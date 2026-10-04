@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f1115">
+<title>DOT Trader</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0f1115;color:#eee;font-family:Arial,sans-serif;padding:18px}
+h1{margin:0 0 4px;font-size:28px}.sub{color:#9da5b4;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:#191d24;border-radius:14px;padding:16px;box-shadow:0 4px 18px #0003}
+.label{color:#9da5b4;font-size:13px}.value{font-size:22px;font-weight:700;margin-top:7px}
+.full{margin-top:12px}.status{display:inline-block;padding:7px 10px;border-radius:20px;background:#263322;color:#8ee39e;font-size:13px}
+table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;padding:10px 5px;border-bottom:1px solid #2a303a;font-size:13px}
+.note{color:#9da5b4;font-size:12px;line-height:1.5}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<h1>DOT Trader</h1>
+<div class="sub">Painel web • Paper Trading • Atualização automática</div>
+<span class="status">● PAPER TRADING ATIVO</span>
+
+<div class="grid full">
+<div class="card"><div class="label">Capital disponível</div><div class="value" id="capital">R$ 0,00</div></div>
+<div class="card"><div class="label">Patrimônio</div><div class="value" id="patrimonio">R$ 0,00</div></div>
+<div class="card"><div class="label">Lucro líquido</div><div class="value" id="lucro">R$ 0,00</div></div>
+<div class="card"><div class="label">Retorno</div><div class="value" id="retorno">0,00%</div></div>
+</div>
+
+<div class="grid full">
+<div class="card"><div class="label">Taxas</div><div class="value" id="taxas">R$ 0,00</div></div>
+<div class="card"><div class="label">Impostos estimados</div><div class="value" id="impostos">R$ 0,00</div></div>
+<div class="card"><div class="label">Operações</div><div class="value" id="operacoes">0</div></div>
+<div class="card"><div class="label">Fonte</div><div class="value" style="font-size:15px">dados.json</div></div>
+</div>
+
+<div class="card full"><h2>Posição atual</h2><p id="posicao">Nenhuma posição aberta.</p></div>
+
+<div class="card full">
+<h2>Últimas operações</h2>
+<table><thead><tr><th>Ativo</th><th>Entrada</th><th>Saída</th><th>Líquido</th><th>Imposto</th></tr></thead>
+<tbody id="historico"><tr><td colspan="5">Carregando...</td></tr></tbody></table>
+</div>
+
+<div class="card full note">
+<strong>Status:</strong> <span id="atualizacao">carregando dados...</span><br>
+Este painel continua em Paper Trading e não envia ordens reais.
+</div>
+
+<script>
+const brl = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0));
+const pct = v => Number(v||0).toFixed(2).replace('.',',')+'%';
+
+async function carregarDados(){
+  try{
+    const r=await fetch('dados.json?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok) throw new Error('dados.json não encontrado');
+    const d=await r.json();
+    const c=d.config||{}, p=d.positions||[], t=d.trades||[];
+    const lucro=t.reduce((s,x)=>s+Number(x.net||0),0);
+    const taxas=t.reduce((s,x)=>s+Number(x.fees||0),0);
+    const impostos=t.reduce((s,x)=>s+Number(x.estimated_tax||0),0);
+    const aberto=p.reduce((s,x)=>s+Number(x.quantity||0)*Number(x.entry_price||0),0);
+    const patrimonio=Number(c.capital||0)+aberto;
+    const retorno=c.capital_inicial ? (patrimonio/Number(c.capital_inicial)-1)*100 : 0;
+
+    capital.textContent=brl(c.capital);
+    patrimonioEl=patrimonio;
+    document.getElementById('patrimonio').textContent=brl(patrimonioEl);
+    lucroEl=lucro;
+    document.getElementById('lucro').textContent=brl(lucroEl);
+    document.getElementById('retorno').textContent=pct(retorno);
+    document.getElementById('taxas').textContent=brl(taxas);
+    document.getElementById('impostos').textContent=brl(impostos);
+    document.getElementById('operacoes').textContent=t.length;
+
+    if(p.length){
+      const x=p[0];
+      document.getElementById('posicao').innerHTML='<b>'+x.symbol+'</b> — '+Number(x.quantity).toFixed(8)+' unidades<br>Entrada: '+brl(x.entry_price)+' | Stop: '+brl(x.stop_price)+' | Alvo: '+brl(x.target_price);
+    }else document.getElementById('posicao').textContent='Nenhuma posição aberta.';
+
+    const rows=t.slice(-20).reverse().map(x=>'<tr><td>'+x.symbol+'</td><td>'+brl(x.entry_price)+'</td><td>'+brl(x.exit_price)+'</td><td>'+brl(x.net)+'</td><td>'+brl(x.estimated_tax)+'</td></tr>').join('');
+    document.getElementById('historico').innerHTML=rows||'<tr><td colspan="5">Nenhuma operação encerrada.</td></tr>';
+    document.getElementById('atualizacao').textContent='Dados carregados em '+new Date().toLocaleTimeString('pt-BR');
+  }catch(e){
+    document.getElementById('atualizacao').textContent='Aguardando publicação de dados.json';
+  }
+}
+carregarDados();
+setInterval(carregarDados,15000);
+</script>
+</body>
+</html>
