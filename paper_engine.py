@@ -53,8 +53,10 @@ def main():
             continue
         gross=(exit_price-pos["entry_price"])*pos["quantity"]
         st["capital"] += pos["quantity"]*exit_price
-        trade={**pos,"exit_price":exit_price,"gross":gross,"net":gross,
-               "reason":reason,"closed_at":now}
+        tax=max(0.0,gross)*0.15
+        net=gross-tax
+        trade={**pos,"exit_price":exit_price,"gross":gross,"fees":0.0,
+               "estimated_tax":tax,"net":net,"reason":reason,"closed_at":now}
         trades.append(trade); closed.append(trade)
     positions=remaining
 
@@ -82,8 +84,8 @@ def main():
 
     lucro=sum(float(t.get("net",0)) for t in trades)
     taxas=sum(float(t.get("fees",0)) for t in trades)
-    impostos=sum(max(0,float(t.get("net",0)))*0.15 for t in trades)
-    aberto=sum(float(x["quantity"])*float(x["entry_price"]) for x in positions)
+    impostos=sum(float(t.get("estimated_tax",0)) for t in trades)
+    aberto=sum(float(x["quantity"])*p for x in positions)
     patrimonio=st["capital"]+aberto
     dados={"config":{"capital_inicial":CAPITAL_INICIAL,"capital":st["capital"],
         "max_position_pct":5.0,"stop_loss_pct":STOP_PCT,"take_profit_pct":ALVO_PCT,
