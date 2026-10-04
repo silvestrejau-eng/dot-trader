@@ -38,3 +38,16 @@ O painel atualiza automaticamente a cada 15 segundos.
 6. Interface otimizada para celular Android.
 
 O projeto deve permanecer em Paper Trading até que todas as regras de risco e validações sejam testadas.
+
+
+## Sincronizar com o GitHub Pages
+
+Depois de executar o DOT Trader e salvar uma alteração na carteira, use:
+
+```bash
+python sync_pages.py
+```
+
+Esse comando copia o estado local de `dot_trader_data.json` para `docs/dados.json`, que alimenta o painel publicado no GitHub Pages. Ele não envia ordens reais.
+
+> Para automatizar a publicação sem depender de comandos manuais, o próximo passo é conectar o projeto a um backend/runner persistente. O GitHub Pages sozinho não executa Python nem acessa arquivos do seu computador.
