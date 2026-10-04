@@ -1,0 +1,15 @@
+{
+  "updated_at": null,
+  "symbol": "DOTUSDT",
+  "interval": "15m",
+  "price": 0,
+  "ema9": 0,
+  "ema21": 0,
+  "rsi14": 0,
+  "momentum_pct": 0,
+  "score": 0,
+  "signal": "HOLD",
+  "reasons": ["Aguardando a primeira atualização do scanner"],
+  "paper_trading": true,
+  "real_orders": false
+}
