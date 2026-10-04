@@ -1,0 +1,17 @@
+{
+  "capital": 4999.999999999999,
+  "positions": [
+    {
+      "symbol": "DOTUSDT",
+      "quantity": 4159.73377703827,
+      "entry_price": 1.202,
+      "stop_price": 1.18998,
+      "target_price": 1.22604,
+      "risk_value": 50.0,
+      "score": 100.0,
+      "opened_at": "2026-10-04T15:57:37.253273+00:00"
+    }
+  ],
+  "trades": [],
+  "updated_at": "2026-10-04T15:57:37.253273+00:00"
+}

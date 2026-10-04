@@ -1,30 +1,41 @@
 {
   "config": {
-    "capital_inicial": 10000,
-    "capital": 10000,
-    "max_position_pct": 5,
-    "stop_loss_pct": 1,
-    "take_profit_pct": 2,
-    "fee_pct": 0,
-    "tax_rate_pct": 15,
+    "capital_inicial": 10000.0,
+    "capital": 4999.999999999999,
+    "max_position_pct": 5.0,
+    "stop_loss_pct": 1.0,
+    "take_profit_pct": 2.0,
+    "fee_pct": 0.0,
+    "tax_rate_pct": 15.0,
     "paper_trading": true,
     "risk_per_trade_pct": 0.5,
     "max_positions": 3
   },
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "DOTUSDT",
+      "quantity": 4159.73377703827,
+      "entry_price": 1.202,
+      "stop_price": 1.18998,
+      "target_price": 1.22604,
+      "risk_value": 50.0,
+      "score": 100.0,
+      "opened_at": "2026-10-04T15:57:37.253273+00:00"
+    }
+  ],
   "trades": [],
   "market": {
     "symbol": "DOTUSDT",
-    "price": 0,
-    "score": 0,
-    "signal": "HOLD"
+    "price": 1.202,
+    "score": 100.0,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 0,
     "taxas": 0,
     "impostos_estimados": 0,
-    "patrimonio": 10000,
-    "retorno_pct": 0,
+    "patrimonio": 10000.0,
+    "retorno_pct": 0.0,
     "operacoes": 0
   }
 }
