@@ -27,7 +27,7 @@ main{max-width:620px;margin:auto;padding:20px 16px 32px}.top{display:flex;justif
 <script>
 async function atualizar(){
  try{
-  const r=await fetch('/api/status',{cache:'no-store'});const d=await r.json();
+  const r=await fetch('https://api.binance.com/api/v3/ticker/24hr?symbol=DOTUSDT',{cache:'no-store'});const m=await r.json();const d={price:parseFloat(m.lastPrice),change_pct:parseFloat(m.priceChangePercent),signal:parseFloat(m.priceChangePercent)>=0.5?'COMPRA':parseFloat(m.priceChangePercent)<=-0.5?'EVITAR':'AGUARDAR',equity:parseFloat(localStorage.getItem('dot_capital')||'10000'),capital:parseFloat(localStorage.getItem('dot_capital')||'10000'),return_pct:0,stop:0,target:0,message:'Mercado ao vivo • paper trading'};
   document.querySelector('#price').textContent=d.price?d.price.toLocaleString('pt-BR',{minimumFractionDigits:4}):'--';
   document.querySelector('#change').textContent=d.change_pct!=null?(d.change_pct.toFixed(2)+'% nas últimas 24h'):'Sem mercado';
   document.querySelector('#change').className=d.change_pct>=0?'up':'down';
@@ -40,5 +40,5 @@ async function atualizar(){
   document.querySelector('#msg').textContent=d.message||'OK';
  }catch(e){document.querySelector('#msg').textContent='Não foi possível conectar ao DOT Trader.'}
 }
-atualizar();setInterval(atualizar,10000);
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/app/sw.js');atualizar();setInterval(atualizar,10000);
 </script></body></html>
