@@ -1,44 +1,67 @@
 <!doctype html>
-<html lang="pt-BR"><head>
+<html lang="pt-BR">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b1020"><link rel="manifest" href="/manifest.json">
-<title>DOT Trader</title>
+<meta name="theme-color" content="#080c16"><link rel="manifest" href="/app/manifest.json">
+<title>DOT Trader Mobile</title>
 <style>
-:root{color-scheme:dark;font-family:system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;background:#080c16;color:#eef2ff}
-main{max-width:620px;margin:auto;padding:20px 16px 32px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
-.brand{font-size:24px;font-weight:800}.status{font-size:12px;opacity:.7}.price{font-size:42px;font-weight:800;margin:8px 0}
-.muted{opacity:.65}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:#11182a;border:1px solid #202b44;border-radius:16px;padding:16px;margin-bottom:10px}
-.label{font-size:12px;opacity:.6}.value{font-size:20px;font-weight:700;margin-top:5px}.signal{font-size:24px;font-weight:800}
-.row{display:flex;justify-content:space-between;gap:12px}.btn{display:block;width:100%;padding:14px;border:0;border-radius:12px;background:#243354;color:white;font-weight:700;font-size:16px}
-.small{font-size:13px}.up{color:#6ee7b7}.down{color:#fca5a5}
-</style></head><body><main>
-<div class="top"><div class="brand">DOT Trader</div><div class="status">PAPER TRADING</div></div>
-<section class="card"><div class="label">DOT / mercado</div><div id="price" class="price">--</div><div id="change" class="muted">Carregando...</div></section>
+*{box-sizing:border-box}body{margin:0;background:#080c16;color:#eef2ff;font-family:system-ui,-apple-system,sans-serif}main{max-width:680px;margin:auto;padding:18px 14px 88px}.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:25px;font-weight:800}.badge{font-size:11px;padding:6px 9px;border-radius:99px;background:#16213a;color:#9fb8e8}.page{display:none}.page.active{display:block}.hero{background:linear-gradient(145deg,#111a2d,#0e1422);border:1px solid #22304c;border-radius:22px;padding:20px;margin:18px 0 12px}.label{font-size:12px;color:#8e9bb3;text-transform:uppercase;letter-spacing:.06em}.price{font-size:42px;font-weight:850;margin:5px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:#11182a;border:1px solid #202b44;border-radius:16px;padding:15px;margin-bottom:10px}.value{font-size:19px;font-weight:750;margin-top:5px}.muted{color:#8e9bb3}.up{color:#6ee7b7}.down{color:#fca5a5}.signal{font-size:23px;font-weight:850}.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #202b44}.row:last-child{border:0}.nav{position:fixed;bottom:0;left:0;right:0;background:#0c1220;border-top:1px solid #202b44;display:flex;justify-content:center;z-index:5}.nav button{flex:1;max-width:170px;background:none;border:0;color:#7f8ca5;padding:12px 4px;font-size:12px}.nav button.active{color:#fff}.nav b{display:block;font-size:18px;margin-bottom:2px}.notice{padding:11px 13px;border-radius:12px;background:#121d31;color:#aebbd0;font-size:13px;margin:12px 0}.btn{width:100%;border:0;border-radius:12px;padding:14px;background:#243354;color:#fff;font-weight:700;font-size:15px}
+</style></head>
+<body><main>
+<div class="top"><div class="brand">DOT Trader</div><div class="badge">PAPER</div></div>
+
+<section id="resumo" class="page active">
+<div class="hero"><div class="label">DOT / USDT</div><div id="price" class="price">--</div><div id="change" class="muted">Carregando mercado...</div></div>
 <div class="grid">
-<section class="card"><div class="label">SINAL</div><div id="signal" class="signal">--</div></section>
-<section class="card"><div class="label">PATRIMÔNIO</div><div id="equity" class="value">--</div></section>
-<section class="card"><div class="label">CAPITAL</div><div id="capital" class="value">--</div></section>
-<section class="card"><div class="label">RETORNO</div><div id="return" class="value">--</div></section>
+<div class="card"><div class="label">Patrimônio</div><div id="equity" class="value">R$ 10.000,00</div></div>
+<div class="card"><div class="label">Capital</div><div id="capital" class="value">R$ 10.000,00</div></div>
+<div class="card"><div class="label">Retorno</div><div id="return" class="value">0,00%</div></div>
+<div class="card"><div class="label">Sinal</div><div id="signal" class="signal">--</div></div>
 </div>
-<section class="card"><div class="row"><span>Stop</span><strong id="stop">--</strong></div><div class="row"><span>Alvo</span><strong id="target">--</strong></div></section>
-<section class="card"><div class="label">STATUS</div><div id="msg" class="small">Conectando ao painel...</div></section>
-<button class="btn" onclick="location.reload()">Atualizar agora</button>
+<div class="notice" id="status">Mercado ao vivo. Nenhuma ordem real é enviada.</div>
+</section>
+
+<section id="mercado" class="page">
+<h2>Mercado</h2>
+<div class="card"><div class="row"><span>Preço</span><strong id="mprice">--</strong></div><div class="row"><span>Variação 24h</span><strong id="mchange">--</strong></div><div class="row"><span>Máxima 24h</span><strong id="mhigh">--</strong></div><div class="row"><span>Mínima 24h</span><strong id="mlow">--</strong></div></div>
+</section>
+
+<section id="historico" class="page">
+<h2>Histórico</h2>
+<div class="card"><div class="muted">Ainda não há operações sincronizadas com o painel local.</div></div>
+<div class="notice">A integração do histórico ficará separada da camada de execução.</div>
+</section>
+
+<section id="config" class="page">
+<h2>Configurações</h2>
+<div class="card"><div class="row"><span>Modo</span><strong>Paper Trading</strong></div><div class="row"><span>Atualização</span><strong>10 segundos</strong></div><div class="row"><span>Capital inicial</span><strong>R$ 10.000,00</strong></div></div>
+<button class="btn" onclick="location.reload()">Recarregar aplicativo</button>
+</section>
 </main>
+<nav class="nav">
+<button class="active" onclick="go('resumo',this)"><b>⌂</b>Resumo</button>
+<button onclick="go('mercado',this)"><b>◈</b>Mercado</button>
+<button onclick="go('historico',this)"><b>≡</b>Histórico</button>
+<button onclick="go('config',this)"><b>⚙</b>Config.</button>
+</nav>
 <script>
+function go(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
+function fmt(v){return Number(v).toLocaleString('pt-BR',{minimumFractionDigits:4,maximumFractionDigits:6})}
 async function atualizar(){
  try{
-  const r=await fetch('https://api.binance.com/api/v3/ticker/24hr?symbol=DOTUSDT',{cache:'no-store'});const m=await r.json();const d={price:parseFloat(m.lastPrice),change_pct:parseFloat(m.priceChangePercent),signal:parseFloat(m.priceChangePercent)>=0.5?'COMPRA':parseFloat(m.priceChangePercent)<=-0.5?'EVITAR':'AGUARDAR',equity:parseFloat(localStorage.getItem('dot_capital')||'10000'),capital:parseFloat(localStorage.getItem('dot_capital')||'10000'),return_pct:0,stop:0,target:0,message:'Mercado ao vivo • paper trading'};
-  document.querySelector('#price').textContent=d.price?d.price.toLocaleString('pt-BR',{minimumFractionDigits:4}):'--';
-  document.querySelector('#change').textContent=d.change_pct!=null?(d.change_pct.toFixed(2)+'% nas últimas 24h'):'Sem mercado';
-  document.querySelector('#change').className=d.change_pct>=0?'up':'down';
-  document.querySelector('#signal').textContent=d.signal||'--';
-  document.querySelector('#equity').textContent=d.equity!=null?('R$ '+d.equity.toFixed(2)):'--';
-  document.querySelector('#capital').textContent=d.capital!=null?('R$ '+d.capital.toFixed(2)):'--';
-  document.querySelector('#return').textContent=d.return_pct!=null?(d.return_pct.toFixed(2)+'%'):'--';
-  document.querySelector('#stop').textContent=d.stop?d.stop.toFixed(4):'--';
-  document.querySelector('#target').textContent=d.target?d.target.toFixed(4):'--';
-  document.querySelector('#msg').textContent=d.message||'OK';
- }catch(e){document.querySelector('#msg').textContent='Não foi possível conectar ao DOT Trader.'}
+  const r=await fetch('https://api.binance.com/api/v3/ticker/24hr?symbol=DOTUSDT',{cache:'no-store'});const m=await r.json();
+  const p=Number(m.lastPrice), ch=Number(m.priceChangePercent);
+  document.getElementById('price').textContent=fmt(p)+' USDT';
+  document.getElementById('change').textContent=(ch>=0?'+':'')+ch.toFixed(2)+'% nas últimas 24h';
+  document.getElementById('change').className=ch>=0?'up':'down';
+  document.getElementById('signal').textContent=ch>=0.5?'COMPRA':ch<=-0.5?'EVITAR':'AGUARDAR';
+  document.getElementById('mprice').textContent=fmt(p)+' USDT';
+  document.getElementById('mchange').textContent=(ch>=0?'+':'')+ch.toFixed(2)+'%';
+  document.getElementById('mhigh').textContent=fmt(m.highPrice);
+  document.getElementById('mlow').textContent=fmt(m.lowPrice);
+  document.getElementById('status').textContent='Mercado atualizado agora • Paper Trading ativo';
+ }catch(e){document.getElementById('status').textContent='Mercado indisponível no momento.'}
 }
-if('serviceWorker' in navigator) navigator.serviceWorker.register('/app/sw.js');atualizar();setInterval(atualizar,10000);
+if('serviceWorker' in navigator)navigator.serviceWorker.register('/app/sw.js');
+atualizar();setInterval(atualizar,10000);
 </script></body></html>
