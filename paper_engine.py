@@ -15,7 +15,7 @@ MAX_POSICOES=3
 STOP_PCT=1.0
 ALVO_PCT=2.0
 STATE=Path("docs/paper_state.json")
-DADOS=Path("docs/dados.json")
+DADOS_OUTS=[Path("docs/dados.json"),Path("dados.json")]
 SINAL=Path("docs/sinal.json")
 API="https://data-api.binance.vision/api/v3/ticker/price"
 
@@ -94,7 +94,9 @@ def main():
         "summary":{"lucro_liquido":lucro,"taxas":taxas,"impostos_estimados":impostos,
                    "patrimonio":patrimonio,"retorno_pct":(patrimonio/CAPITAL_INICIAL-1)*100,
                    "operacoes":len(trades)}}
-    DADOS.write_text(json.dumps(dados,indent=2,ensure_ascii=False),encoding="utf-8")
+    for DADOS in DADOS_OUTS:
+        DADOS.parent.mkdir(parents=True,exist_ok=True)
+        DADOS.write_text(json.dumps(dados,indent=2,ensure_ascii=False),encoding="utf-8")
     print(json.dumps({"price":p,"signal":signal,"score":score,
         "opened":len(positions),"closed":len(closed),"capital":st["capital"]},ensure_ascii=False))
 
