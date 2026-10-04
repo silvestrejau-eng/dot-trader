@@ -165,31 +165,23 @@ def abrir_posicao(cfg, positions, trades):
     print(f"Alvo:        {dinheiro(pos.target_price)}")
 
 
-def fechar_posicao(cfg, positions, trades):
-    if not positions:
-        print("Nenhuma posicao aberta.")
-        return
+def fechar_posicao_preco(cfg, positions, trades, price, motivo="manual"):
+    if not positions or price <= 0:
+        return False
 
     pos = positions[0]
-    price = ler_float(f"Preco de saida de {pos.symbol}: ")
-    if price is None:
-        return
-
     compra = pos.quantity * pos.entry_price
     venda = pos.quantity * price
-
     taxa_compra = compra * cfg.fee_pct / 100
     taxa_venda = venda * cfg.fee_pct / 100
     taxas = taxa_compra + taxa_venda
-
     bruto = venda - compra
     lucro_tributavel = max(0.0, bruto - taxas)
     imposto = lucro_tributavel * cfg.tax_rate_pct / 100
     liquido = bruto - taxas - imposto
-
     cfg.capital += venda - taxa_venda - imposto
 
-    trade = Trade(
+    trades.append(Trade(
         symbol=pos.symbol,
         quantity=pos.quantity,
         entry_price=pos.entry_price,
@@ -200,18 +192,34 @@ def fechar_posicao(cfg, positions, trades):
         net=liquido,
         opened_at=pos.opened_at,
         closed_at=datetime.now().isoformat(timespec="seconds"),
-    )
-
-    trades.append(trade)
+    ))
     positions.clear()
     salvar(cfg, positions, trades)
+    return True
 
-    print("\n===== OPERACAO ENCERRADA =====")
-    print(f"Resultado bruto:    {dinheiro(bruto)}")
-    print(f"Taxas:              {dinheiro(taxas)}")
-    print(f"Imposto estimado:   {dinheiro(imposto)}")
-    print(f"Resultado liquido:  {dinheiro(liquido)}")
-    print(f"Capital atual:      {dinheiro(cfg.capital)}")
+
+def fechar_posicao(cfg, positions, trades):
+    if not positions:
+        print("Nenhuma posicao aberta.")
+        return
+
+    pos = positions[0]
+    price = ler_float(f"Preco de saida de {pos.symbol}: ")
+    if price is None:
+        return
+
+    price = ler_float(f"Preco de saida de {pos.symbol}: ")
+    if price is None:
+        return
+
+    if fechar_posicao_preco(cfg, positions, trades, price):
+        trade = trades[-1]
+        print("\n===== OPERACAO ENCERRADA =====")
+        print(f"Resultado bruto:    {dinheiro(trade.gross)}")
+        print(f"Taxas:              {dinheiro(trade.fees)}")
+        print(f"Imposto estimado:   {dinheiro(trade.estimated_tax)}")
+        print(f"Resultado liquido:  {dinheiro(trade.net)}")
+        print(f"Capital atual:      {dinheiro(cfg.capital)}")
 
 
 def carteira(cfg, positions, trades):
