@@ -36,6 +36,8 @@ table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;p
 <div class="card"><div class="label">Fonte</div><div class="value" style="font-size:15px">dados.json</div></div>
 </div>
 
+<div class="card full"><h2>Sinal de mercado</h2><p><b id="sig-symbol">DOTUSDT</b> — <span id="sig-signal">carregando...</span></p><p>Preço: <b id="sig-price">—</b> &nbsp; Score: <b id="sig-score">—</b>/100 &nbsp; RSI: <b id="sig-rsi">—</b></p><p class="note" id="sig-reasons">Aguardando dados.</p></div>
+
 <div class="card full"><h2>Posição atual</h2><p id="posicao">Nenhuma posição aberta.</p></div>
 
 <div class="card full">
@@ -53,6 +55,19 @@ Este painel continua em Paper Trading e não envia ordens reais.
 const brl = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0));
 const pct = v => Number(v||0).toFixed(2).replace('.',',')+'%';
 
+async function carregarSinal(){
+  try{
+    const r=await fetch('sinal.json?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok) throw new Error();
+    const d=await r.json();
+    document.getElementById('sig-symbol').textContent=d.symbol||'DOTUSDT';
+    document.getElementById('sig-signal').textContent=d.signal||'HOLD';
+    document.getElementById('sig-price').textContent=Number(d.price||0).toFixed(4);
+    document.getElementById('sig-score').textContent=Number(d.score||0).toFixed(0);
+    document.getElementById('sig-rsi').textContent=Number(d.rsi14||0).toFixed(1);
+    document.getElementById('sig-reasons').textContent=(d.reasons||[]).join(' • ');
+  }catch(e){}
+}
 async function carregarDados(){
   try{
     const r=await fetch('dados.json?t='+Date.now(),{cache:'no-store'});
@@ -89,7 +104,9 @@ async function carregarDados(){
   }
 }
 carregarDados();
+carregarSinal();
 setInterval(carregarDados,15000);
+setInterval(carregarSinal,15000);
 </script>
 </body>
 </html>
