@@ -12,7 +12,7 @@ BASE = "https://data-api.binance.vision/api/v3/klines"
 SYMBOL = "DOTUSDT"
 INTERVAL = "15m"
 LIMIT = 100
-OUT = Path("docs/sinal.json")
+OUTS = [Path("docs/sinal.json"), Path("sinal.json")]
 
 def fetch():
     q = urlencode({"symbol": SYMBOL, "interval": INTERVAL, "limit": LIMIT})
@@ -73,8 +73,9 @@ def main():
       "score":score,"signal":signal,"reasons":reasons,
       "paper_trading":True,"real_orders":False
     }
-    OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False),encoding="utf-8")
+    for OUT in OUTS:
+        OUT.parent.mkdir(parents=True,exist_ok=True)
+        OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False),encoding="utf-8")
     print(json.dumps(out,indent=2,ensure_ascii=False))
 
 if __name__=="__main__":
