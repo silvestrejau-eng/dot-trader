@@ -1,0 +1,10 @@
+{
+  "name":"DOT Trader",
+  "short_name":"DOT Trader",
+  "start_url":"/app/",
+  "display":"standalone",
+  "background_color":"#080c16",
+  "theme_color":"#0b1020",
+  "lang":"pt-BR",
+  "description":"Painel móvel do DOT Trader em modo paper trading."
+}
