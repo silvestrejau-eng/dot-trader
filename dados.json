@@ -1,0 +1,30 @@
+{
+  "config": {
+    "capital_inicial": 10000,
+    "capital": 10000,
+    "max_position_pct": 5,
+    "stop_loss_pct": 1,
+    "take_profit_pct": 2,
+    "fee_pct": 0,
+    "tax_rate_pct": 15,
+    "paper_trading": true,
+    "risk_per_trade_pct": 0.5,
+    "max_positions": 3
+  },
+  "positions": [],
+  "trades": [],
+  "market": {
+    "symbol": "DOTUSDT",
+    "price": 0,
+    "score": 0,
+    "signal": "HOLD"
+  },
+  "summary": {
+    "lucro_liquido": 0,
+    "taxas": 0,
+    "impostos_estimados": 0,
+    "patrimonio": 10000,
+    "retorno_pct": 0,
+    "operacoes": 0
+  }
+}
