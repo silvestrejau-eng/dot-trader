@@ -108,8 +108,7 @@ def sinal(preco_anterior, preco_atual):
         return "VENDA/EVITAR", f"Momentum negativo: {variacao:.2f}%"
     return "HOLD", f"Movimento pequeno: {variacao:+.2f}%"
 
-
-def abrir_posicao(cfg, positions):
+def abrir_posicao(cfg, positions, trades):
     if not cfg.paper_trading:
         print("Operacao real bloqueada nesta V1.")
         return
@@ -190,7 +189,7 @@ def fechar_posicao(cfg, positions, trades):
     estimated_tax = taxable * cfg.tax_rate_pct / 100
     net = gross - fees - estimated_tax
 
-    cfg.capital += sell_value - (sell_value * cfg.fee_pct / 100)
+  cfg.capital += sell_value - (sell_value * cfg.fee_pct / 100) - estimated_tax
 
     trade = Trade(
         symbol=pos.symbol,
