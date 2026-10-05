@@ -1,17 +1,24 @@
-# DOT Trader V2
+# DOT Trader V2.2 — Aziz Playbook
 
 Paper Trading only. Never sends real orders.
 
-Architecture:
-- v2_scanner.py: one market snapshot per cycle
-- v2_engine.py: independent HUNTER X and HUNTER EXTREME simulations
-- state.json: persistent V2 state
-- dashboard.json: single source of truth for the dashboard
-- index.html: mobile dashboard
-- GitHub Actions: one cycle every 5 minutes
+The V2.2 engine is a fresh paper-trading baseline starting at R$10,000 per strategy. The previous V2 state is preserved in `state_pre_aziz_20261005.json`.
 
-The V2 engine is intentionally independent from the legacy engine.
+Methodology:
+- VWAP as dynamic support/reference
+- Opening Range Breakout (UTC crypto session proxy)
+- Momentum and volume confirmation
+- Bull Flag, ABCD and VWAP pullback heuristics
+- Trend alignment with EMA 9/21/50
+- Support/resistance and risk/reward filter
+- Score from 0–100
+- HUNTER_X entry score >= 70
+- HUNTER_EXTREME entry score >= 82
+- Risk-based position sizing
+- Partial at +1R, runner at +2R
+- Stop moves to breakeven after first partial
+- 20 crypto markets scanned every cycle
+- 5-minute scanner with five rapid paper cycles per scheduled run
+- Real orders permanently disabled
 
-V2 bootstrap trigger: 2026-10-05T21:21:47.223Z
-
-V2 push trigger test: 2026-10-05T21:24:00Z
+The book by Andrew Aziz emphasizes tactics, capital management, discipline and trading psychology; this implementation converts those principles into explicit, testable rules rather than treating them as a guarantee of profitability.
