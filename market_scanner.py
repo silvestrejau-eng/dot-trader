@@ -243,7 +243,7 @@ def main():
             return None, {"symbol": symbol, "market": market, "error": str(exc)}
 
     # Paralelismo reduz o tempo do scanner e aumenta a frequencia efetiva de ciclos.
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=20) as pool:
         futures = [pool.submit(run, item) for item in UNIVERSE]
         for future in as_completed(futures):
             candidate, error = future.result()
