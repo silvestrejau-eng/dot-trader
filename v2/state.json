@@ -2,10 +2,63 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 10000.0,
-      "positions": [],
+      "capital": 9409.0,
+      "positions": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 26.98327037236913,
+          "initial_qty": 26.98327037236913,
+          "entry": 11.118,
+          "stop": 11.091857142857142,
+          "target": 11.170285714285717,
+          "target1": 11.144142857142858,
+          "target2": 11.170285714285717,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-05T23:52:56.417966+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "ACIMA_VWAP",
+            "MOMENTUM_LEVE",
+            "ORB",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 11.124,
+          "unrealized_pnl": 0.1618996222342209
+        },
+        {
+          "symbol": "BCHUSDT",
+          "market": "CRYPTO",
+          "qty": 0.9185606060606061,
+          "initial_qty": 0.9185606060606061,
+          "entry": 316.8,
+          "stop": 316.47857142857146,
+          "target": 317.4428571428571,
+          "target1": 317.12142857142857,
+          "target2": 317.4428571428571,
+          "score": 72,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-05T23:53:36.161107+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "MOMENTUM_LEVE",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 316.8,
+          "unrealized_pnl": 0.0
+        }
+      ],
       "trades": [],
-      "equity_peak": 10000.0,
+      "equity_peak": 10000.161899622235,
       "equity_history": [
         {
           "timestamp": "2026-10-05T23:25:26.090607+00:00",
@@ -96,6 +149,36 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:52:42.966965+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:52:56.417966+00:00",
+          "equity": 10000.0,
+          "capital": 9700.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-05T23:53:09.676309+00:00",
+          "equity": 10000.134916351863,
+          "capital": 9700.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-05T23:53:23.045982+00:00",
+          "equity": 10000.053966540745,
+          "capital": 9700.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-05T23:53:36.161107+00:00",
+          "equity": 10000.161899622235,
+          "capital": 9409.0,
+          "positions": 2
         }
       ]
     },
@@ -194,9 +277,39 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:52:42.967003+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:52:56.418012+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:53:09.676348+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:53:23.046022+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:53:36.161157+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-05T23:43:19.496623+00:00"
+  "updated_at": "2026-10-05T23:53:36.161176+00:00"
 }

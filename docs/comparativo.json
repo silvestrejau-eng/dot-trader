@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T23:43:17.560473+00:00",
+  "updated_at": "2026-10-05T23:53:34.265079+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -11,8 +11,8 @@
       "closed_now": 0,
       "closed": 16,
       "capital": 9848.192142341113,
-      "patrimonio": 10049.157521053914,
-      "retorno_pct": 0.4915752105391302,
+      "patrimonio": 10049.919165694406,
+      "retorno_pct": 0.49919165694405354,
       "operacoes": 16,
       "posicoes": 1,
       "win_rate_pct": 43.75,
@@ -25,13 +25,13 @@
       "opened_now": 0,
       "opened_total": 3,
       "closed_now": 0,
-      "closed": 43,
-      "capital": 8490.502960318565,
-      "patrimonio": 9994.29538469096,
-      "retorno_pct": -0.05704615309040095,
-      "operacoes": 43,
+      "closed": 44,
+      "capital": 8405.570656331267,
+      "patrimonio": 9997.02559945311,
+      "retorno_pct": -0.029744005468890222,
+      "operacoes": 44,
       "posicoes": 3,
-      "win_rate_pct": 30.23255813953488,
+      "win_rate_pct": 31.818181818181817,
       "last_event": null,
       "opportunities": [
         {
@@ -42,20 +42,6 @@
           "price": 756.2000122070312,
           "momentum_pct": -0.04890428031849581,
           "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 58,
-          "signal": "HOLD",
-          "price": 11.082,
-          "momentum_pct": -0.08114687584526159,
-          "volume_ratio": 0.3983479196822762,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
@@ -74,6 +60,20 @@
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 55,
+          "signal": "HOLD",
+          "price": 11.124,
+          "momentum_pct": 0.2794555124853604,
+          "volume_ratio": 0.9596319834979541,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI sobrecomprado",
+            "momentum positivo"
           ]
         }
       ]
@@ -95,20 +95,6 @@
       ]
     },
     {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 58,
-      "signal": "HOLD",
-      "price": 11.082,
-      "momentum_pct": -0.08114687584526159,
-      "volume_ratio": 0.3983479196822762,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
       "symbol": "TLT",
       "market": "GLOBAL",
       "score": 58,
@@ -120,6 +106,20 @@
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 55,
+      "signal": "HOLD",
+      "price": 11.124,
+      "momentum_pct": 0.2794555124853604,
+      "volume_ratio": 0.9596319834979541,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI sobrecomprado",
+        "momentum positivo"
       ]
     }
   ],
