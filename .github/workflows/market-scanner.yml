@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: dot-trader-paper-engine
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   paper:
@@ -45,6 +45,20 @@ jobs:
       - name: Run DOT Trader V2 engine
         run: timeout 90s python v2/v2_engine.py
 
+      - name: Validate V2 output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("v2/dashboard.json").read_text())
+          assert d["paper_trading"] is True
+          assert d["real_orders"] is False
+          assert d["markets_scanned"] > 0
+          assert d["strategies"]["HUNTER_X"]["equity"] >= 0
+          assert d["strategies"]["HUNTER_EXTREME"]["equity"] >= 0
+          print("V2 validation OK:", d["updated_at"], "markets=", d["markets_scanned"])
+          PY
+
       - name: Publish dashboard data
         run: |
           git config user.name "github-actions[bot]"
@@ -56,6 +70,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
-            git commit -m "Fix DOT Trader V2 dashboard and engine publishing"
+            git commit -m "Update DOT Trader V2 cycle"
             git push
           fi
