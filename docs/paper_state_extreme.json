@@ -1,5 +1,5 @@
 {
-  "capital": 4932.052028862565,
+  "capital": 4283.963486786432,
   "positions": [
     {
       "symbol": "QQQ",
@@ -28,20 +28,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance",
       "opened_at": "2026-10-05T22:04:51.682700+00:00"
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO",
-      "quantity": 4050.1925594513204,
-      "entry_price": 0.09598,
-      "stop_price": 0.09590571428571429,
-      "target_price": 0.09612857142857142,
-      "risk_value": 116.6212445568413,
-      "risk_distance_pct": 0.1,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:14:56.860990+00:00"
     },
     {
       "symbol": "ADAUSDT",
@@ -86,34 +72,6 @@
       "opened_at": "2026-10-05T22:24:13.189066+00:00"
     },
     {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "quantity": 382.8433491635711,
-      "entry_price": 1.5122,
-      "stop_price": 1.5111428571428571,
-      "target_price": 1.5143142857142857,
-      "risk_value": 115.78714252103043,
-      "risk_distance_pct": 0.1,
-      "score": 51.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:28:24.020056+00:00"
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "quantity": 5.19578160633597,
-      "entry_price": 121.43,
-      "stop_price": 121.33250000000001,
-      "target_price": 121.62500000000001,
-      "risk_value": 126.18475209147535,
-      "risk_distance_pct": 0.1,
-      "score": 51.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:29:01.098063+00:00"
-    },
-    {
       "symbol": "ETHUSDT",
       "market": "CRYPTO",
       "quantity": 0.2090559075505727,
@@ -140,6 +98,62 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-05T22:29:18.561242+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 6815.696037072409,
+      "entry_price": 0.0958,
+      "stop_price": 0.09571821428571428,
+      "target_price": 0.09596357142857143,
+      "risk_value": 130.58873607030733,
+      "risk_distance_pct": 0.1,
+      "score": 61.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:39:58.404222+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 389.0171536584027,
+      "entry_price": 1.5106,
+      "stop_price": 1.5094607142857142,
+      "target_price": 1.5128785714285713,
+      "risk_value": 117.5298624632766,
+      "risk_distance_pct": 0.1,
+      "score": 61.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:39:58.404222+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 4.3680573264349585,
+      "entry_price": 121.08,
+      "stop_price": 120.97071428571428,
+      "target_price": 121.29857142857142,
+      "risk_value": 105.77687621694895,
+      "risk_distance_pct": 0.1,
+      "score": 61.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:39:58.404222+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 43.166404550310176,
+      "entry_price": 11.027,
+      "stop_price": 11.015964285714285,
+      "target_price": 11.049071428571429,
+      "risk_value": 95.19918859525406,
+      "risk_distance_pct": 0.1000790268043412,
+      "score": 55.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:39:58.404222+00:00"
     }
   ],
   "trades": [
@@ -646,7 +660,70 @@
       "net": 0.2335310223309453,
       "reason": "ALVO",
       "closed_at": "2026-10-05T22:29:18.561242+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 4050.1925594513204,
+      "entry_price": 0.09598,
+      "stop_price": 0.09590571428571429,
+      "target_price": 0.09612857142857142,
+      "risk_value": 116.6212445568413,
+      "risk_distance_pct": 0.1,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:14:56.860990+00:00",
+      "exit_price": 0.09590571428571429,
+      "gross": -0.30087144727349835,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.30087144727349835,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T22:39:58.404222+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 382.8433491635711,
+      "entry_price": 1.5122,
+      "stop_price": 1.5111428571428571,
+      "target_price": 1.5143142857142857,
+      "risk_value": 115.78714252103043,
+      "risk_distance_pct": 0.1,
+      "score": 51.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:28:24.020056+00:00",
+      "exit_price": 1.5111428571428571,
+      "gross": -0.404720111972922,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.404720111972922,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T22:39:58.404222+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 5.19578160633597,
+      "entry_price": 121.43,
+      "stop_price": 121.33250000000001,
+      "target_price": 121.62500000000001,
+      "risk_value": 126.18475209147535,
+      "risk_distance_pct": 0.1,
+      "score": 51.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:29:01.098063+00:00",
+      "exit_price": 121.33250000000001,
+      "gross": -0.5065887066177394,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5065887066177394,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T22:39:58.404222+00:00"
     }
   ],
-  "updated_at": "2026-10-05T22:29:18.561242+00:00"
+  "updated_at": "2026-10-05T22:40:51.758388+00:00"
 }
