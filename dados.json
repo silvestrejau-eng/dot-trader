@@ -27,8 +27,8 @@
   "market": {
     "symbol": "DOTUSDT",
     "price": 1.209,
-    "score": 100.0,
-    "signal": "COMPRA"
+    "score": 70.0,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 0,
