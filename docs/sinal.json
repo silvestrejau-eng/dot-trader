@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-10-05T02:25:28.764096+00:00",
+  "updated_at": "2026-10-05T02:39:53.884546+00:00",
   "symbol": "DOTUSDT",
   "interval": "15m",
-  "price": 1.215,
-  "ema9": 1.2093707940397231,
-  "ema21": 1.2072852637311842,
-  "rsi14": 55.555555555555635,
-  "momentum_pct": 0.16488046166529546,
-  "score": 85,
+  "price": 1.214,
+  "ema9": 1.2101700596128393,
+  "ema21": 1.2078556424293754,
+  "rsi14": 54.83870967741936,
+  "momentum_pct": 0.8305647840531671,
+  "score": 100,
   "signal": "COMPRA",
   "reasons": [
     "EMA9 acima da EMA21",
-    "RSI favorável"
+    "RSI favorável",
+    "momentum positivo"
   ],
   "paper_trading": true,
   "real_orders": false
