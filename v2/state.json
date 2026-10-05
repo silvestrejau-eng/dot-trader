@@ -1,13 +1,140 @@
 {
-  "capital": 10000,
-  "positions": {
-    "HUNTER_X": [],
-    "HUNTER_EXTREME": []
+  "version": "2.1",
+  "strategies": {
+    "HUNTER_X": {
+      "capital": 8329.72004929,
+      "positions": [
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1112.3470522803116,
+          "entry": 0.2697,
+          "stop": 0.2691071428571429,
+          "target": 0.2708857142857143,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "NEARUSDT",
+          "market": "CRYPTO",
+          "qty": 55.10320015148646,
+          "entry": 5.281,
+          "stop": 5.250642857142857,
+          "target": 5.341714285714286,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "FILUSDT",
+          "market": "CRYPTO",
+          "qty": 237.1418970007561,
+          "entry": 1.1903,
+          "stop": 1.18135,
+          "target": 1.2082,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "market": "CRYPTO",
+          "qty": 0.003187301311615444,
+          "entry": 85903.99,
+          "stop": 85818.08601,
+          "target": 86075.79798,
+          "score": 80.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "APTUSDT",
+          "market": "CRYPTO",
+          "qty": 313.34101344974044,
+          "entry": 0.8476,
+          "stop": 0.8429642857142857,
+          "target": 0.8568714285714286,
+          "score": 70.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 23.473367445102504,
+          "entry": 10.975,
+          "stop": 10.959571428571428,
+          "target": 11.005857142857144,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        }
+      ],
+      "trades": [],
+      "equity_peak": 10000.0
+    },
+    "HUNTER_EXTREME": {
+      "capital": 7350.91890625,
+      "positions": [
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1853.9117538005191,
+          "entry": 0.2697,
+          "stop": 0.269285,
+          "target": 0.27053,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "NEARUSDT",
+          "market": "CRYPTO",
+          "qty": 89.94508615792464,
+          "entry": 5.281,
+          "stop": 5.2597499999999995,
+          "target": 5.3235,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "FILUSDT",
+          "market": "CRYPTO",
+          "qty": 379.1061077039402,
+          "entry": 1.1903,
+          "stop": 1.184035,
+          "target": 1.20283,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "market": "CRYPTO",
+          "qty": 0.004990309530442066,
+          "entry": 85903.99,
+          "stop": 85843.85720700001,
+          "target": 86024.255586,
+          "score": 80.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "APTUSDT",
+          "market": "CRYPTO",
+          "qty": 480.4779672015101,
+          "entry": 0.8476,
+          "stop": 0.844355,
+          "target": 0.85409,
+          "score": 70.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 35.25197892938497,
+          "entry": 10.975,
+          "stop": 10.9642,
+          "target": 10.9966,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        }
+      ],
+      "trades": [],
+      "equity_peak": 10000.0
+    }
   },
-  "trades": {
-    "HUNTER_X": [],
-    "HUNTER_EXTREME": []
-  },
-  "equity_peak": 10000,
-  "updated_at": "RESET_PENDING"
+  "updated_at": "2026-10-05T21:38:51.294668+00:00"
 }

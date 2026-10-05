@@ -1,6 +1,35 @@
 {
-  "capital": 10049.5,
-  "positions": [],
+  "capital": 9651.5398,
+  "positions": [
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.0023397050591014456,
+      "entry_price": 85903.99,
+      "stop_price": 85852.205,
+      "target_price": 86007.56,
+      "risk_value": 50.2475,
+      "risk_distance_pct": 0.1,
+      "score": 93.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.915953+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 17.9471708428246,
+      "entry_price": 10.975,
+      "stop_price": 10.959571428571428,
+      "target_price": 11.005857142857144,
+      "risk_value": 49.24255,
+      "risk_distance_pct": 0.14057923852912996,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.915953+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -37,5 +66,5 @@
       "closed_at": "2026-10-05T09:30:16.731783+00:00"
     }
   ],
-  "updated_at": "2026-10-05T21:32:32.128828+00:00"
+  "updated_at": "2026-10-05T21:38:48.915953+00:00"
 }

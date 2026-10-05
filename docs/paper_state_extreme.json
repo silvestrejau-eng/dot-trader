@@ -1,6 +1,77 @@
 {
-  "capital": 10000.0,
-  "positions": [],
+  "capital": 8153.726976000002,
+  "positions": [
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.00465636113060639,
+      "entry_price": 85903.99,
+      "stop_price": 85867.7405,
+      "target_price": 85976.489,
+      "risk_value": 100.0,
+      "risk_distance_pct": 0.1,
+      "score": 93.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.916204+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 34.98861047835991,
+      "entry_price": 10.975,
+      "stop_price": 10.9642,
+      "target_price": 10.9966,
+      "risk_value": 96.0,
+      "risk_distance_pct": 0.1,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.916204+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1366.8520578420466,
+      "entry_price": 0.2697,
+      "stop_price": 0.269285,
+      "target_price": 0.27053,
+      "risk_value": 92.16,
+      "risk_distance_pct": 0.1538746755654426,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.916204+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.13033008392963022,
+      "entry_price": 2715.37,
+      "stop_price": 2714.2705,
+      "target_price": 2717.569,
+      "risk_value": 88.4736,
+      "risk_distance_pct": 0.1,
+      "score": 63.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.916204+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 225.62001859476695,
+      "entry_price": 1.5058,
+      "stop_price": 1.50489,
+      "target_price": 1.5076200000000002,
+      "risk_value": 84.93465600000002,
+      "risk_distance_pct": 0.1,
+      "score": 63.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:38:48.916204+00:00"
+    }
+  ],
   "trades": [],
-  "updated_at": "2026-10-05T21:32:32.129050+00:00"
+  "updated_at": "2026-10-05T21:38:48.916204+00:00"
 }
