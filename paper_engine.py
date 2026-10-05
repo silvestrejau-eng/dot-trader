@@ -11,6 +11,11 @@ MAX_POSICOES = 50
 MAX_POSITION_PCT = 2.0
 SCORE_MIN = 70
 STATE = Path("docs/paper_state.json")
+EXTREME_STATE = Path("docs/paper_state_extreme.json")
+EXTREME_SCORE_MIN = 60
+EXTREME_RISCO_PCT = 1.0
+EXTREME_MAX_POSICOES = 50
+EXTREME_MAX_POSITION_PCT = 4.0
 DADOS_OUTS = [Path("docs/dados.json"), Path("dados.json")]
 SINAL = Path("docs/sinal.json")
 
@@ -48,9 +53,9 @@ def current_price(symbol, market):
         return b3_price(symbol)
     return yahoo_price(symbol, market)
 
-def main():
+def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_positions, max_position_pct, stop_mult, target_mult):
     s = load(SINAL, {})
-    st = load(STATE, {"capital": CAPITAL_INICIAL, "positions": [], "trades": []})
+    st = load(state_path, {"capital": CAPITAL_INICIAL, "positions": [], "trades": []})
     now = datetime.now(timezone.utc).isoformat()
     positions = st.get("positions", [])
     trades = st.get("trades", [])
@@ -90,9 +95,9 @@ def main():
     selected, opened = [], []
 
     for c in candidates:
-        if len(positions) >= MAX_POSICOES:
+        if len(positions) >= max_positions:
             break
-        if c.get("signal") != "COMPRA" or float(c.get("score", 0)) < SCORE_MIN:
+        if (c.get("signal") != "COMPRA" and not (strategy_name == "DOT_HUNTER_EXTREME" and c.get("ema9", 0) > c.get("ema21", 0))) or float(c.get("score", 0)) < score_min:
             continue
 
         symbol = c["symbol"]
@@ -101,13 +106,14 @@ def main():
 
         p = float(c["price"])
         # Stop e alvo são definidos pelo ATR do scanner, mantendo R/R de 2:1.
-        stop_price = float(c.get("stop_price", p * 0.995))
-        target_price = float(c.get("target_price", p * 1.01))
+        atr_value = float(c.get("atr", 0.0))
+        stop_price = max(0.0, p - stop_mult * atr_value) if atr_value > 0 else float(c.get("stop_price", p * 0.995))
+        target_price = p + target_mult * atr_value if atr_value > 0 else float(c.get("target_price", p * 1.01))
         stop_distance = max(p - stop_price, p * 0.001)
 
-        risk = st["capital"] * (RISCO_PCT / 100)
+        risk = st["capital"] * (risk_pct / 100)
         qty_risk = risk / stop_distance
-        max_value = st["capital"] * (MAX_POSITION_PCT / 100)
+        max_value = st["capital"] * (max_position_pct / 100)
         qty = min(qty_risk, max_value / p if p > 0 else 0)
         value = qty * p
 
@@ -124,7 +130,7 @@ def main():
             "risk_value": risk,
             "risk_distance_pct": (stop_distance / p) * 100,
             "score": float(c["score"]),
-            "strategy": c.get("strategy", "DOT_HUNTER_X"),
+            "strategy": strategy_name,
             "source": c.get("source"),
             "opened_at": now,
         }
@@ -136,8 +142,8 @@ def main():
     st["positions"] = positions
     st["trades"] = trades
     st["updated_at"] = now
-    STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    state_path.write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
 
     lucro = sum(float(t.get("net", 0)) for t in trades)
     taxas = sum(float(t.get("fees", 0)) for t in trades)
@@ -155,16 +161,16 @@ def main():
         "config": {
             "capital_inicial": CAPITAL_INICIAL,
             "capital": st["capital"],
-            "max_position_pct": MAX_POSITION_PCT,
+            "max_position_pct": max_position_pct,
             "fee_pct": 0.0,
             "tax_rate_pct": 15.0,
             "paper_trading": True,
-            "risk_per_trade_pct": RISCO_PCT,
-            "max_positions": MAX_POSICOES,
-            "score_min": SCORE_MIN,
+            "risk_per_trade_pct": risk_pct,
+            "max_positions": max_positions,
+            "score_min": score_min,
             "rr_min": 2.0,
             "trailing_activation_r": 1.0,
-            "strategy": "DOT_HUNTER_AGRESSIVA",
+            "strategy": strategy_name,
         },
         "positions": positions,
         "trades": trades,
@@ -190,14 +196,26 @@ def main():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(dados, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print(json.dumps({
-        "strategy": "DOT_HUNTER_AGRESSIVA",
+    return {
+        "strategy": strategy_name,
         "selected": selected,
         "opened_now": len(opened),
         "opened_total": len(positions),
         "closed": len(closed),
         "capital": st["capital"],
-    }, ensure_ascii=False))
+        "patrimonio": patrimonio,
+        "retorno_pct": (patrimonio / CAPITAL_INICIAL - 1) * 100,
+        "operacoes": len(trades),
+        "posicoes": len(positions),
+    }
+
+def main():
+    s = load(SINAL, {})
+    hunter = run_strategy(s, STATE, "DOT_HUNTER_X", SCORE_MIN, RISCO_PCT, MAX_POSICOES, MAX_POSITION_PCT, 1.0, 2.0)
+    extreme = run_strategy(s, EXTREME_STATE, "DOT_HUNTER_EXTREME", EXTREME_SCORE_MIN, EXTREME_RISCO_PCT, EXTREME_MAX_POSICOES, EXTREME_MAX_POSITION_PCT, 0.7, 1.4)
+    combined = {"updated_at": datetime.now(timezone.utc).isoformat(), "paper_trading": True, "real_orders": False, "comparison": {"hunter_x": hunter, "hunter_extreme": extreme}}
+    Path("docs/comparativo.json").write_text(json.dumps(combined, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(json.dumps(combined, ensure_ascii=False))
 
 if __name__ == "__main__":
     main()
