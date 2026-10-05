@@ -66,7 +66,9 @@ jobs:
           mkdir -p docs/v2
           cp v2/dashboard.json docs/v2/dashboard.json
           cp v2/v2_config.json docs/v2/v2_config.json
+          git stash push -u -m "cycle-output"
           git pull --rebase origin main
+          git stash pop
           git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json docs/v2/index.html docs/v2/dashboard.json docs/v2/v2_config.json v2/market_snapshot.json v2/state.json v2/dashboard.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
