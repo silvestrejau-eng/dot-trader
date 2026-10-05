@@ -13,10 +13,10 @@ MAX_POSITION_PCT = 2.0
 SCORE_MIN = 70
 STATE = Path("docs/paper_state.json")
 EXTREME_STATE = Path("docs/paper_state_extreme.json")
-EXTREME_SCORE_MIN = 60
-EXTREME_RISCO_PCT = 1.0
-EXTREME_MAX_POSICOES = 50
-EXTREME_MAX_POSITION_PCT = 4.0
+EXTREME_SCORE_MIN = 55
+EXTREME_RISCO_PCT = 1.5
+EXTREME_MAX_POSICOES = 75
+EXTREME_MAX_POSITION_PCT = 5.0
 SINAL = Path("docs/sinal.json")
 
 def load(path, default):
@@ -190,7 +190,7 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
 def main():
     s = load(SINAL, {})
     hunter, hunter_data = run_strategy(s, STATE, "DOT_HUNTER_X", SCORE_MIN, RISCO_PCT, MAX_POSICOES, MAX_POSITION_PCT, 1.0, 2.0)
-    extreme, extreme_data = run_strategy(s, EXTREME_STATE, "DOT_HUNTER_EXTREME", EXTREME_SCORE_MIN, EXTREME_RISCO_PCT, EXTREME_MAX_POSICOES, EXTREME_MAX_POSITION_PCT, 0.7, 1.4)
+    extreme, extreme_data = run_strategy(s, EXTREME_STATE, "DOT_HUNTER_EXTREME", EXTREME_SCORE_MIN, EXTREME_RISCO_PCT, EXTREME_MAX_POSICOES, EXTREME_MAX_POSITION_PCT, 0.5, 1.0)
 
     Path("docs/dados_hunter_x.json").write_text(json.dumps(hunter_data, indent=2, ensure_ascii=False), encoding="utf-8")
     Path("docs/dados_extreme.json").write_text(json.dumps(extreme_data, indent=2, ensure_ascii=False), encoding="utf-8")
