@@ -11,7 +11,7 @@ on:
       - "v2/state.json"
       - "v2/dashboard.json"
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "* * * * *"
 
 permissions:
   contents: write
