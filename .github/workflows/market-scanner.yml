@@ -18,12 +18,12 @@ permissions:
 
 concurrency:
   group: dot-trader-paper-engine
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,17 +33,17 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Generate market signal
-        run: timeout 90s python market_scanner.py
-
-      - name: Run paper engine
-        run: timeout 90s python paper_engine.py
-
-      - name: Run DOT Trader V2 scanner
-        run: timeout 90s python v2/v2_scanner.py
-
-      - name: Run DOT Trader V2 engine
-        run: timeout 90s python v2/v2_engine.py
+      - name: Run four rapid paper cycles
+        run: |
+          set -e
+          for i in 1 2 3 4; do
+            echo "=== RAPID CYCLE $i/4 ==="
+            timeout 45s python market_scanner.py
+            timeout 45s python paper_engine.py
+            timeout 45s python v2/v2_scanner.py
+            timeout 45s python v2/v2_engine.py
+            if [ "$i" -lt 4 ]; then sleep 15; fi
+          done
 
       - name: Validate V2 output
         run: |
