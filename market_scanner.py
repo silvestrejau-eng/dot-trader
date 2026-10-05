@@ -8,7 +8,7 @@ Estrategia HUNTER:
 - Rompimento: maxima dos ultimos 20 candles
 - Volume: acima da media dos ultimos 20 candles
 - Volatilidade: ATR 14 para stop/alvo
-- Score minimo: 75
+- Score minimo: 70
 """
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode, quote
@@ -22,6 +22,7 @@ INTERVAL = "5m"
 LIMIT = 120
 OUTS = [Path("docs/sinal.json"), Path("sinal.json")]
 BREAKOUT_PERIOD = 20
+SCORE_MIN = 70
 ATR_PERIOD = 14
 
 UNIVERSE = [
@@ -214,12 +215,12 @@ def evaluate(symbol, market):
         reasons.append("volatilidade controlada")
 
     score = max(0, min(100, int(round(score))))
-    signal = "COMPRA" if score >= 75 and e9 > e21 else (
+    signal = "COMPRA" if score >= SCORE_MIN and e9 > e21 else (
         "VENDA/EVITAR" if score <= 35 else "HOLD"
     )
 
-    stop_price = max(0.0, p - 1.2 * a)
-    target_price = p + 2.4 * a
+    stop_price = max(0.0, p - 1.0 * a)
+    target_price = p + 2.0 * a
 
     return {
         "symbol": symbol, "market": market, "source": source, "interval": INTERVAL,
@@ -227,7 +228,7 @@ def evaluate(symbol, market):
         "momentum_pct": momentum, "breakout_pct": breakout_pct,
         "volume_ratio": volume_ratio, "atr": a, "atr_pct": atr_pct,
         "stop_price": stop_price, "target_price": target_price,
-        "score": score, "signal": signal, "strategy": "DOT_HUNTER_AGRESSIVA",
+        "score": score, "signal": signal, "strategy": "DOT_HUNTER_X",
         "reasons": reasons,
     }
 
@@ -265,7 +266,7 @@ def main():
         "universe": [{"symbol": s, "market": m} for s, m in UNIVERSE],
         "paper_trading": True,
         "real_orders": False,
-        "score_min": 75,
+        "score_min": SCORE_MIN,
         "strategy": "DOT_HUNTER_AGRESSIVA",
     }
     for path in OUTS:

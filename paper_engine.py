@@ -7,9 +7,9 @@ import json, urllib.request, urllib.parse
 
 CAPITAL_INICIAL = 10000.0
 RISCO_PCT = 0.5
-MAX_POSICOES = 20
-MAX_POSITION_PCT = 5.0
-SCORE_MIN = 75
+MAX_POSICOES = 50
+MAX_POSITION_PCT = 2.0
+SCORE_MIN = 70
 STATE = Path("docs/paper_state.json")
 DADOS_OUTS = [Path("docs/dados.json"), Path("dados.json")]
 SINAL = Path("docs/sinal.json")
@@ -124,7 +124,7 @@ def main():
             "risk_value": risk,
             "risk_distance_pct": (stop_distance / p) * 100,
             "score": float(c["score"]),
-            "strategy": c.get("strategy", "DOT_HUNTER_AGRESSIVA"),
+            "strategy": c.get("strategy", "DOT_HUNTER_X"),
             "source": c.get("source"),
             "opened_at": now,
         }
@@ -163,6 +163,7 @@ def main():
             "max_positions": MAX_POSICOES,
             "score_min": SCORE_MIN,
             "rr_min": 2.0,
+            "trailing_activation_r": 1.0,
             "strategy": "DOT_HUNTER_AGRESSIVA",
         },
         "positions": positions,
