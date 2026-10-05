@@ -2,7 +2,7 @@
   "version": "2.1",
   "strategies": {
     "HUNTER_X": {
-      "capital": 8329.72004929,
+      "capital": 7602.310586545651,
       "positions": [
         {
           "symbol": "ADAUSDT",
@@ -63,13 +63,43 @@
           "target": 11.005857142857144,
           "score": 65.0,
           "opened_at": "2026-10-05T21:38:51.294592+00:00"
+        },
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "qty": 203.32921194361265,
+          "entry": 1.229,
+          "stop": 1.2222857142857144,
+          "target": 1.2424285714285714,
+          "score": 70.0,
+          "opened_at": "2026-10-05T21:39:35.566946+00:00"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "market": "CRYPTO",
+          "qty": 0.08926803570588761,
+          "entry": 2715.36,
+          "stop": 2712.64464,
+          "target": 2720.79072,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:39:35.566946+00:00"
+        },
+        {
+          "symbol": "LTCUSDT",
+          "market": "CRYPTO",
+          "qty": 3.344566256490879,
+          "entry": 70.3,
+          "stop": 70.16357142857143,
+          "target": 70.57285714285715,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:39:35.566946+00:00"
         }
       ],
       "trades": [],
       "equity_peak": 10000.0
     },
     "HUNTER_EXTREME": {
-      "capital": 7350.91890625,
+      "capital": 6302.494097246094,
       "positions": [
         {
           "symbol": "ADAUSDT",
@@ -130,11 +160,41 @@
           "target": 10.9966,
           "score": 65.0,
           "opened_at": "2026-10-05T21:38:51.294645+00:00"
+        },
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "qty": 299.0609807262001,
+          "entry": 1.229,
+          "stop": 1.2243000000000002,
+          "target": 1.2384000000000002,
+          "score": 70.0,
+          "opened_at": "2026-10-05T21:39:35.567018+00:00"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "market": "CRYPTO",
+          "qty": 0.12859018621725113,
+          "entry": 2715.36,
+          "stop": 2713.459248,
+          "target": 2719.161504,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:39:35.567018+00:00"
+        },
+        {
+          "symbol": "LTCUSDT",
+          "market": "CRYPTO",
+          "qty": 4.718495243876689,
+          "entry": 70.3,
+          "stop": 70.2045,
+          "target": 70.491,
+          "score": 65.0,
+          "opened_at": "2026-10-05T21:39:35.567018+00:00"
         }
       ],
       "trades": [],
       "equity_peak": 10000.0
     }
   },
-  "updated_at": "2026-10-05T21:38:51.294668+00:00"
+  "updated_at": "2026-10-05T21:39:35.567051+00:00"
 }
