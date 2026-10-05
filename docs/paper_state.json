@@ -1,5 +1,5 @@
 {
-  "capital": 8743.62525013144,
+  "capital": 9102.794917887932,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -56,34 +56,6 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-05T22:04:51.682137+00:00"
-    },
-    {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "quantity": 117.6105848146367,
-      "entry_price": 1.5142,
-      "stop_price": 1.5125142857142857,
-      "target_price": 1.5175714285714286,
-      "risk_value": 44.52148688158072,
-      "risk_distance_pct": 0.11132705624846721,
-      "score": 72.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:04:51.682137+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "quantity": 147.55509843162727,
-      "entry_price": 1.234,
-      "stop_price": 1.2285714285714286,
-      "target_price": 1.2448571428571429,
-      "risk_value": 45.52074786615701,
-      "risk_distance_pct": 0.4399166473720696,
-      "score": 70.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:14:56.860406+00:00"
     },
     {
       "symbol": "BNBUSDT",
@@ -281,7 +253,49 @@
       "net": -0.308828770172184,
       "reason": "STOP",
       "closed_at": "2026-10-05T22:14:56.860406+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 117.6105848146367,
+      "entry_price": 1.5142,
+      "stop_price": 1.5125142857142857,
+      "target_price": 1.5175714285714286,
+      "risk_value": 44.52148688158072,
+      "risk_distance_pct": 0.11132705624846721,
+      "score": 72.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:04:51.682137+00:00",
+      "exit_price": 1.5125142857142857,
+      "gross": -0.19825784297324525,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.19825784297324525,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T22:28:24.019600+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 147.55509843162727,
+      "entry_price": 1.234,
+      "stop_price": 1.2285714285714286,
+      "target_price": 1.2448571428571429,
+      "risk_value": 45.52074786615701,
+      "risk_distance_pct": 0.4399166473720696,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:14:56.860406+00:00",
+      "exit_price": 1.2285714285714286,
+      "gross": -0.8010133914859633,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.8010133914859633,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T22:28:24.019600+00:00"
     }
   ],
-  "updated_at": "2026-10-05T22:24:13.188420+00:00"
+  "updated_at": "2026-10-05T22:29:18.560628+00:00"
 }
