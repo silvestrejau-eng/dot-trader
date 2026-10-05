@@ -1,4 +1,5 @@
-import json, math, time, urllib.request, urllib.parse
+import json, urllib.request, urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,7 +16,7 @@ UNIVERSE=[
 
 def get_json(url):
     req=urllib.request.Request(url,headers={"User-Agent":"DOT-Trader-V2"})
-    with urllib.request.urlopen(req,timeout=10) as r:return json.loads(r.read().decode())
+    with urllib.request.urlopen(req,timeout=8) as r:return json.loads(r.read().decode())
 
 def candles(symbol):
     d=get_json("https://data-api.binance.vision/api/v3/klines?symbol="+urllib.parse.quote(symbol)+"&interval=5m&limit=60")
@@ -42,24 +43,25 @@ def scan(item):
         avgvol=sum(vols[-21:-1])/20; vr=vols[-1]/avgvol if avgvol else 0
         tr=[max(h-l,abs(h-closes[i-1]),abs(l-closes[i-1])) for i,(o,h,l,cl,v) in enumerate(c[1:],1)]
         atr=sum(tr[-14:])/14
-        score=0
-        reasons=[]
+        score=0; reasons=[]
         if e9>e21: score+=20;reasons.append("EMA9>EMA21")
         if e21>e50: score+=15;reasons.append("tendencia")
         if 50<=rv<=72: score+=15;reasons.append("RSI")
         if mom>0.25: score+=20;reasons.append("momentum")
         if vr>1.1: score+=15;reasons.append("volume")
         if p>=max(closes[-21:-1]): score+=15;reasons.append("rompimento")
-        signal="COMPRA" if score>=55 else "HOLD"
         return {"market":market,"symbol":symbol,"price":p,"ema9":e9,"ema21":e21,"ema50":e50,
           "rsi":rv,"momentum_pct":mom,"volume_ratio":vr,"atr":atr,"score":score,
-          "signal":signal,"reasons":reasons}
+          "signal":"COMPRA" if score>=55 else "HOLD","reasons":reasons}
     except Exception as e:
         return {"market":market,"symbol":symbol,"error":str(e),"score":0,"signal":"ERROR"}
 
 def main():
     started=datetime.now(timezone.utc).isoformat()
-    results=[scan(x) for x in UNIVERSE]
+    results=[]
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures=[ex.submit(scan,x) for x in UNIVERSE]
+        for f in as_completed(futures): results.append(f.result())
     results.sort(key=lambda x:x.get("score",0),reverse=True)
     data={"updated_at":started,"interval":"5m","scanner":"DOT Trader V2","markets_scanned":len(results),
           "candidates":[x for x in results if "price" in x]}
