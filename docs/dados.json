@@ -26,7 +26,7 @@
   "trades": [],
   "market": {
     "symbol": "DOTUSDT",
-    "price": 1.217,
+    "price": 1.22,
     "score": 100.0,
     "signal": "COMPRA"
   },
@@ -34,8 +34,8 @@
     "lucro_liquido": 0,
     "taxas": 0,
     "impostos_estimados": 0,
-    "patrimonio": 10062.396006655574,
-    "retorno_pct": 0.6239600665557399,
+    "patrimonio": 10074.875207986688,
+    "retorno_pct": 0.7487520798668879,
     "operacoes": 0
   }
 }
