@@ -8,9 +8,11 @@ on:
 permissions:
   contents: write
 
+# Keep only the freshest market scan. A stale queued/running scan must
+# never block the next 5-minute paper-trading cycle.
 concurrency:
   group: dot-trader-paper-engine
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   paper:
