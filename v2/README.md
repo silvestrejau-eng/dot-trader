@@ -11,3 +11,5 @@ Architecture:
 - GitHub Actions: one cycle every 5 minutes
 
 The V2 engine is intentionally independent from the legacy engine.
+
+V2 bootstrap trigger: 2026-10-05T21:21:47.223Z
