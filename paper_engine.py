@@ -8,12 +8,12 @@ import urllib.request
 import urllib.parse
 
 SYMBOL="DOTUSDT"
-INTERVAL="15m"
+INTERVAL="5m"
 CAPITAL_INICIAL=10000.0
 RISCO_PCT=0.5
-MAX_POSICOES=3
-STOP_PCT=1.0
-ALVO_PCT=2.0
+MAX_POSICOES=20
+STOP_PCT=0.5
+ALVO_PCT=1.0
 STATE=Path("docs/paper_state.json")
 DADOS_OUTS=[Path("docs/dados.json"),Path("dados.json")]
 SINAL=Path("docs/sinal.json")
@@ -63,10 +63,12 @@ def main():
     # Entrada virtual somente com score >= 80 e sem duplicar o mesmo ativo.
     score=float(s.get("score",0) or 0)
     signal=s.get("signal","HOLD")
-    if signal=="COMPRA" and score>=80 and len(positions)<MAX_POSICOES and not any(x["symbol"]==SYMBOL for x in positions):
+    if signal=="COMPRA" and score>=75 and len(positions)<MAX_POSICOES and not any(x["symbol"]==SYMBOL for x in positions):
         risk=st["capital"]*(RISCO_PCT/100)
         stop_distance=p*(STOP_PCT/100)
-        qty=risk/stop_distance if stop_distance>0 else 0
+        qty_risk=risk/stop_distance if stop_distance>0 else 0
+        max_value=st["capital"]*0.05
+        qty=min(qty_risk, max_value/p if p>0 else 0)
         value=qty*p
         if qty>0 and value<=st["capital"]:
             pos={"symbol":SYMBOL,"quantity":qty,"entry_price":p,
