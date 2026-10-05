@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0f1115">
-<title>DOT Trader</title>
+<title>DOT Trader • HUNTER X vs EXTREME</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#0f1115;color:#eee;font-family:Arial,sans-serif;padding:18px}
 h1{margin:0 0 4px;font-size:28px}.sub{color:#9da5b4;margin-bottom:18px}
@@ -18,11 +18,11 @@ table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;p
 </style>
 </head>
 <body>
-<h1>DOT Trader</h1>
+<h1>DOT Trader — HUNTER X × EXTREME</h1>
 <div class="sub">Painel web • Paper Trading • Atualização automática</div>
 <span class="status">● PAPER TRADING ATIVO</span>
 
-<div class="grid full">
+<div class="grid full"><div class="card"><div class="label">Hunter X — Patrimônio</div><div class="value" id="hxPat">R$ 0,00</div></div><div class="card"><div class="label">Hunter Extreme — Patrimônio</div><div class="value" id="hePat">R$ 0,00</div></div><div class="card"><div class="label">Hunter X — Retorno</div><div class="value" id="hxRet">0,00%</div></div><div class="card"><div class="label">Extreme — Retorno</div><div class="value" id="heRet">0,00%</div></div></div><div class="grid full">
 <div class="card"><div class="label">Capital disponível</div><div class="value" id="capital">R$ 0,00</div></div>
 <div class="card"><div class="label">Patrimônio</div><div class="value" id="patrimonio">R$ 0,00</div></div>
 <div class="card"><div class="label">Lucro líquido</div><div class="value" id="lucro">R$ 0,00</div></div>
@@ -35,8 +35,6 @@ table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;p
 <div class="card"><div class="label">Operações</div><div class="value" id="operacoes">0</div></div>
 <div class="card"><div class="label">Fonte</div><div class="value" style="font-size:15px">dados.json</div></div>
 </div>
-
-<div class="card full"><h2>Sinal de mercado</h2><p><b id="sig-symbol">DOTUSDT</b> — <span id="sig-signal">carregando...</span></p><p>Preço: <b id="sig-price">—</b> &nbsp; Score: <b id="sig-score">—</b>/100 &nbsp; RSI: <b id="sig-rsi">—</b></p><p class="note" id="sig-reasons">Aguardando dados.</p></div>
 
 <div class="card full"><h2>Posição atual</h2><p id="posicao">Nenhuma posição aberta.</p></div>
 
@@ -55,21 +53,10 @@ Este painel continua em Paper Trading e não envia ordens reais.
 const brl = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0));
 const pct = v => Number(v||0).toFixed(2).replace('.',',')+'%';
 
-async function carregarSinal(){
-  try{
-    const r=await fetch('sinal.json?t='+Date.now(),{cache:'no-store'});
-    if(!r.ok) throw new Error();
-    const d=await r.json();
-    document.getElementById('sig-symbol').textContent=d.symbol||'DOTUSDT';
-    document.getElementById('sig-signal').textContent=d.signal||'HOLD';
-    document.getElementById('sig-price').textContent=Number(d.price||0).toFixed(4);
-    document.getElementById('sig-score').textContent=Number(d.score||0).toFixed(0);
-    document.getElementById('sig-rsi').textContent=Number(d.rsi14||0).toFixed(1);
-    document.getElementById('sig-reasons').textContent=(d.reasons||[]).join(' • ');
-  }catch(e){}
-}
 async function carregarDados(){
   try{
+    const cr=await fetch('comparativo.json?t='+Date.now(),{cache:'no-store'});
+    if(cr.ok){const cmp=await cr.json(); const x=cmp.comparison?.hunter_x||{}; const e=cmp.comparison?.hunter_extreme||{}; document.getElementById('hxPat').textContent=brl(x.patrimonio); document.getElementById('hePat').textContent=brl(e.patrimonio); document.getElementById('hxRet').textContent=pct(x.retorno_pct); document.getElementById('heRet').textContent=pct(e.retorno_pct);}
     const r=await fetch('dados.json?t='+Date.now(),{cache:'no-store'});
     if(!r.ok) throw new Error('dados.json não encontrado');
     const d=await r.json();
@@ -104,9 +91,7 @@ async function carregarDados(){
   }
 }
 carregarDados();
-carregarSinal();
 setInterval(carregarDados,15000);
-setInterval(carregarSinal,15000);
 </script>
 </body>
 </html>
