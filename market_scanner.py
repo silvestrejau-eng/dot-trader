@@ -10,7 +10,7 @@ import math
 
 BASE = "https://data-api.binance.vision/api/v3/klines"
 SYMBOL = "DOTUSDT"
-INTERVAL = "15m"
+INTERVAL = "5m"
 LIMIT = 100
 OUTS = [Path("docs/sinal.json"), Path("sinal.json")]
 
@@ -64,7 +64,7 @@ def main():
         score -= 15; reasons.append("momentum negativo")
 
     score=max(0,min(100,score))
-    signal="COMPRA" if score >= 80 else "VENDA/EVITAR" if score <= 35 else "HOLD"
+    signal="COMPRA" if score >= 75 else "VENDA/EVITAR" if score <= 35 else "HOLD"
 
     out={
       "updated_at":datetime.now(timezone.utc).isoformat(),
