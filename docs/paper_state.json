@@ -1,5 +1,5 @@
 {
-  "capital": 8922.066581766774,
+  "capital": 8743.62525013144,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -84,6 +84,20 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-05T22:14:56.860406+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.22625601536172985,
+      "entry_price": 788.67,
+      "stop_price": 787.9757142857143,
+      "target_price": 790.0585714285714,
+      "risk_value": 44.61033290883387,
+      "risk_distance_pct": 0.1,
+      "score": 71.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:24:13.188420+00:00"
     }
   ],
   "trades": [
@@ -269,5 +283,5 @@
       "closed_at": "2026-10-05T22:14:56.860406+00:00"
     }
   ],
-  "updated_at": "2026-10-05T22:15:34.296082+00:00"
+  "updated_at": "2026-10-05T22:24:13.188420+00:00"
 }
