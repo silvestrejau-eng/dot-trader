@@ -96,7 +96,15 @@
         }
       ],
       "trades": [],
-      "equity_peak": 10000.0
+      "equity_peak": 10000.0,
+      "equity_history": [
+        {
+          "timestamp": "2026-10-05T21:43:00.025025+00:00",
+          "equity": 9997.754749975087,
+          "capital": 7602.310586545651,
+          "positions": 9
+        }
+      ]
     },
     "HUNTER_EXTREME": {
       "capital": 6302.494097246094,
@@ -193,8 +201,16 @@
         }
       ],
       "trades": [],
-      "equity_peak": 10000.0
+      "equity_peak": 10000.0,
+      "equity_history": [
+        {
+          "timestamp": "2026-10-05T21:43:00.025071+00:00",
+          "equity": 9996.532210633295,
+          "capital": 6302.494097246094,
+          "positions": 9
+        }
+      ]
     }
   },
-  "updated_at": "2026-10-05T21:39:35.567051+00:00"
+  "updated_at": "2026-10-05T21:43:00.025094+00:00"
 }
