@@ -5,7 +5,7 @@ from urllib.request import urlopen, Request
 from urllib.parse import urlencode, quote
 from pathlib import Path
 from datetime import datetime, timezone
-import json, time
+import json\nfrom concurrent.futures import ThreadPoolExecutor, as_completed
 
 INTERVAL="5m"
 LIMIT=100
