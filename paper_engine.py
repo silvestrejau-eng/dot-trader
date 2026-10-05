@@ -8,7 +8,7 @@ import urllib.request
 import urllib.parse
 
 SYMBOL="DOTUSDT"
-INTERVAL="5m"
+INTERVAL="1m"
 CAPITAL_INICIAL=10000.0
 RISCO_PCT=0.5
 MAX_POSICOES=20
