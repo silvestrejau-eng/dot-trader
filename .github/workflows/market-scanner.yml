@@ -33,7 +33,7 @@ jobs:
             timeout 45s python paper_engine.py
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/dados.json
+            git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json
             if git diff --cached --quiet; then
               echo "Nenhuma alteração."
             else
