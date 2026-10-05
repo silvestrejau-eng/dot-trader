@@ -1,0 +1,31 @@
+{
+  "version": "V2",
+  "updated_at": "2026-10-05T21:26:14.682Z",
+  "paper_trading": true,
+  "real_orders": false,
+  "scanner_updated_at": "2026-10-05T21:26:14.686Z",
+  "markets_scanned": 20,
+  "strategies": {
+    "HUNTER_X": {
+      "equity": 10000,
+      "pnl_net": 0,
+      "return_pct": 0,
+      "positions": 0,
+      "trades": 0,
+      "closed_now": 0,
+      "win_rate": 0,
+      "drawdown_pct": 0
+    },
+    "HUNTER_EXTREME": {
+      "equity": 10000,
+      "pnl_net": 0,
+      "return_pct": 0,
+      "positions": 0,
+      "trades": 0,
+      "closed_now": 0,
+      "win_rate": 0,
+      "drawdown_pct": 0
+    }
+  },
+  "opportunities": []
+}
