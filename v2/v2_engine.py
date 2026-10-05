@@ -43,6 +43,7 @@ def run_strategy(name, cfg, state):
     by = {(x["market"], x["symbol"]): x for x in SNAP.get("candidates", [])}
     closed = []
     kept = []
+    opened_count = 0
 
     for p in positions:
         c = by.get((p["market"], p["symbol"]))
@@ -111,12 +112,17 @@ def run_strategy(name, cfg, state):
             "opened_at": now,
         })
         capital -= value
+        opened_count += 1
 
     marked = 0.0
+    open_pnl = 0.0
     for p in positions:
         c = by.get((p["market"], p["symbol"]))
         mark = float(c["price"]) if c and c.get("price") is not None else float(p["entry"])
         marked += p["qty"] * mark
+        open_pnl += (mark - float(p["entry"])) * float(p["qty"])
+        p["mark"] = mark
+        p["unrealized_pnl"] = (mark - float(p["entry"])) * float(p["qty"])
 
     equity = capital + marked
     peak = max(float(st.get("equity_peak", INITIAL)), equity)
@@ -142,7 +148,9 @@ def run_strategy(name, cfg, state):
         "closed_now": len(closed),
         "win_rate": (sum(float(t.get("net", 0)) > 0 for t in trades) / len(trades) * 100) if trades else 0,
         "drawdown_pct": max(0.0, (1 - equity / peak) * 100),
-        "opened_now": max(0, len(positions) - (len(positions) - 0)),
+        "opened_now": opened_count,
+        "closed_now": len(closed),
+        "open_pnl": open_pnl,
     }
 
 
