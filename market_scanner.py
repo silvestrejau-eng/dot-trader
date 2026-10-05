@@ -10,7 +10,7 @@ import math
 
 BASE = "https://data-api.binance.vision/api/v3/klines"
 SYMBOL = "DOTUSDT"
-INTERVAL = "5m"
+INTERVAL = "1m"
 LIMIT = 100
 OUTS = [Path("docs/sinal.json"), Path("sinal.json")]
 
