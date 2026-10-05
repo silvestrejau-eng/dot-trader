@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T23:16:29.281493+00:00",
+  "updated_at": "2026-10-05T23:22:47.141143+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -11,8 +11,8 @@
       "closed_now": 0,
       "closed": 16,
       "capital": 9848.192142341113,
-      "patrimonio": 10049.248193034924,
-      "retorno_pct": 0.49248193034923116,
+      "patrimonio": 10049.157521053914,
+      "retorno_pct": 0.4915752105391302,
       "operacoes": 16,
       "posicoes": 1,
       "win_rate_pct": 43.75,
@@ -21,11 +21,11 @@
         {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
-          "score": 78,
+          "score": 81,
           "signal": "COMPRA",
-          "price": 11.087,
-          "momentum_pct": 0.38935168417240096,
-          "volume_ratio": 0.6893042025530266,
+          "price": 11.082,
+          "momentum_pct": 0.3168280981261873,
+          "volume_ratio": 2.1988162170216317,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
@@ -42,8 +42,8 @@
       "closed_now": 0,
       "closed": 42,
       "capital": 7626.784384572307,
-      "patrimonio": 9995.255437115418,
-      "retorno_pct": -0.047445628845821375,
+      "patrimonio": 9994.599222531284,
+      "retorno_pct": -0.05400777468715923,
       "operacoes": 42,
       "posicoes": 4,
       "win_rate_pct": 30.952380952380953,
@@ -52,29 +52,15 @@
         {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
-          "score": 78,
+          "score": 81,
           "signal": "COMPRA",
-          "price": 11.087,
-          "momentum_pct": 0.38935168417240096,
-          "volume_ratio": 0.6893042025530266,
+          "price": 11.082,
+          "momentum_pct": 0.3168280981261873,
+          "volume_ratio": 2.1988162170216317,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "momentum positivo"
-          ]
-        },
-        {
-          "symbol": "BNBUSDT",
-          "market": "CRYPTO",
-          "score": 58,
-          "signal": "HOLD",
-          "price": 788.36,
-          "momentum_pct": 0.0647331344799218,
-          "volume_ratio": 0.06890525498400062,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "preco comprimido na maxima"
           ]
         },
         {
@@ -112,29 +98,15 @@
     {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
-      "score": 78,
+      "score": 81,
       "signal": "COMPRA",
-      "price": 11.087,
-      "momentum_pct": 0.38935168417240096,
-      "volume_ratio": 0.6893042025530266,
+      "price": 11.082,
+      "momentum_pct": 0.3168280981261873,
+      "volume_ratio": 2.1988162170216317,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "momentum positivo"
-      ]
-    },
-    {
-      "symbol": "BNBUSDT",
-      "market": "CRYPTO",
-      "score": 58,
-      "signal": "HOLD",
-      "price": 788.36,
-      "momentum_pct": 0.0647331344799218,
-      "volume_ratio": 0.06890525498400062,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "preco comprimido na maxima"
       ]
     },
     {
@@ -170,11 +142,11 @@
     {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
-      "score": 78,
+      "score": 81,
       "signal": "COMPRA",
-      "price": 11.087,
-      "momentum_pct": 0.38935168417240096,
-      "volume_ratio": 0.6893042025530266,
+      "price": 11.082,
+      "momentum_pct": 0.3168280981261873,
+      "volume_ratio": 2.1988162170216317,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
