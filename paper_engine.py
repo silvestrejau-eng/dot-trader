@@ -13,10 +13,10 @@ MAX_POSITION_PCT = 2.0
 SCORE_MIN = 70
 STATE = Path("docs/paper_state.json")
 EXTREME_STATE = Path("docs/paper_state_extreme.json")
-EXTREME_SCORE_MIN = 55
-EXTREME_RISCO_PCT = 1.5
-EXTREME_MAX_POSICOES = 75
-EXTREME_MAX_POSITION_PCT = 5.0
+EXTREME_SCORE_MIN = 50
+EXTREME_RISCO_PCT = 2.0
+EXTREME_MAX_POSICOES = 20
+EXTREME_MAX_POSITION_PCT = 10.0
 SINAL = Path("docs/sinal.json")
 
 def load(path, default):
