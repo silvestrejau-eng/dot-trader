@@ -11,7 +11,7 @@ on:
       - "v2/state.json"
       - "v2/dashboard.json"
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -33,16 +33,16 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run four rapid paper cycles
+      - name: Run rapid paper cycles
         run: |
           set -e
-          for i in 1 2 3 4; do
-            echo "=== RAPID CYCLE $i/4 ==="
+          for i in 1 2 3 4 5; do
+            echo "=== RAPID CYCLE $i/5 ==="
             timeout 45s python market_scanner.py
             timeout 45s python paper_engine.py
             timeout 45s python v2/v2_scanner.py
             timeout 45s python v2/v2_engine.py
-            if [ "$i" -lt 4 ]; then sleep 15; fi
+            if [ "$i" -lt 5 ]; then sleep 10; fi
           done
 
       - name: Validate V2 output
