@@ -1,5 +1,5 @@
 {
-  "capital": 5222.638108509988,
+  "capital": 5072.728377269749,
   "positions": [
     {
       "symbol": "QQQ",
@@ -30,20 +30,6 @@
       "opened_at": "2026-10-05T22:04:51.682700+00:00"
     },
     {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "quantity": 489.678982233563,
-      "entry_price": 1.229,
-      "stop_price": 1.2264285714285714,
-      "target_price": 1.2341428571428572,
-      "risk_value": 120.36309383300978,
-      "risk_distance_pct": 0.2092293386028209,
-      "score": 50.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:24:13.189066+00:00"
-    },
-    {
       "symbol": "ETHUSDT",
       "market": "CRYPTO",
       "quantity": 0.2090559075505727,
@@ -72,34 +58,6 @@
       "opened_at": "2026-10-05T22:39:58.404222+00:00"
     },
     {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 43.166404550310176,
-      "entry_price": 11.027,
-      "stop_price": 11.015964285714285,
-      "target_price": 11.049071428571429,
-      "risk_value": 95.19918859525406,
-      "risk_distance_pct": 0.1000790268043412,
-      "score": 55.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:39:58.404222+00:00"
-    },
-    {
-      "symbol": "BNBUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.834823975520814,
-      "entry_price": 787.83,
-      "stop_price": 787.4510714285715,
-      "target_price": 788.5878571428572,
-      "risk_value": 131.53987452691257,
-      "risk_distance_pct": 0.1,
-      "score": 50.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-05T22:53:59.983465+00:00"
-    },
-    {
       "symbol": "DOGEUSDT",
       "market": "CRYPTO",
       "quantity": 6740.227230327045,
@@ -126,6 +84,48 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-05T22:54:54.267347+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 62.904313327497036,
+      "entry_price": 11.062,
+      "stop_price": 11.049571428571427,
+      "target_price": 11.086857142857143,
+      "risk_value": 139.16950280575443,
+      "risk_distance_pct": 0.11235374641630719,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T23:07:05.134399+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.0072788589704444835,
+      "entry_price": 86038.59,
+      "stop_price": 85998.96464285714,
+      "target_price": 86117.8407142857,
+      "risk_value": 125.25255252517898,
+      "risk_distance_pct": 0.1,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T23:07:05.134399+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.7146761422708208,
+      "entry_price": 788.66,
+      "stop_price": 788.275,
+      "target_price": 789.43,
+      "risk_value": 112.72729727266109,
+      "risk_distance_pct": 0.1,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T23:07:05.134399+00:00"
     }
   ],
   "trades": [
@@ -800,7 +800,70 @@
       "net": -0.47736626496040996,
       "reason": "STOP",
       "closed_at": "2026-10-05T22:54:54.267347+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 489.678982233563,
+      "entry_price": 1.229,
+      "stop_price": 1.2264285714285714,
+      "target_price": 1.2341428571428572,
+      "risk_value": 120.36309383300978,
+      "risk_distance_pct": 0.2092293386028209,
+      "score": 50.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:24:13.189066+00:00",
+      "exit_price": 1.2264285714285714,
+      "gross": -1.2591745257434954,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -1.2591745257434954,
+      "reason": "STOP",
+      "closed_at": "2026-10-05T23:07:05.134399+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 43.166404550310176,
+      "entry_price": 11.027,
+      "stop_price": 11.015964285714285,
+      "target_price": 11.049071428571429,
+      "risk_value": 95.19918859525406,
+      "risk_distance_pct": 0.1000790268043412,
+      "score": 55.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:39:58.404222+00:00",
+      "exit_price": 11.049071428571429,
+      "gross": 0.9527442147175964,
+      "fees": 0.0,
+      "estimated_tax": 0.14291163220763944,
+      "net": 0.8098325825099569,
+      "reason": "ALVO",
+      "closed_at": "2026-10-05T23:07:05.134399+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.834823975520814,
+      "entry_price": 787.83,
+      "stop_price": 787.4510714285715,
+      "target_price": 788.5878571428572,
+      "risk_value": 131.53987452691257,
+      "risk_distance_pct": 0.1,
+      "score": 50.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T22:53:59.983465+00:00",
+      "exit_price": 788.5878571428572,
+      "gross": 0.6326773128768259,
+      "fees": 0.0,
+      "estimated_tax": 0.09490159693152389,
+      "net": 0.537775715945302,
+      "reason": "ALVO",
+      "closed_at": "2026-10-05T23:07:05.134399+00:00"
     }
   ],
-  "updated_at": "2026-10-05T22:54:54.267347+00:00"
+  "updated_at": "2026-10-05T23:07:59.682298+00:00"
 }
