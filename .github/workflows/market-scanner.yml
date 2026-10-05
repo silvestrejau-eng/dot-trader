@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json v2/market_snapshot.json v2/state.json v2/dashboard.json
+          mkdir -p docs/v2\n          cp v2/dashboard.json docs/v2/dashboard.json\n          cp v2/v2_config.json docs/v2/v2_config.json\n          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json docs/v2/index.html docs/v2/dashboard.json docs/v2/v2_config.json v2/market_snapshot.json v2/state.json v2/dashboard.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
