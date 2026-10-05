@@ -1,5 +1,6 @@
-"""DOT Trader - motor multi-mercado de Paper Trading.
-Dados publicos. Nunca envia ordens reais.
+"""DOT Trader - motor multi-estrategia de Paper Trading.
+Mantem HUNTER X e HUNTER EXTREME totalmente independentes.
+Nunca envia ordens reais.
 """
 from pathlib import Path
 from datetime import datetime, timezone
@@ -16,7 +17,6 @@ EXTREME_SCORE_MIN = 60
 EXTREME_RISCO_PCT = 1.0
 EXTREME_MAX_POSICOES = 50
 EXTREME_MAX_POSITION_PCT = 4.0
-DADOS_OUTS = [Path("docs/dados.json"), Path("dados.json")]
 SINAL = Path("docs/sinal.json")
 
 def load(path, default):
@@ -27,6 +27,12 @@ def load(path, default):
     except Exception:
         return default
 
+def b3_price(symbol):
+    u = "https://brapi.dev/api/quote/" + urllib.parse.quote(symbol)
+    req = urllib.request.Request(u, headers={"User-Agent": "DOT-Trader-Paper"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return float(json.loads(r.read().decode())["results"][0]["regularMarketPrice"])
+
 def yahoo_price(symbol, market):
     y = symbol + ".SA" if market == "B3" else symbol
     u = "https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(y) + "?interval=5m&range=1d"
@@ -34,12 +40,6 @@ def yahoo_price(symbol, market):
     with urllib.request.urlopen(req, timeout=15) as r:
         d = json.loads(r.read().decode())["chart"]["result"][0]
     return float(d["meta"]["regularMarketPrice"])
-
-def b3_price(symbol):
-    u = "https://brapi.dev/api/quote/" + urllib.parse.quote(symbol)
-    req = urllib.request.Request(u, headers={"User-Agent": "DOT-Trader-Paper"})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        return float(json.loads(r.read().decode())["results"][0]["regularMarketPrice"])
 
 def crypto_price(symbol):
     u = "https://data-api.binance.vision/api/v3/ticker/price?" + urllib.parse.urlencode({"symbol": symbol})
@@ -54,22 +54,20 @@ def current_price(symbol, market):
     return yahoo_price(symbol, market)
 
 def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_positions, max_position_pct, stop_mult, target_mult):
-    s = load(SINAL, {})
     st = load(state_path, {"capital": CAPITAL_INICIAL, "positions": [], "trades": []})
     now = datetime.now(timezone.utc).isoformat()
     positions = st.get("positions", [])
     trades = st.get("trades", [])
-    closed = []
+    closed, opened = [], []
+    candidates = s.get("candidates", [])
 
-    # Fecha posições por stop/alvo. Posições antigas continuam válidas.
     remaining = []
     for pos in positions:
         try:
             p = current_price(pos["symbol"], pos.get("market", "CRYPTO"))
         except Exception:
-            p = pos["entry_price"]
-        exit_price = None
-        reason = None
+            p = float(pos["entry_price"])
+        exit_price, reason = None, None
         if p <= pos["stop_price"]:
             exit_price, reason = pos["stop_price"], "STOP"
         elif p >= pos["target_price"]:
@@ -77,77 +75,54 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
         if exit_price is None:
             remaining.append(pos)
             continue
-
         gross = (exit_price - pos["entry_price"]) * pos["quantity"]
         st["capital"] += pos["quantity"] * exit_price
         tax = max(0.0, gross) * 0.15
-        net = gross - tax
-        trade = {
-            **pos, "exit_price": exit_price, "gross": gross, "fees": 0.0,
-            "estimated_tax": tax, "net": net, "reason": reason, "closed_at": now
-        }
+        trade = {**pos, "exit_price": exit_price, "gross": gross, "fees": 0.0,
+                 "estimated_tax": tax, "net": gross - tax, "reason": reason, "closed_at": now}
         trades.append(trade)
         closed.append(trade)
     positions = remaining
 
-    # A HUNTER abre todos os sinais >= 75 até o limite de 20 posições.
-    candidates = s.get("candidates", [])
-    selected, opened = [], []
-
+    selected = []
     for c in candidates:
         if len(positions) >= max_positions:
             break
-        if (c.get("signal") != "COMPRA" and not (strategy_name == "DOT_HUNTER_EXTREME" and c.get("ema9", 0) > c.get("ema21", 0))) or float(c.get("score", 0)) < score_min:
+        is_extreme = strategy_name == "DOT_HUNTER_EXTREME"
+        if float(c.get("score", 0)) < score_min:
             continue
-
+        if c.get("signal") != "COMPRA" and not (is_extreme and c.get("ema9", 0) > c.get("ema21", 0)):
+            continue
         symbol = c["symbol"]
         if any(x["symbol"] == symbol for x in positions):
             continue
-
         p = float(c["price"])
-        # Stop e alvo são definidos pelo ATR do scanner, mantendo R/R de 2:1.
         atr_value = float(c.get("atr", 0.0))
         stop_price = max(0.0, p - stop_mult * atr_value) if atr_value > 0 else float(c.get("stop_price", p * 0.995))
         target_price = p + target_mult * atr_value if atr_value > 0 else float(c.get("target_price", p * 1.01))
         stop_distance = max(p - stop_price, p * 0.001)
-
         risk = st["capital"] * (risk_pct / 100)
         qty_risk = risk / stop_distance
         max_value = st["capital"] * (max_position_pct / 100)
         qty = min(qty_risk, max_value / p if p > 0 else 0)
         value = qty * p
-
         if qty <= 0 or value > st["capital"]:
             continue
-
         pos = {
-            "symbol": symbol,
-            "market": c.get("market", "CRYPTO"),
-            "quantity": qty,
-            "entry_price": p,
-            "stop_price": stop_price,
-            "target_price": target_price,
-            "risk_value": risk,
-            "risk_distance_pct": (stop_distance / p) * 100,
-            "score": float(c["score"]),
-            "strategy": strategy_name,
-            "source": c.get("source"),
-            "opened_at": now,
+            "symbol": symbol, "market": c.get("market", "CRYPTO"), "quantity": qty,
+            "entry_price": p, "stop_price": stop_price, "target_price": target_price,
+            "risk_value": risk, "risk_distance_pct": (stop_distance / p) * 100,
+            "score": float(c["score"]), "strategy": strategy_name,
+            "source": c.get("source"), "opened_at": now
         }
         positions.append(pos)
         st["capital"] -= value
         opened.append(pos)
         selected.append(c)
 
-    st["positions"] = positions
-    st["trades"] = trades
-    st["updated_at"] = now
+    st["positions"], st["trades"], st["updated_at"] = positions, trades, now
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
-
-    lucro = sum(float(t.get("net", 0)) for t in trades)
-    taxas = sum(float(t.get("fees", 0)) for t in trades)
-    impostos = sum(float(t.get("estimated_tax", 0)) for t in trades)
 
     aberto = 0.0
     for x in positions:
@@ -155,65 +130,61 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
             aberto += float(x["quantity"]) * current_price(x["symbol"], x.get("market", "CRYPTO"))
         except Exception:
             aberto += float(x["quantity"]) * float(x["entry_price"])
-
+    lucro = sum(float(t.get("net", 0)) for t in trades)
     patrimonio = st["capital"] + aberto
-    dados = {
-        "config": {
-            "capital_inicial": CAPITAL_INICIAL,
-            "capital": st["capital"],
-            "max_position_pct": max_position_pct,
-            "fee_pct": 0.0,
-            "tax_rate_pct": 15.0,
-            "paper_trading": True,
-            "risk_per_trade_pct": risk_pct,
-            "max_positions": max_positions,
-            "score_min": score_min,
-            "rr_min": 2.0,
-            "trailing_activation_r": 1.0,
-            "strategy": strategy_name,
-        },
-        "positions": positions,
-        "trades": trades,
-        "market": {
-            "symbol": s.get("symbol"),
-            "market": s.get("market"),
-            "price": s.get("price"),
-            "score": s.get("score"),
-            "signal": s.get("signal"),
-            "candidates": candidates,
-        },
-        "summary": {
-            "lucro_liquido": lucro,
-            "taxas": taxas,
-            "impostos_estimados": impostos,
-            "patrimonio": patrimonio,
-            "retorno_pct": (patrimonio / CAPITAL_INICIAL - 1) * 100,
-            "operacoes": len(trades),
-        },
-    }
-
-    for path in DADOS_OUTS:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(dados, indent=2, ensure_ascii=False), encoding="utf-8")
-
-    return {
-        "strategy": strategy_name,
-        "selected": selected,
-        "opened_now": len(opened),
-        "opened_total": len(positions),
-        "closed": len(closed),
-        "capital": st["capital"],
-        "patrimonio": patrimonio,
+    wins = sum(1 for t in trades if float(t.get("net", 0)) > 0)
+    result = {
+        "strategy": strategy_name, "selected": selected, "opened_now": len(opened),
+        "opened_total": len(positions), "closed_now": len(closed), "closed": len(trades),
+        "capital": st["capital"], "patrimonio": patrimonio,
         "retorno_pct": (patrimonio / CAPITAL_INICIAL - 1) * 100,
-        "operacoes": len(trades),
-        "posicoes": len(positions),
+        "operacoes": len(trades), "posicoes": len(positions),
+        "win_rate_pct": (wins / len(trades) * 100) if trades else 0,
+        "last_event": (closed[-1] if closed else (opened[-1] if opened else None)),
+        "opportunities": [
+            {"symbol": c["symbol"], "market": c.get("market"), "score": c.get("score"),
+             "signal": c.get("signal"), "price": c.get("price"),
+             "momentum_pct": c.get("momentum_pct"), "volume_ratio": c.get("volume_ratio"),
+             "reason": c.get("reasons", [])[:3]}
+            for c in candidates if float(c.get("score", 0)) >= score_min
+        ][:12]
     }
+    data = {
+        "updated_at": now,
+        "config": {"capital_inicial": CAPITAL_INICIAL, "capital": st["capital"],
+                   "max_position_pct": max_position_pct, "stop_mult_atr": stop_mult,
+                   "target_mult_atr": target_mult, "fee_pct": 0.0, "tax_rate_pct": 15.0,
+                   "paper_trading": True, "risk_per_trade_pct": risk_pct,
+                   "max_positions": max_positions, "score_min": score_min,
+                   "strategy": strategy_name},
+        "positions": positions, "trades": trades,
+        "market": {k: s.get(k) for k in ("symbol","market","price","score","signal")},
+        "candidates": candidates, "summary": {
+            "lucro_liquido": lucro, "patrimonio": patrimonio,
+            "retorno_pct": result["retorno_pct"], "operacoes": len(trades),
+            "win_rate_pct": result["win_rate_pct"]
+        }
+    }
+    return result, data
 
 def main():
     s = load(SINAL, {})
-    hunter = run_strategy(s, STATE, "DOT_HUNTER_X", SCORE_MIN, RISCO_PCT, MAX_POSICOES, MAX_POSITION_PCT, 1.0, 2.0)
-    extreme = run_strategy(s, EXTREME_STATE, "DOT_HUNTER_EXTREME", EXTREME_SCORE_MIN, EXTREME_RISCO_PCT, EXTREME_MAX_POSICOES, EXTREME_MAX_POSITION_PCT, 0.7, 1.4)
-    combined = {"updated_at": datetime.now(timezone.utc).isoformat(), "paper_trading": True, "real_orders": False, "comparison": {"hunter_x": hunter, "hunter_extreme": extreme}}
+    hunter, hunter_data = run_strategy(s, STATE, "DOT_HUNTER_X", SCORE_MIN, RISCO_PCT, MAX_POSICOES, MAX_POSITION_PCT, 1.0, 2.0)
+    extreme, extreme_data = run_strategy(s, EXTREME_STATE, "DOT_HUNTER_EXTREME", EXTREME_SCORE_MIN, EXTREME_RISCO_PCT, EXTREME_MAX_POSICOES, EXTREME_MAX_POSITION_PCT, 0.7, 1.4)
+
+    Path("docs/dados_hunter_x.json").write_text(json.dumps(hunter_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    Path("docs/dados_extreme.json").write_text(json.dumps(extreme_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    # dados.json permanece como compatibilidade: agora aponta para HUNTER X.
+    Path("dados.json").write_text(json.dumps(hunter_data, indent=2, ensure_ascii=False), encoding="utf-8")
+    Path("docs/dados.json").write_text(json.dumps(hunter_data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    combined = {
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "paper_trading": True, "real_orders": False,
+        "comparison": {"hunter_x": hunter, "hunter_extreme": extreme},
+        "extreme_opportunities": extreme["opportunities"],
+        "hunter_opportunities": hunter["opportunities"]
+    }
     Path("docs/comparativo.json").write_text(json.dumps(combined, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(combined, ensure_ascii=False))
 
