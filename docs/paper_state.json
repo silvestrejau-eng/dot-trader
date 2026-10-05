@@ -1,5 +1,5 @@
 {
-  "capital": 9651.5398,
+  "capital": 9269.33882392,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -28,6 +28,34 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-05T21:38:48.915953+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 716.2552727272728,
+      "entry_price": 0.2695,
+      "stop_price": 0.26889285714285716,
+      "target_price": 0.27071428571428574,
+      "risk_value": 48.257699,
+      "risk_distance_pct": 0.22528491916247187,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:44:56.806930+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.06965541648133146,
+      "entry_price": 2715.8,
+      "stop_price": 2714.159285714286,
+      "target_price": 2719.0814285714287,
+      "risk_value": 47.29254502,
+      "risk_distance_pct": 0.1,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-05T21:44:56.806930+00:00"
     }
   ],
   "trades": [
@@ -66,5 +94,5 @@
       "closed_at": "2026-10-05T09:30:16.731783+00:00"
     }
   ],
-  "updated_at": "2026-10-05T21:42:58.472096+00:00"
+  "updated_at": "2026-10-05T21:44:56.806930+00:00"
 }
