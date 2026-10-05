@@ -50,9 +50,9 @@
   ],
   "market": {
     "symbol": "DOTUSDT",
-    "price": 1.216,
-    "score": 60.0,
-    "signal": "HOLD"
+    "price": 1.191,
+    "score": 15.0,
+    "signal": "VENDA/EVITAR"
   },
   "summary": {
     "lucro_liquido": 34.49999999999994,
