@@ -21,6 +21,8 @@ class Config:
     fee_pct: float = 0.0
     tax_rate_pct: float = 15.0
     paper_trading: bool = True
+    risk_per_trade_pct: float = 0.5
+    max_positions: int = 20
 
 
 @dataclass
@@ -118,8 +120,8 @@ def sinal(anterior, atual):
 
 
 def abrir_posicao(cfg, positions, trades):
-    if positions:
-        print("Ja existe uma posicao aberta.")
+    if len(positions) >= cfg.max_positions:
+        print(f"Limite de {cfg.max_positions} posicoes abertas atingido.")
         return
 
     symbol = input("Ativo (ex.: DOT/BRL): ").strip().upper()
@@ -289,6 +291,8 @@ def configuracoes(cfg, positions, trades):
     print(f"Taxa:               {pct(cfg.fee_pct)}")
     print(f"Imposto estimado:   {pct(cfg.tax_rate_pct)}")
     print(f"Paper trading:      {cfg.paper_trading}")
+    print(f"Risco por operacao: {pct(cfg.risk_per_trade_pct)}")
+    print(f"Max. posicoes:      {cfg.max_positions}")
 
     print("\nPressione ENTER para manter o valor atual.")
 
