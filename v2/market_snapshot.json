@@ -1,35 +1,9 @@
 {
-  "version": "V2",
-  "updated_at": "2026-10-05T21:32:33.852681+00:00",
-  "paper_trading": true,
-  "real_orders": false,
-  "scanner_updated_at": "2026-10-05T21:32:32.214810+00:00",
+  "updated_at": "2026-10-05T21:32:32.214810+00:00",
+  "interval": "5m",
+  "scanner": "DOT Trader V2",
   "markets_scanned": 20,
-  "strategies": {
-    "HUNTER_X": {
-      "capital": 8852.9281,
-      "equity": 10000.0,
-      "pnl_net": 0,
-      "return_pct": 0.0,
-      "positions": 4,
-      "trades": 0,
-      "closed_now": 0,
-      "win_rate": 0,
-      "drawdown_pct": 0.0
-    },
-    "HUNTER_EXTREME": {
-      "capital": 7210.765268250625,
-      "equity": 8852.9281,
-      "pnl_net": 0,
-      "return_pct": -11.470719000000006,
-      "positions": 4,
-      "trades": 0,
-      "closed_now": 0,
-      "win_rate": 0,
-      "drawdown_pct": 11.470719000000006
-    }
-  },
-  "opportunities": [
+  "candidates": [
     {
       "market": "CRYPTO",
       "symbol": "APTUSDT",
@@ -262,6 +236,146 @@
         "EMA9>EMA21",
         "tendencia"
       ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "DOGEUSDT",
+      "price": 0.09567,
+      "ema9": 0.09562255508918015,
+      "ema21": 0.09555553374266428,
+      "ema50": 0.09526655081319739,
+      "rsi": 41.489361702127475,
+      "momentum_pct": 0.08369076263208264,
+      "volume_ratio": 0.5798621735319812,
+      "atr": 0.00010428571428571152,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "EMA9>EMA21",
+        "tendencia"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "LINKUSDT",
+      "price": 13.944,
+      "ema9": 13.941469853777962,
+      "ema21": 13.93757593651735,
+      "ema50": 13.916319025776035,
+      "rsi": 43.333333333333485,
+      "momentum_pct": 0.0071720576633627076,
+      "volume_ratio": 0.45215258130222663,
+      "atr": 0.01571428571428576,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "EMA9>EMA21",
+        "tendencia"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "LTCUSDT",
+      "price": 70.26,
+      "ema9": 70.21231105655532,
+      "ema21": 70.20078520426885,
+      "ema50": 70.2817783997761,
+      "rsi": 52.67175572519108,
+      "momentum_pct": 0.05696382796924748,
+      "volume_ratio": 0.5204511431351837,
+      "atr": 0.13500000000000106,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "ATOMUSDT",
+      "price": 1.824,
+      "ema9": 1.8230060984160306,
+      "ema21": 1.825040168948857,
+      "ema50": 1.8205029313318248,
+      "rsi": 31.250000000000085,
+      "momentum_pct": 0.3300330033003229,
+      "volume_ratio": 0.16255041535658146,
+      "atr": 0.005142857142857131,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "tendencia",
+        "momentum"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "BCHUSDT",
+      "price": 316.0,
+      "ema9": 315.96834587680115,
+      "ema21": 315.85510587462966,
+      "ema50": 315.5250993343021,
+      "rsi": 44.44444444444462,
+      "momentum_pct": -0.06325110689436864,
+      "volume_ratio": 0.8238675017213727,
+      "atr": 0.34999999999999837,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "EMA9>EMA21",
+        "tendencia"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "PEPEUSDT",
+      "price": 4.42e-06,
+      "ema9": 4.4270717778009975e-06,
+      "ema21": 4.424071802670071e-06,
+      "ema50": 4.412358157798941e-06,
+      "rsi": 46.15384615384615,
+      "momentum_pct": 0.0,
+      "volume_ratio": 0.10197477449192643,
+      "atr": 1.3571428571428441e-08,
+      "score": 35,
+      "signal": "HOLD",
+      "reasons": [
+        "EMA9>EMA21",
+        "tendencia"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "TRXUSDT",
+      "price": 0.3364,
+      "ema9": 0.3364529449964764,
+      "ema21": 0.33650504290601635,
+      "ema50": 0.33655601061135965,
+      "rsi": 50.0,
+      "momentum_pct": -0.029717682020813374,
+      "volume_ratio": 0.14358047397600399,
+      "atr": 0.00013571428571432231,
+      "score": 15,
+      "signal": "HOLD",
+      "reasons": [
+        "RSI"
+      ]
+    },
+    {
+      "market": "CRYPTO",
+      "symbol": "BNBUSDT",
+      "price": 786.17,
+      "ema9": 786.8468062492053,
+      "ema21": 787.1159988323947,
+      "ema50": 787.1726290994955,
+      "rsi": 24.603174603174992,
+      "momentum_pct": -0.09276909391282562,
+      "volume_ratio": 0.21148966881179923,
+      "atr": 0.37714285714285517,
+      "score": 0,
+      "signal": "HOLD",
+      "reasons": []
     }
   ]
 }

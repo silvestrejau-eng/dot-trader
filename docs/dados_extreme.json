@@ -1,31 +1,28 @@
 {
-  "updated_at": "2026-10-05T21:32:32.041767+00:00",
-  "symbol": "AVAXUSDT",
-  "market": "CRYPTO",
-  "source": "Binance public",
-  "interval": "5m",
-  "price": 10.981,
-  "ema9": 10.972599139486242,
-  "ema21": 10.956794598988775,
-  "ema50": 10.932919362212782,
-  "rsi14": 57.00934579439283,
-  "momentum_pct": 0.11852662290299243,
-  "breakout_pct": -0.10007278020379706,
-  "volume_ratio": 0.16591931520732622,
-  "atr": 0.014642857142857148,
-  "atr_pct": 0.13334721011617473,
-  "stop_price": 10.966357142857143,
-  "target_price": 11.010285714285715,
-  "score": 58,
-  "signal": "HOLD",
-  "strategy": "DOT_HUNTER_AGRESSIVA",
-  "reasons": [
-    "EMA9>EMA21>EMA50",
-    "RSI momentum ideal",
-    "preco comprimido na maxima",
-    "volume fraco",
-    "volatilidade controlada"
-  ],
+  "updated_at": "2026-10-05T21:32:32.129050+00:00",
+  "config": {
+    "capital_inicial": 10000.0,
+    "capital": 10000.0,
+    "max_position_pct": 4.0,
+    "stop_mult_atr": 0.7,
+    "target_mult_atr": 1.4,
+    "fee_pct": 0.0,
+    "tax_rate_pct": 15.0,
+    "paper_trading": true,
+    "risk_per_trade_pct": 1.0,
+    "max_positions": 50,
+    "score_min": 60,
+    "strategy": "DOT_HUNTER_EXTREME"
+  },
+  "positions": [],
+  "trades": [],
+  "market": {
+    "symbol": "AVAXUSDT",
+    "market": "CRYPTO",
+    "price": 10.981,
+    "score": 58,
+    "signal": "HOLD"
+  },
   "candidates": [
     {
       "symbol": "AVAXUSDT",
@@ -522,290 +519,11 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "symbol": "BBAS3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "B3SA3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "PETR4",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "JBSS3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "GOLD11",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "ABEV3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "ITUB4",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "WEGE3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "DOLA11",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "SUZB3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "MGLU3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "ELET3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "PRIO3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "BBDC4",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "VALE3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "EMBR3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "BBOI11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "CORN11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "BOVA11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "RENT3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "IVVB11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "CMDB11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    }
-  ],
-  "universe": [
-    {
-      "symbol": "PETR4",
-      "market": "B3"
-    },
-    {
-      "symbol": "VALE3",
-      "market": "B3"
-    },
-    {
-      "symbol": "ITUB4",
-      "market": "B3"
-    },
-    {
-      "symbol": "BBDC4",
-      "market": "B3"
-    },
-    {
-      "symbol": "BBAS3",
-      "market": "B3"
-    },
-    {
-      "symbol": "B3SA3",
-      "market": "B3"
-    },
-    {
-      "symbol": "WEGE3",
-      "market": "B3"
-    },
-    {
-      "symbol": "ABEV3",
-      "market": "B3"
-    },
-    {
-      "symbol": "MGLU3",
-      "market": "B3"
-    },
-    {
-      "symbol": "RENT3",
-      "market": "B3"
-    },
-    {
-      "symbol": "PRIO3",
-      "market": "B3"
-    },
-    {
-      "symbol": "SUZB3",
-      "market": "B3"
-    },
-    {
-      "symbol": "EMBR3",
-      "market": "B3"
-    },
-    {
-      "symbol": "ELET3",
-      "market": "B3"
-    },
-    {
-      "symbol": "JBSS3",
-      "market": "B3"
-    },
-    {
-      "symbol": "BOVA11",
-      "market": "B3"
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3"
-    },
-    {
-      "symbol": "IVVB11",
-      "market": "B3"
-    },
-    {
-      "symbol": "GOLD11",
-      "market": "B3"
-    },
-    {
-      "symbol": "DOLA11",
-      "market": "B3"
-    },
-    {
-      "symbol": "CMDB11",
-      "market": "B3"
-    },
-    {
-      "symbol": "BBOI11",
-      "market": "B3"
-    },
-    {
-      "symbol": "CORN11",
-      "market": "B3"
-    },
-    {
-      "symbol": "SPY",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "QQQ",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "IWM",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "GLD",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "SLV",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "USO",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "UUP",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "TLT",
-      "market": "GLOBAL"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "BNBUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO"
-    }
-  ],
-  "paper_trading": true,
-  "real_orders": false,
-  "score_min": 70
+  "summary": {
+    "lucro_liquido": 0,
+    "patrimonio": 10000.0,
+    "retorno_pct": 0.0,
+    "operacoes": 0,
+    "win_rate_pct": 0
+  }
 }

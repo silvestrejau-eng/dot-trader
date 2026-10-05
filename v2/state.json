@@ -1,0 +1,95 @@
+{
+  "capital": 7210.765268250625,
+  "positions": {
+    "HUNTER_X": [
+      {
+        "symbol": "APTUSDT",
+        "market": "CRYPTO",
+        "qty": 352.98270384751146,
+        "entry": 0.8499,
+        "stop": 0.8455714285714285,
+        "target": 0.8585571428571428,
+        "score": 85,
+        "opened_at": "2026-10-05T21:32:33.852606+00:00"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "market": "CRYPTO",
+        "qty": 55.00945179584121,
+        "entry": 5.29,
+        "stop": 5.262785714285714,
+        "target": 5.344428571428572,
+        "score": 85,
+        "opened_at": "2026-10-05T21:32:33.852606+00:00"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "market": "CRYPTO",
+        "qty": 228.55870445344127,
+        "entry": 1.235,
+        "stop": 1.2287857142857144,
+        "target": 1.2474285714285716,
+        "score": 70,
+        "opened_at": "2026-10-05T21:32:33.852606+00:00"
+      },
+      {
+        "symbol": "FILUSDT",
+        "market": "CRYPTO",
+        "qty": 230.27914213624894,
+        "entry": 1.189,
+        "stop": 1.1797714285714285,
+        "target": 1.207457142857143,
+        "score": 70,
+        "opened_at": "2026-10-05T21:32:33.852606+00:00"
+      }
+    ],
+    "HUNTER_EXTREME": [
+      {
+        "symbol": "APTUSDT",
+        "market": "CRYPTO",
+        "qty": 520.821749617602,
+        "entry": 0.8499,
+        "stop": 0.84687,
+        "target": 0.8559599999999999,
+        "score": 85,
+        "opened_at": "2026-10-05T21:32:33.852655+00:00"
+      },
+      {
+        "symbol": "NEARUSDT",
+        "market": "CRYPTO",
+        "qty": 79.49226554820414,
+        "entry": 5.29,
+        "stop": 5.27095,
+        "target": 5.3281,
+        "score": 85,
+        "opened_at": "2026-10-05T21:32:33.852655+00:00"
+      },
+      {
+        "symbol": "DOTUSDT",
+        "market": "CRYPTO",
+        "qty": 323.47237288461537,
+        "entry": 1.235,
+        "stop": 1.23065,
+        "target": 1.2437,
+        "score": 70,
+        "opened_at": "2026-10-05T21:32:33.852655+00:00"
+      },
+      {
+        "symbol": "FILUSDT",
+        "market": "CRYPTO",
+        "qty": 319.1875201739907,
+        "entry": 1.189,
+        "stop": 1.18254,
+        "target": 1.20192,
+        "score": 70,
+        "opened_at": "2026-10-05T21:32:33.852655+00:00"
+      }
+    ]
+  },
+  "trades": {
+    "HUNTER_X": [],
+    "HUNTER_EXTREME": []
+  },
+  "equity_peak": 10000,
+  "updated_at": "2026-10-05T21:32:33.852681+00:00"
+}

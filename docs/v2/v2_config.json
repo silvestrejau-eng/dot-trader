@@ -1,0 +1,24 @@
+{
+  "capital_inicial": 10000,
+  "interval": "5m",
+  "max_markets": 20,
+  "hunter_x": {
+    "score_min": 65,
+    "risk_pct": 0.5,
+    "max_positions": 20,
+    "max_position_pct": 3,
+    "stop_atr": 1,
+    "target_atr": 2
+  },
+  "hunter_extreme": {
+    "score_min": 55,
+    "risk_pct": 1,
+    "max_positions": 20,
+    "max_position_pct": 5,
+    "stop_atr": 0.7,
+    "target_atr": 1.4
+  },
+  "tax_rate_pct": 15,
+  "paper_trading": true,
+  "real_orders": false
+}

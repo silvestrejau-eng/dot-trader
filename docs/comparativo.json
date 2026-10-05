@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-10-05T21:32:32.130076+00:00",
+  "paper_trading": true,
+  "real_orders": false,
+  "comparison": {
+    "hunter_x": {
+      "strategy": "DOT_HUNTER_X",
+      "selected": [],
+      "opened_now": 0,
+      "opened_total": 0,
+      "closed_now": 0,
+      "closed": 2,
+      "capital": 10049.5,
+      "patrimonio": 10049.5,
+      "retorno_pct": 0.495000000000001,
+      "operacoes": 2,
+      "posicoes": 0,
+      "win_rate_pct": 50.0,
+      "last_event": null,
+      "opportunities": []
+    },
+    "hunter_extreme": {
+      "strategy": "DOT_HUNTER_EXTREME",
+      "selected": [],
+      "opened_now": 0,
+      "opened_total": 0,
+      "closed_now": 0,
+      "closed": 0,
+      "capital": 10000.0,
+      "patrimonio": 10000.0,
+      "retorno_pct": 0.0,
+      "operacoes": 0,
+      "posicoes": 0,
+      "win_rate_pct": 0,
+      "last_event": null,
+      "opportunities": []
+    }
+  },
+  "extreme_opportunities": [],
+  "hunter_opportunities": []
+}
