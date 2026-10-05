@@ -36,6 +36,36 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:29:32.153464+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:29:46.869283+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:00.622349+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:14.542667+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:28.108924+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
         }
       ]
     },
@@ -74,9 +104,39 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:29:32.153503+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:29:46.869320+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:00.622387+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:14.542706+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:30:28.108961+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-05T23:26:18.962152+00:00"
+  "updated_at": "2026-10-05T23:30:28.108982+00:00"
 }
