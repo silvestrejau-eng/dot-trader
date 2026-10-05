@@ -1,43 +1,8 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DOT Trader V2</title>
-<style>
-body{font-family:system-ui;margin:0;background:#0b1020;color:#eef;padding:16px}
-h1{margin:0 0 6px}.muted{color:#9aa4bd}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:14px}
-.card{background:#151c31;border:1px solid #29334f;border-radius:16px;padding:16px}
-.big{font-size:28px;font-weight:700}.ok{color:#6ee7a5}.bad{color:#ff7b8a}
-table{width:100%;border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid #29334f;text-align:left}
-</style>
-</head>
-<body>
-<h1>DOT Trader V2</h1>
-<div class="muted">Paper Trading • atualização automática • sem ordens reais</div>
-<div id="status" class="card" style="margin-top:14px">Carregando...</div>
-<div id="strategies" class="grid"></div>
-<div class="card" style="margin-top:14px">
-<h2>Oportunidades</h2>
-<table><thead><tr><th>Ativo</th><th>Score</th><th>Sinal</th><th>Preço</th></tr></thead><tbody id="ops"></tbody></table>
-</div>
-<script>
-async function load(){
-  try{
-    const r=await fetch("dashboard.json?t="+Date.now(),{cache:"no-store"});
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    const d=await r.json();
-    const age=(Date.now()-Date.parse(d.updated_at))/1000;
-    document.getElementById("status").innerHTML="<b>Motor:</b> <span class='"+(age<600?"ok":"bad")+"'>"+(age<600?"ONLINE":"ATRASADO")+"</span> • Último ciclo: "+new Date(d.updated_at).toLocaleString()+" • Mercados: "+d.markets_scanned;
-    document.getElementById("strategies").innerHTML=Object.entries(d.strategies).map(([n,s])=>"<div class='card'><h2>"+n+"</h2><div class='big'>R$ "+Number(s.equity).toFixed(2)+"</div><div>Retorno: "+Number(s.return_pct).toFixed(2)+"% • P&L: R$ "+Number(s.pnl_net).toFixed(2)+"</div><div>Posições: "+s.positions+" • Operações: "+s.trades+" • Win rate: "+Number(s.win_rate).toFixed(1)+"%</div><div>Drawdown: "+Number(s.drawdown_pct).toFixed(2)+"%</div></div>").join("");
-    document.getElementById("ops").innerHTML=(d.opportunities||[]).map(x=>"<tr><td>"+x.symbol+"</td><td>"+x.score+"</td><td>"+x.signal+"</td><td>"+Number(x.price).toFixed(6)+"</td></tr>").join("");
-  }catch(e){
-    document.getElementById("status").innerHTML="<span class='bad'>Aguardando o primeiro ciclo do motor.</span> O painel está publicado; o robô atualiza a cada 5 minutos.";
-  }
-}
-load();
-setInterval(load,15000);
-</script>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOT Trader V2</title><style>
+body{font-family:system-ui;background:#08101f;color:#eef;margin:0;padding:18px}.wrap{max-width:1200px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.card{background:#111c30;border:1px solid #263651;border-radius:15px;padding:15px;margin:12px 0}.muted{color:#91a0ba}.big{font-size:27px;font-weight:800}.tabs button{background:#16243c;color:#fff;border:1px solid #30435f;padding:10px;border-radius:9px;margin:4px;cursor:pointer}.tabs button.on{background:#28558e}section{display:none}section.on{display:block}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:9px;border-bottom:1px solid #263651;font-size:13px}.ok{color:#62e59a}.bad{color:#ff7187}.chart{height:220px;display:flex;align-items:end;gap:3px;padding:10px}.bar{flex:1;background:#5798e6;border-radius:3px 3px 0 0;min-width:2px}
+</style></head><body><div class="wrap"><h1>DOT Trader V2</h1><div class="muted">Painel profissional • Paper Trading • atualização automática</div><div id="status" class="card">Carregando...</div><div id="cards" class="grid"></div><div class="tabs"><button class="on" onclick="tab('geral',this)">Visão geral</button><button onclick="tab('x',this)">HUNTER_X</button><button onclick="tab('e',this)">HUNTER_EXTREME</button><button onclick="tab('o',this)">Oportunidades</button></div><section id="geral" class="on"><div class="card"><h2>Comparativo de patrimônio</h2><div id="compare" class="chart"></div></div></section><section id="x"></section><section id="e"></section><section id="o"><div class="card"><h2>Oportunidades</h2><div id="ops"></div></div></section></div><script>
+const M=n=>'R$ '+Number(n||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}),N=n=>Number(n||0).toFixed(2);
+function tab(id,b){document.querySelectorAll('section').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on');b.classList.add('on')}
+function block(name,s){let h=s.equity_history||[],vals=h.map(x=>+x.equity),lo=Math.min(...vals,10000),hi=Math.max(...vals,10000),rg=Math.max(hi-lo,1),bars=h.map(x=>'<div class="bar" style="height:'+Math.max(3,(x.equity-lo)/rg*100)+'%"></div>').join('');let p=(s.positions_detail||[]).map(x=>'<tr><td>'+x.symbol+'</td><td>'+N(x.qty)+'</td><td>'+N(x.entry)+'</td><td>'+N(x.stop)+'</td><td>'+N(x.target)+'</td><td>'+x.score+'</td></tr>').join('')||'<tr><td colspan="6">Nenhuma posição aberta</td></tr>';let t=(s.trades_detail||[]).slice().reverse().map(x=>'<tr><td>'+x.symbol+'</td><td>'+N(x.entry)+'</td><td>'+N(x.exit)+'</td><td>'+M(x.net)+'</td><td>'+x.reason+'</td></tr>').join('')||'<tr><td colspan="5">Nenhuma operação encerrada</td></tr>';return '<div class="card"><h2>'+name+' • '+M(s.equity)+'</h2><div class="muted">Evolução do patrimônio</div><div class="chart">'+bars+'</div></div><div class="card"><h3>Compras / posições abertas</h3><table><tr><th>Ativo</th><th>Qtd.</th><th>Entrada</th><th>Stop</th><th>Alvo</th><th>Score</th></tr>'+p+'</table></div><div class="card"><h3>Histórico de compras e vendas</h3><table><tr><th>Ativo</th><th>Entrada</th><th>Saída</th><th>P&L</th><th>Motivo</th></tr>'+t+'</table></div>'}
+async function load(){try{let r=await fetch('dashboard.json?t='+Date.now(),{cache:'no-store'}),d=await r.json(),age=(Date.now()-Date.parse(d.updated_at))/1000;document.getElementById('status').innerHTML='<b>Motor:</b> <span class="'+(age<600?'ok':'bad')+'">'+(age<600?'ONLINE':'ATRASADO')+'</span> • '+new Date(d.updated_at).toLocaleString()+' • '+d.markets_scanned+' mercados';document.getElementById('cards').innerHTML=Object.entries(d.strategies).map(([n,s])=>'<div class="card"><div class="muted">'+n+'</div><div class="big">'+M(s.equity)+'</div><div>'+N(s.return_pct)+'% • '+s.positions+' posições • '+s.trades+' encerradas</div></div>').join('');let a=d.strategies.HUNTER_X,b=d.strategies.HUNTER_EXTREME;document.getElementById('x').innerHTML=block('HUNTER_X',a);document.getElementById('e').innerHTML=block('HUNTER_EXTREME',b);document.getElementById('compare').innerHTML=[a,b].map(s=>'<div class="bar" style="height:'+Math.max(5,s.equity/10000*100)+'%"></div>').join('');document.getElementById('ops').innerHTML='<table><tr><th>Ativo</th><th>Score</th><th>Sinal</th><th>Preço</th><th>RSI</th></tr>'+(d.opportunities||[]).map(x=>'<tr><td>'+x.symbol+'</td><td>'+x.score+'</td><td>'+x.signal+'</td><td>'+N(x.price)+'</td><td>'+N(x.rsi)+'</td></tr>').join('')+'</table>'}catch(e){document.getElementById('status').innerHTML='<span class="bad">Sem dados</span>'}}load();setInterval(load,15000);
+</script></body></html>
