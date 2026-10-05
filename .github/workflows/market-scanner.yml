@@ -33,19 +33,19 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run rapid paper cycles
+      - name: Run rapid V2.2 paper cycles
         run: |
           set -e
           for i in 1 2 3 4 5; do
-            echo "=== RAPID CYCLE $i/5 ==="
+            echo "=== V2.2 RAPID CYCLE $i/5 ==="
             timeout 45s python market_scanner.py
             timeout 45s python paper_engine.py
-            timeout 45s python v2/v2_scanner.py
-            timeout 45s python v2/v2_engine.py
+            timeout 45s python v2/v2_scanner_aziz.py
+            timeout 45s python v2/v2_engine_aziz.py
             if [ "$i" -lt 5 ]; then sleep 10; fi
           done
 
-      - name: Validate V2 output
+      - name: Validate V2.2 output
         run: |
           python - <<'PY'
           import json
@@ -54,9 +54,10 @@ jobs:
           assert d["paper_trading"] is True
           assert d["real_orders"] is False
           assert d["markets_scanned"] > 0
+          assert d["version"].startswith("V2.2")
           assert d["strategies"]["HUNTER_X"]["equity"] >= 0
           assert d["strategies"]["HUNTER_EXTREME"]["equity"] >= 0
-          print("V2 validation OK:", d["updated_at"], "markets=", d["markets_scanned"])
+          print("V2.2 validation OK:", d["updated_at"], "markets=", d["markets_scanned"])
           PY
 
       - name: Publish dashboard data
@@ -73,6 +74,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
-            git commit -m "Update DOT Trader V2 cycle"
+            git commit -m "Update DOT Trader V2.2 cycle"
             git push
           fi
