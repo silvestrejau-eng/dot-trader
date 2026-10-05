@@ -16,8 +16,8 @@ class Config:
     capital_inicial: float = 10000.0
     capital: float = 10000.0
     max_position_pct: float = 10.0
-    stop_loss_pct: float = 1.0
-    take_profit_pct: float = 2.0
+    stop_loss_pct: float = 0.5
+    take_profit_pct: float = 1.0
     fee_pct: float = 0.0
     tax_rate_pct: float = 15.0
     paper_trading: bool = True
@@ -110,10 +110,10 @@ def sinal(anterior, atual):
 
     variacao = (atual / anterior - 1) * 100
 
-    if variacao >= 0.50:
+    if variacao >= 0.25:
         return "COMPRA", f"Alta de {variacao:.2f}%"
 
-    if variacao <= -0.50:
+    if variacao <= -0.25:
         return "VENDA/EVITAR", f"Queda de {variacao:.2f}%"
 
     return "HOLD", f"Variacao de {variacao:+.2f}%"
@@ -293,6 +293,7 @@ def configuracoes(cfg, positions, trades):
     print(f"Paper trading:      {cfg.paper_trading}")
     print(f"Risco por operacao: {pct(cfg.risk_per_trade_pct)}")
     print(f"Max. posicoes:      {cfg.max_positions}")
+    print("Modo rapido:         ON (gatilho +/-0,25%)")
 
     print("\nPressione ENTER para manter o valor atual.")
 
