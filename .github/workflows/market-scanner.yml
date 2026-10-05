@@ -8,8 +8,6 @@ on:
 permissions:
   contents: write
 
-# Keep only the freshest market scan. A stale queued/running scan must
-# never block the next 5-minute paper-trading cycle.
 concurrency:
   group: dot-trader-paper-engine
   cancel-in-progress: true
@@ -17,7 +15,7 @@ concurrency:
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,20 +25,20 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Generate market signal
-        run: timeout 90s python market_scanner.py
-
-      - name: Run paper engine
-        run: timeout 90s python paper_engine.py
-
-      - name: Publish dashboard data
+      - name: Run fast paper cycles
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/dados.json
-          if git diff --cached --quiet; then
-            echo "Nenhuma alteração."
-          else
-            git commit -m "Update DOT Trader paper trading"
-            git push
-          fi
+          for i in 1 2 3 4; do
+            echo "=== PAPER CYCLE $i/4 ==="
+            timeout 45s python market_scanner.py
+            timeout 45s python paper_engine.py
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/dados.json
+            if git diff --cached --quiet; then
+              echo "Nenhuma alteração."
+            else
+              git commit -m "Fast paper cycle $i"
+              git push
+            fi
+            if [ "$i" -lt 4 ]; then sleep 15; fi
+          done
