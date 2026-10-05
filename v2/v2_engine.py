@@ -14,8 +14,8 @@ def default_state():
     return {
         "version": "2.1",
         "strategies": {
-            "HUNTER_X": {"capital": INITIAL, "positions": [], "trades": [], "equity_peak": INITIAL},
-            "HUNTER_EXTREME": {"capital": INITIAL, "positions": [], "trades": [], "equity_peak": INITIAL},
+            "HUNTER_X": {"capital": INITIAL, "positions": [], "trades": [], "equity_peak": INITIAL, "equity_history": []},
+            "HUNTER_EXTREME": {"capital": INITIAL, "positions": [], "trades": [], "equity_peak": INITIAL, "equity_history": []},
         },
         "updated_at": None,
     }
@@ -122,11 +122,14 @@ def run_strategy(name, cfg, state):
     peak = max(float(st.get("equity_peak", INITIAL)), equity)
     pnl = sum(float(t.get("net", 0)) for t in trades)
 
+    history = list(st.get("equity_history", []))
+    history.append({"timestamp": now, "equity": equity, "capital": capital, "positions": len(positions)})
     st.update({
         "capital": capital,
         "positions": positions,
         "trades": trades,
         "equity_peak": peak,
+        "equity_history": history[-500:],
     })
 
     return {
@@ -168,7 +171,10 @@ def main():
         "real_orders": False,
         "scanner_updated_at": SNAP.get("updated_at"),
         "markets_scanned": int(SNAP.get("markets_scanned", len(SNAP.get("candidates", [])))),
-        "strategies": {"HUNTER_X": hx, "HUNTER_EXTREME": he},
+        "strategies": {
+            "HUNTER_X": {**hx, "positions_detail": state["strategies"]["HUNTER_X"]["positions"], "trades_detail": state["strategies"]["HUNTER_X"]["trades"], "equity_history": state["strategies"]["HUNTER_X"]["equity_history"]},
+            "HUNTER_EXTREME": {**he, "positions_detail": state["strategies"]["HUNTER_EXTREME"]["positions"], "trades_detail": state["strategies"]["HUNTER_EXTREME"]["trades"], "equity_history": state["strategies"]["HUNTER_EXTREME"]["equity_history"]}
+        },
         "opportunities": candidates,
     }
     DASH.write_text(json.dumps(dashboard, indent=2, ensure_ascii=False), encoding="utf-8")
