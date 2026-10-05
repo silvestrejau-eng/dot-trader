@@ -61,12 +61,30 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
     closed, opened = [], []
     candidates = s.get("candidates", [])
 
+    # Reutiliza os preços já coletados pelo scanner. Isso evita dezenas de
+    # consultas sequenciais por ciclo quando existem muitas posições.
+    price_map = {
+        (str(c.get("market", "CRYPTO")), str(c.get("symbol"))): float(c.get("price"))
+        for c in candidates
+        if c.get("symbol") and c.get("price") is not None
+    }
+
+    def cached_price(symbol, market, fallback):
+        key = (str(market or "CRYPTO"), str(symbol))
+        if key in price_map:
+            return price_map[key]
+        try:
+            return current_price(symbol, market or "CRYPTO")
+        except Exception:
+            return fallback
+
     remaining = []
     for pos in positions:
-        try:
-            p = current_price(pos["symbol"], pos.get("market", "CRYPTO"))
-        except Exception:
-            p = float(pos["entry_price"])
+        p = cached_price(
+            pos["symbol"],
+            pos.get("market", "CRYPTO"),
+            float(pos["entry_price"]),
+        )
         exit_price, reason = None, None
         if p <= pos["stop_price"]:
             exit_price, reason = pos["stop_price"], "STOP"
@@ -126,10 +144,12 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
 
     aberto = 0.0
     for x in positions:
-        try:
-            aberto += float(x["quantity"]) * current_price(x["symbol"], x.get("market", "CRYPTO"))
-        except Exception:
-            aberto += float(x["quantity"]) * float(x["entry_price"])
+        p = cached_price(
+            x["symbol"],
+            x.get("market", "CRYPTO"),
+            float(x["entry_price"]),
+        )
+        aberto += float(x["quantity"]) * p
     lucro = sum(float(t.get("net", 0)) for t in trades)
     patrimonio = st["capital"] + aberto
     wins = sum(1 for t in trades if float(t.get("net", 0)) > 0)
