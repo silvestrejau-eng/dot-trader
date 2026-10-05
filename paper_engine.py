@@ -67,29 +67,26 @@ def main():
         trades.append(trade); closed.append(trade)
     positions=remaining
 
-    # Seleciona o melhor candidato >=75 ainda não aberto.
+    # Executa no simulador todos os candidatos aprovados até o limite de 20 posições.
     candidates=s.get("candidates",[])
-    selected=None
+    selected=[]
+    opened=[]
     for c in candidates:
-        if c.get("signal")=="COMPRA" and float(c.get("score",0))>=75:
-            if not any(x["symbol"]==c["symbol"] for x in positions):
-                selected=c; break
-
-    if selected and len(positions)<MAX_POSICOES:
-        symbol=selected["symbol"]; market=selected.get("market","CRYPTO"); p=float(selected["price"])
-        risk=st["capital"]*(RISCO_PCT/100)
+        if len(positions)>=MAX_POSICOES: break
+        if c.get("signal")!="COMPRA" or float(c.get("score",0))<75: continue
+        symbol=c["symbol"]
+        if any(x["symbol"]==symbol for x in positions): continue
+        p=float(c["price"]); risk=st["capital"]*(RISCO_PCT/100)
         stop_distance=p*(STOP_PCT/100)
         qty_risk=risk/stop_distance if stop_distance>0 else 0
         max_value=st["capital"]*(MAX_POSITION_PCT/100)
-        qty=min(qty_risk,max_value/p if p>0 else 0)
-        value=qty*p
-        if qty>0 and value<=st["capital"]:
-            positions.append({"symbol":symbol,"market":market,"quantity":qty,
-              "entry_price":p,"stop_price":p*(1-STOP_PCT/100),
-              "target_price":p*(1+ALVO_PCT/100),"risk_value":risk,
-              "score":float(selected["score"]),"source":selected.get("source"),
-              "opened_at":now})
-            st["capital"]-=value
+        qty=min(qty_risk,max_value/p if p>0 else 0); value=qty*p
+        if qty<=0 or value>st["capital"]: continue
+        pos={"symbol":symbol,"market":c.get("market","CRYPTO"),"quantity":qty,
+          "entry_price":p,"stop_price":p*(1-STOP_PCT/100),
+          "target_price":p*(1+ALVO_PCT/100),"risk_value":risk,
+          "score":float(c["score"]),"source":c.get("source"),"opened_at":now}
+        positions.append(pos); st["capital"]-=value; opened.append(pos); selected.append(c)
 
     st["positions"]=positions; st["trades"]=trades; st["updated_at"]=now
     STATE.parent.mkdir(parents=True,exist_ok=True)
@@ -116,7 +113,7 @@ def main():
     for path in DADOS_OUTS:
         path.parent.mkdir(parents=True,exist_ok=True)
         path.write_text(json.dumps(dados,indent=2,ensure_ascii=False),encoding="utf-8")
-    print(json.dumps({"selected":selected,"opened":len(positions),"closed":len(closed),
+    print(json.dumps({"selected":selected,"opened_now":len(opened),"opened_total":len(positions),"closed":len(closed),
       "capital":st["capital"]},ensure_ascii=False))
 
 if __name__=="__main__": main()
