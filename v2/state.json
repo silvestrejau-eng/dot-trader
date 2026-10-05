@@ -2,19 +2,81 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 10000,
+      "capital": 10000.0,
       "positions": [],
       "trades": [],
-      "equity_peak": 10000,
-      "equity_history": []
+      "equity_peak": 10000.0,
+      "equity_history": [
+        {
+          "timestamp": "2026-10-05T23:25:26.090607+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:25:39.096002+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:25:53.024539+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:26:06.010903+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:26:18.962114+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        }
+      ]
     },
     "HUNTER_EXTREME": {
-      "capital": 10000,
+      "capital": 10000.0,
       "positions": [],
       "trades": [],
-      "equity_peak": 10000,
-      "equity_history": []
+      "equity_peak": 10000.0,
+      "equity_history": [
+        {
+          "timestamp": "2026-10-05T23:25:26.090632+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:25:39.096026+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:25:53.024565+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:26:06.010930+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-05T23:26:18.962140+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        }
+      ]
     }
   },
-  "updated_at": null
+  "updated_at": "2026-10-05T23:26:18.962152+00:00"
 }
