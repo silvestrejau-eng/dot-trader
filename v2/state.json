@@ -2,7 +2,7 @@
   "version": "2.1",
   "strategies": {
     "HUNTER_X": {
-      "capital": 5837.3669674586445,
+      "capital": 6141.054941775236,
       "positions": [
         {
           "symbol": "NEARUSDT",
@@ -13,8 +13,8 @@
           "target": 5.341714285714286,
           "score": 85.0,
           "opened_at": "2026-10-05T21:38:51.294592+00:00",
-          "mark": 5.28,
-          "unrealized_pnl": -0.05510320015145592
+          "mark": 5.256,
+          "unrealized_pnl": -1.3775800037871322
         },
         {
           "symbol": "FILUSDT",
@@ -25,8 +25,8 @@
           "target": 1.2082,
           "score": 85.0,
           "opened_at": "2026-10-05T21:38:51.294592+00:00",
-          "mark": 1.1985,
-          "unrealized_pnl": 1.9445635554061964
+          "mark": 1.1953,
+          "unrealized_pnl": 1.185709485003808
         },
         {
           "symbol": "BTCUSDT",
@@ -37,8 +37,8 @@
           "target": 86075.79798,
           "score": 80.0,
           "opened_at": "2026-10-05T21:38:51.294592+00:00",
-          "mark": 85989.9,
-          "unrealized_pnl": 0.2738210556808475
+          "mark": 85964.41,
+          "unrealized_pnl": 0.19257674524779955
         },
         {
           "symbol": "DOTUSDT",
@@ -49,8 +49,8 @@
           "target": 1.2424285714285714,
           "score": 70.0,
           "opened_at": "2026-10-05T21:39:35.566946+00:00",
-          "mark": 1.237,
-          "unrealized_pnl": 1.6266336955489027
+          "mark": 1.234,
+          "unrealized_pnl": 1.0166460597180416
         },
         {
           "symbol": "LTCUSDT",
@@ -61,8 +61,8 @@
           "target": 70.57285714285715,
           "score": 65.0,
           "opened_at": "2026-10-05T21:39:35.566946+00:00",
-          "mark": 70.51,
-          "unrealized_pnl": 0.7023589138631112
+          "mark": 70.43,
+          "unrealized_pnl": 0.4347936133438466
         },
         {
           "symbol": "DOGEUSDT",
@@ -73,20 +73,8 @@
           "target": 0.09634285714285713,
           "score": 100.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 0.09607,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "BCHUSDT",
-          "market": "CRYPTO",
-          "qty": 0.7966953214480336,
-          "entry": 316.8,
-          "stop": 316.3357142857143,
-          "target": 317.72857142857146,
-          "score": 100.0,
-          "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 316.8,
-          "unrealized_pnl": 0.0
+          "mark": 0.09598,
+          "unrealized_pnl": -0.2437588678908746
         },
         {
           "symbol": "APTUSDT",
@@ -97,20 +85,8 @@
           "target": 0.8677857142857143,
           "score": 100.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 0.8586,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "ETCUSDT",
-          "market": "CRYPTO",
-          "qty": 26.327787908503783,
-          "entry": 9.02,
-          "stop": 9.002142857142857,
-          "target": 9.055714285714284,
-          "score": 100.0,
-          "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 9.02,
-          "unrealized_pnl": 0.0
+          "mark": 0.8577,
+          "unrealized_pnl": -0.25662608542945303
         },
         {
           "symbol": "ADAUSDT",
@@ -121,8 +97,8 @@
           "target": 0.27555714285714283,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 0.2738,
-          "unrealized_pnl": 0.0
+          "mark": 0.2731,
+          "unrealized_pnl": -0.5889212683296534
         },
         {
           "symbol": "SOLUSDT",
@@ -133,20 +109,8 @@
           "target": 121.62,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 121.35,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "qty": 19.587756329673493,
-          "entry": 11.065,
-          "stop": 11.046571428571427,
-          "target": 11.101857142857142,
-          "score": 85.0,
-          "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 11.065,
-          "unrealized_pnl": 0.0
+          "mark": 121.56,
+          "unrealized_pnl": 0.3866730382462548
         },
         {
           "symbol": "XRPUSDT",
@@ -157,8 +121,8 @@
           "target": 1.5175714285714286,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 1.5142,
-          "unrealized_pnl": 0.0
+          "mark": 1.5143,
+          "unrealized_pnl": 0.013884319645633266
         },
         {
           "symbol": "SUIUSDT",
@@ -169,8 +133,8 @@
           "target": 1.2375285714285713,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 1.2302,
-          "unrealized_pnl": 0.0
+          "mark": 1.2267,
+          "unrealized_pnl": -0.5801922204616551
         },
         {
           "symbol": "PEPEUSDT",
@@ -181,8 +145,8 @@
           "target": 4.4699999999999996e-06,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 4.44e-06,
-          "unrealized_pnl": 0.0
+          "mark": 4.45e-06,
+          "unrealized_pnl": 0.4455211682905739
         },
         {
           "symbol": "BNBUSDT",
@@ -193,20 +157,8 @@
           "target": 790.09704,
           "score": 80.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 788.52,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "qty": 13.321934368091378,
-          "entry": 13.971,
-          "stop": 13.952428571428571,
-          "target": 14.008142857142857,
-          "score": 80.0,
-          "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 13.971,
-          "unrealized_pnl": 0.0
+          "mark": 788.35,
+          "unrealized_pnl": -0.04136749815995512
         },
         {
           "symbol": "ETHUSDT",
@@ -217,7 +169,43 @@
           "target": 2726.53218,
           "score": 65.0,
           "opened_at": "2026-10-05T22:04:53.167729+00:00",
-          "mark": 2721.09,
+          "mark": 2719.07,
+          "unrealized_pnl": -0.13402165597753393
+        },
+        {
+          "symbol": "ETCUSDT",
+          "market": "CRYPTO",
+          "qty": 22.42882515342383,
+          "entry": 9.0,
+          "stop": 8.981428571428571,
+          "target": 9.037142857142856,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:14:58.314895+00:00",
+          "mark": 9.0,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 17.742265638763143,
+          "entry": 11.036,
+          "stop": 11.016285714285713,
+          "target": 11.07542857142857,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.314895+00:00",
+          "mark": 11.036,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 103.78663075503187,
+          "entry": 1.83,
+          "stop": 1.8262857142857145,
+          "target": 1.8374285714285714,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.314895+00:00",
+          "mark": 1.83,
           "unrealized_pnl": 0.0
         }
       ],
@@ -345,6 +333,78 @@
           "net": 0.8643079505271585,
           "reason": "ALVO",
           "closed_at": "2026-10-05T22:04:53.167729+00:00"
+        },
+        {
+          "symbol": "BCHUSDT",
+          "market": "CRYPTO",
+          "qty": 0.7966953214480336,
+          "entry": 316.8,
+          "stop": 316.3357142857143,
+          "target": 317.72857142857146,
+          "score": 100.0,
+          "opened_at": "2026-10-05T22:04:53.167729+00:00",
+          "mark": 316.8,
+          "unrealized_pnl": 0.0,
+          "exit": 316.3357142857143,
+          "gross": -0.36989425638659346,
+          "tax": 0.0,
+          "net": -0.36989425638659346,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.314895+00:00"
+        },
+        {
+          "symbol": "ETCUSDT",
+          "market": "CRYPTO",
+          "qty": 26.327787908503783,
+          "entry": 9.02,
+          "stop": 9.002142857142857,
+          "target": 9.055714285714284,
+          "score": 100.0,
+          "opened_at": "2026-10-05T22:04:53.167729+00:00",
+          "mark": 9.02,
+          "unrealized_pnl": 0.0,
+          "exit": 9.002142857142857,
+          "gross": -0.47013906979469705,
+          "tax": 0.0,
+          "net": -0.47013906979469705,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.314895+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 19.587756329673493,
+          "entry": 11.065,
+          "stop": 11.046571428571427,
+          "target": 11.101857142857142,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:04:53.167729+00:00",
+          "mark": 11.065,
+          "unrealized_pnl": 0.0,
+          "exit": 11.046571428571427,
+          "gross": -0.3609743666468538,
+          "tax": 0.0,
+          "net": -0.3609743666468538,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.314895+00:00"
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "qty": 13.321934368091378,
+          "entry": 13.971,
+          "stop": 13.952428571428571,
+          "target": 14.008142857142857,
+          "score": 80.0,
+          "opened_at": "2026-10-05T22:04:53.167729+00:00",
+          "mark": 13.971,
+          "unrealized_pnl": 0.0,
+          "exit": 13.952428571428571,
+          "gross": -0.24740735255026994,
+          "tax": 0.0,
+          "net": -0.24740735255026994,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.314895+00:00"
         }
       ],
       "equity_peak": 10009.880427135755,
@@ -384,24 +444,18 @@
           "equity": 10009.880427135755,
           "capital": 5837.3669674586445,
           "positions": 18
+        },
+        {
+          "timestamp": "2026-10-05T22:14:58.314895+00:00",
+          "equity": 10004.393074899488,
+          "capital": 6141.054941775236,
+          "positions": 17
         }
       ]
     },
     "HUNTER_EXTREME": {
-      "capital": 4037.3307851698723,
+      "capital": 5101.826878708764,
       "positions": [
-        {
-          "symbol": "NEARUSDT",
-          "market": "CRYPTO",
-          "qty": 89.94508615792464,
-          "entry": 5.281,
-          "stop": 5.2597499999999995,
-          "target": 5.3235,
-          "score": 85.0,
-          "opened_at": "2026-10-05T21:38:51.294645+00:00",
-          "mark": 5.28,
-          "unrealized_pnl": -0.08994508615787479
-        },
         {
           "symbol": "FILUSDT",
           "market": "CRYPTO",
@@ -411,8 +465,8 @@
           "target": 1.20283,
           "score": 85.0,
           "opened_at": "2026-10-05T21:38:51.294645+00:00",
-          "mark": 1.1985,
-          "unrealized_pnl": 3.108670083172304
+          "mark": 1.1953,
+          "unrealized_pnl": 1.8955305385197447
         },
         {
           "symbol": "BTCUSDT",
@@ -423,8 +477,8 @@
           "target": 86024.255586,
           "score": 80.0,
           "opened_at": "2026-10-05T21:38:51.294645+00:00",
-          "mark": 85989.9,
-          "unrealized_pnl": 0.4287174917602227
+          "mark": 85964.41,
+          "unrealized_pnl": 0.30151450182930095
         },
         {
           "symbol": "DOTUSDT",
@@ -435,8 +489,8 @@
           "target": 1.2384000000000002,
           "score": 70.0,
           "opened_at": "2026-10-05T21:39:35.567018+00:00",
-          "mark": 1.237,
-          "unrealized_pnl": 2.392487845809603
+          "mark": 1.234,
+          "unrealized_pnl": 1.4953049036309687
         },
         {
           "symbol": "DOGEUSDT",
@@ -447,20 +501,8 @@
           "target": 0.096261,
           "score": 100.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 0.09607,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "BCHUSDT",
-          "market": "CRYPTO",
-          "qty": 1.241287254226881,
-          "entry": 316.8,
-          "stop": 316.475,
-          "target": 317.45000000000005,
-          "score": 100.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 316.8,
-          "unrealized_pnl": 0.0
+          "mark": 0.09598,
+          "unrealized_pnl": -0.38778283589837986
         },
         {
           "symbol": "APTUSDT",
@@ -471,56 +513,8 @@
           "target": 0.8650300000000001,
           "score": 100.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 0.8586,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "ETCUSDT",
-          "market": "CRYPTO",
-          "qty": 39.345778429103774,
-          "entry": 9.02,
-          "stop": 9.0075,
-          "target": 9.044999999999998,
-          "score": 100.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 9.02,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "qty": 1231.387784364464,
-          "entry": 0.2738,
-          "stop": 0.273185,
-          "target": 0.27503,
-          "score": 85.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 0.2738,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "SOLUSDT",
-          "market": "CRYPTO",
-          "qty": 2.6394419166958443,
-          "entry": 121.35,
-          "stop": 121.2555,
-          "target": 121.539,
-          "score": 85.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 121.35,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "qty": 27.49945438422853,
-          "entry": 11.065,
-          "stop": 11.0521,
-          "target": 11.0908,
-          "score": 85.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 11.065,
-          "unrealized_pnl": 0.0
+          "mark": 0.8577,
+          "unrealized_pnl": -0.39159099793724006
         },
         {
           "symbol": "XRPUSDT",
@@ -531,20 +525,8 @@
           "target": 1.5165600000000001,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 1.5142,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "SUIUSDT",
-          "market": "CRYPTO",
-          "qty": 223.22713391500852,
-          "entry": 1.2302,
-          "stop": 1.227635,
-          "target": 1.2353299999999998,
-          "score": 85.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 1.2302,
-          "unrealized_pnl": 0.0
+          "mark": 1.5143,
+          "unrealized_pnl": 0.019090436509271058
         },
         {
           "symbol": "PEPEUSDT",
@@ -555,8 +537,8 @@
           "target": 4.460999999999999e-06,
           "score": 85.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 4.44e-06,
-          "unrealized_pnl": 0.0
+          "mark": 4.45e-06,
+          "unrealized_pnl": 0.587575043097137
         },
         {
           "symbol": "BNBUSDT",
@@ -567,20 +549,8 @@
           "target": 789.623928,
           "score": 80.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 788.52,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "qty": 16.852565708929642,
-          "entry": 13.971,
-          "stop": 13.958,
-          "target": 13.997,
-          "score": 80.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 13.971,
-          "unrealized_pnl": 0.0
+          "mark": 788.35,
+          "unrealized_pnl": -0.053432577538063165
         },
         {
           "symbol": "LTCUSDT",
@@ -591,19 +561,79 @@
           "target": 70.69800000000001,
           "score": 70.0,
           "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 70.51,
+          "mark": 70.43,
+          "unrealized_pnl": -0.25377941936573933
+        },
+        {
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "qty": 2.854719217980827,
+          "entry": 121.56,
+          "stop": 121.435,
+          "target": 121.81,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 121.56,
           "unrealized_pnl": 0.0
         },
         {
-          "symbol": "ETHUSDT",
+          "symbol": "ETCUSDT",
           "market": "CRYPTO",
-          "qty": 0.07809043212694512,
-          "entry": 2721.09,
-          "stop": 2719.185237,
-          "target": 2724.899526,
-          "score": 65.0,
-          "opened_at": "2026-10-05T22:04:53.167871+00:00",
-          "mark": 2721.09,
+          "qty": 36.62985385898465,
+          "entry": 9.0,
+          "stop": 8.987,
+          "target": 9.026,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 9.0,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1146.7786543182672,
+          "entry": 0.2731,
+          "stop": 0.272405,
+          "target": 0.27449,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 0.2731,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 26.959585716709213,
+          "entry": 11.036,
+          "stop": 11.0222,
+          "target": 11.0636,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 11.036,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "SUIUSDT",
+          "market": "CRYPTO",
+          "qty": 230.4146805014451,
+          "entry": 1.2267,
+          "stop": 1.2240499999999999,
+          "target": 1.2319999999999998,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 1.2267,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 146.7307126462112,
+          "entry": 1.83,
+          "stop": 1.8274000000000001,
+          "target": 1.8352,
+          "score": 70.0,
+          "opened_at": "2026-10-05T22:14:58.315008+00:00",
+          "mark": 1.83,
           "unrealized_pnl": 0.0
         }
       ],
@@ -765,6 +795,168 @@
           "net": 0.9280836185094362,
           "reason": "ALVO",
           "closed_at": "2026-10-05T22:04:53.167871+00:00"
+        },
+        {
+          "symbol": "NEARUSDT",
+          "market": "CRYPTO",
+          "qty": 89.94508615792464,
+          "entry": 5.281,
+          "stop": 5.2597499999999995,
+          "target": 5.3235,
+          "score": 85.0,
+          "opened_at": "2026-10-05T21:38:51.294645+00:00",
+          "mark": 5.28,
+          "unrealized_pnl": -0.08994508615787479,
+          "exit": 5.2597499999999995,
+          "gross": -1.9113330808559177,
+          "tax": 0.0,
+          "net": -1.9113330808559177,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "BCHUSDT",
+          "market": "CRYPTO",
+          "qty": 1.241287254226881,
+          "entry": 316.8,
+          "stop": 316.475,
+          "target": 317.45000000000005,
+          "score": 100.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 316.8,
+          "unrealized_pnl": 0.0,
+          "exit": 316.475,
+          "gross": -0.4034183576237222,
+          "tax": 0.0,
+          "net": -0.4034183576237222,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "ETCUSDT",
+          "market": "CRYPTO",
+          "qty": 39.345778429103774,
+          "entry": 9.02,
+          "stop": 9.0075,
+          "target": 9.044999999999998,
+          "score": 100.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 9.02,
+          "unrealized_pnl": 0.0,
+          "exit": 9.0075,
+          "gross": -0.4918222303637692,
+          "tax": 0.0,
+          "net": -0.4918222303637692,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1231.387784364464,
+          "entry": 0.2738,
+          "stop": 0.273185,
+          "target": 0.27503,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 0.2738,
+          "unrealized_pnl": 0.0,
+          "exit": 0.273185,
+          "gross": -0.7573034873841167,
+          "tax": 0.0,
+          "net": -0.7573034873841167,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "qty": 2.6394419166958443,
+          "entry": 121.35,
+          "stop": 121.2555,
+          "target": 121.539,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 121.35,
+          "unrealized_pnl": 0.0,
+          "exit": 121.539,
+          "gross": 0.49885452225553345,
+          "tax": 0.07482817833833001,
+          "net": 0.42402634391720345,
+          "reason": "ALVO",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 27.49945438422853,
+          "entry": 11.065,
+          "stop": 11.0521,
+          "target": 11.0908,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 11.065,
+          "unrealized_pnl": 0.0,
+          "exit": 11.0521,
+          "gross": -0.3547429615565517,
+          "tax": 0.0,
+          "net": -0.3547429615565517,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "SUIUSDT",
+          "market": "CRYPTO",
+          "qty": 223.22713391500852,
+          "entry": 1.2302,
+          "stop": 1.227635,
+          "target": 1.2353299999999998,
+          "score": 85.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 1.2302,
+          "unrealized_pnl": 0.0,
+          "exit": 1.227635,
+          "gross": -0.5725775984919809,
+          "tax": 0.0,
+          "net": -0.5725775984919809,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "qty": 16.852565708929642,
+          "entry": 13.971,
+          "stop": 13.958,
+          "target": 13.997,
+          "score": 80.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 13.971,
+          "unrealized_pnl": 0.0,
+          "exit": 13.958,
+          "gross": -0.2190833542160837,
+          "tax": 0.0,
+          "net": -0.2190833542160837,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "market": "CRYPTO",
+          "qty": 0.07809043212694512,
+          "entry": 2721.09,
+          "stop": 2719.185237,
+          "target": 2724.899526,
+          "score": 65.0,
+          "opened_at": "2026-10-05T22:04:53.167871+00:00",
+          "mark": 2721.09,
+          "unrealized_pnl": 0.0,
+          "exit": 2719.185237,
+          "gross": -0.14874376576941659,
+          "tax": 0.0,
+          "net": -0.14874376576941659,
+          "reason": "STOP",
+          "closed_at": "2026-10-05T22:14:58.315008+00:00"
         }
       ],
       "equity_peak": 10007.056052259208,
@@ -804,9 +996,15 @@
           "equity": 10007.056052259208,
           "capital": 4037.3307851698723,
           "positions": 18
+        },
+        {
+          "timestamp": "2026-10-05T22:14:58.315008+00:00",
+          "equity": 10000.068381203466,
+          "capital": 5101.826878708764,
+          "positions": 15
         }
       ]
     }
   },
-  "updated_at": "2026-10-05T22:04:53.167947+00:00"
+  "updated_at": "2026-10-05T22:14:58.315090+00:00"
 }
