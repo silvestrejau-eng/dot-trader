@@ -7,6 +7,9 @@ on:
       - "dados.json"
       - "sinal.json"
       - "docs/**"
+      - "v2/market_snapshot.json"
+      - "v2/state.json"
+      - "v2/dashboard.json"
   schedule:
     - cron: "*/5 * * * *"
 
@@ -20,7 +23,7 @@ concurrency:
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 6
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,14 +39,20 @@ jobs:
       - name: Run paper engine
         run: timeout 90s python paper_engine.py
 
+      - name: Run DOT Trader V2 scanner
+        run: timeout 90s python v2/v2_scanner.py
+
+      - name: Run DOT Trader V2 engine
+        run: timeout 90s python v2/v2_engine.py
+
       - name: Publish dashboard data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json
+          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json v2/market_snapshot.json v2/state.json v2/dashboard.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
-            git commit -m "Update DOT Trader paper trading"
+            git commit -m "Update DOT Trader paper trading and V2"
             git push
           fi
