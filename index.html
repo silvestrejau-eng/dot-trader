@@ -3,95 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0f1115">
-<title>DOT Trader • HUNTER X vs EXTREME</title>
+<meta name="theme-color" content="#0b0e13">
+<title>DOT Trader • Central de Operações</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#0f1115;color:#eee;font-family:Arial,sans-serif;padding:18px}
-h1{margin:0 0 4px;font-size:28px}.sub{color:#9da5b4;margin-bottom:18px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.card{background:#191d24;border-radius:14px;padding:16px;box-shadow:0 4px 18px #0003}
-.label{color:#9da5b4;font-size:13px}.value{font-size:22px;font-weight:700;margin-top:7px}
-.full{margin-top:12px}.status{display:inline-block;padding:7px 10px;border-radius:20px;background:#263322;color:#8ee39e;font-size:13px}
-table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;padding:10px 5px;border-bottom:1px solid #2a303a;font-size:13px}
-.note{color:#9da5b4;font-size:12px;line-height:1.5}
-@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}
+*{box-sizing:border-box}body{margin:0;background:#0b0e13;color:#eef2f7;font-family:Arial,sans-serif;padding:14px}
+h1{margin:0;font-size:24px}.sub{color:#8e99a8;margin:5px 0 12px;font-size:13px}
+.top{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.badge{padding:7px 10px;border-radius:999px;font-size:12px;font-weight:700;background:#18351f;color:#79e39a}.badge.warn{background:#3b2d13;color:#ffd36b}.badge.red{background:#3b1818;color:#ff8585}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}.card{background:#151a21;border:1px solid #222a34;border-radius:13px;padding:13px}.label{font-size:11px;color:#8e99a8;text-transform:uppercase;letter-spacing:.04em}.value{font-size:21px;font-weight:800;margin-top:5px}.small{font-size:12px;color:#9ca7b5;margin-top:4px}
+.hero{border:1px solid #2a3543;background:linear-gradient(145deg,#151b23,#10141a)}.hero h2{margin:0 0 8px;font-size:17px}.event{font-size:16px;font-weight:800}.event.good{color:#79e39a}.event.bad{color:#ff8585}.event.neutral{color:#ffd36b}
+.progress{height:8px;background:#252c36;border-radius:8px;overflow:hidden;margin-top:8px}.bar{height:100%;width:0;background:#79e39a}
+table{width:100%;border-collapse:collapse;margin-top:7px}th,td{text-align:left;padding:8px 5px;border-bottom:1px solid #252c35;font-size:12px}th{color:#8e99a8;font-weight:600}
+.full{grid-column:1/-1}.pill{display:inline-block;padding:4px 7px;border-radius:7px;font-size:11px;font-weight:700}.profit{color:#79e39a}.loss{color:#ff8585}.hold{color:#ffd36b}
+.position{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.metric{background:#10151b;border-radius:9px;padding:9px}.metric b{display:block;margin-top:3px}
+.flash{animation:flash .8s ease 2}@keyframes flash{50%{border-color:#79e39a;box-shadow:0 0 18px #79e39a33}}
+@media(min-width:760px){body{max-width:1100px;margin:auto;padding:20px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{grid-column:span 2}.position{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
-<h1>DOT Trader — HUNTER X × EXTREME</h1>
-<div class="sub">Painel web • Paper Trading • Atualização automática</div>
-<span class="status">● PAPER TRADING ATIVO</span>
+<h1>DOT Trader — Central de Operações</h1>
+<div class="sub">Paper Trading • atualização automática • leitura rápida para celular</div>
+<div class="top"><span id="mode" class="badge">● PAPER TRADING</span><span id="engine" class="badge warn">● AGUARDANDO DADOS</span><span id="refresh" class="small">Atualizando...</span></div>
 
-<div class="grid full"><div class="card"><div class="label">Hunter X — Patrimônio</div><div class="value" id="hxPat">R$ 0,00</div></div><div class="card"><div class="label">Hunter Extreme — Patrimônio</div><div class="value" id="hePat">R$ 0,00</div></div><div class="card"><div class="label">Hunter X — Retorno</div><div class="value" id="hxRet">0,00%</div></div><div class="card"><div class="label">Extreme — Retorno</div><div class="value" id="heRet">0,00%</div></div></div><div class="grid full">
-<div class="card"><div class="label">Capital disponível</div><div class="value" id="capital">R$ 0,00</div></div>
-<div class="card"><div class="label">Patrimônio</div><div class="value" id="patrimonio">R$ 0,00</div></div>
-<div class="card"><div class="label">Lucro líquido</div><div class="value" id="lucro">R$ 0,00</div></div>
-<div class="card"><div class="label">Retorno</div><div class="value" id="retorno">0,00%</div></div>
+<div id="hero" class="card hero full" style="margin-top:10px">
+<h2>Último evento</h2><div id="evento" class="event neutral">Carregando operação...</div><div id="eventoInfo" class="small">—</div>
 </div>
 
-<div class="grid full">
-<div class="card"><div class="label">Taxas</div><div class="value" id="taxas">R$ 0,00</div></div>
-<div class="card"><div class="label">Impostos estimados</div><div class="value" id="impostos">R$ 0,00</div></div>
-<div class="card"><div class="label">Operações</div><div class="value" id="operacoes">0</div></div>
-<div class="card"><div class="label">Fonte</div><div class="value" style="font-size:15px">dados.json</div></div>
+<div class="grid">
+<div class="card"><div class="label">Patrimônio</div><div id="patrimonio" class="value">R$ 0,00</div><div id="retorno" class="small">0,00%</div></div>
+<div class="card"><div class="label">Lucro líquido</div><div id="lucro" class="value">R$ 0,00</div><div id="resultadoHoje" class="small">Resultado acumulado</div></div>
+<div class="card"><div class="label">Capital livre</div><div id="capital" class="value">R$ 0,00</div><div id="exposicao" class="small">Exposição: R$ 0,00</div></div>
+<div class="card"><div class="label">Operações</div><div id="operacoes" class="value">0</div><div id="winrate" class="small">Win rate: 0%</div></div>
 </div>
 
-<div class="card full"><h2>Posição atual</h2><p id="posicao">Nenhuma posição aberta.</p></div>
-
-<div class="card full">
-<h2>Últimas operações</h2>
-<table><thead><tr><th>Ativo</th><th>Entrada</th><th>Saída</th><th>Líquido</th><th>Imposto</th></tr></thead>
-<tbody id="historico"><tr><td colspan="5">Carregando...</td></tr></tbody></table>
+<div class="grid">
+<div class="card"><div class="label">Mercado</div><div id="mercado" class="value">—</div><div id="sinal" class="small">—</div></div>
+<div class="card"><div class="label">Score</div><div id="score" class="value">—</div><div class="progress"><div id="scorebar" class="bar"></div></div></div>
+<div class="card"><div class="label">Posições</div><div id="posicoes" class="value">0 / 20</div><div id="capacidade" class="small">0% utilizada</div></div>
+<div class="card"><div class="label">Proteção</div><div id="protecao" class="value">0,5% / 1%</div><div class="small">Stop / Alvo</div></div>
 </div>
 
-<div class="card full note">
-<strong>Status:</strong> <span id="atualizacao">carregando dados...</span><br>
-Este painel continua em Paper Trading e não envia ordens reais.
+<div class="grid">
+<div id="posCard" class="card full"><div class="label">Posições abertas</div><div id="posicao">Nenhuma posição aberta.</div></div>
+<div class="card full"><div class="label">Últimas operações encerradas</div>
+<table><thead><tr><th>Ativo</th><th>Entrada</th><th>Saída</th><th>Resultado</th><th>Motivo</th><th>Data</th></tr></thead>
+<tbody id="historico"><tr><td colspan="6">Carregando...</td></tr></tbody></table></div>
 </div>
+
+<div class="card full small">O painel consulta os dados publicados pelo robô. Ele não envia ordens reais. <span id="status"></span></div>
 
 <script>
-const brl = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0));
-const pct = v => Number(v||0).toFixed(2).replace('.',',')+'%';
+const brl=v=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0));
+const pct=v=>Number(v||0).toFixed(2).replace('.',',')+'%';
+const dt=v=>v?new Date(v).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'—';
+let assinatura='';
 
-async function carregarDados(){
-  try{
-    const cr=await fetch('comparativo.json?t='+Date.now(),{cache:'no-store'});
-    if(cr.ok){const cmp=await cr.json(); const x=cmp.comparison?.hunter_x||{}; const e=cmp.comparison?.hunter_extreme||{}; document.getElementById('hxPat').textContent=brl(x.patrimonio); document.getElementById('hePat').textContent=brl(e.patrimonio); document.getElementById('hxRet').textContent=pct(x.retorno_pct); document.getElementById('heRet').textContent=pct(e.retorno_pct);}
-    const r=await fetch('dados.json?t='+Date.now(),{cache:'no-store'});
-    if(!r.ok) throw new Error('dados.json não encontrado');
-    const d=await r.json();
-    const c=d.config||{}, p=d.positions||[], t=d.trades||[];
-    const lucro=t.reduce((s,x)=>s+Number(x.net||0),0);
-    const taxas=t.reduce((s,x)=>s+Number(x.fees||0),0);
-    const impostos=t.reduce((s,x)=>s+Number(x.estimated_tax||0),0);
-    const aberto=p.reduce((s,x)=>s+Number(x.quantity||0)*Number(x.entry_price||0),0);
-    const patrimonio=Number(c.capital||0)+aberto;
-    const retorno=c.capital_inicial ? (patrimonio/Number(c.capital_inicial)-1)*100 : 0;
+function render(d){
+ const c=d.config||{}, p=d.positions||[], t=d.trades||[], m=d.market||{}, s=d.summary||{};
+ const capital=Number(c.capital||0), inicial=Number(c.capital_inicial||0);
+ const exposicao=p.reduce((a,x)=>a+Number(x.quantity||0)*Number(x.entry_price||0),0);
+ const patrimonio=Number(s.patrimonio||capital+exposicao);
+ const lucro=Number(s.lucro_liquido ?? t.reduce((a,x)=>a+Number(x.net||0),0));
+ const wins=t.filter(x=>Number(x.net||0)>0).length;
+ const winrate=t.length?wins/t.length*100:0;
+ const maxPos=Number(c.max_positions||20);
+ const score=Number(m.score||0);
+ const latest=t.length?t[t.length-1]:null;
+ const sig=[m.signal||'HOLD'];
+ document.getElementById('patrimonio').textContent=brl(patrimonio);
+ document.getElementById('retorno').textContent=pct(Number(s.retorno_pct||((patrimonio/inicial-1)*100)));
+ document.getElementById('lucro').textContent=brl(lucro);
+ document.getElementById('lucro').className='value '+(lucro>=0?'profit':'loss');
+ document.getElementById('capital').textContent=brl(capital);
+ document.getElementById('exposicao').textContent='Exposição: '+brl(exposicao);
+ document.getElementById('operacoes').textContent=t.length;
+ document.getElementById('winrate').textContent='Win rate: '+pct(winrate);
+ document.getElementById('mercado').textContent=m.symbol||'—';
+ document.getElementById('sinal').textContent=(m.signal||'HOLD')+' • Preço '+brl(m.price);
+ document.getElementById('score').textContent=score.toFixed(0)+'/100';
+ document.getElementById('scorebar').style.width=Math.max(0,Math.min(100,score))+'%';
+ document.getElementById('posicoes').textContent=p.length+' / '+maxPos;
+ document.getElementById('capacidade').textContent=(maxPos?p.length/maxPos*100:0).toFixed(0)+'% utilizada';
+ document.getElementById('protecao').textContent=Number(c.stop_loss_pct||0.5).toFixed(2).replace('.',',')+'% / '+Number(c.take_profit_pct||1).toFixed(2).replace('.',',')+'%';
 
-    capital.textContent=brl(c.capital);
-    patrimonioEl=patrimonio;
-    document.getElementById('patrimonio').textContent=brl(patrimonioEl);
-    lucroEl=lucro;
-    document.getElementById('lucro').textContent=brl(lucroEl);
-    document.getElementById('retorno').textContent=pct(retorno);
-    document.getElementById('taxas').textContent=brl(taxas);
-    document.getElementById('impostos').textContent=brl(impostos);
-    document.getElementById('operacoes').textContent=t.length;
+ if(latest){
+   const gain=Number(latest.net||0)>=0;
+   document.getElementById('evento').textContent=(latest.reason==='ALVO'?'🎯 ALVO ATINGIDO':latest.reason==='STOP'?'🛑 STOP ACIONADO':gain?'🟢 OPERAÇÃO ENCERRADA COM LUCRO':'🔴 OPERAÇÃO ENCERRADA COM PREJUÍZO')+' — '+latest.symbol;
+   document.getElementById('evento').className='event '+(gain?'good':'bad');
+   document.getElementById('eventoInfo').textContent=dt(latest.closed_at)+' • Entrada '+brl(latest.entry_price)+' → Saída '+brl(latest.exit_price)+' • Líquido '+brl(latest.net)+' • Score '+Number(latest.score||0).toFixed(0);
+ }else{
+   document.getElementById('evento').textContent='⏳ Nenhuma operação encerrada ainda';
+   document.getElementById('eventoInfo').textContent='O robô continua monitorando o mercado.';
+ }
+ if(p.length){
+   document.getElementById('posicao').innerHTML='<div class="position">'+p.map(x=>'<div class="metric"><span>'+x.symbol+'</span><b>Entrada '+brl(x.entry_price)+'</b><span class="small">Stop '+brl(x.stop_price)+' • Alvo '+brl(x.target_price)+'</span></div>').join('')+'</div>';
+ }else document.getElementById('posicao').textContent='Nenhuma posição aberta — o capital está livre para novas entradas.';
 
-    if(p.length){
-      const x=p[0];
-      document.getElementById('posicao').innerHTML='<b>'+x.symbol+'</b> — '+Number(x.quantity).toFixed(8)+' unidades<br>Entrada: '+brl(x.entry_price)+' | Stop: '+brl(x.stop_price)+' | Alvo: '+brl(x.target_price);
-    }else document.getElementById('posicao').textContent='Nenhuma posição aberta.';
+ document.getElementById('historico').innerHTML=t.slice(-12).reverse().map(x=>{
+   const n=Number(x.net||0), cls=n>=0?'profit':'loss';
+   return '<tr><td>'+x.symbol+'</td><td>'+brl(x.entry_price)+'</td><td>'+brl(x.exit_price)+'</td><td class="'+cls+'"><b>'+brl(n)+'</b></td><td><span class="pill '+(x.reason==='ALVO'?'profit':'loss')+'">'+(x.reason||'—')+'</span></td><td>'+dt(x.closed_at)+'</td></tr>';
+ }).join('')||'<tr><td colspan="6">Nenhuma operação encerrada.</td></tr>';
 
-    const rows=t.slice(-20).reverse().map(x=>'<tr><td>'+x.symbol+'</td><td>'+brl(x.entry_price)+'</td><td>'+brl(x.exit_price)+'</td><td>'+brl(x.net)+'</td><td>'+brl(x.estimated_tax)+'</td></tr>').join('');
-    document.getElementById('historico').innerHTML=rows||'<tr><td colspan="5">Nenhuma operação encerrada.</td></tr>';
-    document.getElementById('atualizacao').textContent='Dados carregados em '+new Date().toLocaleTimeString('pt-BR');
-  }catch(e){
-    document.getElementById('atualizacao').textContent='Aguardando publicação de dados.json';
-  }
+ document.getElementById('mode').textContent=c.paper_trading?'● PAPER TRADING ATIVO':'⚠ VERIFICAR MODO';
+ document.getElementById('mode').className='badge '+(c.paper_trading?'':'red');
+ document.getElementById('engine').textContent='● DADOS RECEBIDOS';
+ document.getElementById('engine').className='badge';
+ document.getElementById('status').textContent=' Última operação registrada: '+(latest?dt(latest.closed_at):'nenhuma')+'.';
+ const nova=JSON.stringify({t:t.length,last:latest?.closed_at,capital:c.capital,positions:p.length});
+ if(assinatura && assinatura!==nova){document.getElementById('hero').classList.add('flash');setTimeout(()=>document.getElementById('hero').classList.remove('flash'),1800);}
+ assinatura=nova;
 }
-carregarDados();
-setInterval(carregarDados,15000);
+
+async function carregar(){
+ try{
+  const r=await fetch('dados.json?t='+Date.now(),{cache:'no-store'});
+  if(!r.ok) throw new Error();
+  render(await r.json());
+  document.getElementById('refresh').textContent='Atualizado '+new Date().toLocaleTimeString('pt-BR')+' • próxima leitura em 15s';
+ }catch(e){
+  document.getElementById('engine').textContent='● SEM DADOS';
+  document.getElementById('engine').className='badge red';
+  document.getElementById('refresh').textContent='Falha ao carregar dados';
+ }
+}
+carregar();setInterval(carregar,15000);
 </script>
 </body>
 </html>
