@@ -1,7 +1,7 @@
 {
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 4999.999999999999,
+    "capital": 5050.0,
     "max_position_pct": 5.0,
     "stop_loss_pct": 1.0,
     "take_profit_pct": 2.0,
@@ -14,28 +14,46 @@
   "positions": [
     {
       "symbol": "DOTUSDT",
+      "quantity": 4112.377850162867,
+      "entry_price": 1.228,
+      "stop_price": 1.21572,
+      "target_price": 1.25256,
+      "risk_value": 50.5,
+      "score": 100.0,
+      "opened_at": "2026-10-05T07:01:50.771951+00:00"
+    }
+  ],
+  "trades": [
+    {
+      "symbol": "DOTUSDT",
       "quantity": 4159.73377703827,
       "entry_price": 1.202,
       "stop_price": 1.18998,
       "target_price": 1.22604,
       "risk_value": 50.0,
       "score": 100.0,
-      "opened_at": "2026-10-04T15:57:37.253273+00:00"
+      "opened_at": "2026-10-04T15:57:37.253273+00:00",
+      "exit_price": 1.22604,
+      "gross": 100.00000000000027,
+      "fees": 0.0,
+      "estimated_tax": 15.000000000000039,
+      "net": 85.00000000000023,
+      "reason": "ALVO",
+      "closed_at": "2026-10-05T07:01:50.771951+00:00"
     }
   ],
-  "trades": [],
   "market": {
     "symbol": "DOTUSDT",
-    "price": 1.221,
+    "price": 1.228,
     "score": 100.0,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 0,
-    "taxas": 0,
-    "impostos_estimados": 0,
-    "patrimonio": 10079.034941763726,
-    "retorno_pct": 0.7903494176372705,
-    "operacoes": 0
+    "lucro_liquido": 85.00000000000023,
+    "taxas": 0.0,
+    "impostos_estimados": 15.000000000000039,
+    "patrimonio": 10100.0,
+    "retorno_pct": 1.0000000000000009,
+    "operacoes": 1
   }
 }

@@ -1,6 +1,18 @@
 {
-  "capital": 4999.999999999999,
+  "capital": 5050.0,
   "positions": [
+    {
+      "symbol": "DOTUSDT",
+      "quantity": 4112.377850162867,
+      "entry_price": 1.228,
+      "stop_price": 1.21572,
+      "target_price": 1.25256,
+      "risk_value": 50.5,
+      "score": 100.0,
+      "opened_at": "2026-10-05T07:01:50.771951+00:00"
+    }
+  ],
+  "trades": [
     {
       "symbol": "DOTUSDT",
       "quantity": 4159.73377703827,
@@ -9,9 +21,15 @@
       "target_price": 1.22604,
       "risk_value": 50.0,
       "score": 100.0,
-      "opened_at": "2026-10-04T15:57:37.253273+00:00"
+      "opened_at": "2026-10-04T15:57:37.253273+00:00",
+      "exit_price": 1.22604,
+      "gross": 100.00000000000027,
+      "fees": 0.0,
+      "estimated_tax": 15.000000000000039,
+      "net": 85.00000000000023,
+      "reason": "ALVO",
+      "closed_at": "2026-10-05T07:01:50.771951+00:00"
     }
   ],
-  "trades": [],
-  "updated_at": "2026-10-05T06:36:19.140705+00:00"
+  "updated_at": "2026-10-05T07:01:50.771951+00:00"
 }
