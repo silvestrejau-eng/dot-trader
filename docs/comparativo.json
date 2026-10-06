@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T08:18:35.494585+00:00",
+  "updated_at": "2026-10-06T08:37:39.466765+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,33 +7,62 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 2,
       "closed_now": 0,
       "closed": 30,
-      "capital": 9852.254047899782,
-      "patrimonio": 10049.872255302467,
-      "retorno_pct": 0.4987225530246775,
+      "capital": 9655.208966941786,
+      "patrimonio": 10050.335351181247,
+      "retorno_pct": 0.5033535118124766,
       "operacoes": 30,
-      "posicoes": 1,
+      "posicoes": 2,
       "win_rate_pct": 40.0,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 11.378,
+          "momentum_pct": 0.6101335219736548,
+          "volume_ratio": 0.6834380253358432,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI forte, proximo da sobrecompra",
+            "aceleracao positiva"
+          ]
+        }
+      ]
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 7,
+      "opened_total": 6,
       "closed_now": 0,
-      "closed": 100,
-      "capital": 5925.436690094267,
-      "patrimonio": 10013.673709683168,
-      "retorno_pct": 0.136737096831685,
-      "operacoes": 100,
-      "posicoes": 7,
-      "win_rate_pct": 36.0,
+      "closed": 102,
+      "capital": 6585.139437376555,
+      "patrimonio": 10016.721493954956,
+      "retorno_pct": 0.1672149395495648,
+      "operacoes": 102,
+      "posicoes": 6,
+      "win_rate_pct": 36.27450980392157,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 11.378,
+          "momentum_pct": 0.6101335219736548,
+          "volume_ratio": 0.6834380253358432,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI forte, proximo da sobrecompra",
+            "aceleracao positiva"
+          ]
+        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -61,11 +90,39 @@
             "RSI momentum ideal",
             "preco comprimido na maxima"
           ]
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 54,
+          "signal": "HOLD",
+          "price": 0.2732,
+          "momentum_pct": 0.2936857562408246,
+          "volume_ratio": 0.621700231404965,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI forte, proximo da sobrecompra",
+            "momentum positivo"
+          ]
         }
       ]
     }
   },
   "extreme_opportunities": [
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 11.378,
+      "momentum_pct": 0.6101335219736548,
+      "volume_ratio": 0.6834380253358432,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI forte, proximo da sobrecompra",
+        "aceleracao positiva"
+      ]
+    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",
@@ -93,7 +150,36 @@
         "RSI momentum ideal",
         "preco comprimido na maxima"
       ]
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 54,
+      "signal": "HOLD",
+      "price": 0.2732,
+      "momentum_pct": 0.2936857562408246,
+      "volume_ratio": 0.621700231404965,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI forte, proximo da sobrecompra",
+        "momentum positivo"
+      ]
     }
   ],
-  "hunter_opportunities": []
+  "hunter_opportunities": [
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 11.378,
+      "momentum_pct": 0.6101335219736548,
+      "volume_ratio": 0.6834380253358432,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI forte, proximo da sobrecompra",
+        "aceleracao positiva"
+      ]
+    }
+  ]
 }
