@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T14:50:21.224842+00:00",
+  "updated_at": "2026-10-06T15:05:46.241807+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9272.381536052942,
+    "capital": 8724.383787272214,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -62,6 +62,36 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Yahoo Finance",
       "opened_at": "2026-10-06T14:49:36.707140+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 182.92328932832794,
+      "entry_price": 1.5207,
+      "stop_price": 1.516042857142857,
+      "target_price": 1.5300142857142858,
+      "risk_value": 46.361907680264714,
+      "risk_distance_pct": 0.30624994128644145,
+      "risk_reward": 2.0,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T15:05:00.459996+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.0031157775272161185,
+      "entry_price": 86599.99,
+      "stop_price": 86420.35428571429,
+      "target_price": 86959.26142857144,
+      "risk_value": 44.971050449856776,
+      "risk_distance_pct": 0.207431564698467,
+      "risk_reward": 2.0,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T15:05:46.241807+00:00"
     }
   ],
   "trades": [
@@ -965,16 +995,16 @@
     }
   ],
   "market": {
-    "symbol": "SOLUSDT",
+    "symbol": "BTCUSDT",
     "market": "CRYPTO",
-    "price": 121.38,
-    "score": 73,
+    "price": 86599.99,
+    "score": 78,
     "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 34.780355316773175,
-    "patrimonio": 10052.105685368097,
-    "retorno_pct": 0.5210568536809568,
+    "patrimonio": 10054.197419137656,
+    "retorno_pct": 0.5419741913765597,
     "operacoes": 43,
     "win_rate_pct": 39.53488372093023
   }
