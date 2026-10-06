@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T19:25:09.315850+00:00",
+  "updated_at": "2026-10-06T19:42:44.218644+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9640.30466670149,
@@ -3513,16 +3513,16 @@
     }
   ],
   "market": {
-    "symbol": "GLD",
-    "market": "GLOBAL",
-    "price": 382.6199951171875,
-    "score": 50,
+    "symbol": "ITUB4",
+    "market": "B3",
+    "price": 50.68,
+    "score": 58,
     "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 13.122645350990528,
-    "patrimonio": 10026.281912880291,
-    "retorno_pct": 0.2628191288029047,
+    "patrimonio": 10026.521673630528,
+    "retorno_pct": 0.26521673630528486,
     "operacoes": 164,
     "win_rate_pct": 40.243902439024396
   }
