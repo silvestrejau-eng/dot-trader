@@ -31,17 +31,19 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run rapid V1 paper cycles
+      - name: Run high-frequency paper cycles
         run: |
           set -e
-          for i in 1 2 3 4 5; do
-            echo "=== V1 RAPID CYCLE $i/5 ==="
-            timeout 60s python market_scanner.py
-            timeout 60s python paper_engine.py
-            if [ "$i" -lt 5 ]; then sleep 10; fi
+          # O agendamento do GitHub é de 5 min; dentro de cada execução,
+          # mantemos o motor em ciclos curtos para maximizar a frequência.
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            echo "=== DOT RAPID CYCLE $i/10 ==="
+            timeout 45s python market_scanner.py
+            timeout 45s python paper_engine.py
+            if [ "$i" -lt 10 ]; then sleep 5; fi
           done
 
-      - name: Validate V1 output
+      - name: Validate output
         run: |
           python - <<'PY'
           import json
@@ -52,20 +54,20 @@ jobs:
           assert e["config"]["paper_trading"] is True
           assert x["config"]["real_orders"] is False
           assert e["config"]["real_orders"] is False
-          print("V1 validation OK:", x["updated_at"], "X=", x["summary"]["patrimonio"], "EXT=", e["summary"]["patrimonio"])
+          print("DOT validation OK:", x["updated_at"])
           PY
 
-      - name: Publish V1 dashboard data
+      - name: Publish dashboard data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git stash push -u -m "v1-cycle-output"
+          git stash push -u -m "dot-cycle-output"
           git pull --rebase origin main
           git stash pop
           git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
-            git commit -m "Update DOT Trader V1 cycle"
+            git commit -m "Update DOT Trader rapid cycles"
             git push
           fi
