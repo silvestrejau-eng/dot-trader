@@ -1,21 +1,6 @@
 {
-  "capital": 9852.957913475611,
-  "positions": [
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "quantity": 160.00312172771913,
-      "entry_price": 1.231,
-      "stop_price": 1.2277142857142858,
-      "target_price": 1.2375714285714285,
-      "risk_value": 49.24096071170557,
-      "risk_distance_pct": 0.2669142392944221,
-      "score": 71.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T00:01:40.784694+00:00"
-    }
-  ],
+  "capital": 10049.396031779614,
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -365,7 +350,28 @@
       "net": 0.6341857414712817,
       "reason": "ALVO",
       "closed_at": "2026-10-06T00:02:19.983906+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 160.00312172771913,
+      "entry_price": 1.231,
+      "stop_price": 1.2277142857142858,
+      "target_price": 1.2375714285714285,
+      "risk_value": 49.24096071170557,
+      "risk_distance_pct": 0.2669142392944221,
+      "score": 71.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T00:01:40.784694+00:00",
+      "exit_price": 1.2277142857142858,
+      "gross": -0.5257245428196566,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5257245428196566,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T00:30:06.396479+00:00"
     }
   ],
-  "updated_at": "2026-10-06T00:02:32.921886+00:00"
+  "updated_at": "2026-10-06T00:30:58.870009+00:00"
 }

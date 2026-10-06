@@ -7,17 +7,17 @@
         {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
-          "qty": 26.98327037236913,
+          "qty": 13.491635186184565,
           "initial_qty": 26.98327037236913,
           "entry": 11.118,
-          "stop": 11.091857142857142,
+          "stop": 11.118,
           "target": 11.170285714285717,
           "target1": 11.144142857142858,
           "target2": 11.170285714285717,
           "score": 70,
           "strategy": "HUNTER_X",
           "opened_at": "2026-10-05T23:52:56.417966+00:00",
-          "partial_taken": false,
+          "partial_taken": true,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
@@ -27,37 +27,42 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 11.129,
-          "unrealized_pnl": 0.2968159740960397
+          "mark": 11.167,
+          "unrealized_pnl": 0.6610901241230368
+        }
+      ],
+      "trades": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 13.491635186184565,
+          "entry": 11.118,
+          "exit": 11.144142857142858,
+          "gross": 0.3527098912959813,
+          "tax": 0.0529064836943972,
+          "net": 0.2998034076015841,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-05T23:52:56.417966+00:00",
+          "closed_at": "2026-10-06T00:30:08.356825+00:00"
         },
         {
           "symbol": "BCHUSDT",
           "market": "CRYPTO",
           "qty": 0.9185606060606061,
-          "initial_qty": 0.9185606060606061,
           "entry": 316.8,
-          "stop": 316.47857142857146,
-          "target": 317.4428571428571,
-          "target1": 317.12142857142857,
-          "target2": 317.4428571428571,
+          "exit": 316.47857142857146,
+          "gross": -0.2952516233766085,
+          "tax": 0.0,
+          "net": -0.2952516233766085,
           "score": 72,
           "strategy": "HUNTER_X",
+          "reason": "STOP",
           "opened_at": "2026-10-05T23:53:36.161107+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "VWAP_SUPORTE",
-            "MOMENTUM_LEVE",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 316.6,
-          "unrealized_pnl": -0.18371212121211078
+          "closed_at": "2026-10-06T00:30:08.356825+00:00"
         }
       ],
-      "trades": [],
       "equity_peak": 10000.264097225629,
       "equity_history": [
         {
@@ -209,6 +214,36 @@
           "equity": 10000.113103852884,
           "capital": 9409.0,
           "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:30:08.356825+00:00",
+          "equity": 9559.499190501889,
+          "capital": 9409.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T00:30:21.467368+00:00",
+          "equity": 9559.56664867782,
+          "capital": 9409.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T00:30:34.688291+00:00",
+          "equity": 9559.485698866703,
+          "capital": 9409.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T00:30:47.705297+00:00",
+          "equity": 9559.647598488937,
+          "capital": 9409.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T00:31:00.789500+00:00",
+          "equity": 9559.661090124124,
+          "capital": 9409.0,
+          "positions": 1
         }
       ]
     },
@@ -367,9 +402,39 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:30:08.356866+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:30:21.467397+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:30:34.688322+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:30:47.705329+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:31:00.789530+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T00:02:34.949894+00:00"
+  "updated_at": "2026-10-06T00:31:00.789542+00:00"
 }

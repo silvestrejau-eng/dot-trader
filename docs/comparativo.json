@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T00:02:32.924948+00:00",
+  "updated_at": "2026-10-06T00:30:58.872900+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,95 +7,33 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 17,
-      "capital": 9852.957913475611,
-      "patrimonio": 10049.601750078979,
-      "retorno_pct": 0.49601750078978046,
-      "operacoes": 17,
-      "posicoes": 1,
-      "win_rate_pct": 47.05882352941176,
+      "closed": 18,
+      "capital": 10049.396031779614,
+      "patrimonio": 10049.396031779614,
+      "retorno_pct": 0.49396031779613825,
+      "operacoes": 18,
+      "posicoes": 0,
+      "win_rate_pct": 44.44444444444444,
       "last_event": null,
       "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
-      "selected": [
-        {
-          "symbol": "DOTUSDT",
-          "market": "CRYPTO",
-          "source": "Binance public",
-          "interval": "5m",
-          "price": 1.229,
-          "ema9": 1.2281449309256098,
-          "ema21": 1.2280750660470097,
-          "ema50": 1.2272691213228455,
-          "rsi14": 57.142857142857366,
-          "momentum_pct": 0.16299918500406463,
-          "breakout_pct": -0.24350649350648457,
-          "volume_ratio": 1.1295667058570356,
-          "atr": 0.003285714285714273,
-          "atr_pct": 0.2673485993258155,
-          "stop_price": 1.2257142857142858,
-          "target_price": 1.2355714285714285,
-          "score": 63,
-          "signal": "HOLD",
-          "strategy": "DOT_HUNTER_X",
-          "reasons": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "momentum positivo",
-            "volatilidade controlada"
-          ]
-        }
-      ],
-      "opened_now": 1,
+      "selected": [],
+      "opened_now": 0,
       "opened_total": 4,
-      "closed_now": 1,
-      "closed": 45,
-      "capital": 7564.003985774233,
-      "patrimonio": 9996.323909895917,
-      "retorno_pct": -0.03676090104083318,
-      "operacoes": 45,
+      "closed_now": 0,
+      "closed": 47,
+      "capital": 7564.974101422001,
+      "patrimonio": 9997.378916645208,
+      "retorno_pct": -0.026210833547923862,
+      "operacoes": 47,
       "posicoes": 4,
-      "win_rate_pct": 31.11111111111111,
-      "last_event": {
-        "symbol": "DOTUSDT",
-        "market": "CRYPTO",
-        "quantity": 682.8245862169997,
-        "entry_price": 1.231,
-        "stop_price": 1.229357142857143,
-        "target_price": 1.2342857142857144,
-        "risk_value": 168.11141312662534,
-        "risk_distance_pct": 0.13345711964720203,
-        "score": 71.0,
-        "strategy": "DOT_HUNTER_EXTREME",
-        "source": "Binance public",
-        "opened_at": "2026-10-06T00:01:40.785215+00:00",
-        "exit_price": 1.229357142857143,
-        "gross": -1.1217832487850123,
-        "fees": 0.0,
-        "estimated_tax": 0.0,
-        "net": -1.1217832487850123,
-        "reason": "STOP",
-        "closed_at": "2026-10-06T00:02:32.922580+00:00"
-      },
+      "win_rate_pct": 31.914893617021278,
+      "last_event": null,
       "opportunities": [
-        {
-          "symbol": "DOTUSDT",
-          "market": "CRYPTO",
-          "score": 63,
-          "signal": "HOLD",
-          "price": 1.229,
-          "momentum_pct": 0.16299918500406463,
-          "volume_ratio": 1.1295667058570356,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "momentum positivo"
-          ]
-        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -123,25 +61,39 @@
             "RSI momentum ideal",
             "preco comprimido na maxima"
           ]
+        },
+        {
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "score": 50,
+          "signal": "HOLD",
+          "price": 120.91,
+          "momentum_pct": -0.02480568877128997,
+          "volume_ratio": 0.10590433668693583,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI positivo",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 50,
+          "signal": "HOLD",
+          "price": 11.167,
+          "momentum_pct": -0.0626454268838339,
+          "volume_ratio": 0.12473525798196244,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "volume fraco"
+          ]
         }
       ]
     }
   },
   "extreme_opportunities": [
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "score": 63,
-      "signal": "HOLD",
-      "price": 1.229,
-      "momentum_pct": 0.16299918500406463,
-      "volume_ratio": 1.1295667058570356,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "momentum positivo"
-      ]
-    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",
@@ -168,6 +120,34 @@
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "score": 50,
+      "signal": "HOLD",
+      "price": 120.91,
+      "momentum_pct": -0.02480568877128997,
+      "volume_ratio": 0.10590433668693583,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI positivo",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 50,
+      "signal": "HOLD",
+      "price": 11.167,
+      "momentum_pct": -0.0626454268838339,
+      "volume_ratio": 0.12473525798196244,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "volume fraco"
       ]
     }
   ],
