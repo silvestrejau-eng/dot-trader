@@ -1,22 +1,6 @@
 {
-  "capital": 9669.901822937196,
-  "positions": [
-    {
-      "symbol": "QQQ",
-      "market": "GLOBAL",
-      "quantity": 0.46835808760123554,
-      "entry_price": 761.6500244140625,
-      "stop_price": 761.0890106201172,
-      "target_price": 762.7720520019532,
-      "risk_value": 89.18123721400117,
-      "risk_distance_pct": 0.07365768738429743,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance",
-      "opened_at": "2026-10-06T14:49:36.708612+00:00"
-    }
-  ],
+  "capital": 10026.36401644555,
+  "positions": [],
   "trades": [
     {
       "symbol": "ADAUSDT",
@@ -3228,7 +3212,29 @@
       "net": -0.6241974092588142,
       "reason": "STOP",
       "closed_at": "2026-10-06T15:44:48.874117+00:00"
+    },
+    {
+      "symbol": "QQQ",
+      "market": "GLOBAL",
+      "quantity": 0.46835808760123554,
+      "entry_price": 761.6500244140625,
+      "stop_price": 761.0890106201172,
+      "target_price": 762.7720520019532,
+      "risk_value": 89.18123721400117,
+      "risk_distance_pct": 0.07365768738429743,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T14:49:36.708612+00:00",
+      "exit_price": 761.0890106201172,
+      "gross": -0.26275534765015085,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.26275534765015085,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T16:23:06.072328+00:00"
     }
   ],
-  "updated_at": "2026-10-06T16:00:52.724420+00:00"
+  "updated_at": "2026-10-06T16:23:51.231461+00:00"
 }
