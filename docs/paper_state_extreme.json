@@ -1,5 +1,5 @@
 {
-  "capital": 9270.042965311735,
+  "capital": 8899.241246699266,
   "positions": [
     {
       "symbol": "USO",
@@ -30,6 +30,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.1373533010618048,
+      "entry_price": 2699.62,
+      "stop_price": 2698.511,
+      "target_price": 2701.8379999999997,
+      "risk_value": 92.70042965311735,
+      "risk_distance_pct": 0.04107985568338965,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T23:49:35.281372+00:00"
     }
   ],
   "trades": [
@@ -3663,5 +3678,5 @@
       "closed_at": "2026-10-06T23:16:30.375904+00:00"
     }
   ],
-  "updated_at": "2026-10-06T23:35:12.184238+00:00"
+  "updated_at": "2026-10-06T23:50:21.760738+00:00"
 }
