@@ -1,5 +1,5 @@
 {
-  "capital": 5344.328914724526,
+  "capital": 5701.998444412495,
   "positions": [
     {
       "symbol": "QQQ",
@@ -100,18 +100,19 @@
       "opened_at": "2026-10-06T10:10:12.073914+00:00"
     },
     {
-      "symbol": "LINKUSDT",
+      "symbol": "AVAXUSDT",
       "market": "CRYPTO",
-      "quantity": 42.39713864474373,
-      "entry_price": 14.006,
-      "stop_price": 13.989035714285714,
-      "target_price": 14.039928571428572,
-      "risk_value": 118.76286477165614,
-      "risk_distance_pct": 0.12112156014769217,
-      "score": 58.0,
+      "quantity": 20.915861300923257,
+      "entry_price": 11.359,
+      "stop_price": 11.32915,
+      "target_price": 11.4187,
+      "risk_value": 59.39581712929682,
+      "risk_distance_pct": 0.26278721718460873,
+      "risk_reward": 2.0,
+      "score": 65.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-06T10:10:25.292520+00:00"
+      "opened_at": "2026-10-06T10:16:20.354921+00:00"
     }
   ],
   "trades": [
@@ -2739,7 +2740,28 @@
       "net": 1.2413907621324076,
       "reason": "ALVO",
       "closed_at": "2026-10-06T10:10:25.292520+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 42.39713864474373,
+      "entry_price": 14.006,
+      "stop_price": 13.989035714285714,
+      "target_price": 14.039928571428572,
+      "risk_value": 118.76286477165614,
+      "risk_distance_pct": 0.12112156014769217,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T10:10:25.292520+00:00",
+      "exit_price": 14.039928571428572,
+      "gross": 1.438474346875238,
+      "fees": 0.0,
+      "estimated_tax": 0.2157711520312857,
+      "net": 1.2227031948439522,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T10:16:20.354921+00:00"
     }
   ],
-  "updated_at": "2026-10-06T10:11:05.572194+00:00"
+  "updated_at": "2026-10-06T10:17:05.363585+00:00"
 }
