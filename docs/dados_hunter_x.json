@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T11:16:56.802691+00:00",
+  "updated_at": "2026-10-06T11:33:53.739242+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9112.439853830721,
+    "capital": 8839.0666582158,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -76,6 +76,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:33.204937+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 982.6498764015876,
+      "entry_price": 0.2782,
+      "stop_price": 0.2770714285714286,
+      "target_price": 0.28045714285714285,
+      "risk_value": 45.56219926915361,
+      "risk_distance_pct": 0.40566909725788036,
+      "risk_reward": 2.0,
+      "score": 80.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:33:05.802053+00:00"
     }
   ],
   "trades": [
@@ -892,16 +907,16 @@
     }
   ],
   "market": {
-    "symbol": "BTCUSDT",
+    "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 86371.11,
-    "score": 89,
+    "price": 11.407,
+    "score": 100,
     "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 35.54578214521796,
-    "patrimonio": 10052.99832481588,
-    "retorno_pct": 0.5299832481588052,
+    "patrimonio": 10053.38571627943,
+    "retorno_pct": 0.5338571627943045,
     "operacoes": 39,
     "win_rate_pct": 41.02564102564102
   }

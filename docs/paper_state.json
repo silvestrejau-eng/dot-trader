@@ -1,5 +1,5 @@
 {
-  "capital": 9112.439853830721,
+  "capital": 8839.0666582158,
   "positions": [
     {
       "symbol": "BNBUSDT",
@@ -58,6 +58,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:33.204937+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 982.6498764015876,
+      "entry_price": 0.2782,
+      "stop_price": 0.2770714285714286,
+      "target_price": 0.28045714285714285,
+      "risk_value": 45.56219926915361,
+      "risk_distance_pct": 0.40566909725788036,
+      "risk_reward": 2.0,
+      "score": 80.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:33:05.802053+00:00"
     }
   ],
   "trades": [
@@ -873,5 +888,5 @@
       "closed_at": "2026-10-06T11:16:56.802691+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:16:56.802691+00:00"
+  "updated_at": "2026-10-06T11:33:53.739242+00:00"
 }
