@@ -244,6 +244,7 @@ def evaluate(symbol, market):
     }
 
 def main():
+    cycle_started = time.perf_counter()
     candidates, errors = [], []
 
     def run(item):
@@ -269,12 +270,24 @@ def main():
         "signal": "HOLD", "reasons": []
     }
 
+    cycle_duration_ms = int((time.perf_counter() - cycle_started) * 1000)
     out = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
+        "cycle_duration_ms": cycle_duration_ms,
+        "cycle_duration_seconds": round(cycle_duration_ms / 1000, 2),
+        "successful_assets": len(candidates),
+        "failed_assets": len(errors),
         "scanner_heartbeat": datetime.now(timezone.utc).isoformat(),
         **top,
         "candidates": candidates,
         "errors": errors,
+        "performance": {
+            "cycle_duration_ms": cycle_duration_ms,
+            "assets_total": len(UNIVERSE),
+            "successful_assets": len(candidates),
+            "failed_assets": len(errors),
+            "workers": 28
+        },
         "universe": [{"symbol": s, "market": m} for s, m in UNIVERSE],
         "paper_trading": True,
         "real_orders": False,
@@ -285,7 +298,7 @@ def main():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps({
-        "top": top, "candidates": len(candidates), "errors": len(errors)
+        "top": top, "candidates": len(candidates), "errors": len(errors), "cycle_duration_ms": cycle_duration_ms
     }, ensure_ascii=False))
 
 if __name__ == "__main__":
