@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T06:56:05.787473+00:00",
+  "updated_at": "2026-10-06T07:09:58.560636+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,15 +7,15 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 27,
-      "capital": 9847.350641410383,
-      "patrimonio": 10047.927236719326,
-      "retorno_pct": 0.47927236719325084,
-      "operacoes": 27,
-      "posicoes": 1,
-      "win_rate_pct": 37.03703703703704,
+      "closed": 28,
+      "capital": 10047.483080052449,
+      "patrimonio": 10047.483080052449,
+      "retorno_pct": 0.4748308005244839,
+      "operacoes": 28,
+      "posicoes": 0,
+      "win_rate_pct": 35.714285714285715,
       "last_event": null,
       "opportunities": []
     },
@@ -23,15 +23,15 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 4,
+      "opened_total": 3,
       "closed_now": 0,
-      "closed": 88,
-      "capital": 7572.795626701013,
-      "patrimonio": 10006.82733800473,
-      "retorno_pct": 0.06827338004731232,
-      "operacoes": 88,
-      "posicoes": 4,
-      "win_rate_pct": 31.818181818181817,
+      "closed": 90,
+      "capital": 8411.121048905814,
+      "patrimonio": 10002.452991573988,
+      "retorno_pct": 0.02452991573986818,
+      "operacoes": 90,
+      "posicoes": 3,
+      "win_rate_pct": 31.11111111111111,
       "last_event": null,
       "opportunities": [
         {
@@ -59,6 +59,20 @@
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "score": 55,
+          "signal": "HOLD",
+          "price": 13.832,
+          "momentum_pct": 0.03616113401316845,
+          "volume_ratio": 0.9171255434961653,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI positivo",
             "preco comprimido na maxima"
           ]
         }
@@ -91,6 +105,20 @@
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "score": 55,
+      "signal": "HOLD",
+      "price": 13.832,
+      "momentum_pct": 0.03616113401316845,
+      "volume_ratio": 0.9171255434961653,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI positivo",
         "preco comprimido na maxima"
       ]
     }
