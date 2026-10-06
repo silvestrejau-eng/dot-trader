@@ -1,6 +1,21 @@
 {
-  "capital": 10047.483080052449,
-  "positions": [],
+  "capital": 9846.5334184514,
+  "positions": [
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 743.9824568717104,
+      "entry_price": 0.2701,
+      "stop_price": 0.26917142857142856,
+      "target_price": 0.2719571428571429,
+      "risk_value": 50.23741540026224,
+      "risk_distance_pct": 0.3437880150208979,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T07:28:37.525853+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -583,5 +598,5 @@
       "closed_at": "2026-10-06T07:09:03.975280+00:00"
     }
   ],
-  "updated_at": "2026-10-06T07:09:58.554918+00:00"
+  "updated_at": "2026-10-06T07:29:28.732935+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T07:09:58.560636+00:00",
+  "updated_at": "2026-10-06T07:29:28.738618+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,33 +7,62 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 28,
-      "capital": 10047.483080052449,
-      "patrimonio": 10047.483080052449,
-      "retorno_pct": 0.4748308005244839,
+      "capital": 9846.5334184514,
+      "patrimonio": 10047.259885315387,
+      "retorno_pct": 0.4725988531538716,
       "operacoes": 28,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 35.714285714285715,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 0.2698,
+          "momentum_pct": 0.409378489021206,
+          "volume_ratio": 0.1982261411723575,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva"
+          ]
+        }
+      ]
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 4,
       "closed_now": 0,
       "closed": 90,
-      "capital": 8411.121048905814,
-      "patrimonio": 10002.452991573988,
-      "retorno_pct": 0.02452991573986818,
+      "capital": 7570.008944015232,
+      "patrimonio": 10002.059255242542,
+      "retorno_pct": 0.02059255242541358,
       "operacoes": 90,
-      "posicoes": 3,
+      "posicoes": 4,
       "win_rate_pct": 31.11111111111111,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 0.2698,
+          "momentum_pct": 0.409378489021206,
+          "volume_ratio": 0.1982261411723575,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva"
+          ]
+        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -61,25 +90,25 @@
             "RSI momentum ideal",
             "preco comprimido na maxima"
           ]
-        },
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "score": 55,
-          "signal": "HOLD",
-          "price": 13.832,
-          "momentum_pct": 0.03616113401316845,
-          "volume_ratio": 0.9171255434961653,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI positivo",
-            "preco comprimido na maxima"
-          ]
         }
       ]
     }
   },
   "extreme_opportunities": [
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 0.2698,
+      "momentum_pct": 0.409378489021206,
+      "volume_ratio": 0.1982261411723575,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva"
+      ]
+    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",
@@ -107,21 +136,22 @@
         "RSI momentum ideal",
         "preco comprimido na maxima"
       ]
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "score": 55,
-      "signal": "HOLD",
-      "price": 13.832,
-      "momentum_pct": 0.03616113401316845,
-      "volume_ratio": 0.9171255434961653,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI positivo",
-        "preco comprimido na maxima"
-      ]
     }
   ],
-  "hunter_opportunities": []
+  "hunter_opportunities": [
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 0.2698,
+      "momentum_pct": 0.409378489021206,
+      "volume_ratio": 0.1982261411723575,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva"
+      ]
+    }
+  ]
 }
