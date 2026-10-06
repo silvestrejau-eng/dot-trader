@@ -16,7 +16,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 import json
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed\nfrom market_sessions import session_status, all_sessions
 
 INTERVAL = "5m"
 LIMIT = 80
