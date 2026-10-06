@@ -43,13 +43,30 @@ def _clean(values):
 
 def yahoo(symbol):
     ysym = symbol + ".SA" if any(x[0] == symbol and x[1] == "B3" for x in UNIVERSE) else symbol
-    url = "https://query1.finance.yahoo.com/v8/finance/chart/" + quote(ysym) + "?" + urlencode(
-        {"interval": INTERVAL, "range": "5d"}
-    )
-    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urlopen(req, timeout=15) as r:
-        data = json.loads(r.read().decode())
-    res = data["chart"]["result"][0]
+    params = urlencode({"interval": INTERVAL, "range": "5d"})
+    last_error = None
+    for host in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
+        url = "https://" + host + "/v8/finance/chart/" + quote(ysym) + "?" + params
+        for attempt in range(2):
+            try:
+                req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+                with urlopen(req, timeout=10) as r:
+                    data = json.loads(r.read().decode())
+                result = (data.get("chart") or {}).get("result") or []
+                if not result:
+                    raise RuntimeError("Yahoo sem resultado")
+                res = result[0]
+                break
+            except Exception as exc:
+                last_error = exc
+                if attempt == 0:
+                    time.sleep(0.8)
+        else:
+            continue
+        break
+    else:
+        raise last_error or RuntimeError("Yahoo indisponivel")
+
     q = res["indicators"]["quote"][0]
     closes = _clean(q.get("close", []))
     highs = _clean(q.get("high", []))
@@ -57,7 +74,6 @@ def yahoo(symbol):
     volumes = _clean(q.get("volume", []))
     if len(closes) < 60:
         raise RuntimeError("historico insuficiente")
-    n = min(len(closes), len(highs), len(lows), len(volumes))
     return {"close": closes[-LIMIT:], "high": highs[-LIMIT:], "low": lows[-LIMIT:], "volume": volumes[-LIMIT:]}, "Yahoo Finance"
 
 def crypto(symbol):
@@ -74,15 +90,10 @@ def crypto(symbol):
     }, "Binance public"
 
 def b3_quote(symbol):
-    url = "https://brapi.dev/api/quote/" + quote(symbol)
-    req = Request(url, headers={"User-Agent": "DOT-Trader-Paper"})
-    with urlopen(req, timeout=15) as r:
-        data = json.loads(r.read().decode())
-    q = data["results"][0]
-    p = float(q["regularMarketPrice"])
-    candles, _ = yahoo(symbol)
-    candles["close"][-1] = p
-    return candles, "B3 + Yahoo"
+    # Yahoo fornece historico e preco recente para os tickers .SA.
+    # BRAPI deixa de ser dependencia obrigatoria para evitar 401/429 bloqueando o ciclo.
+    candles, source = yahoo(symbol)
+    return candles, source + " (B3)"
 
 def ema(values, period):
     if len(values) < period:
@@ -260,6 +271,7 @@ def main():
 
     out = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
+        "scanner_heartbeat": datetime.now(timezone.utc).isoformat(),
         **top,
         "candidates": candidates,
         "errors": errors,
