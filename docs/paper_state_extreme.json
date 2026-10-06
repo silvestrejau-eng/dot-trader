@@ -1,5 +1,5 @@
 {
-  "capital": 8403.2230540825,
+  "capital": 7562.90074867425,
   "positions": [
     {
       "symbol": "QQQ",
@@ -42,6 +42,20 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T02:50:59.326108+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 684.8592546114506,
+      "entry_price": 1.227,
+      "stop_price": 1.2248928571428572,
+      "target_price": 1.2312142857142858,
+      "risk_value": 168.06446108165002,
+      "risk_distance_pct": 0.1717312842007223,
+      "score": 54.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T03:53:16.549936+00:00"
     }
   ],
   "trades": [
@@ -1285,5 +1299,5 @@
       "closed_at": "2026-10-06T03:37:13.448106+00:00"
     }
   ],
-  "updated_at": "2026-10-06T03:38:08.606471+00:00"
+  "updated_at": "2026-10-06T03:54:07.421631+00:00"
 }
