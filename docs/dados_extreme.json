@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T17:00:42.847554+00:00",
+  "updated_at": "2026-10-06T17:19:29.615887+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9625.309455787728,
+    "capital": 9240.297077556219,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -33,6 +33,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "B3 + Yahoo",
       "opened_at": "2026-10-06T16:42:48.185725+00:00"
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "quantity": 6.949054899634368,
+      "entry_price": 55.404998779296875,
+      "stop_price": 55.37114067077637,
+      "target_price": 55.47271499633789,
+      "risk_value": 96.25309455787729,
+      "risk_distance_pct": 0.06111020533612338,
+      "risk_reward": 2.00000000000021,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T17:18:40.607953+00:00"
     }
   ],
   "trades": [
@@ -3271,16 +3286,16 @@
     }
   ],
   "market": {
-    "symbol": "ITUB4",
-    "market": "B3",
-    "price": 50.34,
-    "score": 50,
+    "symbol": "SLV",
+    "market": "GLOBAL",
+    "price": 55.400001525878906,
+    "score": 66,
     "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 14.044686717759795,
-    "patrimonio": 10027.162293835394,
-    "retorno_pct": 0.2716229383539437,
+    "patrimonio": 10026.329290257201,
+    "retorno_pct": 0.2632929025720099,
     "operacoes": 153,
     "win_rate_pct": 40.52287581699346
   }

@@ -1,5 +1,5 @@
 {
-  "capital": 9625.309455787728,
+  "capital": 9240.297077556219,
   "positions": [
     {
       "symbol": "ITUB4",
@@ -15,6 +15,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "B3 + Yahoo",
       "opened_at": "2026-10-06T16:42:48.185725+00:00"
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "quantity": 6.949054899634368,
+      "entry_price": 55.404998779296875,
+      "stop_price": 55.37114067077637,
+      "target_price": 55.47271499633789,
+      "risk_value": 96.25309455787729,
+      "risk_distance_pct": 0.06111020533612338,
+      "risk_reward": 2.00000000000021,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T17:18:40.607953+00:00"
     }
   ],
   "trades": [
@@ -3252,5 +3267,5 @@
       "closed_at": "2026-10-06T16:23:06.072328+00:00"
     }
   ],
-  "updated_at": "2026-10-06T17:00:42.847554+00:00"
+  "updated_at": "2026-10-06T17:19:29.615887+00:00"
 }
