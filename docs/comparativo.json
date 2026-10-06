@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-06T14:30:18.278049+00:00",
+  "updated_at": "2026-10-06T14:50:21.230604+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 3,
       "closed_now": 0,
       "closed": 43,
-      "capital": 9854.800229623703,
-      "patrimonio": 10051.576820069235,
-      "retorno_pct": 0.5157682006923459,
+      "capital": 9272.381536052942,
+      "patrimonio": 10052.105685368097,
+      "retorno_pct": 0.5210568536809568,
       "operacoes": 43,
-      "posicoes": 1,
+      "posicoes": 3,
       "win_rate_pct": 39.53488372093023,
       "last_event": null,
       "opportunities": []
@@ -21,19 +21,111 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 2,
+      "opened_total": 4,
       "closed_now": 0,
-      "closed": 142,
-      "capital": 9356.545079391266,
-      "patrimonio": 10023.19679520151,
-      "retorno_pct": 0.23196795201509968,
-      "operacoes": 142,
-      "posicoes": 2,
-      "win_rate_pct": 39.436619718309856,
+      "closed": 143,
+      "capital": 8561.398772544113,
+      "patrimonio": 10024.772978294248,
+      "retorno_pct": 0.24772978294247405,
+      "operacoes": 143,
+      "posicoes": 4,
+      "win_rate_pct": 39.86013986013986,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 121.38,
+          "momentum_pct": 0.4136333553937721,
+          "volume_ratio": 0.09693255056236824,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "TLT",
+          "market": "GLOBAL",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 77.4000015258789,
+          "momentum_pct": 0.34355270928807524,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI forte, proximo da sobrecompra",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "QQQ",
+          "market": "GLOBAL",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 761.739990234375,
+          "momentum_pct": 0.20521423526322913,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "preco comprimido na maxima"
+          ]
+        }
+      ]
     }
   },
-  "extreme_opportunities": [],
+  "extreme_opportunities": [
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 121.38,
+      "momentum_pct": 0.4136333553937721,
+      "volume_ratio": 0.09693255056236824,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 77.4000015258789,
+      "momentum_pct": 0.34355270928807524,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI forte, proximo da sobrecompra",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "QQQ",
+      "market": "GLOBAL",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 761.739990234375,
+      "momentum_pct": 0.20521423526322913,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima"
+      ]
+    }
+  ],
   "hunter_opportunities": []
 }

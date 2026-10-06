@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T14:30:18.273194+00:00",
+  "updated_at": "2026-10-06T14:50:21.226452+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9356.545079391266,
+    "capital": 8561.398772544113,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -20,20 +20,6 @@
   },
   "positions": [
     {
-      "symbol": "TLT",
-      "market": "GLOBAL",
-      "quantity": 4.149842337951622,
-      "entry_price": 77.11000061035156,
-      "stop_price": 77.08058656964984,
-      "target_price": 77.16882869175502,
-      "risk_value": 95.99830356369368,
-      "risk_distance_pct": 0.1,
-      "score": 58.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance",
-      "opened_at": "2026-10-05T22:04:51.682700+00:00"
-    },
-    {
       "symbol": "DOGEUSDT",
       "market": "CRYPTO",
       "quantity": 3622.9260887978908,
@@ -47,6 +33,51 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:10.528703+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 3.1915513033860314,
+      "entry_price": 121.28,
+      "stop_price": 121.0495,
+      "target_price": 121.741,
+      "risk_value": 96.76783551866447,
+      "risk_distance_pct": 0.19005606860158836,
+      "risk_reward": 1.9999999999999383,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T14:49:36.708612+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 32.25034615445856,
+      "entry_price": 11.522,
+      "stop_price": 11.4884,
+      "target_price": 11.5892,
+      "risk_value": 92.89712209791789,
+      "risk_distance_pct": 0.2916160388821372,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T14:49:36.708612+00:00"
+    },
+    {
+      "symbol": "QQQ",
+      "market": "GLOBAL",
+      "quantity": 0.46835808760123554,
+      "entry_price": 761.6500244140625,
+      "stop_price": 761.0890106201172,
+      "target_price": 762.7720520019532,
+      "risk_value": 89.18123721400117,
+      "risk_distance_pct": 0.07365768738429743,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T14:49:36.708612+00:00"
     }
   ],
   "trades": [
@@ -3041,20 +3072,41 @@
       "net": -1.2314023494330544,
       "reason": "STOP",
       "closed_at": "2026-10-06T14:29:33.532375+00:00"
+    },
+    {
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "quantity": 4.149842337951622,
+      "entry_price": 77.11000061035156,
+      "stop_price": 77.08058656964984,
+      "target_price": 77.16882869175502,
+      "risk_value": 95.99830356369368,
+      "risk_distance_pct": 0.1,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-05T22:04:51.682700+00:00",
+      "exit_price": 77.16882869175502,
+      "gross": 0.24412726286855047,
+      "fees": 0.0,
+      "estimated_tax": 0.03661908943028257,
+      "net": 0.20750817343826788,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T14:49:36.708612+00:00"
     }
   ],
   "market": {
     "symbol": "SOLUSDT",
     "market": "CRYPTO",
-    "price": 120.95,
-    "score": 58,
-    "signal": "HOLD"
+    "price": 121.38,
+    "score": 73,
+    "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 11.691203988743258,
-    "patrimonio": 10023.19679520151,
-    "retorno_pct": 0.23196795201509968,
-    "operacoes": 142,
-    "win_rate_pct": 39.436619718309856
+    "lucro_liquido": 11.898712162181527,
+    "patrimonio": 10024.772978294248,
+    "retorno_pct": 0.24772978294247405,
+    "operacoes": 143,
+    "win_rate_pct": 39.86013986013986
   }
 }

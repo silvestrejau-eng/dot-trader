@@ -1,5 +1,5 @@
 {
-  "capital": 9854.800229623703,
+  "capital": 9272.381536052942,
   "positions": [
     {
       "symbol": "BNBUSDT",
@@ -14,6 +14,36 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T10:10:12.072302+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 2.4376979459821166,
+      "entry_price": 121.28,
+      "stop_price": 120.95071428571428,
+      "target_price": 121.93857142857142,
+      "risk_value": 49.274001148118515,
+      "risk_distance_pct": 0.2715086694308355,
+      "risk_reward": 1.999999999999957,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T14:49:36.707140+00:00"
+    },
+    {
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "quantity": 3.7060570801374966,
+      "entry_price": 77.37999725341797,
+      "stop_price": 77.31053979056222,
+      "target_price": 77.51891217912946,
+      "risk_value": 47.795781113674956,
+      "risk_distance_pct": 0.0897615214798729,
+      "risk_reward": 1.9999999999997955,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T14:49:36.707140+00:00"
     }
   ],
   "trades": [
@@ -916,5 +946,5 @@
       "closed_at": "2026-10-06T14:29:33.530505+00:00"
     }
   ],
-  "updated_at": "2026-10-06T14:30:18.271114+00:00"
+  "updated_at": "2026-10-06T14:50:21.224842+00:00"
 }
