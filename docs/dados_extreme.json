@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T20:52:17.090929+00:00",
+  "updated_at": "2026-10-06T21:02:02.964112+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9253.978242682755,
+    "capital": 8883.819112975445,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -48,6 +48,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T19:56:16.005942+00:00"
+    },
+    {
+      "symbol": "GOLD11",
+      "market": "B3",
+      "quantity": 17.15287910175955,
+      "entry_price": 21.579999923706055,
+      "stop_price": 21.562000370025636,
+      "target_price": 21.615999031066895,
+      "risk_value": 92.53978242682756,
+      "risk_distance_pct": 0.08340849742379117,
+      "risk_reward": 2.000000000000197,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-06T21:01:13.186016+00:00"
     }
   ],
   "trades": [
@@ -3550,16 +3565,16 @@
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
-    "market": "CRYPTO",
-    "price": 13.983,
-    "score": 58,
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
     "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 12.40840800031469,
-    "patrimonio": 10025.509758995784,
-    "retorno_pct": 0.25509758995783116,
+    "patrimonio": 10025.482191639003,
+    "retorno_pct": 0.2548219163900356,
     "operacoes": 165,
     "win_rate_pct": 40.0
   }
