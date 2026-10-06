@@ -2,7 +2,7 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 4010.070685431575,
+      "capital": 3889.768564868628,
       "positions": [
         {
           "symbol": "TRXUSDT",
@@ -27,37 +27,35 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.3367,
-          "unrealized_pnl": 0.05310392547760601
+          "mark": 0.3366,
+          "unrealized_pnl": 0.0
         },
         {
-          "symbol": "LTCUSDT",
+          "symbol": "LINKUSDT",
           "market": "CRYPTO",
-          "qty": 0.9106735153175707,
-          "initial_qty": 1.8213470306351414,
-          "entry": 70.2,
-          "stop": 70.2,
-          "target": 70.42428571428572,
-          "target1": 70.31214285714286,
-          "target2": 70.42428571428572,
-          "score": 93,
+          "qty": 8.577079749247629,
+          "initial_qty": 8.577079749247629,
+          "entry": 14.026,
+          "stop": 13.990571428571428,
+          "target": 14.096857142857143,
+          "target1": 14.061428571428571,
+          "target2": 14.096857142857143,
+          "score": 70,
           "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T09:24:42.636910+00:00",
-          "partial_taken": true,
+          "opened_at": "2026-10-06T10:11:07.480145+00:00",
+          "partial_taken": false,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
+            "MOMENTUM_LEVE",
             "ORB",
-            "ABCD",
             "PULLBACK_VWAP",
             "ROMPIMENTO",
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 70.39,
-          "unrealized_pnl": 0.17302796791033637
+          "mark": 14.026,
+          "unrealized_pnl": 0.0
         }
       ],
       "trades": [
@@ -675,6 +673,21 @@
           "reason": "PARCIAL_1R",
           "opened_at": "2026-10-06T09:24:42.636910+00:00",
           "closed_at": "2026-10-06T09:56:13.791913+00:00"
+        },
+        {
+          "symbol": "LTCUSDT",
+          "market": "CRYPTO",
+          "qty": 0.9106735153175707,
+          "entry": 70.2,
+          "exit": 70.42428571428572,
+          "gross": 0.20425105986408282,
+          "tax": 0.030637658979612424,
+          "net": 0.1736134008844704,
+          "score": 93,
+          "strategy": "HUNTER_X",
+          "reason": "ALVO_2R",
+          "opened_at": "2026-10-06T09:24:42.636910+00:00",
+          "closed_at": "2026-10-06T10:10:13.947645+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -1908,39 +1921,42 @@
           "equity": 4252.973911257898,
           "capital": 4010.070685431575,
           "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T10:10:13.947645+00:00",
+          "equity": 4188.712290738261,
+          "capital": 4010.070685431575,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T10:10:27.174235+00:00",
+          "equity": 4188.765394663739,
+          "capital": 4010.070685431575,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T10:10:41.061862+00:00",
+          "equity": 4188.712290738261,
+          "capital": 4010.070685431575,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T10:10:54.220942+00:00",
+          "equity": 4188.765394663739,
+          "capital": 4010.070685431575,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T10:11:07.480145+00:00",
+          "equity": 4188.818498589217,
+          "capital": 3889.768564868628,
+          "positions": 2
         }
       ]
     },
     "HUNTER_EXTREME": {
       "capital": 5133.420832795051,
-      "positions": [
-        {
-          "symbol": "TRXUSDT",
-          "market": "CRYPTO",
-          "qty": 1037.0319217311405,
-          "initial_qty": 1037.0319217311405,
-          "entry": 0.3367,
-          "stop": 0.33646431,
-          "target": 0.3373734,
-          "target1": 0.3370367,
-          "target2": 0.3373734,
-          "score": 85,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T07:09:06.198466+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "VWAP_SUPORTE",
-            "VOLUME_FORTE",
-            "ORB",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 0.3367,
-          "unrealized_pnl": 0.0
-        }
-      ],
+      "positions": [],
       "trades": [
         {
           "symbol": "ATOMUSDT",
@@ -2226,6 +2242,21 @@
           "reason": "ALVO_2R",
           "opened_at": "2026-10-06T09:24:42.637019+00:00",
           "closed_at": "2026-10-06T09:56:13.791970+00:00"
+        },
+        {
+          "symbol": "TRXUSDT",
+          "market": "CRYPTO",
+          "qty": 1037.0319217311405,
+          "entry": 0.3367,
+          "exit": 0.33646431,
+          "gross": -0.2444180536328235,
+          "tax": 0.0,
+          "net": -0.2444180536328235,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T07:09:06.198466+00:00",
+          "closed_at": "2026-10-06T10:10:13.947708+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -3459,9 +3490,39 @@
           "equity": 5482.589480841926,
           "capital": 5133.420832795051,
           "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T10:10:13.947708+00:00",
+          "equity": 5133.420832795051,
+          "capital": 5133.420832795051,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T10:10:27.174289+00:00",
+          "equity": 5133.420832795051,
+          "capital": 5133.420832795051,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T10:10:41.061916+00:00",
+          "equity": 5133.420832795051,
+          "capital": 5133.420832795051,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T10:10:54.220999+00:00",
+          "equity": 5133.420832795051,
+          "capital": 5133.420832795051,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T10:11:07.480222+00:00",
+          "equity": 5133.420832795051,
+          "capital": 5133.420832795051,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T09:57:08.043960+00:00"
+  "updated_at": "2026-10-06T10:11:07.480245+00:00"
 }
