@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T23:17:33.179450+00:00",
+  "updated_at": "2026-10-06T23:35:12.184238+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9270.042965311735,
@@ -3682,11 +3682,11 @@
     }
   ],
   "market": {
-    "symbol": "AVAXUSDT",
-    "market": "CRYPTO",
-    "price": 11.68,
-    "score": 70,
-    "signal": "COMPRA"
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 12.736884681074207,
