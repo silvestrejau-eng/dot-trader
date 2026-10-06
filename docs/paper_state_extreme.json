@@ -1,21 +1,6 @@
 {
-  "capital": 9255.78058865491,
+  "capital": 9640.30466670149,
   "positions": [
-    {
-      "symbol": "ITUB4",
-      "market": "B3",
-      "quantity": 7.591263757520798,
-      "entry_price": 50.72,
-      "stop_price": 50.653499908447266,
-      "target_price": 50.853000183105465,
-      "risk_value": 96.25722444536372,
-      "risk_distance_pct": 0.13111216788788044,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "B3 + Yahoo",
-      "opened_at": "2026-10-06T18:51:58.956620+00:00"
-    },
     {
       "symbol": "USO",
       "market": "GLOBAL",
@@ -3485,7 +3470,29 @@
       "net": 0.4193229885146313,
       "reason": "ALVO",
       "closed_at": "2026-10-06T19:05:47.764146+00:00"
+    },
+    {
+      "symbol": "ITUB4",
+      "market": "B3",
+      "quantity": 7.591263757520798,
+      "entry_price": 50.72,
+      "stop_price": 50.653499908447266,
+      "target_price": 50.853000183105465,
+      "risk_value": 96.25722444536372,
+      "risk_distance_pct": 0.13111216788788044,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "B3 + Yahoo",
+      "opened_at": "2026-10-06T18:51:58.956620+00:00",
+      "exit_price": 50.653499908447266,
+      "gross": -0.5048197348760767,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5048197348760767,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T19:24:23.304364+00:00"
     }
   ],
-  "updated_at": "2026-10-06T19:06:34.843098+00:00"
+  "updated_at": "2026-10-06T19:25:09.315850+00:00"
 }
