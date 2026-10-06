@@ -1,39 +1,45 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07101d"><title>DOT Trader • B3</title>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071018"><title>B3 Market • DOT</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#07101d;color:#edf4ff;font-family:system-ui,-apple-system,sans-serif;padding:14px}.wrap{max-width:1250px;margin:auto}.head{display:flex;justify-content:space-between;align-items:center;gap:12px}.muted{color:#8fa2bf;font-size:12px}.badge{padding:7px 10px;border-radius:20px;background:#152640;font-size:12px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.card{background:#101c2e;border:1px solid #263752;border-radius:15px;padding:14px;margin:10px 0;box-shadow:0 8px 25px #0002}.big{font-size:25px;font-weight:800;margin:5px 0}.green{color:#5ee39a}.red{color:#ff6f86}.yellow{color:#ffd166}.quote{display:flex;justify-content:space-between;gap:8px}.chart{height:130px;display:flex;align-items:end;gap:3px;padding:10px 0}.bar{flex:1;background:#4f9cf5;border-radius:3px 3px 0 0;min-width:2px}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:8px;border-bottom:1px solid #263752;font-size:12px}th{color:#8fa2bf}.pill{padding:4px 7px;border-radius:8px;background:#162840}.status{margin-top:10px}@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.head{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.grid{grid-template-columns:1fr}}
-</style></head><body><div class="wrap">
-<div class="head"><div><h1 style="margin:4px 0">DOT Trader <span class="muted">B3</span></h1><div class="muted">Painel de mercado • cotações online • atualização automática</div></div><div class="badge">● DADOS ONLINE</div></div>
-<div id="status" class="card">Carregando mercado...</div><div id="macro" class="grid"></div>
-<div class="card"><h2>📊 Principais ações da B3</h2><div class="scroll"><table><thead><tr><th>Ativo</th><th>Preço</th><th>Variação</th><th>Máx.</th><th>Mín.</th><th>Volume</th><th>Atualização</th></tr></thead><tbody id="stocks"><tr><td colspan="7">Carregando...</td></tr></tbody></table></div></div>
-<div class="card"><h2>📈 Gráfico indicativo</h2><div class="muted">Variação relativa das principais ações no ciclo atual</div><div id="chart" class="chart"></div></div>
-<div class="card"><h2>🎯 Radar DOT</h2><div class="muted">Indicador simples de força baseado na variação diária. Não é recomendação de investimento.</div><div id="radar" class="grid" style="margin-top:10px"></div></div>
+*{box-sizing:border-box}body{margin:0;background:#071018;color:#eef4f8;font-family:Inter,Arial,sans-serif;padding:14px}.wrap{max-width:1100px;margin:auto}
+h1{margin:0;font-size:24px}.sub{color:#8fa0ad;font-size:12px;margin:5px 0 14px}.top{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.card{background:#101a22;border:1px solid #20303b;border-radius:14px;padding:13px}.label{font-size:10px;color:#8495a2;text-transform:uppercase}.value{font-size:20px;font-weight:800;margin-top:4px}.small{font-size:11px;color:#8797a4;margin-top:4px}.up{color:#57d98b}.down{color:#ff7676}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}.section{margin-top:12px}.section-title{font-size:15px;font-weight:800;margin:0 0 9px}.stocks{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stock{background:#101a22;border:1px solid #20303b;border-radius:12px;padding:11px;cursor:pointer}.stock:hover{border-color:#52748a}.stock b{font-size:14px}.price{font-size:18px;font-weight:800;margin-top:4px}.spark{width:100%;height:34px;margin-top:5px}.watch{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid #2a3b47;background:#101a22;border-radius:999px;padding:8px 11px;font-size:12px;cursor:pointer}.chip.on{border-color:#58d98b}.fgts{border-color:#735a2c;background:#171711}.refresh{display:flex;justify-content:space-between;align-items:center;margin:12px 0}.btn{background:#183247;color:#eef4f8;border:1px solid #31506a;border-radius:9px;padding:9px 12px;font-weight:700}.chart{height:170px;width:100%;display:block}.notice{font-size:10px;color:#82929f;margin-top:8px;line-height:1.45}@media(max-width:800px){.top{grid-template-columns:repeat(2,1fr)}.stocks{grid-template-columns:repeat(2,1fr)}}@media(max-width:430px){.top,.grid{grid-template-columns:1fr}.stocks{grid-template-columns:repeat(2,1fr)}body{padding:10px}}
+</style></head>
+<body><div class="wrap">
+<h1>📊 B3 Market</h1><div class="sub">Ações • Ibovespa • Dólar • Eletrobras FGTS • atualização automática</div>
+<div class="top">
+<div class="card"><div class="label">Ibovespa</div><div id="ibov" class="value">--</div><div id="ibovchg" class="small">Carregando...</div></div>
+<div class="card"><div class="label">Dólar USD/BRL</div><div id="usd" class="value">--</div><div id="usdchg" class="small">Carregando...</div></div>
+<div class="card"><div class="label">Mercado</div><div id="market" class="value">--</div><div class="small">horário de referência B3</div></div>
+<div class="card"><div class="label">Atualização</div><div id="updated" class="value">--:--</div><div class="small">recarrega automaticamente</div></div>
+</div>
+<div class="section"><div class="section-title">⭐ Minha Lista</div><div id="watch" class="watch"></div></div>
+<div class="section"><div class="section-title">🔥 Principais ações</div><div id="stocks" class="stocks">Carregando cotações...</div></div>
+<div class="section"><div class="section-title">⚡ Eletrobras FGTS</div><div class="card fgts">
+<div class="grid"><div><div class="label">Referência</div><div class="value">ELET3</div><div class="small">O FMP-FGTS Eletrobras investe em ações da Eletrobras; o painel usa ELET3 como referência de mercado.</div></div><div><div class="label">Cotação de referência</div><div id="elet" class="value">--</div><div id="eletchg" class="small">Carregando...</div></div></div></div></div>
+<div class="section"><div class="section-title">📈 Gráfico indicativo — ativo selecionado</div><div class="card"><div id="selected" class="small">Selecione uma ação acima.</div><svg id="chart" class="chart" viewBox="0 0 800 170" preserveAspectRatio="none"><polyline id="line" points="" fill="none" stroke="#57d98b" stroke-width="3"/></svg></div></div>
+<div class="refresh"><span id="status" class="small">Inicializando...</span><button id="refresh" class="btn" type="button">↻ Atualizar agora</button></div>
+<div class="notice">Fonte de dados: brapi.dev. A disponibilidade e o atraso dependem do provedor. A B3 informa que suas cotações públicas podem ter atraso de 15 minutos; o Market Data oficial em tempo real é um produto específico. Este painel é informativo e não executa ordens.</div>
 </div>
 <script>
-const tickers=['PETR4','VALE3','ITUB4','BBDC4','BBAS3','ABEV3','WEGE3','ELET3','ELET6','B3SA3','MGLU3','RENT3'];
-const fmt=n=>Number(n||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
-const money=n=>'R$ '+fmt(n);
-const cls=n=>Number(n)>=0?'green':'red';
-async function api(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
-async function load(){
- try{
-  const d=await api('https://brapi.dev/api/quote/'+tickers.join(',')+'?range=1d&interval=15m');
-  const q=d.results||[];
-  const b=await api('https://brapi.dev/api/quote/%5EBVSP,USDBRL');
-  const macro=b.results||[];
-  const ib=macro.find(x=>x.symbol==='^BVSP'),usd=macro.find(x=>x.symbol==='USDBRL');
-  document.getElementById('macro').innerHTML=
-   '<div class="card"><div class="muted">IBOVESPA</div><div class="big">'+(ib?fmt(ib.regularMarketPrice):'—')+'</div><div class="'+cls(ib?.regularMarketChangePercent)+'">'+fmt(ib?.regularMarketChangePercent)+'%</div></div>'+
-   '<div class="card"><div class="muted">DÓLAR / REAL</div><div class="big">'+(usd?money(usd.regularMarketPrice):'—')+'</div><div class="'+cls(usd?.regularMarketChangePercent)+'">'+fmt(usd?.regularMarketChangePercent)+'%</div></div>'+
-   '<div class="card"><div class="muted">ATIVOS MONITORADOS</div><div class="big">'+q.length+'</div><div class="muted">universo DOT B3</div></div>'+
-   '<div class="card"><div class="muted">STATUS</div><div class="big green">ONLINE</div><div class="muted">fonte: BRAPI</div></div>';
-  document.getElementById('stocks').innerHTML=q.map(x=>'<tr><td><b>'+x.symbol+'</b></td><td>'+money(x.regularMarketPrice)+'</td><td class="'+cls(x.regularMarketChangePercent)+'">'+fmt(x.regularMarketChangePercent)+'%</td><td>'+money(x.regularMarketDayHigh)+'</td><td>'+money(x.regularMarketDayLow)+'</td><td>'+Number(x.regularMarketVolume||0).toLocaleString('pt-BR')+'</td><td>'+new Date().toLocaleTimeString('pt-BR')+'</td></tr>').join('');
-  const top=q.slice().sort((a,b)=>(b.regularMarketChangePercent||0)-(a.regularMarketChangePercent||0));
-  document.getElementById('radar').innerHTML=top.slice(0,8).map((x,i)=>'<div class="card"><div class="quote"><b>'+x.symbol+'</b><span class="pill">#'+(i+1)+'</span></div><div class="big '+cls(x.regularMarketChangePercent)+'">'+fmt(x.regularMarketChangePercent)+'%</div><div class="muted">'+money(x.regularMarketPrice)+'</div></div>').join('');
-  const min=Math.min(...q.map(x=>x.regularMarketChangePercent||0),-1),max=Math.max(...q.map(x=>x.regularMarketChangePercent||0),1),rg=max-min;
-  document.getElementById('chart').innerHTML=q.map(x=>'<div class="bar" title="'+x.symbol+' '+fmt(x.regularMarketChangePercent)+'%" style="height:'+Math.max(5,((x.regularMarketChangePercent-min)/rg)*100)+'%"></div>').join('');
-  document.getElementById('status').innerHTML='<b>Motor B3:</b> <span class="green">ONLINE</span> • última consulta '+new Date().toLocaleString('pt-BR')+' • atualização automática a cada 30s';
- }catch(e){document.getElementById('status').innerHTML='<b class="red">Falha ao carregar cotações.</b> O painel continua disponível e tentará novamente em 30s.'}
-}
-load();setInterval(load,30000);
+const symbols=['PETR4','VALE3','ITUB4','BBAS3','BBDC4','PRIO3','B3SA3','ELET3'];
+const watch=['PETR4','VALE3','ITUB4','ELET3'];
+const hist={};
+const brl=v=>Number.isFinite(Number(v))?Number(v).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}):'--';
+const pct=v=>Number.isFinite(Number(v))?((Number(v)>=0?'+':'')+Number(v).toFixed(2).replace('.',',')+'%'):'--';
+const cls=v=>Number(v)>=0?'up':'down';
+function renderWatch(){document.getElementById('watch').innerHTML=watch.map(s=>'<button type="button" class="chip on" data-symbol="'+s+'">'+s+'</button>').join('');document.querySelectorAll('[data-symbol]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.symbol)))}
+function draw(sym){const a=hist[sym]||[];if(!a.length)return;const vals=a.map(x=>Number(x));const min=Math.min(...vals),max=Math.max(...vals),span=max-min||1;const pts=a.map((v,i)=>((i/(a.length-1||1))*800).toFixed(1)+','+(160-((v-min)/span)*140).toFixed(1)).join(' ');document.getElementById('line').setAttribute('points',pts);document.getElementById('selected').textContent=sym+' • histórico indicativo recebido da API'}
+function select(sym){document.getElementById('selected').textContent='Carregando '+sym+'...';fetch('https://brapi.dev/api/v2/stocks/historical?symbol='+encodeURIComponent(sym)+'&range=5d&interval=1d',{cache:'no-store'}).then(r=>r.json()).then(j=>{const rows=j.results?.[0]?.historicalDataPrice||[];hist[sym]=rows.map(x=>x.close).filter(Number.isFinite).reverse();draw(sym)}).catch(()=>{document.getElementById('selected').textContent=sym+' • gráfico indisponível no momento'})}
+async function load(){try{
+const q=await fetch('https://brapi.dev/api/v2/stocks/quote?symbols='+symbols.join(','),{cache:'no-store'});const d=await q.json();const map={};(d.results||[]).forEach(r=>map[r.symbol||r.requestedSymbol]=r.data||r);
+const ib=map['^BVSP'];if(ib){document.getElementById('ibov').textContent=Number(ib.regularMarketPrice||ib.close||0).toLocaleString('pt-BR');document.getElementById('ibovchg').textContent=pct(ib.regularMarketChangePercent||ib.change);document.getElementById('ibovchg').className='small '+cls(ib.regularMarketChangePercent||ib.change)}
+const us=await fetch('https://brapi.dev/api/v2/currency?currency=USD-BRL',{cache:'no-store'}).then(r=>r.json());const u=us.currency?.[0];if(u){document.getElementById('usd').textContent=brl(u.bidPrice);document.getElementById('usdchg').textContent=pct(u.percentageChange);document.getElementById('usdchg').className='small '+cls(u.percentageChange)}
+document.getElementById('stocks').innerHTML=symbols.filter(s=>s!=='ELET3').map(s=>{const x=map[s]||{};const p=x.regularMarketPrice??x.close;const c=x.regularMarketChangePercent??x.change;return '<div class="stock" data-symbol="'+s+'"><div style="display:flex;justify-content:space-between"><b>'+s+'</b><span class="'+cls(c)+'">'+pct(c)+'</span></div><div class="price">'+brl(p)+'</div><div class="small">volume '+(Number(x.regularMarketVolume||x.volume||0).toLocaleString('pt-BR'))+'</div></div>'}).join('');
+const e=map['ELET3']||{};document.getElementById('elet').textContent=brl(e.regularMarketPrice??e.close);document.getElementById('eletchg').textContent=pct(e.regularMarketChangePercent??e.change);document.getElementById('eletchg').className='small '+cls(e.regularMarketChangePercent??e.change);
+document.querySelectorAll('.stock').forEach(x=>x.addEventListener('click',()=>select(x.dataset.symbol)));document.getElementById('updated').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});const h=new Date();const open=h.getDay()>0&&h.getDay()<6&&h.getHours()>=10&&h.getHours()<17;document.getElementById('market').textContent=open?'ABERTO':'FECHADO';document.getElementById('status').textContent='Online • última leitura '+new Date().toLocaleTimeString('pt-BR');select('PETR4');
+}catch(e){document.getElementById('status').textContent='Não foi possível atualizar agora. Tentando novamente...'}}
+renderWatch();document.getElementById('refresh').addEventListener('click',load);load();setInterval(load,60000);
 </script></body></html>
