@@ -1,5 +1,5 @@
 {
-  "capital": 8012.465661899717,
+  "capital": 7716.639806352438,
   "positions": [
     {
       "symbol": "QQQ",
@@ -45,21 +45,6 @@
       "opened_at": "2026-10-06T11:00:09.709123+00:00"
     },
     {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "quantity": 238.88264393063702,
-      "entry_price": 1.5114,
-      "stop_price": 1.50963,
-      "target_price": 1.5149400000000002,
-      "risk_value": 90.2618070091912,
-      "risk_distance_pct": 0.11710996427153958,
-      "risk_reward": 2.0,
-      "score": 81.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T11:16:10.528703+00:00"
-    },
-    {
       "symbol": "DOGEUSDT",
       "market": "CRYPTO",
       "quantity": 3622.9260887978908,
@@ -88,6 +73,36 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:33.213211+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.42639354624722337,
+      "entry_price": 785.48,
+      "stop_price": 784.986,
+      "target_price": 786.4680000000001,
+      "risk_value": 83.73090067656726,
+      "risk_distance_pct": 0.06289148036869534,
+      "risk_reward": 2.0,
+      "score": 69.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T12:24:13.854935+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 27.796892763725968,
+      "entry_price": 11.567,
+      "stop_price": 11.5227,
+      "target_price": 11.6556,
+      "risk_value": 80.38166464950457,
+      "risk_distance_pct": 0.382986081092762,
+      "risk_reward": 2.0,
+      "score": 65.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T12:24:36.633073+00:00"
     }
   ],
   "trades": [
@@ -2951,7 +2966,29 @@
       "net": -0.23566213545849798,
       "reason": "STOP",
       "closed_at": "2026-10-06T12:00:58.951997+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 238.88264393063702,
+      "entry_price": 1.5114,
+      "stop_price": 1.50963,
+      "target_price": 1.5149400000000002,
+      "risk_value": 90.2618070091912,
+      "risk_distance_pct": 0.11710996427153958,
+      "risk_reward": 2.0,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00",
+      "exit_price": 1.50963,
+      "gross": -0.4228222797572393,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4228222797572393,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T12:24:13.854935+00:00"
     }
   ],
-  "updated_at": "2026-10-06T12:01:46.261020+00:00"
+  "updated_at": "2026-10-06T12:24:59.106879+00:00"
 }

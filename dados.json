@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T12:01:46.259050+00:00",
+  "updated_at": "2026-10-06T12:24:59.105653+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9116.154907560438,
+    "capital": 9393.804915345814,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -46,21 +46,6 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T10:10:38.744584+00:00"
-    },
-    {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "quantity": 184.01170737804378,
-      "entry_price": 1.5114,
-      "stop_price": 1.5088714285714286,
-      "target_price": 1.516457142857143,
-      "risk_value": 46.35254908852923,
-      "risk_distance_pct": 0.16729994895933806,
-      "risk_reward": 2.0,
-      "score": 81.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T11:16:10.527162+00:00"
     },
     {
       "symbol": "ADAUSDT",
@@ -911,20 +896,42 @@
       "net": 1.2718191667523209,
       "reason": "ALVO",
       "closed_at": "2026-10-06T11:49:04.965397+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 184.01170737804378,
+      "entry_price": 1.5114,
+      "stop_price": 1.5088714285714286,
+      "target_price": 1.516457142857143,
+      "risk_value": 46.35254908852923,
+      "risk_distance_pct": 0.16729994895933806,
+      "risk_reward": 2.0,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.527162+00:00",
+      "exit_price": 1.5088714285714286,
+      "gross": -0.4652867457987691,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4652867457987691,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T12:24:36.631871+00:00"
     }
   ],
   "market": {
-    "symbol": "ADAUSDT",
+    "symbol": "BNBUSDT",
     "market": "CRYPTO",
-    "price": 0.2798,
-    "score": 68,
-    "signal": "HOLD"
+    "price": 785.2,
+    "score": 81,
+    "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 36.817601311970286,
-    "patrimonio": 10056.521130614155,
-    "retorno_pct": 0.5652113061415553,
-    "operacoes": 40,
-    "win_rate_pct": 42.5
+    "lucro_liquido": 36.352314566171515,
+    "patrimonio": 10053.290635471594,
+    "retorno_pct": 0.5329063547159452,
+    "operacoes": 41,
+    "win_rate_pct": 41.46341463414634
   }
 }
