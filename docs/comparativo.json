@@ -1,37 +1,52 @@
 {
-  "updated_at": "2026-10-06T22:10:02.219611+00:00",
+  "updated_at": "2026-10-06T22:28:57.265277+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 1,
       "closed_now": 0,
-      "closed": 50,
-      "capital": 9172.508757279404,
-      "patrimonio": 10051.161331123443,
-      "retorno_pct": 0.5116133112344379,
-      "operacoes": 50,
-      "posicoes": 3,
-      "win_rate_pct": 38.0,
+      "closed": 52,
+      "capital": 9748.071406061397,
+      "patrimonio": 10049.471966088302,
+      "retorno_pct": 0.494719660883014,
+      "operacoes": 52,
+      "posicoes": 1,
+      "win_rate_pct": 36.53846153846153,
       "last_event": null,
       "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 7,
+      "opened_total": 3,
       "closed_now": 0,
-      "closed": 166,
-      "capital": 7557.648968665561,
-      "patrimonio": 10026.542637319628,
-      "retorno_pct": 0.2654263731962869,
-      "operacoes": 166,
-      "posicoes": 7,
-      "win_rate_pct": 39.75903614457831,
+      "closed": 170,
+      "capital": 8897.397028757881,
+      "patrimonio": 10024.43544103059,
+      "retorno_pct": 0.24435441030590255,
+      "operacoes": 170,
+      "posicoes": 3,
+      "win_rate_pct": 38.82352941176471,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "BNBUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 780.18,
+          "momentum_pct": -0.056365453101392404,
+          "volume_ratio": 1.5978531399774802,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "preco comprimido na maxima",
+            "volume >= 1.5x media"
+          ]
+        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -51,6 +66,21 @@
     }
   },
   "extreme_opportunities": [
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 780.18,
+      "momentum_pct": -0.056365453101392404,
+      "volume_ratio": 1.5978531399774802,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "preco comprimido na maxima",
+        "volume >= 1.5x media"
+      ]
+    },
     {
       "symbol": "GOLD11",
       "market": "B3",
