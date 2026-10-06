@@ -27,23 +27,23 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.3366,
-          "unrealized_pnl": 0.0
+          "mark": 0.3367,
+          "unrealized_pnl": 0.05310392547760601
         },
         {
           "symbol": "LTCUSDT",
           "market": "CRYPTO",
-          "qty": 1.8213470306351414,
+          "qty": 0.9106735153175707,
           "initial_qty": 1.8213470306351414,
           "entry": 70.2,
-          "stop": 70.08785714285715,
+          "stop": 70.2,
           "target": 70.42428571428572,
           "target1": 70.31214285714286,
           "target2": 70.42428571428572,
           "score": 93,
           "strategy": "HUNTER_X",
           "opened_at": "2026-10-06T09:24:42.636910+00:00",
-          "partial_taken": false,
+          "partial_taken": true,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
@@ -56,8 +56,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 70.27,
-          "unrealized_pnl": 0.12749429214444746
+          "mark": 70.39,
+          "unrealized_pnl": 0.17302796791033637
         }
       ],
       "trades": [
@@ -660,6 +660,21 @@
           "reason": "STOP",
           "opened_at": "2026-10-06T07:59:32.147525+00:00",
           "closed_at": "2026-10-06T09:41:46.606730+00:00"
+        },
+        {
+          "symbol": "LTCUSDT",
+          "market": "CRYPTO",
+          "qty": 0.9106735153175707,
+          "entry": 70.2,
+          "exit": 70.31214285714286,
+          "gross": 0.10212552993204141,
+          "tax": 0.015318829489806212,
+          "net": 0.0868067004422352,
+          "score": 93,
+          "strategy": "HUNTER_X",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T09:24:42.636910+00:00",
+          "closed_at": "2026-10-06T09:56:13.791913+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -1863,6 +1878,36 @@
           "equity": 4316.8045544319475,
           "capital": 4010.070685431575,
           "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:56:13.791913+00:00",
+          "equity": 4252.964804522745,
+          "capital": 4010.070685431575,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:56:27.941481+00:00",
+          "equity": 4252.929914067573,
+          "capital": 4010.070685431575,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:56:41.275433+00:00",
+          "equity": 4252.983017993051,
+          "capital": 4010.070685431575,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:56:54.687894+00:00",
+          "equity": 4252.920807332421,
+          "capital": 4010.070685431575,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:57:08.043881+00:00",
+          "equity": 4252.973911257898,
+          "capital": 4010.070685431575,
+          "positions": 2
         }
       ]
     },
@@ -1892,37 +1937,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.3366,
-          "unrealized_pnl": -0.10370319217310263
-        },
-        {
-          "symbol": "LTCUSDT",
-          "market": "CRYPTO",
-          "qty": 2.0256413542608973,
-          "initial_qty": 4.051282708521795,
-          "entry": 70.2,
-          "stop": 70.2,
-          "target": 70.35700000000001,
-          "target1": 70.27850000000001,
-          "target2": 70.35700000000001,
-          "score": 93,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T09:24:42.637019+00:00",
-          "partial_taken": true,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
-            "ORB",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 70.27,
-          "unrealized_pnl": 0.141794894798249
+          "mark": 0.3367,
+          "unrealized_pnl": 0.0
         }
       ],
       "trades": [
@@ -2195,6 +2211,21 @@
           "reason": "PARCIAL_1R",
           "opened_at": "2026-10-06T09:24:42.637019+00:00",
           "closed_at": "2026-10-06T09:41:46.606815+00:00"
+        },
+        {
+          "symbol": "LTCUSDT",
+          "market": "CRYPTO",
+          "qty": 2.0256413542608973,
+          "entry": 70.2,
+          "exit": 70.35700000000001,
+          "gross": 0.3180256926189825,
+          "tax": 0.04770385389284738,
+          "net": 0.27032183872613513,
+          "score": 93,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "ALVO_2R",
+          "opened_at": "2026-10-06T09:24:42.637019+00:00",
+          "closed_at": "2026-10-06T09:56:13.791970+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -3398,9 +3429,39 @@
           "equity": 5624.827595613666,
           "capital": 5133.420832795051,
           "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:56:13.791970+00:00",
+          "equity": 5482.589480841926,
+          "capital": 5133.420832795051,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T09:56:27.941523+00:00",
+          "equity": 5482.485777649753,
+          "capital": 5133.420832795051,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T09:56:41.275476+00:00",
+          "equity": 5482.589480841926,
+          "capital": 5133.420832795051,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T09:56:54.687961+00:00",
+          "equity": 5482.485777649753,
+          "capital": 5133.420832795051,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T09:57:08.043941+00:00",
+          "equity": 5482.589480841926,
+          "capital": 5133.420832795051,
+          "positions": 1
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T09:42:14.095441+00:00"
+  "updated_at": "2026-10-06T09:57:08.043960+00:00"
 }

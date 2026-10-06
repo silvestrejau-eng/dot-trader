@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T09:42:12.305500+00:00",
+  "updated_at": "2026-10-06T09:57:06.050589+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,14 +7,14 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 37,
-      "capital": 10050.769551396748,
-      "patrimonio": 10050.769551396748,
-      "retorno_pct": 0.5076955139674766,
+      "capital": 9849.754160368813,
+      "patrimonio": 10050.634141660836,
+      "retorno_pct": 0.5063414166083469,
       "operacoes": 37,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 37.83783783783784,
       "last_event": null,
       "opportunities": []
@@ -23,25 +23,53 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 4,
+      "opened_total": 8,
       "closed_now": 0,
-      "closed": 122,
-      "capital": 7583.605999384482,
-      "patrimonio": 10019.71990824957,
-      "retorno_pct": 0.1971990824956915,
-      "operacoes": 122,
-      "posicoes": 4,
-      "win_rate_pct": 37.704918032786885,
+      "closed": 123,
+      "capital": 4976.319569926674,
+      "patrimonio": 10017.253400125282,
+      "retorno_pct": 0.17253400125283314,
+      "operacoes": 123,
+      "posicoes": 8,
+      "win_rate_pct": 38.21138211382114,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 65,
+          "signal": "HOLD",
+          "price": 0.2775,
+          "momentum_pct": 0.43431053203042413,
+          "volume_ratio": 0.14302697316718455,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva"
+          ]
+        },
+        {
+          "symbol": "BTCUSDT",
+          "market": "CRYPTO",
+          "score": 58,
+          "signal": "HOLD",
+          "price": 86028.01,
+          "momentum_pct": 0.1956790123456731,
+          "volume_ratio": 0.5424343846600452,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI positivo",
+            "momentum positivo"
+          ]
+        },
         {
           "symbol": "BNBUSDT",
           "market": "CRYPTO",
           "score": 58,
           "signal": "HOLD",
-          "price": 783.07,
-          "momentum_pct": -0.04722761155927513,
-          "volume_ratio": 0.29208224744243655,
+          "price": 783.27,
+          "momentum_pct": 0.0025534631343804293,
+          "volume_ratio": 0.6186271519455387,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
@@ -77,17 +105,31 @@
           ]
         },
         {
-          "symbol": "BTCUSDT",
+          "symbol": "DOGEUSDT",
           "market": "CRYPTO",
           "score": 50,
           "signal": "HOLD",
-          "price": 85919.18,
-          "momentum_pct": -0.1056039872568304,
-          "volume_ratio": 0.3500976052643878,
+          "price": 0.09499,
+          "momentum_pct": 0.26388009288578207,
+          "volume_ratio": 0.5278903658134183,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI positivo",
-            "preco comprimido na maxima"
+            "momentum positivo"
+          ]
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "score": 50,
+          "signal": "HOLD",
+          "price": 13.959,
+          "momentum_pct": 0.20099059651137452,
+          "volume_ratio": 0.45348944953139664,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI positivo",
+            "momentum positivo"
           ]
         }
       ]
@@ -95,13 +137,41 @@
   },
   "extreme_opportunities": [
     {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 65,
+      "signal": "HOLD",
+      "price": 0.2775,
+      "momentum_pct": 0.43431053203042413,
+      "volume_ratio": 0.14302697316718455,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva"
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "score": 58,
+      "signal": "HOLD",
+      "price": 86028.01,
+      "momentum_pct": 0.1956790123456731,
+      "volume_ratio": 0.5424343846600452,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI positivo",
+        "momentum positivo"
+      ]
+    },
+    {
       "symbol": "BNBUSDT",
       "market": "CRYPTO",
       "score": 58,
       "signal": "HOLD",
-      "price": 783.07,
-      "momentum_pct": -0.04722761155927513,
-      "volume_ratio": 0.29208224744243655,
+      "price": 783.27,
+      "momentum_pct": 0.0025534631343804293,
+      "volume_ratio": 0.6186271519455387,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
@@ -137,17 +207,31 @@
       ]
     },
     {
-      "symbol": "BTCUSDT",
+      "symbol": "DOGEUSDT",
       "market": "CRYPTO",
       "score": 50,
       "signal": "HOLD",
-      "price": 85919.18,
-      "momentum_pct": -0.1056039872568304,
-      "volume_ratio": 0.3500976052643878,
+      "price": 0.09499,
+      "momentum_pct": 0.26388009288578207,
+      "volume_ratio": 0.5278903658134183,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI positivo",
-        "preco comprimido na maxima"
+        "momentum positivo"
+      ]
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "score": 50,
+      "signal": "HOLD",
+      "price": 13.959,
+      "momentum_pct": 0.20099059651137452,
+      "volume_ratio": 0.45348944953139664,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI positivo",
+        "momentum positivo"
       ]
     }
   ],
