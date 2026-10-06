@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T11:49:50.732641+00:00",
+  "updated_at": "2026-10-06T12:01:46.259050+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9116.154907560438,
@@ -914,16 +914,16 @@
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
+    "symbol": "ADAUSDT",
     "market": "CRYPTO",
-    "price": 14.078,
-    "score": 93,
-    "signal": "COMPRA"
+    "price": 0.2798,
+    "score": 68,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 36.817601311970286,
-    "patrimonio": 10055.931296184488,
-    "retorno_pct": 0.5593129618448822,
+    "patrimonio": 10056.521130614155,
+    "retorno_pct": 0.5652113061415553,
     "operacoes": 40,
     "win_rate_pct": 42.5
   }

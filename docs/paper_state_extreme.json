@@ -1,5 +1,5 @@
 {
-  "capital": 7705.552557973109,
+  "capital": 8012.465661899717,
   "positions": [
     {
       "symbol": "QQQ",
@@ -88,21 +88,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:33.213211+00:00"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.11305451449196709,
-      "entry_price": 2716.82,
-      "stop_price": 2714.7355000000002,
-      "target_price": 2720.989,
-      "risk_value": 76.78719151551651,
-      "risk_distance_pct": 0.07672573081764468,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T11:33:31.346316+00:00"
     }
   ],
   "trades": [
@@ -2944,7 +2929,29 @@
       "net": 1.0548900561160361,
       "reason": "ALVO",
       "closed_at": "2026-10-06T11:49:04.967234+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.11305451449196709,
+      "entry_price": 2716.82,
+      "stop_price": 2714.7355000000002,
+      "target_price": 2720.989,
+      "risk_value": 76.78719151551651,
+      "risk_distance_pct": 0.07672573081764468,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:33:31.346316+00:00",
+      "exit_price": 2714.7355000000002,
+      "gross": -0.23566213545849798,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.23566213545849798,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T12:00:58.951997+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:49:50.734549+00:00"
+  "updated_at": "2026-10-06T12:01:46.261020+00:00"
 }
