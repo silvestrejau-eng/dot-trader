@@ -2,6 +2,8 @@ name: DOT Trader Paper Engine
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -42,6 +44,8 @@ jobs:
           e=json.loads(Path("docs/dados_extreme.json").read_text())
           assert x["config"]["paper_trading"] is True
           assert e["config"]["paper_trading"] is True
+          assert x["config"]["real_orders"] is False
+          assert e["config"]["real_orders"] is False
           print("V1 validation OK:", x["updated_at"], "X=", x["summary"]["patrimonio"], "EXT=", e["summary"]["patrimonio"])
           PY
 
