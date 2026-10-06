@@ -1,5 +1,5 @@
 {
-  "capital": 8839.0666582158,
+  "capital": 9116.154907560438,
   "positions": [
     {
       "symbol": "BNBUSDT",
@@ -43,21 +43,6 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:10.527162+00:00"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 24.244918756171472,
-      "entry_price": 11.367,
-      "stop_price": 11.336142857142859,
-      "target_price": 11.428714285714287,
-      "risk_value": 45.93199858356686,
-      "risk_distance_pct": 0.2714625042415963,
-      "risk_reward": 2.0000000000000577,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T11:16:33.204937+00:00"
     },
     {
       "symbol": "ADAUSDT",
@@ -886,7 +871,29 @@
       "net": 0.5242269521951329,
       "reason": "ALVO",
       "closed_at": "2026-10-06T11:16:56.802691+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 24.244918756171472,
+      "entry_price": 11.367,
+      "stop_price": 11.336142857142859,
+      "target_price": 11.428714285714287,
+      "risk_value": 45.93199858356686,
+      "risk_distance_pct": 0.2714625042415963,
+      "risk_reward": 2.0000000000000577,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:33.204937+00:00",
+      "exit_price": 11.428714285714287,
+      "gross": 1.4962578432380245,
+      "fees": 0.0,
+      "estimated_tax": 0.22443867648570368,
+      "net": 1.2718191667523209,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T11:49:04.965397+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:33:53.739242+00:00"
+  "updated_at": "2026-10-06T11:49:50.732641+00:00"
 }

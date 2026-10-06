@@ -1,5 +1,5 @@
 {
-  "capital": 7371.570385489585,
+  "capital": 7705.552557973109,
   "positions": [
     {
       "symbol": "QQQ",
@@ -70,21 +70,6 @@
       "risk_distance_pct": 0.14058743597783602,
       "risk_reward": 2.000000000000103,
       "score": 77.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T11:16:10.528703+00:00"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 29.269979359490005,
-      "entry_price": 11.368,
-      "stop_price": 11.3468,
-      "target_price": 11.410400000000001,
-      "risk_value": 83.1852813396706,
-      "risk_distance_pct": 0.18648838845883473,
-      "risk_reward": 2.0,
-      "score": 73.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:16:10.528703+00:00"
@@ -2937,7 +2922,29 @@
       "net": -0.4136359261662731,
       "reason": "STOP",
       "closed_at": "2026-10-06T11:33:05.803153+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 29.269979359490005,
+      "entry_price": 11.368,
+      "stop_price": 11.3468,
+      "target_price": 11.410400000000001,
+      "risk_value": 83.1852813396706,
+      "risk_distance_pct": 0.18648838845883473,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00",
+      "exit_price": 11.410400000000001,
+      "gross": 1.2410471248423955,
+      "fees": 0.0,
+      "estimated_tax": 0.18615706872635931,
+      "net": 1.0548900561160361,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T11:49:04.967234+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:33:53.740512+00:00"
+  "updated_at": "2026-10-06T11:49:50.734549+00:00"
 }
