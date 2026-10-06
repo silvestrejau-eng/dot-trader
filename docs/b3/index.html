@@ -94,7 +94,7 @@ var fmt=function(n){return Number(n||0).toLocaleString('pt-BR',{minimumFractionD
 var money=function(n){return 'R$ '+fmt(n)};
 var cls=function(n){return Number(n)>=0?'green':'red'};
 var dt=function(v){return v?new Date(v).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}):'—'};
-var api=function(u){return fetch(u+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error(r.status);return r.json()})};
+var api=function(u,fallback){var q=u+'?t='+Date.now();return fetch(q,{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).catch(function(err){if(!fallback)throw err;return fetch(fallback+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('fallback HTTP '+r.status);return r.json()})}};
 
 function nav(id){
 var el=$(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
@@ -156,7 +156,7 @@ if(ev.length){var vals=ev.map(function(q){return q.v}),lo=Math.min.apply(null,va
 
 $('lat').textContent=sig.cycle_duration_seconds!=null?sig.cycle_duration_seconds+'s':'—';
 $('latmeta').textContent=(sig.successful_assets||0)+' ativos • '+(sig.failed_assets||0)+' falhas';
-$('status').innerHTML='<b class="green">● MOTOR CONECTADO</b> • último ciclo '+dt(sig.updated_at)+' • painel atualiza a cada 15s';
+$('status').innerHTML='<b class="green">● MOTOR CONECTADO</b> • último ciclo '+dt(sig.updated_at)+' • '+(sig.successful_assets||0)+' ativos OK • '+(sig.failed_assets||0)+' falhas • painel atualiza a cada 15s';
 updateManual();
 }
 
@@ -185,9 +185,9 @@ $('buyBtn').onclick=function(){manualDo('COMPRA')};
 $('sellBtn').onclick=function(){manualDo('VENDA')};
 
 function load(){
-Promise.all([api('../sinal.json'),api('../dados_hunter_x.json'),api('../dados_extreme.json')]).then(function(r){
+Promise.all([api('../sinal.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/sinal.json'),api('../dados_hunter_x.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_hunter_x.json'),api('../dados_extreme.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_extreme.json')]).then(function(r){
 sig=r[0];x=r[1]||{};e=r[2]||{};posX=x.positions||[];posE=e.positions||[];render();
-}).catch(function(err){$('status').innerHTML='<b class="red">⚠️ Motor não respondeu.</b> Tentando novamente em 15s. <span class="muted">'+err.message+'</span>'});
+}).catch(function(err){$('status').innerHTML='<b class="red">⚠️ Dados não carregaram.</b> Tentando novamente em 15s.<br><span class="muted">'+err.message+'</span><br><span class="muted">Se o painel abriu mas esta mensagem aparece, o problema está no acesso aos JSONs.</span>'});
 }
 load();setInterval(load,15000);
 })();
