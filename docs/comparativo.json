@@ -1,49 +1,79 @@
 {
-  "updated_at": "2026-10-06T17:36:51.130891+00:00",
+  "updated_at": "2026-10-06T17:53:08.632194+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 48,
-      "capital": 9748.320120790035,
-      "patrimonio": 10051.014535373113,
-      "retorno_pct": 0.5101453537311285,
-      "operacoes": 48,
-      "posicoes": 1,
-      "win_rate_pct": 37.5,
+      "closed": 49,
+      "capital": 10051.040249445923,
+      "patrimonio": 10051.040249445923,
+      "retorno_pct": 0.5104024944592389,
+      "operacoes": 49,
+      "posicoes": 0,
+      "win_rate_pct": 38.775510204081634,
       "last_event": null,
       "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 2,
+      "opened_total": 5,
       "closed_now": 0,
-      "closed": 154,
-      "capital": 9256.785785943472,
-      "patrimonio": 10027.746852878501,
-      "retorno_pct": 0.2774685287850076,
-      "operacoes": 154,
-      "posicoes": 2,
-      "win_rate_pct": 40.909090909090914,
+      "closed": 155,
+      "capital": 8190.975800682903,
+      "patrimonio": 10029.400496191336,
+      "retorno_pct": 0.29400496191336334,
+      "operacoes": 155,
+      "posicoes": 5,
+      "win_rate_pct": 41.29032258064516,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "DOTUSDT",
+          "symbol": "LINKUSDT",
           "market": "CRYPTO",
           "score": 73,
           "signal": "COMPRA",
-          "price": 1.211,
-          "momentum_pct": 0.5813953488372103,
-          "volume_ratio": 0.20676040990376882,
+          "price": 13.981,
+          "momentum_pct": 0.517650442159745,
+          "volume_ratio": 0.4689966203336736,
           "reason": [
             "EMA9>EMA21",
             "RSI momentum ideal",
             "aceleracao positiva",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 11.535,
+          "momentum_pct": 0.37417333797422625,
+          "volume_ratio": 0.30279240686139647,
+          "reason": [
+            "EMA9>EMA21",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 0.2734,
+          "momentum_pct": 0.29347028613351256,
+          "volume_ratio": 0.11957432044182555,
+          "reason": [
+            "EMA9>EMA21",
+            "RSI momentum ideal",
+            "momentum positivo",
             "rompimento da maxima de 20 candles"
           ]
         }
@@ -52,17 +82,47 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "DOTUSDT",
+      "symbol": "LINKUSDT",
       "market": "CRYPTO",
       "score": 73,
       "signal": "COMPRA",
-      "price": 1.211,
-      "momentum_pct": 0.5813953488372103,
-      "volume_ratio": 0.20676040990376882,
+      "price": 13.981,
+      "momentum_pct": 0.517650442159745,
+      "volume_ratio": 0.4689966203336736,
       "reason": [
         "EMA9>EMA21",
         "RSI momentum ideal",
         "aceleracao positiva",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 11.535,
+      "momentum_pct": 0.37417333797422625,
+      "volume_ratio": 0.30279240686139647,
+      "reason": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 0.2734,
+      "momentum_pct": 0.29347028613351256,
+      "volume_ratio": 0.11957432044182555,
+      "reason": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "momentum positivo",
         "rompimento da maxima de 20 candles"
       ]
     }

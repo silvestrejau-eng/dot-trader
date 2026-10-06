@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T17:36:51.125630+00:00",
+  "updated_at": "2026-10-06T17:53:08.626135+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9256.785785943472,
+    "capital": 8190.975800682903,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -35,19 +35,64 @@
       "opened_at": "2026-10-06T17:18:40.607953+00:00"
     },
     {
-      "symbol": "DOTUSDT",
+      "symbol": "LINKUSDT",
       "market": "CRYPTO",
-      "quantity": 318.75984111375595,
-      "entry_price": 1.21,
-      "stop_price": 1.20785,
-      "target_price": 1.2143,
-      "risk_value": 96.42485193691117,
-      "risk_distance_pct": 0.17768595041321275,
-      "risk_reward": 2.0000000000001035,
+      "quantity": 27.597240981565047,
+      "entry_price": 13.978,
+      "stop_price": 13.9571,
+      "target_price": 14.0198,
+      "risk_value": 96.43855861007906,
+      "risk_distance_pct": 0.14952067534696847,
+      "risk_reward": 2.000000000000085,
       "score": 73.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-06T17:36:04.548647+00:00"
+      "opened_at": "2026-10-06T17:52:22.630737+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 32.12387795477998,
+      "entry_price": 11.528,
+      "stop_price": 11.4978,
+      "target_price": 11.5884,
+      "risk_value": 92.5810162656759,
+      "risk_distance_pct": 0.2619708535739128,
+      "risk_reward": 1.9999999999999412,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T17:52:22.630737+00:00"
+    },
+    {
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "quantity": 4.588880324443281,
+      "entry_price": 77.47229766845703,
+      "stop_price": 77.43993759155273,
+      "target_price": 77.53701782226562,
+      "risk_value": 88.87777561504888,
+      "risk_distance_pct": 0.0417698685571221,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T17:52:34.060160+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1247.8634675019657,
+      "entry_price": 0.2735,
+      "stop_price": 0.27292000000000005,
+      "target_price": 0.27466,
+      "risk_value": 85.32266459044692,
+      "risk_distance_pct": 0.21206581352832518,
+      "risk_reward": 2.000000000000096,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T17:52:34.060160+00:00"
     }
   ],
   "trades": [
@@ -3305,20 +3350,42 @@
       "net": 0.9635221555146465,
       "reason": "ALVO",
       "closed_at": "2026-10-06T17:36:04.548647+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 318.75984111375595,
+      "entry_price": 1.21,
+      "stop_price": 1.20785,
+      "target_price": 1.2143,
+      "risk_value": 96.42485193691117,
+      "risk_distance_pct": 0.17768595041321275,
+      "risk_reward": 2.0000000000001035,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T17:36:04.548647+00:00",
+      "exit_price": 1.2143,
+      "gross": 1.3706673167891412,
+      "fees": 0.0,
+      "estimated_tax": 0.2056000975183712,
+      "net": 1.16506721927077,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T17:52:22.630737+00:00"
     }
   ],
   "market": {
-    "symbol": "DOTUSDT",
+    "symbol": "LINKUSDT",
     "market": "CRYPTO",
-    "price": 1.211,
+    "price": 13.981,
     "score": 73,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 15.008208873274441,
-    "patrimonio": 10027.746852878501,
-    "retorno_pct": 0.2774685287850076,
-    "operacoes": 154,
-    "win_rate_pct": 40.909090909090914
+    "lucro_liquido": 16.173276092545212,
+    "patrimonio": 10029.400496191336,
+    "retorno_pct": 0.29400496191336334,
+    "operacoes": 155,
+    "win_rate_pct": 41.29032258064516
   }
 }
