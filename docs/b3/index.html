@@ -24,22 +24,28 @@ h1{margin:0;font-size:24px}.sub{color:#8fa0ad;font-size:12px;margin:5px 0 14px}.
 <div class="notice">Fonte de dados: brapi.dev. A disponibilidade e o atraso dependem do provedor. A B3 informa que suas cotações públicas podem ter atraso de 15 minutos; o Market Data oficial em tempo real é um produto específico. Este painel é informativo e não executa ordens.</div>
 </div>
 <script>
-const symbols=['PETR4','VALE3','ITUB4','BBAS3','BBDC4','PRIO3','B3SA3','ELET3'];
-const watch=['PETR4','VALE3','ITUB4','ELET3'];
+const symbols=['PETR4','VALE3','ITUB4','MGLU3'];
+const watch=['PETR4','VALE3','ITUB4'];
 const hist={};
 const brl=v=>Number.isFinite(Number(v))?Number(v).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}):'--';
 const pct=v=>Number.isFinite(Number(v))?((Number(v)>=0?'+':'')+Number(v).toFixed(2).replace('.',',')+'%'):'--';
 const cls=v=>Number(v)>=0?'up':'down';
 function renderWatch(){document.getElementById('watch').innerHTML=watch.map(s=>'<button type="button" class="chip on" data-symbol="'+s+'">'+s+'</button>').join('');document.querySelectorAll('[data-symbol]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.symbol)))}
-function draw(sym){const a=hist[sym]||[];if(!a.length)return;const vals=a.map(x=>Number(x));const min=Math.min(...vals),max=Math.max(...vals),span=max-min||1;const pts=a.map((v,i)=>((i/(a.length-1||1))*800).toFixed(1)+','+(160-((v-min)/span)*140).toFixed(1)).join(' ');document.getElementById('line').setAttribute('points',pts);document.getElementById('selected').textContent=sym+' • histórico indicativo recebido da API'}
-function select(sym){document.getElementById('selected').textContent='Carregando '+sym+'...';fetch('https://brapi.dev/api/v2/stocks/historical?symbol='+encodeURIComponent(sym)+'&range=5d&interval=1d',{cache:'no-store'}).then(r=>r.json()).then(j=>{const rows=j.results?.[0]?.historicalDataPrice||[];hist[sym]=rows.map(x=>x.close).filter(Number.isFinite).reverse();draw(sym)}).catch(()=>{document.getElementById('selected').textContent=sym+' • gráfico indisponível no momento'})}
-async function load(){try{
-const q=await fetch('https://brapi.dev/api/v2/stocks/quote?symbols='+symbols.join(','),{cache:'no-store'});const d=await q.json();const map={};(d.results||[]).forEach(r=>map[r.symbol||r.requestedSymbol]=r.data||r);
-const ib=map['^BVSP'];if(ib){document.getElementById('ibov').textContent=Number(ib.regularMarketPrice||ib.close||0).toLocaleString('pt-BR');document.getElementById('ibovchg').textContent=pct(ib.regularMarketChangePercent||ib.change);document.getElementById('ibovchg').className='small '+cls(ib.regularMarketChangePercent||ib.change)}
-const us=await fetch('https://brapi.dev/api/v2/currency?currency=USD-BRL',{cache:'no-store'}).then(r=>r.json());const u=us.currency?.[0];if(u){document.getElementById('usd').textContent=brl(u.bidPrice);document.getElementById('usdchg').textContent=pct(u.percentageChange);document.getElementById('usdchg').className='small '+cls(u.percentageChange)}
-document.getElementById('stocks').innerHTML=symbols.filter(s=>s!=='ELET3').map(s=>{const x=map[s]||{};const p=x.regularMarketPrice??x.close;const c=x.regularMarketChangePercent??x.change;return '<div class="stock" data-symbol="'+s+'"><div style="display:flex;justify-content:space-between"><b>'+s+'</b><span class="'+cls(c)+'">'+pct(c)+'</span></div><div class="price">'+brl(p)+'</div><div class="small">volume '+(Number(x.regularMarketVolume||x.volume||0).toLocaleString('pt-BR'))+'</div></div>'}).join('');
-const e=map['ELET3']||{};document.getElementById('elet').textContent=brl(e.regularMarketPrice??e.close);document.getElementById('eletchg').textContent=pct(e.regularMarketChangePercent??e.change);document.getElementById('eletchg').className='small '+cls(e.regularMarketChangePercent??e.change);
-document.querySelectorAll('.stock').forEach(x=>x.addEventListener('click',()=>select(x.dataset.symbol)));document.getElementById('updated').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});const h=new Date();const open=h.getDay()>0&&h.getDay()<6&&h.getHours()>=10&&h.getHours()<17;document.getElementById('market').textContent=open?'ABERTO':'FECHADO';document.getElementById('status').textContent='Online • última leitura '+new Date().toLocaleTimeString('pt-BR');select('PETR4');
-}catch(e){document.getElementById('status').textContent='Não foi possível atualizar agora. Tentando novamente...'}}
+async function quote(sym){const r=await fetch('https://brapi.dev/api/v2/stocks/quote?symbols='+encodeURIComponent(sym),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const j=await r.json();return j.results?.[0]?.data||j.results?.[0]||null}
+function draw(sym){const a=hist[sym]||[];if(!a.length)return;const vals=a.map(Number),min=Math.min(...vals),max=Math.max(...vals),span=max-min||1;const pts=a.map((v,i)=>((i/(a.length-1||1))*800).toFixed(1)+','+(160-((v-min)/span)*140).toFixed(1)).join(' ');document.getElementById('line').setAttribute('points',pts);document.getElementById('selected').textContent=sym+' • histórico recebido da API')}
+async function select(sym){document.getElementById('selected').textContent='Carregando '+sym+'...';try{const r=await fetch('https://brapi.dev/api/v2/stocks/historical?symbol='+encodeURIComponent(sym)+'&range=5d&interval=1d',{cache:'no-store'});if(!r.ok)throw 0;const j=await r.json();const rows=j.results?.[0]?.historicalDataPrice||[];hist[sym]=rows.map(x=>x.close).filter(Number.isFinite).reverse();draw(sym)}catch(e){document.getElementById('selected').textContent=sym+' • histórico indisponível'}} 
+async function load(){
+document.getElementById('status').textContent='Consultando mercado...';
+const results=await Promise.allSettled(symbols.map(quote));
+const map={};results.forEach((r,i)=>{if(r.status==='fulfilled'&&r.value)map[symbols[i]]=r.value});
+document.getElementById('stocks').innerHTML=symbols.map(s=>{const x=map[s]||{};const p=x.regularMarketPrice??x.close,c=x.regularMarketChangePercent??x.change;return '<div class="stock" data-symbol="'+s+'"><div style="display:flex;justify-content:space-between"><b>'+s+'</b><span class="'+cls(c)+'">'+pct(c)+'</span></div><div class="price">'+brl(p)+'</div><div class="small">volume '+(Number(x.regularMarketVolume||x.volume||0).toLocaleString('pt-BR'))+'</div></div>'}).join('');
+const e=map['ITUB4']||{};document.getElementById('elet').textContent='--';document.getElementById('eletchg').textContent='ELET3 requer autenticação da API';document.getElementById('eletchg').className='small';
+document.getElementById('ibov').textContent='--';document.getElementById('ibovchg').textContent='IBOV requer fonte autenticada';document.getElementById('ibovchg').className='small';
+document.getElementById('usd').textContent='--';document.getElementById('usdchg').textContent='USD/BRL requer fonte autenticada';document.getElementById('usdchg').className='small';
+document.querySelectorAll('.stock').forEach(x=>x.addEventListener('click',()=>select(x.dataset.symbol)));
+document.getElementById('updated').textContent=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+const h=new Date(),open=h.getDay()>0&&h.getDay()<6&&h.getHours()>=10&&h.getHours()<17;document.getElementById('market').textContent=open?'ABERTO':'FECHADO';
+document.getElementById('status').textContent='Online • dados recebidos • '+new Date().toLocaleTimeString('pt-BR');select('PETR4');
+}
 renderWatch();document.getElementById('refresh').addEventListener('click',load);load();setInterval(load,60000);
 </script></body></html>
