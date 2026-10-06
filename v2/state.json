@@ -2,7 +2,7 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 4669.7470525437175,
+      "capital": 4261.952051686231,
       "positions": [
         {
           "symbol": "TRXUSDT",
@@ -80,35 +80,90 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 5.304,
-          "unrealized_pnl": 0.12653704614951888
+          "mark": 5.313,
+          "unrealized_pnl": 0.2530740922990253
         },
         {
-          "symbol": "AVAXUSDT",
+          "symbol": "ADAUSDT",
           "market": "CRYPTO",
-          "qty": 12.694485943000531,
-          "initial_qty": 12.694485943000531,
-          "entry": 11.377,
-          "stop": 11.340357142857144,
-          "target": 11.450285714285714,
-          "target1": 11.413642857142857,
-          "target2": 11.450285714285714,
-          "score": 78,
+          "qty": 509.7977131597945,
+          "initial_qty": 509.7977131597945,
+          "entry": 0.2748,
+          "stop": 0.2737785714285714,
+          "target": 0.2768428571428571,
+          "target1": 0.27582142857142855,
+          "target2": 0.2768428571428571,
+          "score": 85,
           "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T08:37:12.583694+00:00",
+          "opened_at": "2026-10-06T09:04:46.112107+00:00",
           "partial_taken": false,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
-            "MOMENTUM",
+            "MOMENTUM_LEVE",
+            "VOLUME_FORTE",
             "ORB",
             "PULLBACK_VWAP",
             "ROMPIMENTO",
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 11.345,
-          "unrealized_pnl": -0.40622355017601736
+          "mark": 0.2748,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "BNBUSDT",
+          "market": "CRYPTO",
+          "qty": 0.17339939672956078,
+          "initial_qty": 0.17339939672956078,
+          "entry": 783.68,
+          "stop": 782.89632,
+          "target": 785.24736,
+          "target1": 784.46368,
+          "target2": 785.24736,
+          "score": 74,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T09:04:46.112107+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "MOMENTUM_LEVE",
+            "VOLUME",
+            "ABCD",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_ESTICADO",
+            "RR_OK"
+          ],
+          "mark": 783.39,
+          "unrealized_pnl": -0.05028582505156632
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "market": "CRYPTO",
+          "qty": 1387.3586996332124,
+          "initial_qty": 1387.3586996332124,
+          "entry": 0.09501,
+          "stop": 0.09488714285714285,
+          "target": 0.09525571428571429,
+          "target1": 0.09513285714285714,
+          "target2": 0.09525571428571429,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T09:04:46.112107+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "MOMENTUM_LEVE",
+            "VOLUME",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 0.09499,
+          "unrealized_pnl": -0.02774717399265349
         }
       ],
       "trades": [
@@ -576,6 +631,21 @@
           "reason": "ALVO_2R",
           "opened_at": "2026-10-06T07:46:23.970275+00:00",
           "closed_at": "2026-10-06T08:54:00.139603+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 12.694485943000531,
+          "entry": 11.377,
+          "exit": 11.340357142857144,
+          "gross": -0.4651622349113717,
+          "tax": 0.0,
+          "net": -0.4651622349113717,
+          "score": 78,
+          "strategy": "HUNTER_X",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T08:37:12.583694+00:00",
+          "closed_at": "2026-10-06T09:04:46.112107+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -1689,11 +1759,41 @@
           "equity": 5220.58313710008,
           "capital": 4669.7470525437175,
           "positions": 4
+        },
+        {
+          "timestamp": "2026-10-06T09:04:46.112107+00:00",
+          "equity": 5077.114708811762,
+          "capital": 4261.952051686231,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T09:05:01.318789+00:00",
+          "equity": 5077.118626091946,
+          "capital": 4261.952051686231,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T09:05:14.990638+00:00",
+          "equity": 5076.642290452043,
+          "capital": 4261.952051686231,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T09:05:30.330331+00:00",
+          "equity": 5076.563452346494,
+          "capital": 4261.952051686231,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T09:05:43.731536+00:00",
+          "equity": 5076.612698123843,
+          "capital": 4261.952051686231,
+          "positions": 6
         }
       ]
     },
     "HUNTER_EXTREME": {
-      "capital": 5987.369392383789,
+      "capital": 5688.0009227646,
       "positions": [
         {
           "symbol": "TRXUSDT",
@@ -1720,6 +1820,34 @@
           ],
           "mark": 0.3366,
           "unrealized_pnl": -0.10370319217310263
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1089.4049112779821,
+          "initial_qty": 1089.4049112779821,
+          "entry": 0.2748,
+          "stop": 0.27408499999999997,
+          "target": 0.27623000000000003,
+          "target1": 0.275515,
+          "target2": 0.27623000000000003,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "opened_at": "2026-10-06T09:04:46.112197+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "ACIMA_VWAP",
+            "MOMENTUM_LEVE",
+            "VOLUME_FORTE",
+            "ORB",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 0.2748,
+          "unrealized_pnl": 0.0
         }
       ],
       "trades": [
@@ -3045,9 +3173,39 @@
           "equity": 6336.434337238491,
           "capital": 5987.369392383789,
           "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T09:04:46.112197+00:00",
+          "equity": 6336.434337238491,
+          "capital": 5688.0009227646,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:05:01.318863+00:00",
+          "equity": 6336.652218220746,
+          "capital": 5688.0009227646,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:05:14.990707+00:00",
+          "equity": 6336.548515028573,
+          "capital": 5688.0009227646,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:05:30.330400+00:00",
+          "equity": 6336.325396747363,
+          "capital": 5688.0009227646,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T09:05:43.731603+00:00",
+          "equity": 6336.434337238491,
+          "capital": 5688.0009227646,
+          "positions": 2
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T08:54:13.349393+00:00"
+  "updated_at": "2026-10-06T09:05:43.731635+00:00"
 }
