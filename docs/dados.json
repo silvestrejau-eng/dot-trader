@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T22:28:57.257674+00:00",
+  "updated_at": "2026-10-06T22:46:25.073776+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9748.071406061397,
@@ -1133,16 +1133,16 @@
     }
   ],
   "market": {
-    "symbol": "BNBUSDT",
+    "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 780.18,
-    "score": 73,
-    "signal": "COMPRA"
+    "price": 11.593,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 32.30014050692321,
-    "patrimonio": 10049.471966088302,
-    "retorno_pct": 0.494719660883014,
+    "patrimonio": 10050.097224402818,
+    "retorno_pct": 0.5009722440281861,
     "operacoes": 52,
     "win_rate_pct": 36.53846153846153
   }
