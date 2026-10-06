@@ -1,136 +1,51 @@
 {
-  "updated_at": "2026-10-06T09:25:33.673865+00:00",
+  "updated_at": "2026-10-06T09:42:12.305500+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
-      "selected": [
-        {
-          "symbol": "ETHUSDT",
-          "market": "CRYPTO",
-          "source": "Binance public",
-          "interval": "5m",
-          "price": 2717.43,
-          "ema9": 2716.0311828027357,
-          "ema21": 2713.0336720501664,
-          "ema50": 2708.057261787233,
-          "rsi14": 64.03269754768414,
-          "momentum_pct": 0.011409139088436326,
-          "breakout_pct": 0.0007359949363516805,
-          "volume_ratio": 0.021595836402856877,
-          "atr": 2.071428571428604,
-          "atr_pct": 0.07622748594917272,
-          "stop_price": 2715.3585714285714,
-          "target_price": 2721.572857142857,
-          "score": 70,
-          "signal": "COMPRA",
-          "strategy": "DOT_HUNTER_X",
-          "reasons": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "rompimento da maxima de 20 candles",
-            "volume fraco",
-            "volatilidade controlada"
-          ]
-        }
-      ],
-      "opened_now": 1,
-      "opened_total": 4,
+      "selected": [],
+      "opened_now": 0,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 33,
-      "capital": 9278.905131920712,
-      "patrimonio": 10052.216507480114,
-      "retorno_pct": 0.5221650748011397,
-      "operacoes": 33,
-      "posicoes": 4,
-      "win_rate_pct": 42.42424242424242,
-      "last_event": {
-        "symbol": "ETHUSDT",
-        "market": "CRYPTO",
-        "quantity": 0.06968547887361395,
-        "entry_price": 2717.43,
-        "stop_price": 2715.3585714285714,
-        "target_price": 2721.572857142857,
-        "risk_value": 47.341352713881186,
-        "risk_distance_pct": 0.1,
-        "score": 70.0,
-        "strategy": "DOT_HUNTER_X",
-        "source": "Binance public",
-        "opened_at": "2026-10-06T09:25:33.667097+00:00"
-      },
-      "opportunities": [
-        {
-          "symbol": "ETHUSDT",
-          "market": "CRYPTO",
-          "score": 70,
-          "signal": "COMPRA",
-          "price": 2717.43,
-          "momentum_pct": 0.011409139088436326,
-          "volume_ratio": 0.021595836402856877,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "rompimento da maxima de 20 candles"
-          ]
-        }
-      ]
+      "closed": 37,
+      "capital": 10050.769551396748,
+      "patrimonio": 10050.769551396748,
+      "retorno_pct": 0.5076955139674766,
+      "operacoes": 37,
+      "posicoes": 0,
+      "win_rate_pct": 37.83783783783784,
+      "last_event": null,
+      "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 9,
+      "opened_total": 4,
       "closed_now": 0,
-      "closed": 115,
-      "capital": 4931.991006822911,
-      "patrimonio": 10024.096118243291,
-      "retorno_pct": 0.24096118243290832,
-      "operacoes": 115,
-      "posicoes": 9,
-      "win_rate_pct": 40.0,
+      "closed": 122,
+      "capital": 7583.605999384482,
+      "patrimonio": 10019.71990824957,
+      "retorno_pct": 0.1971990824956915,
+      "operacoes": 122,
+      "posicoes": 4,
+      "win_rate_pct": 37.704918032786885,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "ETHUSDT",
-          "market": "CRYPTO",
-          "score": 70,
-          "signal": "COMPRA",
-          "price": 2717.43,
-          "momentum_pct": 0.011409139088436326,
-          "volume_ratio": 0.021595836402856877,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "DOGEUSDT",
-          "market": "CRYPTO",
-          "score": 66,
-          "signal": "HOLD",
-          "price": 0.09522,
-          "momentum_pct": 0.2421307506053294,
-          "volume_ratio": 0.0347523243900526,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI forte, proximo da sobrecompra",
-            "momentum positivo"
-          ]
-        },
-        {
-          "symbol": "AVAXUSDT",
+          "symbol": "BNBUSDT",
           "market": "CRYPTO",
           "score": 58,
           "signal": "HOLD",
-          "price": 11.348,
-          "momentum_pct": 0.3005126392080726,
-          "volume_ratio": 0.025272855846205925,
+          "price": 783.07,
+          "momentum_pct": -0.04722761155927513,
+          "volume_ratio": 0.29208224744243655,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
-            "momentum positivo"
+            "preco comprimido na maxima"
           ]
         },
         {
@@ -162,27 +77,13 @@
           ]
         },
         {
-          "symbol": "XRPUSDT",
+          "symbol": "BTCUSDT",
           "market": "CRYPTO",
           "score": 50,
           "signal": "HOLD",
-          "price": 1.5098,
-          "momentum_pct": 0.2456676183520301,
-          "volume_ratio": 0.08700390697507217,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI sobrecomprado",
-            "momentum positivo"
-          ]
-        },
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "score": 50,
-          "signal": "HOLD",
-          "price": 14.002,
-          "momentum_pct": 0.02143010215014396,
-          "volume_ratio": 0.022003473256368603,
+          "price": 85919.18,
+          "momentum_pct": -0.1056039872568304,
+          "volume_ratio": 0.3500976052643878,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI positivo",
@@ -194,45 +95,17 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "score": 70,
-      "signal": "COMPRA",
-      "price": 2717.43,
-      "momentum_pct": 0.011409139088436326,
-      "volume_ratio": 0.021595836402856877,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO",
-      "score": 66,
-      "signal": "HOLD",
-      "price": 0.09522,
-      "momentum_pct": 0.2421307506053294,
-      "volume_ratio": 0.0347523243900526,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI forte, proximo da sobrecompra",
-        "momentum positivo"
-      ]
-    },
-    {
-      "symbol": "AVAXUSDT",
+      "symbol": "BNBUSDT",
       "market": "CRYPTO",
       "score": 58,
       "signal": "HOLD",
-      "price": 11.348,
-      "momentum_pct": 0.3005126392080726,
-      "volume_ratio": 0.025272855846205925,
+      "price": 783.07,
+      "momentum_pct": -0.04722761155927513,
+      "volume_ratio": 0.29208224744243655,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
-        "momentum positivo"
+        "preco comprimido na maxima"
       ]
     },
     {
@@ -264,27 +137,13 @@
       ]
     },
     {
-      "symbol": "XRPUSDT",
+      "symbol": "BTCUSDT",
       "market": "CRYPTO",
       "score": 50,
       "signal": "HOLD",
-      "price": 1.5098,
-      "momentum_pct": 0.2456676183520301,
-      "volume_ratio": 0.08700390697507217,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI sobrecomprado",
-        "momentum positivo"
-      ]
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "score": 50,
-      "signal": "HOLD",
-      "price": 14.002,
-      "momentum_pct": 0.02143010215014396,
-      "volume_ratio": 0.022003473256368603,
+      "price": 85919.18,
+      "momentum_pct": -0.1056039872568304,
+      "volume_ratio": 0.3500976052643878,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI positivo",
@@ -292,20 +151,5 @@
       ]
     }
   ],
-  "hunter_opportunities": [
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "score": 70,
-      "signal": "COMPRA",
-      "price": 2717.43,
-      "momentum_pct": 0.011409139088436326,
-      "volume_ratio": 0.021595836402856877,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "rompimento da maxima de 20 candles"
-      ]
-    }
-  ]
+  "hunter_opportunities": []
 }
