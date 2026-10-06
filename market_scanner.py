@@ -255,8 +255,11 @@ def main():
             return None, {"symbol": symbol, "market": market, "error": str(exc)}
 
     # Paralelismo reduz o tempo do scanner e aumenta a frequencia efetiva de ciclos.
+    priority = {"REGULAR": 0, "PRE": 1, "AFTER": 1, "FECHADO": 2}
+    ordered_universe = sorted(UNIVERSE, key=lambda item: (priority.get(session_status(item[1])["state"], 2), 0 if item[1] == "B3" else 1))
+
     with ThreadPoolExecutor(max_workers=28) as pool:
-        futures = [pool.submit(run, item) for item in UNIVERSE]
+        futures = [pool.submit(run, item) for item in ordered_universe]
         for future in as_completed(futures):
             candidate, error = future.result()
             if candidate:
