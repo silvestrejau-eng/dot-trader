@@ -2,7 +2,7 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 5958.2604385880495,
+      "capital": 5779.512625430408,
       "positions": [
         {
           "symbol": "FILUSDT",
@@ -28,8 +28,34 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 1.1802,
-          "unrealized_pnl": -0.6989979911370897
+          "mark": 1.1878,
+          "unrealized_pnl": 0.5967056021902096
+        },
+        {
+          "symbol": "TRXUSDT",
+          "market": "CRYPTO",
+          "qty": 531.0392547761186,
+          "initial_qty": 531.0392547761186,
+          "entry": 0.3366,
+          "stop": 0.3362634,
+          "target": 0.33727320000000005,
+          "target1": 0.33693660000000003,
+          "target2": 0.33727320000000005,
+          "score": 80,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T06:33:49.095105+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "VOLUME_FORTE",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 0.3366,
+          "unrealized_pnl": 0.0
         }
       ],
       "trades": [
@@ -1175,6 +1201,36 @@
           "equity": 6159.469567646584,
           "capital": 5958.2604385880495,
           "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T06:33:49.095105+00:00",
+          "equity": 6160.304955489651,
+          "capital": 5779.512625430408,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T06:34:02.145993+00:00",
+          "equity": 6160.524631268032,
+          "capital": 5779.512625430408,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T06:34:15.097375+00:00",
+          "equity": 6160.541679999523,
+          "capital": 5779.512625430408,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T06:34:28.109174+00:00",
+          "equity": 6160.714125045439,
+          "capital": 5779.512625430408,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T06:34:41.076984+00:00",
+          "equity": 6160.765271239912,
+          "capital": 5779.512625430408,
+          "positions": 2
         }
       ]
     },
@@ -2189,9 +2245,39 @@
           "equity": 6983.3729609375005,
           "capital": 6983.3729609375005,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T06:33:49.095172+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T06:34:02.146055+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T06:34:15.097434+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T06:34:28.109237+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T06:34:41.077044+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T06:11:25.674393+00:00"
+  "updated_at": "2026-10-06T06:34:41.077072+00:00"
 }
