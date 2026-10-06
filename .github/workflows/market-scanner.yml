@@ -7,9 +7,7 @@ on:
       - "dados.json"
       - "sinal.json"
       - "docs/**"
-      - "v2/market_snapshot.json"
-      - "v2/state.json"
-      - "v2/dashboard.json"
+      - "v2/**"
   schedule:
     - cron: "*/5 * * * *"
 
@@ -33,47 +31,39 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run rapid V2.2 paper cycles
+      - name: Run rapid V1 paper cycles
         run: |
           set -e
           for i in 1 2 3 4 5; do
-            echo "=== V2.2 RAPID CYCLE $i/5 ==="
+            echo "=== V1 RAPID CYCLE $i/5 ==="
             timeout 45s python market_scanner.py
             timeout 45s python paper_engine.py
-            timeout 45s python v2/v2_scanner_aziz.py
-            timeout 45s python v2/v2_engine_aziz.py
             if [ "$i" -lt 5 ]; then sleep 10; fi
           done
 
-      - name: Validate V2.2 output
+      - name: Validate V1 output
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          d=json.loads(Path("v2/dashboard.json").read_text())
-          assert d["paper_trading"] is True
-          assert d["real_orders"] is False
-          assert d["markets_scanned"] > 0
-          assert d["version"].startswith("V2.2")
-          assert d["strategies"]["HUNTER_X"]["equity"] >= 0
-          assert d["strategies"]["HUNTER_EXTREME"]["equity"] >= 0
-          print("V2.2 validation OK:", d["updated_at"], "markets=", d["markets_scanned"])
+          x=json.loads(Path("docs/dados_hunter_x.json").read_text())
+          e=json.loads(Path("docs/dados_extreme.json").read_text())
+          assert x["config"]["paper_trading"] is True
+          assert e["config"]["paper_trading"] is True
+          print("V1 validation OK:", x["updated_at"], "X=", x["summary"]["patrimonio"], "EXT=", e["summary"]["patrimonio"])
           PY
 
-      - name: Publish dashboard data
+      - name: Publish V1 dashboard data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdir -p docs/v2
-          cp v2/dashboard.json docs/v2/dashboard.json
-          cp v2/v2_config.json docs/v2/v2_config.json
-          git stash push -u -m "cycle-output"
+          git stash push -u -m "v1-cycle-output"
           git pull --rebase origin main
           git stash pop
-          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json docs/v2/index.html docs/v2/dashboard.json docs/v2/v2_config.json v2/market_snapshot.json v2/state.json v2/dashboard.json
+          git add sinal.json dados.json docs/sinal.json docs/paper_state.json docs/paper_state_extreme.json docs/comparativo.json docs/dados.json docs/dados_hunter_x.json docs/dados_extreme.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração."
           else
-            git commit -m "Update DOT Trader V2.2 cycle"
+            git commit -m "Update DOT Trader V1 cycle"
             git push
           fi
