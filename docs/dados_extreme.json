@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T22:46:25.075836+00:00",
+  "updated_at": "2026-10-06T22:59:22.787711+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 8897.397028757881,
@@ -3677,14 +3677,14 @@
   "market": {
     "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 11.593,
-    "score": 66,
-    "signal": "HOLD"
+    "price": 11.618,
+    "score": 83,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 11.132147085398296,
-    "patrimonio": 10025.204715020327,
-    "retorno_pct": 0.25204715020326063,
+    "patrimonio": 10026.006042092971,
+    "retorno_pct": 0.2600604209297197,
     "operacoes": 170,
     "win_rate_pct": 38.82352941176471
   }
