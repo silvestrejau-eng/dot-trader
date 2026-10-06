@@ -27,35 +27,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.3367,
-          "unrealized_pnl": 0.05310392547760601
-        },
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "qty": 12.429059409527758,
-          "initial_qty": 12.429059409527758,
-          "entry": 13.95,
-          "stop": 13.930214285714285,
-          "target": 13.989571428571427,
-          "target1": 13.969785714285713,
-          "target2": 13.989571428571427,
-          "score": 70,
-          "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T07:45:45.959460+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "ORB",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_ESTICADO",
-            "RR_OK"
-          ],
-          "mark": 13.948,
-          "unrealized_pnl": -0.02485811881904174
+          "mark": 0.3366,
+          "unrealized_pnl": 0.0
         },
         {
           "symbol": "ADAUSDT",
@@ -80,23 +53,23 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.2733,
-          "unrealized_pnl": 0.3597316491246334
+          "mark": 0.2728,
+          "unrealized_pnl": 0.2098434619893667
         },
         {
           "symbol": "APTUSDT",
           "market": "CRYPTO",
-          "qty": 191.2084990233004,
+          "qty": 95.6042495116502,
           "initial_qty": 191.2084990233004,
           "entry": 0.8276,
-          "stop": 0.82495,
+          "stop": 0.8276,
           "target": 0.8329000000000001,
           "target1": 0.83025,
           "target2": 0.8329000000000001,
           "score": 90,
           "strategy": "HUNTER_X",
           "opened_at": "2026-10-06T07:59:32.147525+00:00",
-          "partial_taken": false,
+          "partial_taken": true,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
@@ -108,8 +81,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.828,
-          "unrealized_pnl": 0.07648339960931173
+          "mark": 0.8317,
+          "unrealized_pnl": 0.3919774229977651
         },
         {
           "symbol": "PEPEUSDT",
@@ -161,8 +134,8 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 5.296,
-          "unrealized_pnl": 0.0281193435887903
+          "mark": 5.285,
+          "unrealized_pnl": -0.2811934358878031
         }
       ],
       "trades": [
@@ -540,6 +513,51 @@
           "reason": "PARCIAL_1R",
           "opened_at": "2026-10-06T07:46:23.970275+00:00",
           "closed_at": "2026-10-06T07:59:32.147525+00:00"
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "qty": 6.214529704763879,
+          "entry": 13.95,
+          "exit": 13.969785714285713,
+          "gross": 0.12295890915853977,
+          "tax": 0.018443836373780966,
+          "net": 0.1045150727847588,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T07:45:45.959460+00:00",
+          "closed_at": "2026-10-06T08:17:43.802494+00:00"
+        },
+        {
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "qty": 6.214529704763879,
+          "entry": 13.95,
+          "exit": 13.989571428571427,
+          "gross": 0.24591781831707954,
+          "tax": 0.03688767274756193,
+          "net": 0.2090301455695176,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "reason": "ALVO_2R",
+          "opened_at": "2026-10-06T07:45:45.959460+00:00",
+          "closed_at": "2026-10-06T08:17:43.802494+00:00"
+        },
+        {
+          "symbol": "APTUSDT",
+          "market": "CRYPTO",
+          "qty": 95.6042495116502,
+          "entry": 0.8276,
+          "exit": 0.83025,
+          "gross": 0.253351261205877,
+          "tax": 0.038002689180881545,
+          "net": 0.21534857202499544,
+          "score": 90,
+          "strategy": "HUNTER_X",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T07:59:32.147525+00:00",
+          "closed_at": "2026-10-06T08:17:43.802494+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -1563,6 +1581,36 @@
           "equity": 5709.000049947993,
           "capital": 4814.172219117235,
           "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T08:17:43.802494+00:00",
+          "equity": 5456.110139690388,
+          "capital": 4814.172219117235,
+          "positions": 5
+        },
+        {
+          "timestamp": "2026-10-06T08:17:58.206335+00:00",
+          "equity": 5456.183488328297,
+          "capital": 4814.172219117235,
+          "positions": 5
+        },
+        {
+          "timestamp": "2026-10-06T08:18:11.254924+00:00",
+          "equity": 5456.273401345866,
+          "capital": 4814.172219117235,
+          "positions": 5
+        },
+        {
+          "timestamp": "2026-10-06T08:18:24.299792+00:00",
+          "equity": 5455.9938050851815,
+          "capital": 4814.172219117235,
+          "positions": 5
+        },
+        {
+          "timestamp": "2026-10-06T08:18:37.270711+00:00",
+          "equity": 5456.320641539357,
+          "capital": 4814.172219117235,
+          "positions": 5
         }
       ]
     },
@@ -1592,36 +1640,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 0.3367,
-          "unrealized_pnl": 0.0
-        },
-        {
-          "symbol": "APTUSDT",
-          "market": "CRYPTO",
-          "qty": 380.7693388863034,
-          "initial_qty": 380.7693388863034,
-          "entry": 0.8276,
-          "stop": 0.825745,
-          "target": 0.8313100000000001,
-          "target1": 0.829455,
-          "target2": 0.8313100000000001,
-          "score": 90,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T07:59:32.147620+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 0.828,
-          "unrealized_pnl": 0.15230773555450458
+          "mark": 0.3366,
+          "unrealized_pnl": -0.10370319217310263
         }
       ],
       "trades": [
@@ -1804,6 +1824,36 @@
           "reason": "STOP",
           "opened_at": "2026-10-06T07:46:23.970335+00:00",
           "closed_at": "2026-10-06T07:59:32.147620+00:00"
+        },
+        {
+          "symbol": "APTUSDT",
+          "market": "CRYPTO",
+          "qty": 190.3846694431517,
+          "entry": 0.8276,
+          "exit": 0.829455,
+          "gross": 0.3531635618170561,
+          "tax": 0.05297453427255841,
+          "net": 0.3001890275444977,
+          "score": 90,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T07:59:32.147620+00:00",
+          "closed_at": "2026-10-06T08:17:43.802592+00:00"
+        },
+        {
+          "symbol": "APTUSDT",
+          "market": "CRYPTO",
+          "qty": 190.3846694431517,
+          "entry": 0.8276,
+          "exit": 0.8313100000000001,
+          "gross": 0.7063271236341122,
+          "tax": 0.10594906854511682,
+          "net": 0.6003780550889954,
+          "score": 90,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "ALVO_2R",
+          "opened_at": "2026-10-06T07:59:32.147620+00:00",
+          "closed_at": "2026-10-06T08:18:11.254997+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -2827,9 +2877,39 @@
           "equity": 6651.815053028524,
           "capital": 5987.369392383789,
           "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T08:17:43.802592+00:00",
+          "equity": 6494.529766744085,
+          "capital": 5987.369392383789,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T08:17:58.206413+00:00",
+          "equity": 6494.785777671812,
+          "capital": 5987.369392383789,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T08:18:11.254997+00:00",
+          "equity": 6336.434337238491,
+          "capital": 5987.369392383789,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T08:18:24.299876+00:00",
+          "equity": 6336.538040430664,
+          "capital": 5987.369392383789,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T08:18:37.270796+00:00",
+          "equity": 6336.434337238491,
+          "capital": 5987.369392383789,
+          "positions": 1
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T08:00:23.945207+00:00"
+  "updated_at": "2026-10-06T08:18:37.270828+00:00"
 }

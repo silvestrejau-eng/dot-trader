@@ -1,20 +1,6 @@
 {
-  "capital": 9654.895411521258,
+  "capital": 9852.254047899782,
   "positions": [
-    {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO",
-      "quantity": 2080.4000461549545,
-      "entry_price": 0.09466,
-      "stop_price": 0.09455714285714285,
-      "target_price": 0.09486571428571429,
-      "risk_value": 49.232667092256996,
-      "risk_distance_pct": 0.10865956355075074,
-      "score": 81.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T07:45:42.336977+00:00"
-    },
     {
       "symbol": "ADAUSDT",
       "market": "CRYPTO",
@@ -631,7 +617,28 @@
       "net": 1.174429449776078,
       "reason": "ALVO",
       "closed_at": "2026-10-06T07:46:09.725929+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 2080.4000461549545,
+      "entry_price": 0.09466,
+      "stop_price": 0.09455714285714285,
+      "target_price": 0.09486571428571429,
+      "risk_value": 49.232667092256996,
+      "risk_distance_pct": 0.10865956355075074,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T07:45:42.336977+00:00",
+      "exit_price": 0.09486571428571429,
+      "gross": 0.42796800949475317,
+      "fees": 0.0,
+      "estimated_tax": 0.06419520142421298,
+      "net": 0.3637728080705402,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T08:17:41.994116+00:00"
     }
   ],
-  "updated_at": "2026-10-06T08:00:22.275304+00:00"
+  "updated_at": "2026-10-06T08:18:35.488619+00:00"
 }
