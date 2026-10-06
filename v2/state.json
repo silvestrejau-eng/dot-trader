@@ -2,33 +2,61 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 7602.310586545651,
+      "capital": 7153.014030880803,
       "positions": [
         {
-          "symbol": "FILUSDT",
+          "symbol": "ADAUSDT",
           "market": "CRYPTO",
-          "qty": 200.4117011859093,
-          "initial_qty": 200.4117011859093,
-          "entry": 1.1732,
-          "stop": 1.1672071428571429,
-          "target": 1.1851857142857143,
-          "target1": 1.1791928571428572,
-          "target2": 1.1851857142857143,
-          "score": 73,
+          "qty": 846.2683398752115,
+          "initial_qty": 846.2683398752115,
+          "entry": 0.2695,
+          "stop": 0.26879285714285717,
+          "target": 0.2709142857142857,
+          "target1": 0.27020714285714287,
+          "target2": 0.2709142857142857,
+          "score": 70,
           "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T04:24:50.430911+00:00",
+          "opened_at": "2026-10-06T04:41:07.038870+00:00",
+          "partial_taken": false,
+          "setup": [
+            "EMA9>EMA21",
+            "VWAP_SUPORTE",
+            "MOMENTUM",
+            "BULL_FLAG",
+            "ABCD",
+            "ROMPIMENTO",
+            "RSI_ESTICADO",
+            "RR_OK"
+          ],
+          "mark": 0.2695,
+          "unrealized_pnl": 0.0
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 19.518902247086505,
+          "initial_qty": 19.518902247086505,
+          "entry": 11.334,
+          "stop": 11.295714285714286,
+          "target": 11.410571428571426,
+          "target1": 11.372285714285713,
+          "target2": 11.410571428571426,
+          "score": 70,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T04:41:47.487173+00:00",
           "partial_taken": false,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
             "MOMENTUM",
-            "PULLBACK_VWAP",
+            "ORB",
+            "ABCD",
             "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
+            "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 1.1749,
-          "unrealized_pnl": 0.3406998920160528
+          "mark": 11.334,
+          "unrealized_pnl": 0.0
         }
       ],
       "trades": [
@@ -181,6 +209,21 @@
           "reason": "ALVO_2R",
           "opened_at": "2026-10-06T04:05:21.781149+00:00",
           "closed_at": "2026-10-06T04:25:23.347162+00:00"
+        },
+        {
+          "symbol": "FILUSDT",
+          "market": "CRYPTO",
+          "qty": 200.4117011859093,
+          "entry": 1.1732,
+          "exit": 1.1672071428571429,
+          "gross": -1.2010386949641259,
+          "tax": 0.0,
+          "net": -1.2010386949641259,
+          "score": 73,
+          "strategy": "HUNTER_X",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T04:24:50.430911+00:00",
+          "closed_at": "2026-10-06T04:41:07.038870+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -814,6 +857,36 @@
           "equity": 7837.774294268976,
           "capital": 7602.310586545651,
           "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:07.038870+00:00",
+          "equity": 7602.310586545651,
+          "capital": 7374.241268949281,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:20.589413+00:00",
+          "equity": 7602.395213379638,
+          "capital": 7374.241268949281,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:34.050899+00:00",
+          "equity": 7602.310586545651,
+          "capital": 7374.241268949281,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:47.487173+00:00",
+          "equity": 7602.310586545651,
+          "capital": 7153.014030880803,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T04:42:00.951961+00:00",
+          "equity": 7602.310586545651,
+          "capital": 7153.014030880803,
+          "positions": 2
         }
       ]
     },
@@ -823,17 +896,17 @@
         {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
-          "qty": 39.97608079376329,
+          "qty": 19.988040396881644,
           "initial_qty": 39.97608079376329,
           "entry": 11.288,
-          "stop": 11.2615,
+          "stop": 11.288,
           "target": 11.341000000000001,
           "target1": 11.3145,
           "target2": 11.341000000000001,
           "score": 85,
           "strategy": "HUNTER_EXTREME",
           "opened_at": "2026-10-06T04:24:50.430978+00:00",
-          "partial_taken": false,
+          "partial_taken": true,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
@@ -846,8 +919,8 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 11.276,
-          "unrealized_pnl": -0.4797129695251776
+          "mark": 11.334,
+          "unrealized_pnl": 0.9194498582565431
         }
       ],
       "trades": [
@@ -895,6 +968,21 @@
           "reason": "ALVO_2R",
           "opened_at": "2026-10-06T04:05:36.088296+00:00",
           "closed_at": "2026-10-06T04:24:50.430978+00:00"
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 19.988040396881644,
+          "entry": 11.288,
+          "exit": 11.3145,
+          "gross": 0.5296830705173718,
+          "tax": 0.07945246057760577,
+          "net": 0.45023060993976605,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T04:24:50.430978+00:00",
+          "closed_at": "2026-10-06T04:41:07.038932+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -1528,9 +1616,39 @@
           "equity": 9024.520287030475,
           "capital": 8573.75,
           "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:07.038932+00:00",
+          "equity": 8800.134545535082,
+          "capital": 8573.75,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:20.589459+00:00",
+          "equity": 8800.234485737066,
+          "capital": 8573.75,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:34.050946+00:00",
+          "equity": 8800.234485737066,
+          "capital": 8573.75,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:41:47.487234+00:00",
+          "equity": 8800.294449858256,
+          "capital": 8573.75,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:42:00.952018+00:00",
+          "equity": 8800.294449858256,
+          "capital": 8573.75,
+          "positions": 1
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T04:26:55.148565+00:00"
+  "updated_at": "2026-10-06T04:42:00.952048+00:00"
 }
