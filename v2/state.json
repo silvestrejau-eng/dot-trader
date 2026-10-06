@@ -85,8 +85,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 1.1881,
-          "unrealized_pnl": 0.6478517966636497
+          "mark": 1.1895,
+          "unrealized_pnl": 0.8865340375397411
         },
         {
           "symbol": "TRXUSDT",
@@ -111,8 +111,8 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 0.3366,
-          "unrealized_pnl": 0.05820234271564954
+          "mark": 0.3365,
+          "unrealized_pnl": 0.0
         },
         {
           "symbol": "ADAUSDT",
@@ -139,8 +139,8 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 0.272,
-          "unrealized_pnl": 0.27978697605455405
+          "mark": 0.2712,
+          "unrealized_pnl": -0.27978697605455405
         },
         {
           "symbol": "PEPEUSDT",
@@ -165,8 +165,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 4.33e-06,
-          "unrealized_pnl": 0.0
+          "mark": 4.32e-06,
+          "unrealized_pnl": -0.42557989847298816
         }
       ],
       "trades": [
@@ -1102,6 +1102,36 @@
           "equity": 7153.999871996236,
           "capital": 5958.2604385880495,
           "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T05:26:02.746610+00:00",
+          "equity": 7154.026869470151,
+          "capital": 5958.2604385880495,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T05:26:15.427376+00:00",
+          "equity": 7153.248096056337,
+          "capital": 5958.2604385880495,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T05:26:28.115693+00:00",
+          "equity": 7153.155796250639,
+          "capital": 5958.2604385880495,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T05:26:41.008071+00:00",
+          "equity": 7152.9545566981315,
+          "capital": 5958.2604385880495,
+          "positions": 6
+        },
+        {
+          "timestamp": "2026-10-06T05:26:54.043471+00:00",
+          "equity": 7153.195198043814,
+          "capital": 5958.2604385880495,
+          "positions": 6
         }
       ]
     },
@@ -1168,17 +1198,17 @@
         {
           "symbol": "FILUSDT",
           "market": "CRYPTO",
-          "qty": 326.57252363467546,
+          "qty": 163.28626181733773,
           "initial_qty": 326.57252363467546,
           "entry": 1.1847,
-          "stop": 1.18053,
+          "stop": 1.1847,
           "target": 1.19304,
           "target1": 1.18887,
           "target2": 1.19304,
           "score": 83,
           "strategy": "HUNTER_EXTREME",
           "opened_at": "2026-10-06T05:08:54.792041+00:00",
-          "partial_taken": false,
+          "partial_taken": true,
           "setup": [
             "TENDÊNCIA",
             "ACIMA_VWAP",
@@ -1190,36 +1220,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 1.1881,
-          "unrealized_pnl": 1.1103465803578467
-        },
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "qty": 1352.2661711276673,
-          "initial_qty": 1352.2661711276673,
-          "entry": 0.2718,
-          "stop": 0.271215,
-          "target": 0.27297,
-          "target1": 0.272385,
-          "target2": 0.27297,
-          "score": 82,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T05:09:08.206523+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_ESTICADO",
-            "RR_OK"
-          ],
-          "mark": 0.272,
-          "unrealized_pnl": 0.27045323422557876
+          "mark": 1.1895,
+          "unrealized_pnl": 0.7837740567232073
         }
       ],
       "trades": [
@@ -1297,6 +1299,36 @@
           "reason": "STOP_BE",
           "opened_at": "2026-10-06T04:24:50.430978+00:00",
           "closed_at": "2026-10-06T04:55:42.230171+00:00"
+        },
+        {
+          "symbol": "FILUSDT",
+          "market": "CRYPTO",
+          "qty": 163.28626181733773,
+          "entry": 1.1847,
+          "exit": 1.18887,
+          "gross": 0.6809037117782994,
+          "tax": 0.10213555676674492,
+          "net": 0.5787681550115545,
+          "score": 83,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "PARCIAL_1R",
+          "opened_at": "2026-10-06T05:08:54.792041+00:00",
+          "closed_at": "2026-10-06T05:26:02.746679+00:00"
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "qty": 1352.2661711276673,
+          "entry": 0.2718,
+          "exit": 0.271215,
+          "gross": -0.7910757101096884,
+          "tax": 0.0,
+          "net": -0.7910757101096884,
+          "score": 82,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T05:09:08.206523+00:00",
+          "closed_at": "2026-10-06T05:26:41.008136+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -2020,9 +2052,39 @@
           "equity": 8575.130799814584,
           "capital": 6983.3729609375005,
           "positions": 4
+        },
+        {
+          "timestamp": "2026-10-06T05:26:02.746679+00:00",
+          "equity": 8380.927687143108,
+          "capital": 6983.3729609375005,
+          "positions": 4
+        },
+        {
+          "timestamp": "2026-10-06T05:26:15.427449+00:00",
+          "equity": 8380.396077969977,
+          "capital": 6983.3729609375005,
+          "positions": 4
+        },
+        {
+          "timestamp": "2026-10-06T05:26:28.115783+00:00",
+          "equity": 8380.363420717615,
+          "capital": 6983.3729609375005,
+          "positions": 4
+        },
+        {
+          "timestamp": "2026-10-06T05:26:41.008136+00:00",
+          "equity": 8013.2537600373835,
+          "capital": 6983.3729609375005,
+          "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:26:54.043531+00:00",
+          "equity": 8013.5425943692235,
+          "capital": 6983.3729609375005,
+          "positions": 3
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T05:09:35.257100+00:00"
+  "updated_at": "2026-10-06T05:26:54.043561+00:00"
 }
