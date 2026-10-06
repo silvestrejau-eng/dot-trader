@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T10:17:05.361699+00:00",
+  "updated_at": "2026-10-06T10:29:24.190978+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9270.509817705846,
@@ -848,16 +848,16 @@
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
+    "symbol": "DOGEUSDT",
     "market": "CRYPTO",
-    "price": 14.048,
+    "price": 0.09538,
     "score": 96,
     "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 34.21404499687178,
-    "patrimonio": 10051.234237762392,
-    "retorno_pct": 0.51234237762392,
+    "patrimonio": 10051.783597282652,
+    "retorno_pct": 0.5178359728265303,
     "operacoes": 37,
     "win_rate_pct": 37.83783783783784
   }
