@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T10:47:31.308471+00:00",
+  "updated_at": "2026-10-06T11:00:21.015062+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -10,8 +10,8 @@
       "closed_now": 0,
       "closed": 37,
       "capital": 9270.509817705846,
-      "patrimonio": 10051.544430253254,
-      "retorno_pct": 0.5154443025325417,
+      "patrimonio": 10051.488995063957,
+      "retorno_pct": 0.5148899506395743,
       "operacoes": 37,
       "posicoes": 4,
       "win_rate_pct": 37.83783783783784,
@@ -21,25 +21,40 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 5,
+      "opened_total": 4,
       "closed_now": 0,
-      "closed": 130,
-      "capital": 7677.413262946343,
-      "patrimonio": 10024.089349116595,
-      "retorno_pct": 0.24089349116596104,
-      "operacoes": 130,
-      "posicoes": 5,
-      "win_rate_pct": 40.0,
+      "closed": 132,
+      "capital": 8182.143795796935,
+      "patrimonio": 10023.507416905082,
+      "retorno_pct": 0.23507416905081957,
+      "operacoes": 132,
+      "posicoes": 4,
+      "win_rate_pct": 39.39393939393939,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "XRPUSDT",
+          "symbol": "SOLUSDT",
           "market": "CRYPTO",
           "score": 66,
           "signal": "HOLD",
-          "price": 1.5088,
-          "momentum_pct": 0.20588430630270604,
-          "volume_ratio": 0.5218105005935252,
+          "price": 120.29,
+          "momentum_pct": 0.20826391202932726,
+          "volume_ratio": 0.01796674694363586,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "BTCUSDT",
+          "market": "CRYPTO",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 86174.5,
+          "momentum_pct": 0.15399456079590035,
+          "volume_ratio": 0.03343334092942584,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
@@ -52,13 +67,28 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "XRPUSDT",
+      "symbol": "SOLUSDT",
       "market": "CRYPTO",
       "score": 66,
       "signal": "HOLD",
-      "price": 1.5088,
-      "momentum_pct": 0.20588430630270604,
-      "volume_ratio": 0.5218105005935252,
+      "price": 120.29,
+      "momentum_pct": 0.20826391202932726,
+      "volume_ratio": 0.01796674694363586,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 86174.5,
+      "momentum_pct": 0.15399456079590035,
+      "volume_ratio": 0.03343334092942584,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
