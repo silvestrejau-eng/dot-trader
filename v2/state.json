@@ -27,8 +27,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 11.124,
-          "unrealized_pnl": 0.1618996222342209
+          "mark": 11.129,
+          "unrealized_pnl": 0.2968159740960397
         },
         {
           "symbol": "BCHUSDT",
@@ -53,12 +53,12 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 316.8,
-          "unrealized_pnl": 0.0
+          "mark": 316.6,
+          "unrealized_pnl": -0.18371212121211078
         }
       ],
       "trades": [],
-      "equity_peak": 10000.161899622235,
+      "equity_peak": 10000.264097225629,
       "equity_history": [
         {
           "timestamp": "2026-10-05T23:25:26.090607+00:00",
@@ -177,6 +177,36 @@
         {
           "timestamp": "2026-10-05T23:53:36.161107+00:00",
           "equity": 10000.161899622235,
+          "capital": 9409.0,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:01:42.612178+00:00",
+          "equity": 9999.708354797298,
+          "capital": 9409.0,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:01:55.570568+00:00",
+          "equity": 9999.84327114916,
+          "capital": 9409.0,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:02:08.854532+00:00",
+          "equity": 9999.670465277437,
+          "capital": 9409.0,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:02:21.809229+00:00",
+          "equity": 10000.264097225629,
+          "capital": 9409.0,
+          "positions": 2
+        },
+        {
+          "timestamp": "2026-10-06T00:02:34.949837+00:00",
+          "equity": 10000.113103852884,
           "capital": 9409.0,
           "positions": 2
         }
@@ -307,9 +337,39 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:01:42.612210+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:01:55.570604+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:02:08.854562+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:02:21.809261+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:02:34.949882+00:00",
+          "equity": 10000.0,
+          "capital": 10000.0,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-05T23:53:36.161176+00:00"
+  "updated_at": "2026-10-06T00:02:34.949894+00:00"
 }
