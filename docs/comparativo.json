@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T18:07:32.350878+00:00",
+  "updated_at": "2026-10-06T18:29:37.826081+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,51 +21,19 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 5,
+      "opened_total": 1,
       "closed_now": 0,
-      "closed": 156,
-      "capital": 8233.400392919259,
-      "patrimonio": 10028.62205249338,
-      "retorno_pct": 0.286220524933789,
-      "operacoes": 156,
-      "posicoes": 5,
-      "win_rate_pct": 41.66666666666667,
+      "closed": 160,
+      "capital": 9671.431607118728,
+      "patrimonio": 10027.023933656932,
+      "retorno_pct": 0.2702393365693112,
+      "operacoes": 160,
+      "posicoes": 1,
+      "win_rate_pct": 40.625,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "TLT",
-          "market": "GLOBAL",
-          "score": 70,
-          "signal": "COMPRA",
-          "price": 77.5,
-          "momentum_pct": 0.07747618375806287,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "rompimento da maxima de 20 candles",
-            "volume fraco"
-          ]
-        }
-      ]
+      "opportunities": []
     }
   },
-  "extreme_opportunities": [
-    {
-      "symbol": "TLT",
-      "market": "GLOBAL",
-      "score": 70,
-      "signal": "COMPRA",
-      "price": 77.5,
-      "momentum_pct": 0.07747618375806287,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "rompimento da maxima de 20 candles",
-        "volume fraco"
-      ]
-    }
-  ],
+  "extreme_opportunities": [],
   "hunter_opportunities": []
 }
