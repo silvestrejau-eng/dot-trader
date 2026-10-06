@@ -152,7 +152,7 @@ var winner=scx===sce?'EMPATE':scx>sce?'HUNTER X':'EXTREME';
 $('winner').innerHTML='<b>🏆 Estratégia líder: <span class="'+(winner==='EXTREME'?'yellow':'green')+'">'+winner+'</span></b><div class="muted">Pontuação baseada em rentabilidade, acerto e consistência.</div>';
 
 var ev=[];[ [tx,'HUNTER X'],[te,'EXTREME'] ].forEach(function(pair){var v=10000;pair[0].slice().sort(function(a,b){return new Date(a.closed_at)-new Date(b.closed_at)}).forEach(function(t){v+=+t.net||0;ev.push({v:v,d:t.closed_at,label:pair[1]})})});
-if(ev.length){var vals=ev.map(function(q){return q.v}),lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals),span=Math.max(hi-lo,1);$('equity').innerHTML=ev.slice(-60).map(function(q){return '<div title="'+q.label+' • '+money(q.v)+'" style="flex:1;min-width:3px;height:'+Math.max(5,((q.v-lo)/span)*100)+'%;background:'+(q.v>=10000?'#42d392':'#ff6078');border-radius:3px 3px 0 0"></div>'}).join('');var peak=10000,dd=0;ev.forEach(function(q){peak=Math.max(peak,q.v);dd=Math.min(dd,q.v-peak)});$('drawdown').textContent='Maior drawdown observado: '+money(dd)+' • '+ev.length+' eventos'}else{$('equity').innerHTML='<div class="muted">Ainda sem histórico.</div>';$('drawdown').textContent=''}
+if(ev.length){var vals=ev.map(function(q){return q.v}),lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals),span=Math.max(hi-lo,1);$('equity').innerHTML=ev.slice(-60).map(function(q){return '<div title="'+q.label+' • '+money(q.v)+'" style="flex:1;min-width:3px;height:'+Math.max(5,((q.v-lo)/span)*100)+'%;background:'+(q.v>=10000?'#42d392':'#ff6078')+';border-radius:3px 3px 0 0"></div>'}).join('');var peak=10000,dd=0;ev.forEach(function(q){peak=Math.max(peak,q.v);dd=Math.min(dd,q.v-peak)});$('drawdown').textContent='Maior drawdown observado: '+money(dd)+' • '+ev.length+' eventos'}else{$('equity').innerHTML='<div class="muted">Ainda sem histórico.</div>';$('drawdown').textContent=''}
 
 $('lat').textContent=sig.cycle_duration_seconds!=null?sig.cycle_duration_seconds+'s':'—';
 $('latmeta').textContent=(sig.successful_assets||0)+' ativos • '+(sig.failed_assets||0)+' falhas';
@@ -185,9 +185,34 @@ $('buyBtn').onclick=function(){manualDo('COMPRA')};
 $('sellBtn').onclick=function(){manualDo('VENDA')};
 
 function load(){
-Promise.all([api('../sinal.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/sinal.json'),api('../dados_hunter_x.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_hunter_x.json'),api('../dados_extreme.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_extreme.json')]).then(function(r){
-sig=r[0];x=r[1]||{};e=r[2]||{};posX=x.positions||[];posE=e.positions||[];render();
-}).catch(function(err){$('status').innerHTML='<b class="red">⚠️ Dados não carregaram.</b> Tentando novamente em 15s.<br><span class="muted">'+err.message+'</span><br><span class="muted">Se o painel abriu mas esta mensagem aparece, o problema está no acesso aos JSONs.</span>'});
+var urls=[
+['sinal','../sinal.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/sinal.json'],
+['hunter','../dados_hunter_x.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_hunter_x.json'],
+['extreme','../dados_extreme.json','https://raw.githubusercontent.com/silvestrejau-eng/dot-trader/main/docs/dados_extreme.json']
+];
+Promise.allSettled(urls.map(function(a){return api(a[1],a[2])})).then(function(r){
+if(r[0].status==='fulfilled'){
+sig=r[0].value;
+}
+if(r[1].status==='fulfilled'){
+x=r[1].value||{};
+posX=x.positions||[];
+}
+if(r[2].status==='fulfilled'){
+e=r[2].value||{};
+posE=e.positions||[];
+}
+if(sig){
+render();
+var ok=r.filter(function(z){return z.status==='fulfilled'}).length;
+$('status').innerHTML='<b class="green">● MOTOR CONECTADO</b> • '+ok+'/3 fontes carregadas • último ciclo '+dt(sig.updated_at);
+}else{
+var msg=r.map(function(z){return z.status==='rejected'?(z.reason&&z.reason.message||'erro desconhecido'):'OK'}).join(' | ');
+$('status').innerHTML='<b class="red">⚠️ Scanner não respondeu.</b><br><span class="muted">'+msg+'</span>';
+}
+}).catch(function(err){
+$('status').innerHTML='<b class="red">⚠️ Erro no painel.</b><br><span class="muted">'+err.message+'</span>';
+});
 }
 load();setInterval(load,15000);
 })();
