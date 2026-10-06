@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T16:43:23.503923+00:00",
+  "updated_at": "2026-10-06T17:00:42.847554+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9625.309455787728,
@@ -3273,14 +3273,14 @@
   "market": {
     "symbol": "ITUB4",
     "market": "B3",
-    "price": 50.25,
-    "score": 78,
-    "signal": "COMPRA"
+    "price": 50.34,
+    "score": 50,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 14.044686717759795,
-    "patrimonio": 10026.443844184534,
-    "retorno_pct": 0.26443844184533827,
+    "patrimonio": 10027.162293835394,
+    "retorno_pct": 0.2716229383539437,
     "operacoes": 153,
     "win_rate_pct": 40.52287581699346
   }
