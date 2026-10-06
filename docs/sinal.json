@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-10-06T04:41:58.681955+00:00",
+  "updated_at": "2026-10-06T04:56:32.910307+00:00",
   "symbol": "AVAXUSDT",
   "market": "CRYPTO",
   "source": "Binance public",
   "interval": "5m",
-  "price": 11.336,
-  "ema9": 11.27072046349216,
-  "ema21": 11.232128237875202,
-  "ema50": 11.195075236978488,
-  "rsi14": 80.11869436201816,
-  "momentum_pct": 0.6749555950266384,
-  "breakout_pct": 0.19444935478167835,
-  "volume_ratio": 0.9084845506038121,
-  "atr": 0.03849999999999998,
-  "atr_pct": 0.3396259703599151,
-  "stop_price": 11.2975,
-  "target_price": 11.413,
-  "score": 62,
+  "price": 11.262,
+  "ema9": 11.267207318440168,
+  "ema21": 11.239940650873121,
+  "ema50": 11.205830432617388,
+  "rsi14": 59.46843853820615,
+  "momentum_pct": 0.17790428749333564,
+  "breakout_pct": -0.4859945215162975,
+  "volume_ratio": 0.0912477169809893,
+  "atr": 0.036785714285714324,
+  "atr_pct": 0.3266357155542028,
+  "stop_price": 11.225214285714285,
+  "target_price": 11.335571428571429,
+  "score": 58,
   "signal": "HOLD",
   "strategy": "DOT_HUNTER_AGRESSIVA",
   "reasons": [
     "EMA9>EMA21>EMA50",
-    "RSI sobrecomprado",
-    "aceleracao positiva",
-    "rompimento da maxima de 20 candles",
+    "RSI momentum ideal",
+    "momentum positivo",
+    "volume fraco",
     "volatilidade controlada"
   ],
   "candidates": [
@@ -32,26 +32,26 @@
       "market": "CRYPTO",
       "source": "Binance public",
       "interval": "5m",
-      "price": 11.336,
-      "ema9": 11.27072046349216,
-      "ema21": 11.232128237875202,
-      "ema50": 11.195075236978488,
-      "rsi14": 80.11869436201816,
-      "momentum_pct": 0.6749555950266384,
-      "breakout_pct": 0.19444935478167835,
-      "volume_ratio": 0.9084845506038121,
-      "atr": 0.03849999999999998,
-      "atr_pct": 0.3396259703599151,
-      "stop_price": 11.2975,
-      "target_price": 11.413,
-      "score": 62,
+      "price": 11.262,
+      "ema9": 11.267207318440168,
+      "ema21": 11.239940650873121,
+      "ema50": 11.205830432617388,
+      "rsi14": 59.46843853820615,
+      "momentum_pct": 0.17790428749333564,
+      "breakout_pct": -0.4859945215162975,
+      "volume_ratio": 0.0912477169809893,
+      "atr": 0.036785714285714324,
+      "atr_pct": 0.3266357155542028,
+      "stop_price": 11.225214285714285,
+      "target_price": 11.335571428571429,
+      "score": 58,
       "signal": "HOLD",
       "strategy": "DOT_HUNTER_X",
       "reasons": [
         "EMA9>EMA21>EMA50",
-        "RSI sobrecomprado",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "volume fraco",
         "volatilidade controlada"
       ]
     },
@@ -112,23 +112,52 @@
       ]
     },
     {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 13.828,
+      "ema9": 13.818437181535739,
+      "ema21": 13.803918514957115,
+      "ema50": 13.805749191454668,
+      "rsi14": 67.4796747967475,
+      "momentum_pct": 0.159351006808639,
+      "breakout_pct": -0.05059631369715989,
+      "volume_ratio": 0.15856445389372087,
+      "atr": 0.015500000000000291,
+      "atr_pct": 0.11209140873590029,
+      "stop_price": 13.8125,
+      "target_price": 13.859,
+      "score": 54,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
       "symbol": "ADAUSDT",
       "market": "CRYPTO",
       "source": "Binance public",
       "interval": "5m",
-      "price": 0.2695,
-      "ema9": 0.26807360245604,
-      "ema21": 0.26760183356917233,
-      "ema50": 0.2680213551817094,
-      "rsi14": 73.84615384615356,
-      "momentum_pct": 0.8230452674897304,
-      "breakout_pct": 0.18587360594795044,
-      "volume_ratio": 0.29891342825801354,
-      "atr": 0.0007142857142857109,
-      "atr_pct": 0.26504108136761073,
-      "stop_price": 0.2687857142857143,
-      "target_price": 0.27092857142857146,
-      "score": 45,
+      "price": 0.2698,
+      "ema9": 0.2688508054566796,
+      "ema21": 0.2681130002439462,
+      "ema50": 0.26826685424770147,
+      "rsi14": 80.76923076923069,
+      "momentum_pct": 0.7092198581560183,
+      "breakout_pct": 0.03707823507601571,
+      "volume_ratio": 0.8604983247300411,
+      "atr": 0.00073571428571428,
+      "atr_pct": 0.27268876416392884,
+      "stop_price": 0.2690642857142857,
+      "target_price": 0.27127142857142855,
+      "score": 50,
       "signal": "HOLD",
       "strategy": "DOT_HUNTER_X",
       "reasons": [
@@ -136,6 +165,144 @@
         "RSI sobrecomprado",
         "aceleracao positiva",
         "rompimento da maxima de 20 candles",
+        "volatilidade controlada"
+      ]
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 0.09481,
+      "ema9": 0.09477842893586888,
+      "ema21": 0.0947420988960671,
+      "ema50": 0.09483037206090503,
+      "rsi14": 60.86956521739174,
+      "momentum_pct": 0.08445054365038285,
+      "breakout_pct": -0.042171850289929314,
+      "volume_ratio": 0.22951343487972586,
+      "atr": 9.428571428571342e-05,
+      "atr_pct": 0.09944701432940978,
+      "stop_price": 0.09471571428571429,
+      "target_price": 0.09499857142857143,
+      "score": 46,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 2702.64,
+      "ema9": 2702.41126176789,
+      "ema21": 2702.2731711984343,
+      "ema50": 2704.4097236125094,
+      "rsi14": 58.84984025559146,
+      "momentum_pct": 0.05219844293153919,
+      "breakout_pct": -0.06729624398217338,
+      "volume_ratio": 0.2855488650178316,
+      "atr": 1.798571428571417,
+      "atr_pct": 0.06654868678667587,
+      "stop_price": 2700.8414285714284,
+      "target_price": 2706.2371428571428,
+      "score": 46,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 85603.43,
+      "ema9": 85591.80163958238,
+      "ema21": 85582.82702406171,
+      "ema50": 85626.16299032488,
+      "rsi14": 55.019354181521535,
+      "momentum_pct": 0.03792173468153415,
+      "breakout_pct": -0.02870556024833215,
+      "volume_ratio": 0.11966762344197565,
+      "atr": 41.92857142856831,
+      "atr_pct": 0.04898001333424176,
+      "stop_price": 85561.50142857143,
+      "target_price": 85687.28714285712,
+      "score": 46,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 1.4993,
+      "ema9": 1.4996614034025972,
+      "ema21": 1.4994637612057007,
+      "ema50": 1.5007125109594908,
+      "rsi14": 56.0000000000013,
+      "momentum_pct": -0.05332977801478789,
+      "breakout_pct": -0.10660270504362357,
+      "volume_ratio": 0.08366712898799121,
+      "atr": 0.0011928571428571225,
+      "atr_pct": 0.07956093796152354,
+      "stop_price": 1.4981071428571429,
+      "target_price": 1.5016857142857143,
+      "score": 46,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
+      "symbol": "VALE3",
+      "market": "B3",
+      "source": "B3 + Yahoo",
+      "interval": "5m",
+      "price": 71.4,
+      "ema9": 71.41845854019925,
+      "ema21": 71.41104101947099,
+      "ema50": 71.15412227031223,
+      "rsi14": 44.14887357060725,
+      "momentum_pct": 0.1683518837797493,
+      "breakout_pct": -0.8057840092858481,
+      "volume_ratio": 0.0,
+      "atr": 0.2242856706891741,
+      "atr_pct": 0.3141255892005239,
+      "stop_price": 71.17571432931084,
+      "target_price": 71.84857134137836,
+      "score": 38,
+      "signal": "HOLD",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "EMA9>EMA21>EMA50",
+        "momentum positivo",
         "volume fraco",
         "volatilidade controlada"
       ]
@@ -168,170 +335,28 @@
       ]
     },
     {
-      "symbol": "DOGEUSDT",
+      "symbol": "DOTUSDT",
       "market": "CRYPTO",
       "source": "Binance public",
       "interval": "5m",
-      "price": 0.09484,
-      "ema9": 0.09476171294735268,
-      "ema21": 0.09472558314066379,
-      "ema50": 0.09484071864266544,
-      "rsi14": 69.69696969696842,
-      "momentum_pct": 0.1266891891891886,
-      "breakout_pct": -0.010542962572490655,
-      "volume_ratio": 0.5011055129918557,
-      "atr": 0.00012428571428571268,
-      "atr_pct": 0.13104777971922468,
-      "stop_price": 0.09471571428571428,
-      "target_price": 0.09508857142857143,
-      "score": 34,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "EMA9>EMA21",
-        "RSI forte, proximo da sobrecompra",
-        "preco comprimido na maxima",
-        "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 2702.98,
-      "ema9": 2702.422118490127,
-      "ema21": 2702.2463157663915,
-      "ema50": 2704.60237434954,
-      "rsi14": 70.31003678402602,
-      "momentum_pct": -0.017755025041987782,
-      "breakout_pct": -0.05472441818329399,
-      "volume_ratio": 0.23346259834545355,
-      "atr": 2.119285714285687,
-      "atr_pct": 0.07840552702149801,
-      "stop_price": 2700.8607142857145,
-      "target_price": 2707.2185714285715,
-      "score": 34,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "EMA9>EMA21",
-        "RSI forte, proximo da sobrecompra",
-        "preco comprimido na maxima",
-        "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 13.829,
-      "ema9": 13.807122660295265,
-      "ema21": 13.7952268514371,
-      "ema50": 13.80387465530802,
-      "rsi14": 76.33136094674589,
-      "momentum_pct": 0.20288384899644907,
-      "breakout_pct": -0.014460270407046227,
-      "volume_ratio": 0.2500658001930139,
-      "atr": 0.021000000000000036,
-      "atr_pct": 0.15185479788849546,
-      "stop_price": 13.808,
-      "target_price": 13.871,
+      "price": 1.224,
+      "ema9": 1.2215031494893678,
+      "ema21": 1.2214198978052324,
+      "ema50": 1.2217393180696952,
+      "rsi14": 43.478260869565005,
+      "momentum_pct": 0.24570024570023108,
+      "breakout_pct": -0.32573289902280145,
+      "volume_ratio": 0.35143890958766183,
+      "atr": 0.0034999999999999953,
+      "atr_pct": 0.2859477124183003,
+      "stop_price": 1.2205,
+      "target_price": 1.2309999999999999,
       "score": 26,
       "signal": "VENDA/EVITAR",
       "strategy": "DOT_HUNTER_X",
       "reasons": [
         "EMA9>EMA21",
-        "RSI sobrecomprado",
         "momentum positivo",
-        "preco comprimido na maxima",
-        "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 120.33,
-      "ema9": 120.23482819247172,
-      "ema21": 120.22503215623158,
-      "ema50": 120.36128808447366,
-      "rsi14": 74.99999999999883,
-      "momentum_pct": 0.10815307820299935,
-      "breakout_pct": -0.008309788931359918,
-      "volume_ratio": 0.22564699410397826,
-      "atr": 0.12499999999999797,
-      "atr_pct": 0.10388099393334826,
-      "stop_price": 120.205,
-      "target_price": 120.58,
-      "score": 18,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "EMA9>EMA21",
-        "RSI sobrecomprado",
-        "preco comprimido na maxima",
-        "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 85622.01,
-      "ema9": 85592.97834136528,
-      "ema21": 85581.00553317383,
-      "ema50": 85624.70472090415,
-      "rsi14": 72.38011384577405,
-      "momentum_pct": 0.03452406905934957,
-      "breakout_pct": -0.007007052949148385,
-      "volume_ratio": 0.24731746728869217,
-      "atr": 55.66214285713899,
-      "atr_pct": 0.06500915226953792,
-      "stop_price": 85566.34785714286,
-      "target_price": 85733.33428571427,
-      "score": 18,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "EMA9>EMA21",
-        "RSI sobrecomprado",
-        "preco comprimido na maxima",
-        "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 1.5004,
-      "ema9": 1.5000196191694966,
-      "ema21": 1.4995303019932174,
-      "ema50": 1.5009915864078867,
-      "rsi14": 75.0,
-      "momentum_pct": 0.006665333599942258,
-      "breakout_pct": -0.033313345326135835,
-      "volume_ratio": 0.21339600525115585,
-      "atr": 0.0014928571428571371,
-      "atr_pct": 0.09949727691663138,
-      "stop_price": 1.4989071428571428,
-      "target_price": 1.5033857142857143,
-      "score": 18,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "EMA9>EMA21",
-        "RSI sobrecomprado",
-        "preco comprimido na maxima",
         "volume fraco",
         "volatilidade controlada"
       ]
@@ -360,33 +385,6 @@
         "tendencia indefinida",
         "RSI positivo",
         "volume fraco",
-        "volatilidade controlada"
-      ]
-    },
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "source": "Binance public",
-      "interval": "5m",
-      "price": 1.221,
-      "ema9": 1.221373342079029,
-      "ema21": 1.2214081599780697,
-      "ema50": 1.2218078297499555,
-      "rsi14": 50.0,
-      "momentum_pct": 0.24630541871921707,
-      "breakout_pct": -0.5700325732898914,
-      "volume_ratio": 1.0383922579530733,
-      "atr": 0.0038571428571428606,
-      "atr_pct": 0.3159003159003162,
-      "stop_price": 1.2171428571428573,
-      "target_price": 1.2287142857142859,
-      "score": 5,
-      "signal": "VENDA/EVITAR",
-      "strategy": "DOT_HUNTER_X",
-      "reasons": [
-        "tendencia de baixa",
-        "RSI positivo",
-        "momentum positivo",
         "volatilidade controlada"
       ]
     },
@@ -471,6 +469,33 @@
       ]
     },
     {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "source": "Binance public",
+      "interval": "5m",
+      "price": 781.31,
+      "ema9": 781.4462682598985,
+      "ema21": 781.6000839660746,
+      "ema50": 782.4069404556599,
+      "rsi14": 45.14767932489415,
+      "momentum_pct": 0.02560458834222068,
+      "breakout_pct": -0.15335267280930376,
+      "volume_ratio": 0.5378206727230738,
+      "atr": 0.5949999999999948,
+      "atr_pct": 0.0761541513611748,
+      "stop_price": 780.7149999999999,
+      "target_price": 782.4999999999999,
+      "score": 0,
+      "signal": "VENDA/EVITAR",
+      "strategy": "DOT_HUNTER_X",
+      "reasons": [
+        "tendencia de baixa",
+        "preco comprimido na maxima",
+        "volume fraco",
+        "volatilidade controlada"
+      ]
+    },
+    {
       "symbol": "UUP",
       "market": "GLOBAL",
       "source": "Yahoo Finance",
@@ -498,22 +523,22 @@
       ]
     },
     {
-      "symbol": "BNBUSDT",
+      "symbol": "SOLUSDT",
       "market": "CRYPTO",
       "source": "Binance public",
       "interval": "5m",
-      "price": 781.43,
-      "ema9": 781.5431509816572,
-      "ema21": 781.6841974540707,
-      "ema50": 782.6062749043348,
-      "rsi14": 52.4916943521591,
-      "momentum_pct": -0.01663339986692769,
-      "breakout_pct": -0.13801740552836783,
-      "volume_ratio": 0.14376605060893174,
-      "atr": 0.7085714285714175,
-      "atr_pct": 0.09067625104889979,
-      "stop_price": 780.7214285714285,
-      "target_price": 782.8471428571428,
+      "price": 120.13,
+      "ema9": 120.18943232817168,
+      "ema21": 120.20485781913548,
+      "ema50": 120.35717060758483,
+      "rsi14": 54.166666666666664,
+      "momentum_pct": -0.06655020381000076,
+      "breakout_pct": -0.1745055675585916,
+      "volume_ratio": 0.1717671611175212,
+      "atr": 0.10357142857142675,
+      "atr_pct": 0.08621612300959523,
+      "stop_price": 120.02642857142857,
+      "target_price": 120.33714285714285,
       "score": 0,
       "signal": "VENDA/EVITAR",
       "strategy": "DOT_HUNTER_X",
@@ -526,27 +551,29 @@
       ]
     },
     {
-      "symbol": "MGLU3",
+      "symbol": "ITUB4",
       "market": "B3",
       "source": "B3 + Yahoo",
       "interval": "5m",
-      "price": 9.45,
-      "ema9": 9.467687525240574,
-      "ema21": 9.514413684586057,
-      "ema50": 9.572151606093563,
-      "rsi14": 36.66668574018922,
-      "momentum_pct": -0.21119605559508647,
-      "breakout_pct": -2.1739114982322505,
+      "price": 49.48,
+      "ema9": 49.842228816976366,
+      "ema21": 49.96215196987958,
+      "ema50": 49.998195334419705,
+      "rsi14": 25.675572157446,
+      "momentum_pct": -0.5826812439147511,
+      "breakout_pct": -1.4735189221741107,
       "volume_ratio": 0.0,
-      "atr": 0.060000215257917135,
-      "atr_pct": 0.6349229127821919,
-      "stop_price": 9.389999784742082,
-      "target_price": 9.570000430515833,
+      "atr": 0.1750000544956752,
+      "atr_pct": 0.3536783639767082,
+      "stop_price": 49.30499994550432,
+      "target_price": 49.83000010899135,
       "score": 0,
       "signal": "VENDA/EVITAR",
       "strategy": "DOT_HUNTER_X",
       "reasons": [
         "tendencia de baixa",
+        "RSI muito baixo",
+        "aceleracao negativa",
         "volume fraco",
         "volatilidade controlada"
       ]
@@ -554,92 +581,12 @@
   ],
   "errors": [
     {
-      "symbol": "BBDC4",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
       "symbol": "PETR4",
       "market": "B3",
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "symbol": "BBAS3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "SUZB3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "RENT3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "JBSS3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "ABEV3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "VALE3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "B3SA3",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "BOVA11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
       "symbol": "WEGE3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "ITUB4",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "ELET3",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "BBOI11",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "IVVB11",
-      "market": "B3",
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "GOLD11",
-      "market": "B3",
-      "error": "HTTP Error 401: Unauthorized"
-    },
-    {
-      "symbol": "PRIO3",
       "market": "B3",
       "error": "HTTP Error 401: Unauthorized"
     },
@@ -649,9 +596,79 @@
       "error": "HTTP Error 401: Unauthorized"
     },
     {
-      "symbol": "CORN11",
+      "symbol": "BBAS3",
       "market": "B3",
       "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "BBDC4",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "B3SA3",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "JBSS3",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "ABEV3",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "ELET3",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "IVVB11",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "GOLD11",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "PRIO3",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "BOVA11",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "SUZB3",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "DOLA11",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "MGLU3",
+      "market": "B3",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
     },
     {
       "symbol": "CMDB11",
@@ -659,7 +676,12 @@
       "error": "HTTP Error 401: Unauthorized"
     },
     {
-      "symbol": "DOLA11",
+      "symbol": "BBOI11",
+      "market": "B3",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "symbol": "CORN11",
       "market": "B3",
       "error": "HTTP Error 401: Unauthorized"
     }
