@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T17:19:29.615887+00:00",
+  "updated_at": "2026-10-06T17:36:51.125630+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9240.297077556219,
+    "capital": 9256.785785943472,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -20,21 +20,6 @@
   },
   "positions": [
     {
-      "symbol": "ITUB4",
-      "market": "B3",
-      "quantity": 7.982773898443909,
-      "entry_price": 50.24,
-      "stop_price": 50.16899990081787,
-      "target_price": 50.38200019836426,
-      "risk_value": 100.26364016445551,
-      "risk_distance_pct": 0.14132185346761328,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "B3 + Yahoo",
-      "opened_at": "2026-10-06T16:42:48.185725+00:00"
-    },
-    {
       "symbol": "SLV",
       "market": "GLOBAL",
       "quantity": 6.949054899634368,
@@ -48,6 +33,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance",
       "opened_at": "2026-10-06T17:18:40.607953+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 318.75984111375595,
+      "entry_price": 1.21,
+      "stop_price": 1.20785,
+      "target_price": 1.2143,
+      "risk_value": 96.42485193691117,
+      "risk_distance_pct": 0.17768595041321275,
+      "risk_reward": 2.0000000000001035,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T17:36:04.548647+00:00"
     }
   ],
   "trades": [
@@ -3283,20 +3283,42 @@
       "net": -0.26275534765015085,
       "reason": "STOP",
       "closed_at": "2026-10-06T16:23:06.072328+00:00"
+    },
+    {
+      "symbol": "ITUB4",
+      "market": "B3",
+      "quantity": 7.982773898443909,
+      "entry_price": 50.24,
+      "stop_price": 50.16899990081787,
+      "target_price": 50.38200019836426,
+      "risk_value": 100.26364016445551,
+      "risk_distance_pct": 0.14132185346761328,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "B3 + Yahoo",
+      "opened_at": "2026-10-06T16:42:48.185725+00:00",
+      "exit_price": 50.38200019836426,
+      "gross": 1.1335554770760548,
+      "fees": 0.0,
+      "estimated_tax": 0.1700333215614082,
+      "net": 0.9635221555146465,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T17:36:04.548647+00:00"
     }
   ],
   "market": {
-    "symbol": "SLV",
-    "market": "GLOBAL",
-    "price": 55.400001525878906,
-    "score": 66,
-    "signal": "HOLD"
+    "symbol": "DOTUSDT",
+    "market": "CRYPTO",
+    "price": 1.211,
+    "score": 73,
+    "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 14.044686717759795,
-    "patrimonio": 10026.329290257201,
-    "retorno_pct": 0.2632929025720099,
-    "operacoes": 153,
-    "win_rate_pct": 40.52287581699346
+    "lucro_liquido": 15.008208873274441,
+    "patrimonio": 10027.746852878501,
+    "retorno_pct": 0.2774685287850076,
+    "operacoes": 154,
+    "win_rate_pct": 40.909090909090914
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T17:19:29.889675+00:00",
+  "updated_at": "2026-10-06T17:36:51.130891+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -10,8 +10,8 @@
       "closed_now": 0,
       "closed": 48,
       "capital": 9748.320120790035,
-      "patrimonio": 10049.8145575155,
-      "retorno_pct": 0.4981455751549957,
+      "patrimonio": 10051.014535373113,
+      "retorno_pct": 0.5101453537311285,
       "operacoes": 48,
       "posicoes": 1,
       "win_rate_pct": 37.5,
@@ -23,28 +23,28 @@
       "opened_now": 0,
       "opened_total": 2,
       "closed_now": 0,
-      "closed": 153,
-      "capital": 9240.297077556219,
-      "patrimonio": 10026.329290257201,
-      "retorno_pct": 0.2632929025720099,
-      "operacoes": 153,
+      "closed": 154,
+      "capital": 9256.785785943472,
+      "patrimonio": 10027.746852878501,
+      "retorno_pct": 0.2774685287850076,
+      "operacoes": 154,
       "posicoes": 2,
-      "win_rate_pct": 40.52287581699346,
+      "win_rate_pct": 40.909090909090914,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "SLV",
-          "market": "GLOBAL",
-          "score": 66,
-          "signal": "HOLD",
-          "price": 55.400001525878906,
-          "momentum_pct": 0.15367061607207688,
-          "volume_ratio": 0.0,
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 1.211,
+          "momentum_pct": 0.5813953488372103,
+          "volume_ratio": 0.20676040990376882,
           "reason": [
-            "EMA9>EMA21>EMA50",
+            "EMA9>EMA21",
             "RSI momentum ideal",
-            "momentum positivo",
-            "preco comprimido na maxima"
+            "aceleracao positiva",
+            "rompimento da maxima de 20 candles"
           ]
         }
       ]
@@ -52,18 +52,18 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "SLV",
-      "market": "GLOBAL",
-      "score": 66,
-      "signal": "HOLD",
-      "price": 55.400001525878906,
-      "momentum_pct": 0.15367061607207688,
-      "volume_ratio": 0.0,
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 1.211,
+      "momentum_pct": 0.5813953488372103,
+      "volume_ratio": 0.20676040990376882,
       "reason": [
-        "EMA9>EMA21>EMA50",
+        "EMA9>EMA21",
         "RSI momentum ideal",
-        "momentum positivo",
-        "preco comprimido na maxima"
+        "aceleracao positiva",
+        "rompimento da maxima de 20 candles"
       ]
     }
   ],
