@@ -1,20 +1,6 @@
 {
-  "capital": 9270.509817705846,
+  "capital": 9112.439853830721,
   "positions": [
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.0023350532145521336,
-      "entry_price": 86086.0,
-      "stop_price": 85953.93928571428,
-      "target_price": 86350.12142857142,
-      "risk_value": 50.253847756983745,
-      "risk_distance_pct": 0.15340556453513796,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T09:56:11.680212+00:00"
-    },
     {
       "symbol": "BNBUSDT",
       "market": "CRYPTO",
@@ -30,20 +16,6 @@
       "opened_at": "2026-10-06T10:10:12.072302+00:00"
     },
     {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO",
-      "quantity": 2027.4646244825537,
-      "entry_price": 0.09522,
-      "stop_price": 0.09498571428571428,
-      "target_price": 0.09568857142857143,
-      "risk_value": 48.26379538580719,
-      "risk_distance_pct": 0.24604674888228803,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T10:10:38.744584+00:00"
-    },
-    {
       "symbol": "LINKUSDT",
       "market": "CRYPTO",
       "quantity": 13.503253009233047,
@@ -56,6 +28,36 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T10:10:38.744584+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 184.01170737804378,
+      "entry_price": 1.5114,
+      "stop_price": 1.5088714285714286,
+      "target_price": 1.516457142857143,
+      "risk_value": 46.35254908852923,
+      "risk_distance_pct": 0.16729994895933806,
+      "risk_reward": 2.0,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.527162+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 24.244918756171472,
+      "entry_price": 11.367,
+      "stop_price": 11.336142857142859,
+      "target_price": 11.428714285714287,
+      "risk_value": 45.93199858356686,
+      "risk_distance_pct": 0.2714625042415963,
+      "risk_reward": 2.0000000000000577,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:33.204937+00:00"
     }
   ],
   "trades": [
@@ -827,7 +829,49 @@
       "net": -0.14434849195247698,
       "reason": "STOP",
       "closed_at": "2026-10-06T09:41:18.799239+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 2027.4646244825537,
+      "entry_price": 0.09522,
+      "stop_price": 0.09498571428571428,
+      "target_price": 0.09568857142857143,
+      "risk_value": 48.26379538580719,
+      "risk_distance_pct": 0.24604674888228803,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T10:10:38.744584+00:00",
+      "exit_price": 0.09568857142857143,
+      "gross": 0.9500119954718267,
+      "fees": 0.0,
+      "estimated_tax": 0.142501799320774,
+      "net": 0.8075101961510527,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T11:16:21.878598+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.0023350532145521336,
+      "entry_price": 86086.0,
+      "stop_price": 85953.93928571428,
+      "target_price": 86350.12142857142,
+      "risk_value": 50.253847756983745,
+      "risk_distance_pct": 0.15340556453513796,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T09:56:11.680212+00:00",
+      "exit_price": 86350.12142857142,
+      "gross": 0.6167375908178034,
+      "fees": 0.0,
+      "estimated_tax": 0.09251063862267052,
+      "net": 0.5242269521951329,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T11:16:56.802691+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:00:21.008684+00:00"
+  "updated_at": "2026-10-06T11:16:56.802691+00:00"
 }

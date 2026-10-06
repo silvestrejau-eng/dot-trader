@@ -1,5 +1,5 @@
 {
-  "capital": 8182.143795796935,
+  "capital": 7359.701307133481,
   "positions": [
     {
       "symbol": "QQQ",
@@ -30,20 +30,6 @@
       "opened_at": "2026-10-05T22:04:51.682700+00:00"
     },
     {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.009789560309402026,
-      "entry_price": 86086.0,
-      "stop_price": 86019.96964285715,
-      "target_price": 86218.06071428572,
-      "risk_value": 168.54881775903655,
-      "risk_distance_pct": 0.1,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T09:56:11.681214+00:00"
-    },
-    {
       "symbol": "SOLUSDT",
       "market": "CRYPTO",
       "quantity": 2.834172900143034,
@@ -57,6 +43,81 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T11:00:09.709123+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 238.88264393063702,
+      "entry_price": 1.5114,
+      "stop_price": 1.50963,
+      "target_price": 1.5149400000000002,
+      "risk_value": 90.2618070091912,
+      "risk_distance_pct": 0.11710996427153958,
+      "risk_reward": 2.0,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 3622.9260887978908,
+      "entry_price": 0.09567,
+      "stop_price": 0.09553550000000001,
+      "target_price": 0.09593900000000001,
+      "risk_value": 86.65133472882356,
+      "risk_distance_pct": 0.14058743597783602,
+      "risk_reward": 2.000000000000103,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 29.269979359490005,
+      "entry_price": 11.368,
+      "stop_price": 11.3468,
+      "target_price": 11.410400000000001,
+      "risk_value": 83.1852813396706,
+      "risk_distance_pct": 0.18648838845883473,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 22.727248690454296,
+      "entry_price": 14.055,
+      "stop_price": 14.0368,
+      "target_price": 14.0914,
+      "risk_value": 79.85787008608378,
+      "risk_distance_pct": 0.12949128424048537,
+      "risk_reward": 2.0,
+      "score": 71.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:10.528703+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1101.8836547990002,
+      "entry_price": 0.2783,
+      "stop_price": 0.27754,
+      "target_price": 0.27982,
+      "risk_value": 76.66355528264043,
+      "risk_distance_pct": 0.27308659719726297,
+      "risk_reward": 2.000000000000073,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T11:16:33.213211+00:00"
     }
   ],
   "trades": [
@@ -2833,7 +2894,28 @@
       "net": -0.7428244008841404,
       "reason": "STOP",
       "closed_at": "2026-10-06T10:59:34.618878+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.009789560309402026,
+      "entry_price": 86086.0,
+      "stop_price": 86019.96964285715,
+      "target_price": 86218.06071428572,
+      "risk_value": 168.54881775903655,
+      "risk_distance_pct": 0.1,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T09:56:11.681214+00:00",
+      "exit_price": 86218.06071428572,
+      "gross": 1.2928163270027544,
+      "fees": 0.0,
+      "estimated_tax": 0.19392244905041314,
+      "net": 1.0988938779523412,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T11:16:10.528703+00:00"
     }
   ],
-  "updated_at": "2026-10-06T11:00:21.010624+00:00"
+  "updated_at": "2026-10-06T11:16:56.804497+00:00"
 }
