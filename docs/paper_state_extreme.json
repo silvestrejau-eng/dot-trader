@@ -1,5 +1,5 @@
 {
-  "capital": 7574.168702856588,
+  "capital": 7572.795626701013,
   "positions": [
     {
       "symbol": "QQQ",
@@ -1885,7 +1885,28 @@
       "net": -1.0098863784899856,
       "reason": "STOP",
       "closed_at": "2026-10-06T05:55:47.891187+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 2806.287033292549,
+      "entry_price": 0.2699,
+      "stop_price": 0.2694107142857143,
+      "target_price": 0.2708785714285714,
+      "risk_value": 151.48337405713178,
+      "risk_distance_pct": 0.181284073466355,
+      "score": 57.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T06:55:24.277143+00:00",
+      "exit_price": 0.2694107142857143,
+      "gross": -1.3730761555752207,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -1.3730761555752207,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T06:55:51.919444+00:00"
     }
   ],
-  "updated_at": "2026-10-06T06:34:39.272487+00:00"
+  "updated_at": "2026-10-06T06:56:05.783396+00:00"
 }
