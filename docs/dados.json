@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T15:26:32.547136+00:00",
+  "updated_at": "2026-10-06T15:45:34.229952+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9558.259444567004,
@@ -1016,16 +1016,16 @@
     }
   ],
   "market": {
-    "symbol": "QQQ",
+    "symbol": "USO",
     "market": "GLOBAL",
-    "price": 762.4749755859375,
-    "score": 58,
+    "price": 143.3800048828125,
+    "score": 61,
     "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 33.806353152190184,
-    "patrimonio": 10051.557287317406,
-    "retorno_pct": 0.5155728731740528,
+    "patrimonio": 10050.38173236789,
+    "retorno_pct": 0.5038173236789012,
     "operacoes": 46,
     "win_rate_pct": 39.130434782608695
   }
