@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T18:29:37.821066+00:00",
+  "updated_at": "2026-10-06T18:52:44.818965+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9671.431607118728,
+    "capital": 8871.06580488472,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -20,19 +20,49 @@
   },
   "positions": [
     {
-      "symbol": "TLT",
-      "market": "GLOBAL",
-      "quantity": 4.588880324443281,
-      "entry_price": 77.47229766845703,
-      "stop_price": 77.43993759155273,
-      "target_price": 77.53701782226562,
-      "risk_value": 88.87777561504888,
-      "risk_distance_pct": 0.0417698685571221,
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 328.20930320977806,
+      "entry_price": 1.222,
+      "stop_price": 1.2195,
+      "target_price": 1.227,
+      "risk_value": 100.2679421305872,
+      "risk_distance_pct": 0.20458265139115767,
+      "risk_reward": 2.000000000000089,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T18:51:58.956620+00:00"
+    },
+    {
+      "symbol": "ITUB4",
+      "market": "B3",
+      "quantity": 7.591263757520798,
+      "entry_price": 50.72,
+      "stop_price": 50.653499908447266,
+      "target_price": 50.853000183105465,
+      "risk_value": 96.25722444536372,
+      "risk_distance_pct": 0.13111216788788044,
       "risk_reward": 2.0,
-      "score": 70.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "B3 + Yahoo",
+      "opened_at": "2026-10-06T18:51:58.956620+00:00"
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "quantity": 6.6479811513347284,
+      "entry_price": 55.599998474121094,
+      "stop_price": 55.56289539337158,
+      "target_price": 55.674204635620114,
+      "risk_value": 92.40693546754918,
+      "risk_distance_pct": 0.06673216145280984,
+      "risk_reward": 2.0,
+      "score": 66.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance",
-      "opened_at": "2026-10-06T17:52:34.060160+00:00"
+      "opened_at": "2026-10-06T18:52:44.818965+00:00"
     }
   ],
   "trades": [
@@ -3422,20 +3452,42 @@
       "net": -0.12540910840658998,
       "reason": "STOP",
       "closed_at": "2026-10-06T18:28:52.197354+00:00"
+    },
+    {
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "quantity": 4.588880324443281,
+      "entry_price": 77.47229766845703,
+      "stop_price": 77.43993759155273,
+      "target_price": 77.53701782226562,
+      "risk_value": 88.87777561504888,
+      "risk_distance_pct": 0.0417698685571221,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T17:52:34.060160+00:00",
+      "exit_price": 77.43993759155273,
+      "gross": -0.14849652020359935,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.14849652020359935,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T18:51:58.956620+00:00"
     }
   ],
   "market": {
-    "symbol": "ITUB4",
-    "market": "B3",
-    "price": 50.61,
-    "score": 58,
-    "signal": "HOLD"
+    "symbol": "DOTUSDT",
+    "market": "CRYPTO",
+    "price": 1.221,
+    "score": 78,
+    "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 14.17716187558,
-    "patrimonio": 10027.023933656932,
-    "retorno_pct": 0.2702393365693112,
-    "operacoes": 160,
-    "win_rate_pct": 40.625
+    "lucro_liquido": 14.0286653553764,
+    "patrimonio": 10026.238265842785,
+    "retorno_pct": 0.2623826584278399,
+    "operacoes": 161,
+    "win_rate_pct": 40.37267080745342
   }
 }

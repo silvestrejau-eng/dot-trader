@@ -1,39 +1,147 @@
 {
-  "updated_at": "2026-10-06T18:29:37.826081+00:00",
+  "updated_at": "2026-10-06T18:52:45.020780+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 49,
-      "capital": 10051.040249445923,
-      "patrimonio": 10051.040249445923,
-      "retorno_pct": 0.5104024944592389,
+      "capital": 9749.509041962545,
+      "patrimonio": 10050.793497230306,
+      "retorno_pct": 0.5079349723030591,
       "operacoes": 49,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 38.775510204081634,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 1.221,
+          "momentum_pct": 0.4111842105263275,
+          "volume_ratio": 0.8624321189682586,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva",
+            "preco comprimido na maxima"
+          ]
+        }
+      ]
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
-      "opened_now": 0,
-      "opened_total": 1,
+      "opened_now": 1,
+      "opened_total": 3,
       "closed_now": 0,
-      "closed": 160,
-      "capital": 9671.431607118728,
-      "patrimonio": 10027.023933656932,
-      "retorno_pct": 0.2702393365693112,
-      "operacoes": 160,
-      "posicoes": 1,
-      "win_rate_pct": 40.625,
-      "last_event": null,
-      "opportunities": []
+      "closed": 161,
+      "capital": 8871.06580488472,
+      "patrimonio": 10026.238265842785,
+      "retorno_pct": 0.2623826584278399,
+      "operacoes": 161,
+      "posicoes": 3,
+      "win_rate_pct": 40.37267080745342,
+      "last_event": {
+        "symbol": "SLV",
+        "market": "GLOBAL",
+        "quantity": 6.6479811513347284,
+        "entry_price": 55.599998474121094,
+        "stop_price": 55.56289539337158,
+        "target_price": 55.674204635620114,
+        "risk_value": 92.40693546754918,
+        "risk_distance_pct": 0.06673216145280984,
+        "risk_reward": 2.0,
+        "score": 66.0,
+        "strategy": "DOT_HUNTER_EXTREME",
+        "source": "Yahoo Finance",
+        "opened_at": "2026-10-06T18:52:44.818965+00:00"
+      },
+      "opportunities": [
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 1.221,
+          "momentum_pct": 0.4111842105263275,
+          "volume_ratio": 0.8624321189682586,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "SLV",
+          "market": "GLOBAL",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 55.599998474121094,
+          "momentum_pct": 0.17115107499823257,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "preco comprimido na maxima"
+          ]
+        }
+      ]
     }
   },
-  "extreme_opportunities": [],
-  "hunter_opportunities": []
+  "extreme_opportunities": [
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 1.221,
+      "momentum_pct": 0.4111842105263275,
+      "volume_ratio": 0.8624321189682586,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 55.599998474121094,
+      "momentum_pct": 0.17115107499823257,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima"
+      ]
+    }
+  ],
+  "hunter_opportunities": [
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 1.221,
+      "momentum_pct": 0.4111842105263275,
+      "volume_ratio": 0.8624321189682586,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva",
+        "preco comprimido na maxima"
+      ]
+    }
+  ]
 }

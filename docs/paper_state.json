@@ -1,6 +1,22 @@
 {
-  "capital": 10051.040249445923,
-  "positions": [],
+  "capital": 9749.509041962545,
+  "positions": [
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 246.75221561651202,
+      "entry_price": 1.222,
+      "stop_price": 1.2184285714285714,
+      "target_price": 1.229142857142857,
+      "risk_value": 50.255201247229614,
+      "risk_distance_pct": 0.29226093055880187,
+      "risk_reward": 2.0,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T18:51:58.954558+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1032,5 +1048,5 @@
       "closed_at": "2026-10-06T17:52:33.979119+00:00"
     }
   ],
-  "updated_at": "2026-10-06T18:29:37.818805+00:00"
+  "updated_at": "2026-10-06T18:52:44.816781+00:00"
 }
