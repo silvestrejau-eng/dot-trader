@@ -19,7 +19,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 INTERVAL = "5m"
-LIMIT = 120
+LIMIT = 80
 OUTS = [Path("docs/sinal.json"), Path("sinal.json")]
 BREAKOUT_PERIOD = 20
 SCORE_MIN = 70
@@ -50,7 +50,7 @@ def yahoo(symbol):
         for attempt in range(2):
             try:
                 req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
-                with urlopen(req, timeout=10) as r:
+                with urlopen(req, timeout=6) as r:
                     data = json.loads(r.read().decode())
                 result = (data.get("chart") or {}).get("result") or []
                 if not result:
@@ -60,7 +60,7 @@ def yahoo(symbol):
             except Exception as exc:
                 last_error = exc
                 if attempt == 0:
-                    time.sleep(0.8)
+                    time.sleep(0.35)
         else:
             continue
         break
@@ -80,7 +80,7 @@ def crypto(symbol):
     url = "https://data-api.binance.vision/api/v3/klines?" + urlencode(
         {"symbol": symbol, "interval": INTERVAL, "limit": LIMIT}
     )
-    with urlopen(url, timeout=15) as r:
+    with urlopen(url, timeout=6) as r:
         raw = json.loads(r.read().decode())
     return {
         "close": [float(x[4]) for x in raw],
@@ -254,7 +254,7 @@ def main():
             return None, {"symbol": symbol, "market": market, "error": str(exc)}
 
     # Paralelismo reduz o tempo do scanner e aumenta a frequencia efetiva de ciclos.
-    with ThreadPoolExecutor(max_workers=20) as pool:
+    with ThreadPoolExecutor(max_workers=28) as pool:
         futures = [pool.submit(run, item) for item in UNIVERSE]
         for future in as_completed(futures):
             candidate, error = future.result()
