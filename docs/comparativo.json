@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T21:02:02.968860+00:00",
+  "updated_at": "2026-10-06T21:04:27.319054+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,15 +21,15 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 2,
       "closed_now": 0,
-      "closed": 165,
-      "capital": 8883.819112975445,
-      "patrimonio": 10025.482191639003,
-      "retorno_pct": 0.2548219163900356,
-      "operacoes": 165,
-      "posicoes": 3,
-      "win_rate_pct": 40.0,
+      "closed": 166,
+      "capital": 9268.950249267657,
+      "patrimonio": 10025.166545403847,
+      "retorno_pct": 0.2516654540384744,
+      "operacoes": 166,
+      "posicoes": 2,
+      "win_rate_pct": 39.75903614457831,
       "last_event": null,
       "opportunities": [
         {

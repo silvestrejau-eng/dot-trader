@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T21:02:02.964112+00:00",
+  "updated_at": "2026-10-06T21:04:27.314399+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8883.819112975445,
+    "capital": 9268.950249267657,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -33,21 +33,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance",
       "opened_at": "2026-10-06T19:05:47.764146+00:00"
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "quantity": 27.567356782103204,
-      "entry_price": 13.988,
-      "stop_price": 13.97055,
-      "target_price": 14.0229,
-      "risk_value": 96.4030466670149,
-      "risk_distance_pct": 0.12474978553045603,
-      "risk_reward": 2.0,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T19:56:16.005942+00:00"
     },
     {
       "symbol": "GOLD11",
@@ -3562,6 +3547,28 @@
       "net": -0.7142373506758375,
       "reason": "STOP",
       "closed_at": "2026-10-06T20:51:32.311673+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 27.567356782103204,
+      "entry_price": 13.988,
+      "stop_price": 13.97055,
+      "target_price": 14.0229,
+      "risk_value": 96.4030466670149,
+      "risk_distance_pct": 0.12474978553045603,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T19:56:16.005942+00:00",
+      "exit_price": 13.97055,
+      "gross": -0.4810503758477061,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4810503758477061,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T21:04:02.138138+00:00"
     }
   ],
   "market": {
@@ -3572,10 +3579,10 @@
     "signal": "HOLD"
   },
   "summary": {
-    "lucro_liquido": 12.40840800031469,
-    "patrimonio": 10025.482191639003,
-    "retorno_pct": 0.2548219163900356,
-    "operacoes": 165,
-    "win_rate_pct": 40.0
+    "lucro_liquido": 11.927357624466984,
+    "patrimonio": 10025.166545403847,
+    "retorno_pct": 0.2516654540384744,
+    "operacoes": 166,
+    "win_rate_pct": 39.75903614457831
   }
 }
