@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T19:42:44.217226+00:00",
+  "updated_at": "2026-10-06T19:57:02.096251+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10050.158991533006,
@@ -1073,10 +1073,10 @@
     }
   ],
   "market": {
-    "symbol": "ITUB4",
-    "market": "B3",
-    "price": 50.68,
-    "score": 58,
+    "symbol": "LINKUSDT",
+    "market": "CRYPTO",
+    "price": 13.982,
+    "score": 61,
     "signal": "HOLD"
   },
   "summary": {
