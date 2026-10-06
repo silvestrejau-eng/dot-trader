@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T22:03:11.977012+00:00",
+  "updated_at": "2026-10-06T22:10:02.212598+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9748.654221787016,
+    "capital": 9172.508757279404,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -33,6 +33,36 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T22:03:05.238608+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 2.4094548249597167,
+      "entry_price": 121.38,
+      "stop_price": 121.20071428571428,
+      "target_price": 121.73857142857142,
+      "risk_value": 48.743271108935076,
+      "risk_distance_pct": 0.14770614128003923,
+      "risk_reward": 2.0,
+      "score": 83.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T22:08:57.643117+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.0033118811624874857,
+      "entry_price": 85657.01,
+      "stop_price": 85611.46642857142,
+      "target_price": 85748.09714285714,
+      "risk_value": 47.28097297566703,
+      "risk_distance_pct": 0.0531696955433892,
+      "risk_reward": 2.0,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T22:09:11.742714+00:00"
     }
   ],
   "trades": [
@@ -1089,16 +1119,16 @@
     }
   ],
   "market": {
-    "symbol": "AVAXUSDT",
-    "market": "CRYPTO",
-    "price": 11.571,
-    "score": 70,
-    "signal": "COMPRA"
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 32.88295623254196,
-    "patrimonio": 10050.106886673462,
-    "retorno_pct": 0.5010688667346219,
+    "patrimonio": 10051.161331123443,
+    "retorno_pct": 0.5116133112344379,
     "operacoes": 50,
     "win_rate_pct": 38.0
   }

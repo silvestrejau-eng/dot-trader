@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-06T22:03:11.982176+00:00",
+  "updated_at": "2026-10-06T22:10:02.219611+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 3,
       "closed_now": 0,
       "closed": 50,
-      "capital": 9748.654221787016,
-      "patrimonio": 10050.106886673462,
-      "retorno_pct": 0.5010688667346219,
+      "capital": 9172.508757279404,
+      "patrimonio": 10051.161331123443,
+      "retorno_pct": 0.5116133112344379,
       "operacoes": 50,
-      "posicoes": 1,
+      "posicoes": 3,
       "win_rate_pct": 38.0,
       "last_event": null,
       "opportunities": []
@@ -21,32 +21,17 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 7,
       "closed_now": 0,
       "closed": 166,
-      "capital": 8898.19223929695,
-      "patrimonio": 10025.29475773547,
-      "retorno_pct": 0.25294757735470075,
+      "capital": 7557.648968665561,
+      "patrimonio": 10026.542637319628,
+      "retorno_pct": 0.2654263731962869,
       "operacoes": 166,
-      "posicoes": 3,
+      "posicoes": 7,
       "win_rate_pct": 39.75903614457831,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 70,
-          "signal": "COMPRA",
-          "price": 11.571,
-          "momentum_pct": 0.1384681955863165,
-          "volume_ratio": 0.4401743752173276,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "rompimento da maxima de 20 candles",
-            "volume fraco"
-          ]
-        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -66,21 +51,6 @@
     }
   },
   "extreme_opportunities": [
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 70,
-      "signal": "COMPRA",
-      "price": 11.571,
-      "momentum_pct": 0.1384681955863165,
-      "volume_ratio": 0.4401743752173276,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "rompimento da maxima de 20 candles",
-        "volume fraco"
-      ]
-    },
     {
       "symbol": "GOLD11",
       "market": "B3",
