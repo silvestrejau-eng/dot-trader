@@ -1,20 +1,6 @@
 {
-  "capital": 9655.208966941786,
+  "capital": 9656.59210830331,
   "positions": [
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "quantity": 724.406918631547,
-      "entry_price": 0.272,
-      "stop_price": 0.2710214285714286,
-      "target_price": 0.2739571428571429,
-      "risk_value": 49.2596704669452,
-      "risk_distance_pct": 0.3597689075630293,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T07:46:09.725929+00:00"
-    },
     {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
@@ -28,6 +14,20 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T08:36:43.833955+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 719.2456508493453,
+      "entry_price": 0.274,
+      "stop_price": 0.2728857142857143,
+      "target_price": 0.27622857142857143,
+      "risk_value": 49.26832708318016,
+      "risk_distance_pct": 0.4066736183524577,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T08:53:45.164725+00:00"
     }
   ],
   "trades": [
@@ -652,7 +652,28 @@
       "net": 0.3637728080705402,
       "reason": "ALVO",
       "closed_at": "2026-10-06T08:17:41.994116+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 724.406918631547,
+      "entry_price": 0.272,
+      "stop_price": 0.2710214285714286,
+      "target_price": 0.2739571428571429,
+      "risk_value": 49.2596704669452,
+      "risk_distance_pct": 0.3597689075630293,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T07:46:09.725929+00:00",
+      "exit_price": 0.2739571428571429,
+      "gross": 1.4177678264646154,
+      "fees": 0.0,
+      "estimated_tax": 0.2126651739696923,
+      "net": 1.205102652494923,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T08:53:45.164725+00:00"
     }
   ],
-  "updated_at": "2026-10-06T08:37:39.457948+00:00"
+  "updated_at": "2026-10-06T08:54:11.510027+00:00"
 }
