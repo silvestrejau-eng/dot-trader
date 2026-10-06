@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T01:24:57.112568+00:00",
+  "updated_at": "2026-10-06T01:38:48.764485+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -23,59 +23,17 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 5,
+      "opened_total": 2,
       "closed_now": 0,
-      "closed": 55,
-      "capital": 6808.832589279671,
-      "patrimonio": 9996.611149376775,
-      "retorno_pct": -0.03388850623224915,
-      "operacoes": 55,
-      "posicoes": 5,
-      "win_rate_pct": 30.909090909090907,
+      "closed": 58,
+      "capital": 9338.467646038867,
+      "patrimonio": 9995.298144106246,
+      "retorno_pct": -0.04701855893753937,
+      "operacoes": 58,
+      "posicoes": 2,
+      "win_rate_pct": 29.310344827586203,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "ETHUSDT",
-          "market": "CRYPTO",
-          "score": 63,
-          "signal": "HOLD",
-          "price": 2716.49,
-          "momentum_pct": -0.07173231706421035,
-          "volume_ratio": 1.132662262536632,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "BTCUSDT",
-          "market": "CRYPTO",
-          "score": 58,
-          "signal": "HOLD",
-          "price": 85955.28,
-          "momentum_pct": 0.06201251868263036,
-          "volume_ratio": 0.4792695078535934,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "SOLUSDT",
-          "market": "CRYPTO",
-          "score": 58,
-          "signal": "HOLD",
-          "price": 121.02,
-          "momentum_pct": -0.016523463317918985,
-          "volume_ratio": 0.5122328071374431,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "preco comprimido na maxima"
-          ]
-        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -108,48 +66,6 @@
     }
   },
   "extreme_opportunities": [
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "score": 63,
-      "signal": "HOLD",
-      "price": 2716.49,
-      "momentum_pct": -0.07173231706421035,
-      "volume_ratio": 1.132662262536632,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "score": 58,
-      "signal": "HOLD",
-      "price": 85955.28,
-      "momentum_pct": 0.06201251868263036,
-      "volume_ratio": 0.4792695078535934,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "score": 58,
-      "signal": "HOLD",
-      "price": 121.02,
-      "momentum_pct": -0.016523463317918985,
-      "volume_ratio": 0.5122328071374431,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "preco comprimido na maxima"
-      ]
-    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",

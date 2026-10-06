@@ -1,5 +1,5 @@
 {
-  "capital": 6808.832589279671,
+  "capital": 9338.467646038867,
   "positions": [
     {
       "symbol": "QQQ",
@@ -28,48 +28,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance",
       "opened_at": "2026-10-05T22:04:51.682700+00:00"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.3438107339895675,
-      "entry_price": 2716.6,
-      "stop_price": 2715.2267857142856,
-      "target_price": 2719.3464285714285,
-      "risk_value": 186.79924799121181,
-      "risk_distance_pct": 0.1,
-      "score": 63.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T01:24:03.722633+00:00"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.009777790112370049,
-      "entry_price": 85970.0,
-      "stop_price": 85918.38714285714,
-      "target_price": 86073.22571428571,
-      "risk_value": 168.11932319209063,
-      "risk_distance_pct": 0.1,
-      "score": 58.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T01:24:03.722633+00:00"
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "quantity": 6.251338244624094,
-      "entry_price": 121.02,
-      "stop_price": 120.93714285714286,
-      "target_price": 121.18571428571428,
-      "risk_value": 151.30739087288157,
-      "risk_distance_pct": 0.1,
-      "score": 58.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T01:24:03.722633+00:00"
     }
   ],
   "trades": [
@@ -1227,7 +1185,70 @@
       "net": -0.289836445000037,
       "reason": "STOP",
       "closed_at": "2026-10-06T01:24:03.722633+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.3438107339895675,
+      "entry_price": 2716.6,
+      "stop_price": 2715.2267857142856,
+      "target_price": 2719.3464285714285,
+      "risk_value": 186.79924799121181,
+      "risk_distance_pct": 0.1,
+      "score": 63.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T01:24:03.722633+00:00",
+      "exit_price": 2715.2267857142856,
+      "gross": -0.4721258114963972,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4721258114963972,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T01:37:55.322866+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.009777790112370049,
+      "entry_price": 85970.0,
+      "stop_price": 85918.38714285714,
+      "target_price": 86073.22571428571,
+      "risk_value": 168.11932319209063,
+      "risk_distance_pct": 0.1,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T01:24:03.722633+00:00",
+      "exit_price": 85918.38714285714,
+      "gross": -0.5046596842425874,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5046596842425874,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T01:37:55.322866+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 6.251338244624094,
+      "entry_price": 121.02,
+      "stop_price": 120.93714285714286,
+      "target_price": 121.18571428571428,
+      "risk_value": 151.30739087288157,
+      "risk_distance_pct": 0.1,
+      "score": 58.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T01:24:03.722633+00:00",
+      "exit_price": 120.93714285714286,
+      "gross": -0.5179680259830997,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5179680259830997,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T01:37:55.322866+00:00"
     }
   ],
-  "updated_at": "2026-10-06T01:24:57.109155+00:00"
+  "updated_at": "2026-10-06T01:38:48.760908+00:00"
 }
