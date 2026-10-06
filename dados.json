@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T22:59:22.785812+00:00",
+  "updated_at": "2026-10-06T23:17:33.177103+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9748.071406061397,
+    "capital": 10051.775745235242,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,23 +18,7 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 26.05242977153635,
-      "entry_price": 11.573,
-      "stop_price": 11.530785714285715,
-      "target_price": 11.657428571428571,
-      "risk_value": 50.25079495766503,
-      "risk_distance_pct": 0.3647652787892987,
-      "risk_reward": 2.0,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T22:03:05.238608+00:00"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1130,20 +1114,42 @@
       "net": -0.43198082933205706,
       "reason": "STOP",
       "closed_at": "2026-10-06T22:28:09.059353+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.05242977153635,
+      "entry_price": 11.573,
+      "stop_price": 11.530785714285715,
+      "target_price": 11.657428571428571,
+      "risk_value": 50.25079495766503,
+      "risk_distance_pct": 0.3647652787892987,
+      "risk_reward": 2.0,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T22:03:05.238608+00:00",
+      "exit_price": 11.657428571428571,
+      "gross": 2.199569427853988,
+      "fees": 0.0,
+      "estimated_tax": 0.3299354141780982,
+      "net": 1.86963401367589,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T23:16:30.373759+00:00"
     }
   ],
   "market": {
     "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 11.618,
-    "score": 83,
+    "price": 11.68,
+    "score": 70,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 32.30014050692321,
-    "patrimonio": 10050.748535147106,
-    "retorno_pct": 0.5074853514710487,
-    "operacoes": 52,
-    "win_rate_pct": 36.53846153846153
+    "lucro_liquido": 34.169774520599105,
+    "patrimonio": 10051.775745235242,
+    "retorno_pct": 0.5177574523524076,
+    "operacoes": 53,
+    "win_rate_pct": 37.735849056603776
   }
 }
