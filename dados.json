@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T21:16:46.670056+00:00",
+  "updated_at": "2026-10-06T22:03:11.977012+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 10050.158991533006,
+    "capital": 9748.654221787016,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,7 +18,23 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.05242977153635,
+      "entry_price": 11.573,
+      "stop_price": 11.530785714285715,
+      "target_price": 11.657428571428571,
+      "risk_value": 50.25079495766503,
+      "risk_distance_pct": 0.3647652787892987,
+      "risk_reward": 2.0,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T22:03:05.238608+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1073,16 +1089,16 @@
     }
   ],
   "market": {
-    "symbol": "GOLD11",
-    "market": "B3",
-    "price": 21.579999923706055,
-    "score": 66,
-    "signal": "HOLD"
+    "symbol": "AVAXUSDT",
+    "market": "CRYPTO",
+    "price": 11.571,
+    "score": 70,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 32.88295623254196,
-    "patrimonio": 10050.158991533006,
-    "retorno_pct": 0.5015899153300696,
+    "patrimonio": 10050.106886673462,
+    "retorno_pct": 0.5010688667346219,
     "operacoes": 50,
     "win_rate_pct": 38.0
   }

@@ -1,5 +1,5 @@
 {
-  "capital": 9268.950249267657,
+  "capital": 8898.19223929695,
   "positions": [
     {
       "symbol": "USO",
@@ -30,6 +30,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 32.05308290574101,
+      "entry_price": 11.567,
+      "stop_price": 11.53755,
+      "target_price": 11.6259,
+      "risk_value": 92.68950249267657,
+      "risk_distance_pct": 0.25460361372871654,
+      "risk_reward": 1.9999999999999396,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T22:02:38.397472+00:00"
     }
   ],
   "trades": [
@@ -3553,5 +3568,5 @@
       "closed_at": "2026-10-06T21:04:02.138138+00:00"
     }
   ],
-  "updated_at": "2026-10-06T21:16:46.672438+00:00"
+  "updated_at": "2026-10-06T22:03:11.978661+00:00"
 }
