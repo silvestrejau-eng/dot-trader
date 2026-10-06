@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T03:54:07.425095+00:00",
+  "updated_at": "2026-10-06T04:06:00.940671+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -11,13 +11,28 @@
       "closed_now": 0,
       "closed": 22,
       "capital": 9846.953601654019,
-      "patrimonio": 10048.145343702947,
-      "retorno_pct": 0.4814534370294776,
+      "patrimonio": 10048.522544540641,
+      "retorno_pct": 0.485225445406412,
       "operacoes": 22,
       "posicoes": 1,
       "win_rate_pct": 36.36363636363637,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 11.222,
+          "momentum_pct": 0.3128631447215424,
+          "volume_ratio": 0.6787043001127189,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo"
+          ]
+        }
+      ]
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
@@ -25,26 +40,26 @@
       "opened_now": 0,
       "opened_total": 4,
       "closed_now": 0,
-      "closed": 59,
-      "capital": 7562.90074867425,
-      "patrimonio": 9996.743586208097,
-      "retorno_pct": -0.03256413791903334,
-      "operacoes": 59,
+      "closed": 61,
+      "capital": 7564.513891979299,
+      "patrimonio": 9996.319438504537,
+      "retorno_pct": -0.036805614954626975,
+      "operacoes": 61,
       "posicoes": 4,
-      "win_rate_pct": 28.8135593220339,
+      "win_rate_pct": 29.508196721311474,
       "last_event": null,
       "opportunities": [
         {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
-          "score": 58,
-          "signal": "HOLD",
-          "price": 11.201,
-          "momentum_pct": 0.2236936292054459,
-          "volume_ratio": 0.3941098001499383,
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 11.222,
+          "momentum_pct": 0.3128631447215424,
+          "volume_ratio": 0.6787043001127189,
           "reason": [
             "EMA9>EMA21>EMA50",
-            "RSI positivo",
+            "RSI momentum ideal",
             "momentum positivo"
           ]
         },
@@ -79,15 +94,15 @@
         {
           "symbol": "DOTUSDT",
           "market": "CRYPTO",
-          "score": 54,
+          "score": 50,
           "signal": "HOLD",
-          "price": 1.227,
-          "momentum_pct": 0.16326530612245094,
-          "volume_ratio": 0.18280527115449657,
+          "price": 1.223,
+          "momentum_pct": -0.08169934640521737,
+          "volume_ratio": 0.3636865120673983,
           "reason": [
-            "EMA9>EMA21",
+            "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
-            "momentum positivo"
+            "volume fraco"
           ]
         }
       ]
@@ -97,14 +112,14 @@
     {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
-      "score": 58,
-      "signal": "HOLD",
-      "price": 11.201,
-      "momentum_pct": 0.2236936292054459,
-      "volume_ratio": 0.3941098001499383,
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 11.222,
+      "momentum_pct": 0.3128631447215424,
+      "volume_ratio": 0.6787043001127189,
       "reason": [
         "EMA9>EMA21>EMA50",
-        "RSI positivo",
+        "RSI momentum ideal",
         "momentum positivo"
       ]
     },
@@ -139,17 +154,32 @@
     {
       "symbol": "DOTUSDT",
       "market": "CRYPTO",
-      "score": 54,
+      "score": 50,
       "signal": "HOLD",
-      "price": 1.227,
-      "momentum_pct": 0.16326530612245094,
-      "volume_ratio": 0.18280527115449657,
+      "price": 1.223,
+      "momentum_pct": -0.08169934640521737,
+      "volume_ratio": 0.3636865120673983,
       "reason": [
-        "EMA9>EMA21",
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "volume fraco"
+      ]
+    }
+  ],
+  "hunter_opportunities": [
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 11.222,
+      "momentum_pct": 0.3128631447215424,
+      "volume_ratio": 0.6787043001127189,
+      "reason": [
+        "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "momentum positivo"
       ]
     }
-  ],
-  "hunter_opportunities": []
+  ]
 }

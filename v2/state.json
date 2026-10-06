@@ -2,8 +2,35 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 8079.828447811299,
-      "positions": [],
+      "capital": 7837.43359437696,
+      "positions": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 21.59804450096578,
+          "initial_qty": 21.59804450096578,
+          "entry": 11.223,
+          "stop": 11.190285714285714,
+          "target": 11.288428571428573,
+          "target1": 11.255714285714287,
+          "target2": 11.288428571428573,
+          "score": 77,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T04:05:21.781149+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "MOMENTUM_LEVE",
+            "ORB",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 11.222,
+          "unrealized_pnl": -0.021598044500992175
+        }
+      ],
       "trades": [
         {
           "symbol": "AVAXUSDT",
@@ -697,12 +724,69 @@
           "equity": 8079.828447811299,
           "capital": 8079.828447811299,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T04:05:08.438135+00:00",
+          "equity": 8079.828447811299,
+          "capital": 8079.828447811299,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T04:05:21.781149+00:00",
+          "equity": 8079.828447811299,
+          "capital": 7837.43359437696,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:05:36.088258+00:00",
+          "equity": 8079.914839989303,
+          "capital": 7837.43359437696,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:05:49.461313+00:00",
+          "equity": 8079.914839989303,
+          "capital": 7837.43359437696,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:06:02.873161+00:00",
+          "equity": 8079.806849766798,
+          "capital": 7837.43359437696,
+          "positions": 1
         }
       ]
     },
     "HUNTER_EXTREME": {
-      "capital": 9500.0,
-      "positions": [],
+      "capital": 9025.0,
+      "positions": [
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "qty": 42.30872004987975,
+          "initial_qty": 42.30872004987975,
+          "entry": 11.227,
+          "stop": 11.20395,
+          "target": 11.2731,
+          "target1": 11.25005,
+          "target2": 11.2731,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "opened_at": "2026-10-06T04:05:36.088296+00:00",
+          "partial_taken": false,
+          "setup": [
+            "TENDÊNCIA",
+            "VWAP_SUPORTE",
+            "MOMENTUM",
+            "ORB",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 11.222,
+          "unrealized_pnl": -0.21154360024943183
+        }
+      ],
       "trades": [
         {
           "symbol": "ATOMUSDT",
@@ -1291,9 +1375,39 @@
           "equity": 9500.0,
           "capital": 9500.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T04:05:08.438173+00:00",
+          "equity": 9500.0,
+          "capital": 9500.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T04:05:21.781193+00:00",
+          "equity": 9500.0,
+          "capital": 9500.0,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T04:05:36.088296+00:00",
+          "equity": 9500.0,
+          "capital": 9025.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:05:49.461351+00:00",
+          "equity": 9500.0,
+          "capital": 9025.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T04:06:02.873201+00:00",
+          "equity": 9499.78845639975,
+          "capital": 9025.0,
+          "positions": 1
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T03:54:08.978232+00:00"
+  "updated_at": "2026-10-06T04:06:02.873220+00:00"
 }

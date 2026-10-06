@@ -1,5 +1,5 @@
 {
-  "capital": 7562.90074867425,
+  "capital": 7564.513891979299,
   "positions": [
     {
       "symbol": "QQQ",
@@ -32,30 +32,30 @@
     {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
-      "quantity": 83.62557218625295,
-      "entry_price": 11.167,
-      "stop_price": 11.147392857142856,
-      "target_price": 11.206214285714285,
-      "risk_value": 186.76935292077735,
-      "risk_distance_pct": 0.17558111271732427,
-      "score": 50.0,
+      "quantity": 83.27156522051375,
+      "entry_price": 11.215,
+      "stop_price": 11.198964285714286,
+      "target_price": 11.247071428571429,
+      "risk_value": 186.77812078961233,
+      "risk_distance_pct": 0.1429845232787669,
+      "score": 78.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-06T02:50:59.326108+00:00"
+      "opened_at": "2026-10-06T04:05:06.440396+00:00"
     },
     {
       "symbol": "DOTUSDT",
       "market": "CRYPTO",
-      "quantity": 684.8592546114506,
-      "entry_price": 1.227,
-      "stop_price": 1.2248928571428572,
-      "target_price": 1.2312142857142858,
-      "risk_value": 168.06446108165002,
-      "risk_distance_pct": 0.1717312842007223,
-      "score": 54.0,
+      "quantity": 687.2457428890069,
+      "entry_price": 1.223,
+      "stop_price": 1.2208214285714287,
+      "target_price": 1.227357142857143,
+      "risk_value": 168.1003087106511,
+      "risk_distance_pct": 0.17813339563134611,
+      "score": 50.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-06T03:53:16.549936+00:00"
+      "opened_at": "2026-10-06T04:05:06.440396+00:00"
     }
   ],
   "trades": [
@@ -1297,7 +1297,49 @@
       "net": -1.3978273524796105,
       "reason": "STOP",
       "closed_at": "2026-10-06T03:37:13.448106+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 83.62557218625295,
+      "entry_price": 11.167,
+      "stop_price": 11.147392857142856,
+      "target_price": 11.206214285714285,
+      "risk_value": 186.76935292077735,
+      "risk_distance_pct": 0.17558111271732427,
+      "score": 50.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T02:50:59.326108+00:00",
+      "exit_price": 11.206214285714285,
+      "gross": 3.2793170807323238,
+      "fees": 0.0,
+      "estimated_tax": 0.49189756210984853,
+      "net": 2.787419518622475,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T04:05:06.440396+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 684.8592546114506,
+      "entry_price": 1.227,
+      "stop_price": 1.2248928571428572,
+      "target_price": 1.2312142857142858,
+      "risk_value": 168.06446108165002,
+      "risk_distance_pct": 0.1717312842007223,
+      "score": 54.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T03:53:16.549936+00:00",
+      "exit_price": 1.2248928571428572,
+      "gross": -1.4430962865027035,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -1.4430962865027035,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T04:05:06.440396+00:00"
     }
   ],
-  "updated_at": "2026-10-06T03:54:07.421631+00:00"
+  "updated_at": "2026-10-06T04:06:00.937357+00:00"
 }
