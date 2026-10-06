@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T00:30:58.872900+00:00",
+  "updated_at": "2026-10-06T00:53:58.455669+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -27,13 +27,27 @@
       "closed_now": 0,
       "closed": 47,
       "capital": 7564.974101422001,
-      "patrimonio": 9997.378916645208,
-      "retorno_pct": -0.026210833547923862,
+      "patrimonio": 9997.571815528729,
+      "retorno_pct": -0.024281844712714662,
       "operacoes": 47,
       "posicoes": 4,
       "win_rate_pct": 31.914893617021278,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 121.01,
+          "momentum_pct": 0.1655492095025357,
+          "volume_ratio": 0.4492919791059669,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo"
+          ]
+        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -63,27 +77,13 @@
           ]
         },
         {
-          "symbol": "SOLUSDT",
-          "market": "CRYPTO",
-          "score": 50,
-          "signal": "HOLD",
-          "price": 120.91,
-          "momentum_pct": -0.02480568877128997,
-          "volume_ratio": 0.10590433668693583,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI positivo",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
           "symbol": "AVAXUSDT",
           "market": "CRYPTO",
           "score": 50,
           "signal": "HOLD",
-          "price": 11.167,
-          "momentum_pct": -0.0626454268838339,
-          "volume_ratio": 0.12473525798196244,
+          "price": 11.161,
+          "momentum_pct": 0.09865470852017388,
+          "volume_ratio": 0.6748757723319023,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
@@ -94,6 +94,20 @@
     }
   },
   "extreme_opportunities": [
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 121.01,
+      "momentum_pct": 0.1655492095025357,
+      "volume_ratio": 0.4492919791059669,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo"
+      ]
+    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",
@@ -123,27 +137,13 @@
       ]
     },
     {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "score": 50,
-      "signal": "HOLD",
-      "price": 120.91,
-      "momentum_pct": -0.02480568877128997,
-      "volume_ratio": 0.10590433668693583,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI positivo",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
       "symbol": "AVAXUSDT",
       "market": "CRYPTO",
       "score": 50,
       "signal": "HOLD",
-      "price": 11.167,
-      "momentum_pct": -0.0626454268838339,
-      "volume_ratio": 0.12473525798196244,
+      "price": 11.161,
+      "momentum_pct": 0.09865470852017388,
+      "volume_ratio": 0.6748757723319023,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
