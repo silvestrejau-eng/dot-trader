@@ -1,20 +1,6 @@
 {
-  "capital": 9462.824355212977,
+  "capital": 9278.905131920712,
   "positions": [
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "quantity": 719.2456508493453,
-      "entry_price": 0.274,
-      "stop_price": 0.2728857142857143,
-      "target_price": 0.27622857142857143,
-      "risk_value": 49.26832708318016,
-      "risk_distance_pct": 0.4066736183524577,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T08:53:45.164725+00:00"
-    },
     {
       "symbol": "DOGEUSDT",
       "market": "CRYPTO",
@@ -42,6 +28,34 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-06T09:04:43.565560+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 128.06018362851486,
+      "entry_price": 1.5089,
+      "stop_price": 1.50715,
+      "target_price": 1.5124,
+      "risk_value": 48.30750276926652,
+      "risk_distance_pct": 0.11597852740406378,
+      "score": 81.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T09:24:40.651711+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.06968547887361395,
+      "entry_price": 2717.43,
+      "stop_price": 2715.3585714285714,
+      "target_price": 2721.572857142857,
+      "risk_value": 47.341352713881186,
+      "risk_distance_pct": 0.1,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T09:25:33.667097+00:00"
     }
   ],
   "trades": [
@@ -708,7 +722,28 @@
       "net": -0.633903950000603,
       "reason": "STOP",
       "closed_at": "2026-10-06T09:04:43.565560+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 719.2456508493453,
+      "entry_price": 0.274,
+      "stop_price": 0.2728857142857143,
+      "target_price": 0.27622857142857143,
+      "risk_value": 49.26832708318016,
+      "risk_distance_pct": 0.4066736183524577,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T08:53:45.164725+00:00",
+      "exit_price": 0.27622857142857143,
+      "gross": 1.6028903076071013,
+      "fees": 0.0,
+      "estimated_tax": 0.24043354614106519,
+      "net": 1.3624567614660361,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T09:24:40.651711+00:00"
     }
   ],
-  "updated_at": "2026-10-06T09:05:41.586609+00:00"
+  "updated_at": "2026-10-06T09:25:33.667097+00:00"
 }
