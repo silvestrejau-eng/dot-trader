@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T19:57:02.097763+00:00",
+  "updated_at": "2026-10-06T20:14:54.301783+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9254.692480033431,
@@ -3528,16 +3528,16 @@
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
-    "market": "CRYPTO",
-    "price": 13.982,
-    "score": 61,
+    "symbol": "USO",
+    "market": "GLOBAL",
+    "price": 144.9199981689453,
+    "score": 58,
     "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 13.122645350990528,
-    "patrimonio": 10026.409563206955,
-    "retorno_pct": 0.2640956320695498,
+    "patrimonio": 10026.057651381947,
+    "retorno_pct": 0.2605765138194771,
     "operacoes": 164,
     "win_rate_pct": 40.243902439024396
   }

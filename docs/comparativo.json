@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T19:57:02.101476+00:00",
+  "updated_at": "2026-10-06T20:14:54.307113+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -25,8 +25,8 @@
       "closed_now": 0,
       "closed": 164,
       "capital": 9254.692480033431,
-      "patrimonio": 10026.409563206955,
-      "retorno_pct": 0.2640956320695498,
+      "patrimonio": 10026.057651381947,
+      "retorno_pct": 0.2605765138194771,
       "operacoes": 164,
       "posicoes": 2,
       "win_rate_pct": 40.243902439024396,
