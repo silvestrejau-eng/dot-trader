@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-06T17:53:08.626135+00:00",
+  "updated_at": "2026-10-06T18:07:32.345664+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8190.975800682903,
+    "capital": 8233.400392919259,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -19,21 +19,6 @@
     "strategy": "DOT_HUNTER_EXTREME"
   },
   "positions": [
-    {
-      "symbol": "SLV",
-      "market": "GLOBAL",
-      "quantity": 6.949054899634368,
-      "entry_price": 55.404998779296875,
-      "stop_price": 55.37114067077637,
-      "target_price": 55.47271499633789,
-      "risk_value": 96.25309455787729,
-      "risk_distance_pct": 0.06111020533612338,
-      "risk_reward": 2.00000000000021,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance",
-      "opened_at": "2026-10-06T17:18:40.607953+00:00"
-    },
     {
       "symbol": "LINKUSDT",
       "market": "CRYPTO",
@@ -93,6 +78,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-06T17:52:34.060160+00:00"
+    },
+    {
+      "symbol": "QQQ",
+      "market": "GLOBAL",
+      "quantity": 0.4505038111191656,
+      "entry_price": 761.4993286132812,
+      "stop_price": 761.2209533691406,
+      "target_price": 762.0560791015625,
+      "risk_value": 85.76458742624227,
+      "risk_distance_pct": 0.03655620348971016,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T18:07:20.849843+00:00"
     }
   ],
   "trades": [
@@ -3372,20 +3372,42 @@
       "net": 1.16506721927077,
       "reason": "ALVO",
       "closed_at": "2026-10-06T17:52:22.630737+00:00"
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "quantity": 6.949054899634368,
+      "entry_price": 55.404998779296875,
+      "stop_price": 55.37114067077637,
+      "target_price": 55.47271499633789,
+      "risk_value": 96.25309455787729,
+      "risk_distance_pct": 0.06111020533612338,
+      "risk_reward": 2.00000000000021,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-06T17:18:40.607953+00:00",
+      "exit_price": 55.47271499633789,
+      "gross": 0.4705637098135838,
+      "fees": 0.0,
+      "estimated_tax": 0.07058455647203757,
+      "net": 0.3999791533415462,
+      "reason": "ALVO",
+      "closed_at": "2026-10-06T18:06:46.248710+00:00"
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
-    "market": "CRYPTO",
-    "price": 13.981,
-    "score": 73,
+    "symbol": "TLT",
+    "market": "GLOBAL",
+    "price": 77.5,
+    "score": 70,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 16.173276092545212,
-    "patrimonio": 10029.400496191336,
-    "retorno_pct": 0.29400496191336334,
-    "operacoes": 155,
-    "win_rate_pct": 41.29032258064516
+    "lucro_liquido": 16.573255245886756,
+    "patrimonio": 10028.62205249338,
+    "retorno_pct": 0.286220524933789,
+    "operacoes": 156,
+    "win_rate_pct": 41.66666666666667
   }
 }

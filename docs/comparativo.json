@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T17:53:08.632194+00:00",
+  "updated_at": "2026-10-06T18:07:32.350878+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -23,58 +23,28 @@
       "opened_now": 0,
       "opened_total": 5,
       "closed_now": 0,
-      "closed": 155,
-      "capital": 8190.975800682903,
-      "patrimonio": 10029.400496191336,
-      "retorno_pct": 0.29400496191336334,
-      "operacoes": 155,
+      "closed": 156,
+      "capital": 8233.400392919259,
+      "patrimonio": 10028.62205249338,
+      "retorno_pct": 0.286220524933789,
+      "operacoes": 156,
       "posicoes": 5,
-      "win_rate_pct": 41.29032258064516,
+      "win_rate_pct": 41.66666666666667,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "score": 73,
+          "symbol": "TLT",
+          "market": "GLOBAL",
+          "score": 70,
           "signal": "COMPRA",
-          "price": 13.981,
-          "momentum_pct": 0.517650442159745,
-          "volume_ratio": 0.4689966203336736,
+          "price": 77.5,
+          "momentum_pct": 0.07747618375806287,
+          "volume_ratio": 0.0,
           "reason": [
-            "EMA9>EMA21",
+            "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 66,
-          "signal": "HOLD",
-          "price": 11.535,
-          "momentum_pct": 0.37417333797422625,
-          "volume_ratio": 0.30279240686139647,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "momentum positivo",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "score": 66,
-          "signal": "HOLD",
-          "price": 0.2734,
-          "momentum_pct": 0.29347028613351256,
-          "volume_ratio": 0.11957432044182555,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "momentum positivo",
-            "rompimento da maxima de 20 candles"
+            "rompimento da maxima de 20 candles",
+            "volume fraco"
           ]
         }
       ]
@@ -82,48 +52,18 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "score": 73,
+      "symbol": "TLT",
+      "market": "GLOBAL",
+      "score": 70,
       "signal": "COMPRA",
-      "price": 13.981,
-      "momentum_pct": 0.517650442159745,
-      "volume_ratio": 0.4689966203336736,
+      "price": 77.5,
+      "momentum_pct": 0.07747618375806287,
+      "volume_ratio": 0.0,
       "reason": [
-        "EMA9>EMA21",
+        "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 66,
-      "signal": "HOLD",
-      "price": 11.535,
-      "momentum_pct": 0.37417333797422625,
-      "volume_ratio": 0.30279240686139647,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "momentum positivo",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "score": 66,
-      "signal": "HOLD",
-      "price": 0.2734,
-      "momentum_pct": 0.29347028613351256,
-      "volume_ratio": 0.11957432044182555,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "momentum positivo",
-        "rompimento da maxima de 20 candles"
+        "rompimento da maxima de 20 candles",
+        "volume fraco"
       ]
     }
   ],
