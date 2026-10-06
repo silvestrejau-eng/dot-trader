@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T03:02:27.467584+00:00",
+  "updated_at": "2026-10-06T03:20:44.095880+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -7,14 +7,14 @@
       "strategy": "DOT_HUNTER_X",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 22,
-      "capital": 10047.911838422468,
-      "patrimonio": 10047.911838422468,
-      "retorno_pct": 0.4791183842246749,
+      "capital": 9846.953601654019,
+      "patrimonio": 10048.037572035033,
+      "retorno_pct": 0.4803757203503345,
       "operacoes": 22,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 36.36363636363637,
       "last_event": null,
       "opportunities": []
@@ -23,17 +23,45 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "selected": [],
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 4,
       "closed_now": 0,
       "closed": 58,
-      "capital": 8404.620881434981,
-      "patrimonio": 9994.54551395657,
-      "retorno_pct": -0.0545448604343024,
+      "capital": 7564.158793291483,
+      "patrimonio": 9997.639660127461,
+      "retorno_pct": -0.02360339872539141,
       "operacoes": 58,
-      "posicoes": 3,
+      "posicoes": 4,
       "win_rate_pct": 29.310344827586203,
       "last_event": null,
       "opportunities": [
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "score": 61,
+          "signal": "HOLD",
+          "price": 1.224,
+          "momentum_pct": 0.7407407407407307,
+          "volume_ratio": 0.049815672359608536,
+          "reason": [
+            "EMA9>EMA21",
+            "RSI momentum ideal",
+            "aceleracao positiva"
+          ]
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 58,
+          "signal": "HOLD",
+          "price": 11.195,
+          "momentum_pct": 0.22381378692928333,
+          "volume_ratio": 0.1342481347621602,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI positivo",
+            "momentum positivo"
+          ]
+        },
         {
           "symbol": "QQQ",
           "market": "GLOBAL",
@@ -66,6 +94,34 @@
     }
   },
   "extreme_opportunities": [
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "score": 61,
+      "signal": "HOLD",
+      "price": 1.224,
+      "momentum_pct": 0.7407407407407307,
+      "volume_ratio": 0.049815672359608536,
+      "reason": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "aceleracao positiva"
+      ]
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 58,
+      "signal": "HOLD",
+      "price": 11.195,
+      "momentum_pct": 0.22381378692928333,
+      "volume_ratio": 0.1342481347621602,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI positivo",
+        "momentum positivo"
+      ]
+    },
     {
       "symbol": "QQQ",
       "market": "GLOBAL",

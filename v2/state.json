@@ -2,8 +2,36 @@
   "version": "2.2",
   "strategies": {
     "HUNTER_X": {
-      "capital": 8329.72004929,
-      "positions": [],
+      "capital": 8079.828447811299,
+      "positions": [
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 138.59767136921795,
+          "initial_qty": 138.59767136921795,
+          "entry": 1.803,
+          "stop": 1.7987857142857142,
+          "target": 1.8114285714285714,
+          "target1": 1.8072142857142857,
+          "target2": 1.8114285714285714,
+          "score": 88,
+          "strategy": "HUNTER_X",
+          "opened_at": "2026-10-06T03:19:50.915138+00:00",
+          "partial_taken": false,
+          "setup": [
+            "EMA9>EMA21",
+            "VWAP_SUPORTE",
+            "MOMENTUM",
+            "VOLUME_FORTE",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 1.805,
+          "unrealized_pnl": 0.27719534273843616
+        }
+      ],
       "trades": [
         {
           "symbol": "AVAXUSDT",
@@ -592,14 +620,72 @@
           "equity": 8329.72004929,
           "capital": 8329.72004929,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T03:19:50.915138+00:00",
+          "equity": 8329.72004929,
+          "capital": 8079.828447811299,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:04.976538+00:00",
+          "equity": 8329.85864696137,
+          "capital": 8079.828447811299,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:19.301183+00:00",
+          "equity": 8329.85864696137,
+          "capital": 8079.828447811299,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:32.783164+00:00",
+          "equity": 8329.85864696137,
+          "capital": 8079.828447811299,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:46.268412+00:00",
+          "equity": 8329.997244632737,
+          "capital": 8079.828447811299,
+          "positions": 1
         }
       ]
     },
     "HUNTER_EXTREME": {
-      "capital": 10000.0,
-      "positions": [],
+      "capital": 9500.0,
+      "positions": [
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 277.31558513588465,
+          "initial_qty": 277.31558513588465,
+          "entry": 1.803,
+          "stop": 1.80005,
+          "target": 1.8089,
+          "target1": 1.80595,
+          "target2": 1.8089,
+          "score": 88,
+          "strategy": "HUNTER_EXTREME",
+          "opened_at": "2026-10-06T03:19:50.915188+00:00",
+          "partial_taken": false,
+          "setup": [
+            "EMA9>EMA21",
+            "VWAP_SUPORTE",
+            "MOMENTUM",
+            "VOLUME_FORTE",
+            "PULLBACK_VWAP",
+            "ROMPIMENTO",
+            "RSI_SAUDÁVEL",
+            "RR_OK"
+          ],
+          "mark": 1.805,
+          "unrealized_pnl": 0.5546311702717698
+        }
+      ],
       "trades": [],
-      "equity_peak": 10000.0,
+      "equity_peak": 10000.554631170271,
       "equity_history": [
         {
           "timestamp": "2026-10-05T23:25:26.090632+00:00",
@@ -1080,9 +1166,39 @@
           "equity": 10000.0,
           "capital": 10000.0,
           "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T03:19:50.915188+00:00",
+          "equity": 10000.0,
+          "capital": 9500.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:04.976591+00:00",
+          "equity": 10000.277315585136,
+          "capital": 9500.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:19.301231+00:00",
+          "equity": 10000.277315585136,
+          "capital": 9500.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:32.783211+00:00",
+          "equity": 10000.277315585136,
+          "capital": 9500.0,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T03:20:46.268462+00:00",
+          "equity": 10000.554631170271,
+          "capital": 9500.0,
+          "positions": 1
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T03:02:28.955215+00:00"
+  "updated_at": "2026-10-06T03:20:46.268488+00:00"
 }
