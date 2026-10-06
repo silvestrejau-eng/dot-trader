@@ -1,35 +1,6 @@
 {
-  "capital": 9651.658686036499,
-  "positions": [
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 17.81796246817374,
-      "entry_price": 11.28,
-      "stop_price": 11.242142857142856,
-      "target_price": 11.355714285714285,
-      "risk_value": 50.246654160249946,
-      "risk_distance_pct": 0.3356129685916995,
-      "score": 88.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T04:24:48.869996+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "quantity": 159.63106951551697,
-      "entry_price": 1.234,
-      "stop_price": 1.23,
-      "target_price": 1.242,
-      "risk_value": 49.24618494553698,
-      "risk_distance_pct": 0.32414910858995166,
-      "score": 88.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-06T05:08:38.958470+00:00"
-    }
-  ],
+  "capital": 10048.316981031003,
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -547,7 +518,49 @@
       "net": -0.5935632887475228,
       "reason": "STOP",
       "closed_at": "2026-10-06T05:41:52.130611+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 17.81796246817374,
+      "entry_price": 11.28,
+      "stop_price": 11.242142857142856,
+      "target_price": 11.355714285714285,
+      "risk_value": 50.246654160249946,
+      "risk_distance_pct": 0.3356129685916995,
+      "score": 88.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T04:24:48.869996+00:00",
+      "exit_price": 11.242142857142856,
+      "gross": -0.674537150580878,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.674537150580878,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T06:10:28.347475+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 159.63106951551697,
+      "entry_price": 1.234,
+      "stop_price": 1.23,
+      "target_price": 1.242,
+      "risk_value": 49.24618494553698,
+      "risk_distance_pct": 0.32414910858995166,
+      "score": 88.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-06T05:08:38.958470+00:00",
+      "exit_price": 1.23,
+      "gross": -0.6385242780620685,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.6385242780620685,
+      "reason": "STOP",
+      "closed_at": "2026-10-06T06:10:28.347475+00:00"
     }
   ],
-  "updated_at": "2026-10-06T05:56:29.409062+00:00"
+  "updated_at": "2026-10-06T06:11:23.544928+00:00"
 }
