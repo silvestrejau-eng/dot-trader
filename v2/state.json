@@ -5,63 +5,6 @@
       "capital": 5958.2604385880495,
       "positions": [
         {
-          "symbol": "DOTUSDT",
-          "market": "CRYPTO",
-          "qty": 86.94911706905351,
-          "initial_qty": 173.89823413810703,
-          "entry": 1.234,
-          "stop": 1.234,
-          "target": 1.242,
-          "target1": 1.238,
-          "target2": 1.242,
-          "score": 85,
-          "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T05:08:41.139739+00:00",
-          "partial_taken": true,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM_LEVE",
-            "VOLUME_FORTE",
-            "ORB",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 1.238,
-          "unrealized_pnl": 0.34779646827621435
-        },
-        {
-          "symbol": "ATOMUSDT",
-          "market": "CRYPTO",
-          "qty": 114.24407700254191,
-          "initial_qty": 114.24407700254191,
-          "entry": 1.822,
-          "stop": 1.8185,
-          "target": 1.8290000000000002,
-          "target1": 1.8255000000000001,
-          "target2": 1.8290000000000002,
-          "score": 85,
-          "strategy": "HUNTER_X",
-          "opened_at": "2026-10-06T05:08:41.139739+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
-            "ORB",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_ESTICADO",
-            "RR_OK"
-          ],
-          "mark": 1.821,
-          "unrealized_pnl": -0.1142440770025547
-        },
-        {
           "symbol": "FILUSDT",
           "market": "CRYPTO",
           "qty": 170.4873149114856,
@@ -85,8 +28,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 1.1886,
-          "unrealized_pnl": 0.733095454119421
+          "mark": 1.1859,
+          "unrealized_pnl": 0.2727797038583848
         },
         {
           "symbol": "TRXUSDT",
@@ -111,8 +54,8 @@
             "RSI_ESTICADO",
             "RR_OK"
           ],
-          "mark": 0.3364,
-          "unrealized_pnl": -0.058202342715681844
+          "mark": 0.3362,
+          "unrealized_pnl": -0.17460702814698092
         },
         {
           "symbol": "PEPEUSDT",
@@ -137,8 +80,8 @@
             "RSI_SAUDÁVEL",
             "RR_OK"
           ],
-          "mark": 4.34e-06,
-          "unrealized_pnl": 0.42557989847298816
+          "mark": 4.32e-06,
+          "unrealized_pnl": -0.42557989847298816
         }
       ],
       "trades": [
@@ -381,6 +324,36 @@
           "reason": "STOP",
           "opened_at": "2026-10-06T05:08:54.791935+00:00",
           "closed_at": "2026-10-06T05:41:54.026352+00:00"
+        },
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "qty": 86.94911706905351,
+          "entry": 1.234,
+          "exit": 1.234,
+          "gross": 0.0,
+          "tax": 0.0,
+          "net": 0.0,
+          "score": 85,
+          "strategy": "HUNTER_X",
+          "reason": "STOP_BE",
+          "opened_at": "2026-10-06T05:08:41.139739+00:00",
+          "closed_at": "2026-10-06T05:55:36.704196+00:00"
+        },
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 114.24407700254191,
+          "entry": 1.822,
+          "exit": 1.8185,
+          "gross": -0.3998542695089034,
+          "tax": 0.0,
+          "net": -0.3998542695089034,
+          "score": 85,
+          "strategy": "HUNTER_X",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T05:08:41.139739+00:00",
+          "closed_at": "2026-10-06T05:55:36.704196+00:00"
         }
       ],
       "equity_peak": 10000.264097225629,
@@ -1164,98 +1137,42 @@
           "equity": 6857.077489077704,
           "capital": 5958.2604385880495,
           "positions": 5
+        },
+        {
+          "timestamp": "2026-10-06T05:55:36.704196+00:00",
+          "equity": 6539.916991497475,
+          "capital": 5958.2604385880495,
+          "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:55:50.015178+00:00",
+          "equity": 6539.753560330806,
+          "capital": 5958.2604385880495,
+          "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:56:03.344430+00:00",
+          "equity": 6539.916991497475,
+          "capital": 5958.2604385880495,
+          "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:56:16.527892+00:00",
+          "equity": 6540.036332617913,
+          "capital": 5958.2604385880495,
+          "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:56:31.530001+00:00",
+          "equity": 6539.968137691948,
+          "capital": 5958.2604385880495,
+          "positions": 3
         }
       ]
     },
     "HUNTER_EXTREME": {
       "capital": 6983.3729609375005,
-      "positions": [
-        {
-          "symbol": "DOTUSDT",
-          "market": "CRYPTO",
-          "qty": 173.69833873581848,
-          "initial_qty": 347.39667747163696,
-          "entry": 1.234,
-          "stop": 1.234,
-          "target": 1.2395999999999998,
-          "target1": 1.2368,
-          "target2": 1.2395999999999998,
-          "score": 85,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T05:08:41.139822+00:00",
-          "partial_taken": true,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM_LEVE",
-            "VOLUME_FORTE",
-            "ORB",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 1.238,
-          "unrealized_pnl": 0.6947933549432745
-        },
-        {
-          "symbol": "ATOMUSDT",
-          "market": "CRYPTO",
-          "qty": 223.51982711306258,
-          "initial_qty": 223.51982711306258,
-          "entry": 1.822,
-          "stop": 1.81955,
-          "target": 1.8269000000000002,
-          "target1": 1.8244500000000001,
-          "target2": 1.8269000000000002,
-          "score": 85,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T05:08:41.139822+00:00",
-          "partial_taken": false,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME_FORTE",
-            "ORB",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_ESTICADO",
-            "RR_OK"
-          ],
-          "mark": 1.821,
-          "unrealized_pnl": -0.2235198271130876
-        },
-        {
-          "symbol": "FILUSDT",
-          "market": "CRYPTO",
-          "qty": 163.28626181733773,
-          "initial_qty": 326.57252363467546,
-          "entry": 1.1847,
-          "stop": 1.1847,
-          "target": 1.19304,
-          "target1": 1.18887,
-          "target2": 1.19304,
-          "score": 83,
-          "strategy": "HUNTER_EXTREME",
-          "opened_at": "2026-10-06T05:08:54.792041+00:00",
-          "partial_taken": true,
-          "setup": [
-            "TENDÊNCIA",
-            "ACIMA_VWAP",
-            "MOMENTUM",
-            "VOLUME",
-            "ABCD",
-            "PULLBACK_VWAP",
-            "ROMPIMENTO",
-            "RSI_SAUDÁVEL",
-            "RR_OK"
-          ],
-          "mark": 1.1886,
-          "unrealized_pnl": 0.6368164210876195
-        }
-      ],
+      "positions": [],
       "trades": [
         {
           "symbol": "ATOMUSDT",
@@ -1376,6 +1293,51 @@
           "reason": "PARCIAL_1R",
           "opened_at": "2026-10-06T05:08:41.139822+00:00",
           "closed_at": "2026-10-06T05:41:54.026425+00:00"
+        },
+        {
+          "symbol": "DOTUSDT",
+          "market": "CRYPTO",
+          "qty": 173.69833873581848,
+          "entry": 1.234,
+          "exit": 1.234,
+          "gross": 0.0,
+          "tax": 0.0,
+          "net": 0.0,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "STOP_BE",
+          "opened_at": "2026-10-06T05:08:41.139822+00:00",
+          "closed_at": "2026-10-06T05:55:36.704253+00:00"
+        },
+        {
+          "symbol": "ATOMUSDT",
+          "market": "CRYPTO",
+          "qty": 223.51982711306258,
+          "entry": 1.822,
+          "exit": 1.81955,
+          "gross": -0.5476235764270174,
+          "tax": 0.0,
+          "net": -0.5476235764270174,
+          "score": 85,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "STOP",
+          "opened_at": "2026-10-06T05:08:41.139822+00:00",
+          "closed_at": "2026-10-06T05:55:36.704253+00:00"
+        },
+        {
+          "symbol": "FILUSDT",
+          "market": "CRYPTO",
+          "qty": 163.28626181733773,
+          "entry": 1.1847,
+          "exit": 1.1847,
+          "gross": 0.0,
+          "tax": 0.0,
+          "net": 0.0,
+          "score": 83,
+          "strategy": "HUNTER_EXTREME",
+          "reason": "STOP_BE",
+          "opened_at": "2026-10-06T05:08:54.792041+00:00",
+          "closed_at": "2026-10-06T05:55:50.015228+00:00"
         }
       ],
       "equity_peak": 10000.554631170271,
@@ -2159,9 +2121,39 @@
           "equity": 7799.5231602614185,
           "capital": 6983.3729609375005,
           "positions": 3
+        },
+        {
+          "timestamp": "2026-10-06T05:55:36.704253+00:00",
+          "equity": 7176.965152948136,
+          "capital": 6983.3729609375005,
+          "positions": 1
+        },
+        {
+          "timestamp": "2026-10-06T05:55:50.015228+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T05:56:03.344477+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T05:56:16.527941+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
+        },
+        {
+          "timestamp": "2026-10-06T05:56:31.530049+00:00",
+          "equity": 6983.3729609375005,
+          "capital": 6983.3729609375005,
+          "positions": 0
         }
       ]
     }
   },
-  "updated_at": "2026-10-06T05:42:46.691181+00:00"
+  "updated_at": "2026-10-06T05:56:31.530069+00:00"
 }
