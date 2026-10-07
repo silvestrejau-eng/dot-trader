@@ -196,7 +196,9 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
         p = cached_price(x["symbol"], x.get("market", "CRYPTO"), float(x["entry_price"]))
         aberto += float(x["quantity"]) * p
 
-    lucro = sum(float(t.get("net", 0)) for t in trades)
+    lucro_bruto = sum(float(t.get("gross", 0)) for t in trades)
+    imposto_estimado = sum(float(t.get("estimated_tax", 0)) for t in trades)
+    lucro = lucro_bruto - imposto_estimado
     patrimonio = st["capital"] + aberto
     wins = sum(1 for t in trades if float(t.get("net", 0)) > 0)
 
@@ -236,6 +238,7 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
         "positions": positions, "trades": trades,
         "market": {k: s.get(k) for k in ("symbol", "market", "price", "score", "signal")},
         "summary": {
+            "lucro_bruto": lucro_bruto, "imposto_estimado": imposto_estimado,
             "lucro_liquido": lucro, "patrimonio": patrimonio,
             "retorno_pct": result["retorno_pct"], "operacoes": len(trades),
             "win_rate_pct": result["win_rate_pct"]
