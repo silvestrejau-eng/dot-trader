@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T13:30:45.981239+00:00",
+  "updated_at": "2026-10-07T13:51:19.204506+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9458.048913802755,
+    "capital": 10053.568758361456,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -19,38 +19,7 @@
     "strategy": "DOT_HUNTER_X",
     "tax_method": "20% sobre resultado líquido diário positivo (estimativa; apuração fiscal real é mensal)"
   },
-  "positions": [
-    {
-      "symbol": "RENT3",
-      "market": "B3",
-      "quantity": 5.982223654711357,
-      "entry_price": 50.40999984741211,
-      "stop_price": 50.24571337018694,
-      "target_price": 50.738572801862446,
-      "risk_value": 50.26064892019745,
-      "risk_distance_pct": 0.32590057076463647,
-      "risk_reward": 2.0,
-      "score": 85.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T13:29:43.275960+00:00"
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3",
-      "quantity": 2.2546397743983575,
-      "entry_price": 129.74000549316406,
-      "stop_price": 129.50643266950334,
-      "target_price": 130.20715114048548,
-      "risk_value": 48.75282945259153,
-      "risk_distance_pct": 0.18003145812494145,
-      "risk_reward": 1.9999999999998783,
-      "score": 85.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T13:29:43.275960+00:00"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1186,8 +1155,8 @@
       "exit_price": 0.25845714285714283,
       "gross": 2.06416898547041,
       "fees": 0.0,
-      "estimated_tax": 0.07080776084971863,
-      "net": 1.9933612246206915,
+      "estimated_tax": 0.1836872012164689,
+      "net": 1.8804817842539412,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:44.067723+00:00"
     },
@@ -1256,12 +1225,56 @@
       "net": -1.0867246752015682,
       "reason": "STOP",
       "closed_at": "2026-10-07T08:02:39.516210+00:00"
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "quantity": 5.982223654711357,
+      "entry_price": 50.40999984741211,
+      "stop_price": 50.24571337018694,
+      "target_price": 50.738572801862446,
+      "risk_value": 50.26064892019745,
+      "risk_distance_pct": 0.32590057076463647,
+      "risk_reward": 2.0,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.275960+00:00",
+      "exit_price": 50.738572801862446,
+      "gross": 1.9655969004112024,
+      "fees": 0.0,
+      "estimated_tax": 0.1749154240266904,
+      "net": 1.790681476384512,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T13:50:20.870984+00:00"
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
+      "quantity": 2.2546397743983575,
+      "entry_price": 129.74000549316406,
+      "stop_price": 129.50643266950334,
+      "target_price": 130.20715114048548,
+      "risk_value": 48.75282945259153,
+      "risk_distance_pct": 0.18003145812494145,
+      "risk_reward": 1.9999999999998783,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.275960+00:00",
+      "exit_price": 129.50643266950334,
+      "gross": -0.5266225784439985,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5266225784439985,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T13:50:20.870984+00:00"
     }
   ],
   "tax": {
     "rate_pct": 20.0,
-    "base_tributavel": 52.129784039493735,
-    "imposto_estimado": 10.425956807898748,
+    "base_tributavel": 53.56875836146094,
+    "imposto_estimado": 10.713751672292188,
     "dias_positivos": 3,
     "daily": [
       {
@@ -1278,28 +1291,28 @@
       },
       {
         "date": "2026-10-07",
-        "net_result": 0.35403880424859313,
-        "taxable_base": 0.35403880424859313,
-        "estimated_tax": 0.07080776084971863
+        "net_result": 1.7930131262157967,
+        "taxable_base": 1.7930131262157967,
+        "estimated_tax": 0.35860262524315933
       }
     ]
   },
   "market": {
-    "symbol": "RENT3",
-    "market": "B3",
-    "price": 50.52000045776367,
-    "score": 85,
+    "symbol": "LINKUSDT",
+    "market": "CRYPTO",
+    "price": 13.456,
+    "score": 73,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_bruto": 52.12978403949374,
-    "base_tributavel": 52.129784039493735,
-    "imposto_estimado": 10.425956807898748,
-    "lucro_liquido": 41.70382723159499,
-    "patrimonio": 10053.328923820656,
+    "lucro_bruto": 53.56875836146095,
+    "base_tributavel": 53.56875836146094,
+    "imposto_estimado": 10.713751672292188,
+    "lucro_liquido": 42.85500668916876,
+    "patrimonio": 10053.568758361456,
     "dias_positivos": 3,
-    "retorno_pct": 0.533289238206569,
-    "operacoes": 57,
-    "win_rate_pct": 36.84210526315789
+    "retorno_pct": 0.5356875836145525,
+    "operacoes": 59,
+    "win_rate_pct": 37.28813559322034
   }
 }

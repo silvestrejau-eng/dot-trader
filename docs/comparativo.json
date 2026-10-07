@@ -1,93 +1,47 @@
 {
-  "updated_at": "2026-10-07T13:30:45.991094+00:00",
+  "updated_at": "2026-10-07T13:51:19.214969+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 2,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 57,
-      "capital": 9458.048913802755,
-      "patrimonio": 10053.328923820656,
-      "retorno_pct": 0.533289238206569,
-      "operacoes": 57,
-      "posicoes": 2,
-      "win_rate_pct": 36.84210526315789,
+      "closed": 59,
+      "capital": 10053.568758361456,
+      "patrimonio": 10053.568758361456,
+      "retorno_pct": 0.5356875836145525,
+      "operacoes": 59,
+      "posicoes": 0,
+      "win_rate_pct": 37.28813559322034,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "RENT3",
-          "market": "B3",
-          "score": 85,
-          "signal": "COMPRA",
-          "price": 50.52000045776367,
-          "momentum_pct": 0.818199645616069,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "SMAL11",
-          "market": "B3",
-          "score": 85,
-          "signal": "COMPRA",
-          "price": 129.97999572753906,
-          "momentum_pct": 0.7674937531710224,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        }
-      ]
+      "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 7,
+      "opened_total": 3,
       "closed_now": 0,
-      "closed": 189,
-      "capital": 7597.839042027421,
-      "patrimonio": 10023.11256425982,
-      "retorno_pct": 0.23112564259819557,
-      "operacoes": 189,
-      "posicoes": 7,
-      "win_rate_pct": 37.56613756613756,
+      "closed": 194,
+      "capital": 8954.369428777545,
+      "patrimonio": 10025.403695805213,
+      "retorno_pct": 0.25403695805212845,
+      "operacoes": 194,
+      "posicoes": 3,
+      "win_rate_pct": 37.628865979381445,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "RENT3",
-          "market": "B3",
-          "score": 85,
+          "symbol": "LINKUSDT",
+          "market": "CRYPTO",
+          "score": 73,
           "signal": "COMPRA",
-          "price": 50.52000045776367,
-          "momentum_pct": 0.818199645616069,
-          "volume_ratio": 0.0,
+          "price": 13.456,
+          "momentum_pct": 0.6808829031051289,
+          "volume_ratio": 0.3763017705690016,
           "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "SMAL11",
-          "market": "B3",
-          "score": 85,
-          "signal": "COMPRA",
-          "price": 129.97999572753906,
-          "momentum_pct": 0.7674937531710224,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
+            "EMA9>EMA21",
             "RSI momentum ideal",
             "aceleracao positiva",
             "rompimento da maxima de 20 candles"
@@ -96,31 +50,16 @@
         {
           "symbol": "BBOI11",
           "market": "B3",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 12.5,
-          "momentum_pct": 1.7087065809503033,
+          "score": 65,
+          "signal": "HOLD",
+          "price": 12.539999961853027,
+          "momentum_pct": 1.9512176211098575,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "B3SA3",
-          "market": "B3",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 22.8700008392334,
-          "momentum_pct": 0.8377448478881,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
+            "volume fraco"
           ]
         }
       ]
@@ -128,30 +67,15 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "RENT3",
-      "market": "B3",
-      "score": 85,
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "score": 73,
       "signal": "COMPRA",
-      "price": 50.52000045776367,
-      "momentum_pct": 0.818199645616069,
-      "volume_ratio": 0.0,
+      "price": 13.456,
+      "momentum_pct": 0.6808829031051289,
+      "volume_ratio": 0.3763017705690016,
       "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3",
-      "score": 85,
-      "signal": "COMPRA",
-      "price": 129.97999572753906,
-      "momentum_pct": 0.7674937531710224,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
+        "EMA9>EMA21",
         "RSI momentum ideal",
         "aceleracao positiva",
         "rompimento da maxima de 20 candles"
@@ -160,64 +84,18 @@
     {
       "symbol": "BBOI11",
       "market": "B3",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 12.5,
-      "momentum_pct": 1.7087065809503033,
+      "score": 65,
+      "signal": "HOLD",
+      "price": 12.539999961853027,
+      "momentum_pct": 1.9512176211098575,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "B3SA3",
-      "market": "B3",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 22.8700008392334,
-      "momentum_pct": 0.8377448478881,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
+        "volume fraco"
       ]
     }
   ],
-  "hunter_opportunities": [
-    {
-      "symbol": "RENT3",
-      "market": "B3",
-      "score": 85,
-      "signal": "COMPRA",
-      "price": 50.52000045776367,
-      "momentum_pct": 0.818199645616069,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "SMAL11",
-      "market": "B3",
-      "score": 85,
-      "signal": "COMPRA",
-      "price": 129.97999572753906,
-      "momentum_pct": 0.7674937531710224,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    }
-  ]
+  "hunter_opportunities": []
 }
