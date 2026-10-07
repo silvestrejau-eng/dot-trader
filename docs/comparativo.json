@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T00:59:30.717515+00:00",
+  "updated_at": "2026-10-07T01:20:51.163608+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,32 +21,17 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 2,
       "closed_now": 0,
-      "closed": 172,
-      "capital": 8899.095014880824,
-      "patrimonio": 10026.05405271412,
-      "retorno_pct": 0.26054052714119535,
-      "operacoes": 172,
-      "posicoes": 3,
-      "win_rate_pct": 38.95348837209303,
+      "closed": 173,
+      "capital": 9269.423939881006,
+      "patrimonio": 10025.640236017196,
+      "retorno_pct": 0.25640236017197005,
+      "operacoes": 173,
+      "posicoes": 2,
+      "win_rate_pct": 38.72832369942196,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 14.021,
-          "momentum_pct": 0.5377886132224452,
-          "volume_ratio": 0.5051576552960687,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -66,21 +51,6 @@
     }
   },
   "extreme_opportunities": [
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 14.021,
-      "momentum_pct": 0.5377886132224452,
-      "volume_ratio": 0.5051576552960687,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    },
     {
       "symbol": "GOLD11",
       "market": "B3",

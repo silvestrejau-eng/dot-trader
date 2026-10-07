@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T00:59:30.711673+00:00",
+  "updated_at": "2026-10-07T01:20:51.158465+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8899.095014880824,
+    "capital": 9269.423939881006,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -48,21 +48,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "quantity": 26.441961464738952,
-      "entry_price": 14.023,
-      "stop_price": 14.00535,
-      "target_price": 14.0583,
-      "risk_value": 92.69890640500859,
-      "risk_distance_pct": 0.125864650930612,
-      "risk_reward": 2.0,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T00:58:31.251766+00:00"
     }
   ],
   "trades": [
@@ -3716,20 +3701,42 @@
       "net": -0.15232481087753102,
       "reason": "STOP",
       "closed_at": "2026-10-07T00:00:43.099783+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.441961464738952,
+      "entry_price": 14.023,
+      "stop_price": 14.00535,
+      "target_price": 14.0583,
+      "risk_value": 92.69890640500859,
+      "risk_distance_pct": 0.125864650930612,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T00:58:31.251766+00:00",
+      "exit_price": 14.00535,
+      "gross": -0.46670061985263517,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.46670061985263517,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T01:19:44.465821+00:00"
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
-    "market": "CRYPTO",
-    "price": 14.021,
-    "score": 73,
-    "signal": "COMPRA"
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
-    "lucro_liquido": 12.584559870196676,
-    "patrimonio": 10026.05405271412,
-    "retorno_pct": 0.26054052714119535,
-    "operacoes": 172,
-    "win_rate_pct": 38.95348837209303
+    "lucro_liquido": 12.117859250344042,
+    "patrimonio": 10025.640236017196,
+    "retorno_pct": 0.25640236017197005,
+    "operacoes": 173,
+    "win_rate_pct": 38.72832369942196
   }
 }
