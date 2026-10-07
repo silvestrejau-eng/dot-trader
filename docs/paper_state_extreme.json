@@ -1,5 +1,5 @@
 {
-  "capital": 8899.762886145814,
+  "capital": 8201.768695246537,
   "positions": [
     {
       "symbol": "USO",
@@ -45,6 +45,36 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-07T07:26:48.842794+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 31.403538765510987,
+      "entry_price": 11.336,
+      "stop_price": 11.307500000000001,
+      "target_price": 11.393,
+      "risk_value": 88.99762886145814,
+      "risk_distance_pct": 0.251411432604087,
+      "risk_reward": 2.000000000000062,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:46:54.619517+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1323.54904067366,
+      "entry_price": 0.2582,
+      "stop_price": 0.25776,
+      "target_price": 0.25908,
+      "risk_value": 85.43509057548475,
+      "risk_distance_pct": 0.17041053446940202,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:47:41.277996+00:00"
     }
   ],
   "trades": [
@@ -3896,7 +3926,29 @@
       "net": -0.529252626703649,
       "reason": "STOP",
       "closed_at": "2026-10-07T07:26:42.075619+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.44143026237486827,
+      "entry_price": 774.19,
+      "stop_price": 773.5935000000001,
+      "target_price": 775.383,
+      "risk_value": 85.43772370699982,
+      "risk_distance_pct": 0.07704826980456887,
+      "risk_reward": 2.0,
+      "score": 72.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:46:54.619517+00:00",
+      "exit_price": 773.5935000000001,
+      "gross": -0.2633131515066053,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.2633131515066053,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T07:47:07.892537+00:00"
     }
   ],
-  "updated_at": "2026-10-07T07:27:43.154358+00:00"
+  "updated_at": "2026-10-07T07:47:54.842106+00:00"
 }

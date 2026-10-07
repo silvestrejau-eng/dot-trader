@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T07:27:43.151998+00:00",
+  "updated_at": "2026-10-07T07:47:54.839643+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 10053.216508714691,
+    "capital": 9751.62001345325,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,7 +18,23 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.598156386051745,
+      "entry_price": 11.339,
+      "stop_price": 11.298142857142857,
+      "target_price": 11.420714285714286,
+      "risk_value": 50.26608254357346,
+      "risk_distance_pct": 0.36032403966085025,
+      "risk_reward": 1.9999999999999565,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:47:21.259204+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1205,16 +1221,16 @@
     }
   ],
   "market": {
-    "symbol": "DOGEUSDT",
+    "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 0.09089,
-    "score": 66,
-    "signal": "HOLD"
+    "price": 11.334,
+    "score": 78,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 35.3009126522287,
-    "patrimonio": 10053.216508714691,
-    "retorno_pct": 0.5321650871469075,
+    "patrimonio": 10053.08351793276,
+    "retorno_pct": 0.5308351793276156,
     "operacoes": 56,
     "win_rate_pct": 37.5
   }
