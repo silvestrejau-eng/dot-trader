@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T05:58:11.407601+00:00",
+  "updated_at": "2026-10-07T06:21:11.196946+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -10,8 +10,8 @@
       "closed_now": 0,
       "closed": 53,
       "capital": 9750.222472878184,
-      "patrimonio": 10052.598056457095,
-      "retorno_pct": 0.5259805645709381,
+      "patrimonio": 10051.775745235242,
+      "retorno_pct": 0.5177574523524076,
       "operacoes": 53,
       "posicoes": 1,
       "win_rate_pct": 37.735849056603776,
@@ -25,8 +25,8 @@
       "closed_now": 0,
       "closed": 175,
       "capital": 8900.280792286734,
-      "patrimonio": 10028.285124593609,
-      "retorno_pct": 0.2828512459360999,
+      "patrimonio": 10027.274046018165,
+      "retorno_pct": 0.2727404601816419,
       "operacoes": 175,
       "posicoes": 3,
       "win_rate_pct": 39.42857142857143,
