@@ -107,7 +107,7 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
 
         gross = (exit_price - pos["entry_price"]) * pos["quantity"]
         st["capital"] += pos["quantity"] * exit_price
-        tax = max(0.0, gross) * 0.15
+        tax = max(0.0, gross) * 0.20
         trade = {
             **pos, "exit_price": exit_price, "gross": gross, "fees": 0.0,
             "estimated_tax": tax, "net": gross - tax, "reason": reason,
@@ -228,7 +228,7 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
             "capital_inicial": CAPITAL_INICIAL, "capital": st["capital"],
             "max_position_pct": max_position_pct, "stop_mult_atr": stop_mult,
             "target_mult_atr": target_mult, "fee_pct": 0.0,
-            "tax_rate_pct": 15.0, "paper_trading": True,
+            "tax_rate_pct": 20.0, "paper_trading": True,
             "real_orders": False, "risk_per_trade_pct": risk_pct,
             "max_positions": max_positions, "score_min": score_min,
             "max_total_exposure_pct": MAX_TOTAL_EXPOSURE_PCT,
