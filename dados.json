@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T09:02:21.299651+00:00",
+  "updated_at": "2026-10-07T09:07:18.300050+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10052.12978403949,
@@ -1234,6 +1234,8 @@
     "signal": "HOLD"
   },
   "summary": {
+    "lucro_bruto": 52.12978403949374,
+    "imposto_estimado": 17.915596062466605,
     "lucro_liquido": 34.21418797702714,
     "patrimonio": 10052.12978403949,
     "retorno_pct": 0.5212978403948965,
