@@ -1,5 +1,5 @@
 {
-  "capital": 9478.065088705709,
+  "capital": 9193.723136044538,
   "positions": [
     {
       "symbol": "ADAUSDT",
@@ -30,6 +30,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-07T15:58:00.985387+00:00"
+    },
+    {
+      "symbol": "PETR4",
+      "market": "B3",
+      "quantity": 5.251005441343912,
+      "entry_price": 54.150001525878906,
+      "stop_price": 54.039287839617046,
+      "target_price": 54.37142889840262,
+      "risk_value": 47.390325443528546,
+      "risk_distance_pct": 0.20445740192444675,
+      "risk_reward": 1.9999999999999358,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T16:41:16.553045+00:00"
     }
   ],
   "trades": [
@@ -1305,5 +1320,5 @@
       "closed_at": "2026-10-07T16:20:22.169354+00:00"
     }
   ],
-  "updated_at": "2026-10-07T16:21:23.258970+00:00"
+  "updated_at": "2026-10-07T16:42:16.635716+00:00"
 }

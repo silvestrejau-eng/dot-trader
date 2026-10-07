@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T16:21:23.258970+00:00",
+  "updated_at": "2026-10-07T16:42:16.635716+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9478.065088705709,
+    "capital": 9193.723136044538,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -49,6 +49,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-07T15:58:00.985387+00:00"
+    },
+    {
+      "symbol": "PETR4",
+      "market": "B3",
+      "quantity": 5.251005441343912,
+      "entry_price": 54.150001525878906,
+      "stop_price": 54.039287839617046,
+      "target_price": 54.37142889840262,
+      "risk_value": 47.390325443528546,
+      "risk_distance_pct": 0.20445740192444675,
+      "risk_reward": 1.9999999999999358,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T16:41:16.553045+00:00"
     }
   ],
   "trades": [
@@ -1351,10 +1366,10 @@
     ]
   },
   "market": {
-    "symbol": "AVAXUSDT",
-    "market": "CRYPTO",
-    "price": 11.338,
-    "score": 73,
+    "symbol": "PETR4",
+    "market": "B3",
+    "price": 54.150001525878906,
+    "score": 78,
     "signal": "COMPRA"
   },
   "summary": {
@@ -1362,9 +1377,9 @@
     "base_tributavel": 54.406024916299856,
     "imposto_estimado": 10.881204983259973,
     "lucro_liquido": 43.52481993303989,
-    "patrimonio": 10055.873816693662,
+    "patrimonio": 10054.760193459075,
     "dias_positivos": 3,
-    "retorno_pct": 0.558738166936612,
+    "retorno_pct": 0.5476019345907579,
     "operacoes": 60,
     "win_rate_pct": 38.333333333333336
   }
