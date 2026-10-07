@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T14:04:47.791419+00:00",
+  "updated_at": "2026-10-07T14:27:29.272888+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,30 +21,30 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 197,
-      "capital": 10025.777522181495,
+      "capital": 9624.746421294236,
       "patrimonio": 10025.777522181495,
       "retorno_pct": 0.2577752218149598,
       "operacoes": 197,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 37.56345177664975,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "BBOI11",
+          "symbol": "CORN11",
           "market": "B3",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 12.6899995803833,
-          "momentum_pct": 1.5199966430664125,
+          "score": 65,
+          "signal": "HOLD",
+          "price": 7.079999923706055,
+          "momentum_pct": 0.9985690804376057,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
-            "RSI forte, proximo da sobrecompra",
+            "RSI momentum ideal",
             "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
+            "volume fraco"
           ]
         }
       ]
@@ -52,18 +52,18 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "BBOI11",
+      "symbol": "CORN11",
       "market": "B3",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 12.6899995803833,
-      "momentum_pct": 1.5199966430664125,
+      "score": 65,
+      "signal": "HOLD",
+      "price": 7.079999923706055,
+      "momentum_pct": 0.9985690804376057,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
-        "RSI forte, proximo da sobrecompra",
+        "RSI momentum ideal",
         "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
+        "volume fraco"
       ]
     }
   ],

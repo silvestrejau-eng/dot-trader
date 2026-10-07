@@ -1,6 +1,22 @@
 {
-  "capital": 10025.777522181495,
-  "positions": [],
+  "capital": 9624.746421294236,
+  "positions": [
+    {
+      "symbol": "CORN11",
+      "market": "B3",
+      "quantity": 56.64281147016432,
+      "entry_price": 7.079999923706055,
+      "stop_price": 7.061499977111817,
+      "target_price": 7.116999816894531,
+      "risk_value": 100.25777522181495,
+      "risk_distance_pct": 0.26129868352532487,
+      "risk_reward": 2.000000000000048,
+      "score": 65.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T14:26:29.205512+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "ADAUSDT",
@@ -4204,5 +4220,5 @@
       "closed_at": "2026-10-07T14:03:45.836353+00:00"
     }
   ],
-  "updated_at": "2026-10-07T14:04:47.784001+00:00"
+  "updated_at": "2026-10-07T14:27:29.266832+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T14:04:47.780971+00:00",
+  "updated_at": "2026-10-07T14:27:29.264500+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10053.568758361456,
@@ -1298,11 +1298,11 @@
     ]
   },
   "market": {
-    "symbol": "BBOI11",
+    "symbol": "CORN11",
     "market": "B3",
-    "price": 12.6899995803833,
-    "score": 73,
-    "signal": "COMPRA"
+    "price": 7.079999923706055,
+    "score": 65,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_bruto": 53.56875836146095,
