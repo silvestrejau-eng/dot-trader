@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T15:58:49.211638+00:00",
+  "updated_at": "2026-10-07T16:21:23.258970+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9175.620759400026,
+    "capital": 9478.065088705709,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -20,21 +20,6 @@
     "tax_method": "20% sobre resultado líquido diário positivo (estimativa; apuração fiscal real é mensal)"
   },
   "positions": [
-    {
-      "symbol": "BNBUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.3922935665242559,
-      "entry_price": 768.83,
-      "stop_price": 767.7628571428572,
-      "target_price": 770.9642857142858,
-      "risk_value": 50.26784379180728,
-      "risk_distance_pct": 0.13880088669053137,
-      "risk_reward": 2.0000000000001066,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T15:35:04.858501+00:00"
-    },
     {
       "symbol": "ADAUSDT",
       "market": "CRYPTO",
@@ -1201,8 +1186,8 @@
       "exit_price": 0.25845714285714283,
       "gross": 2.06416898547041,
       "fees": 0.0,
-      "estimated_tax": 0.1836872012164689,
-      "net": 1.8804817842539412,
+      "estimated_tax": 0.2231068646808679,
+      "net": 1.8410621207895423,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:44.067723+00:00"
     },
@@ -1289,8 +1274,8 @@
       "exit_price": 50.738572801862446,
       "gross": 1.9655969004112024,
       "fees": 0.0,
-      "estimated_tax": 0.1749154240266904,
-      "net": 1.790681476384512,
+      "estimated_tax": 0.2124526454781684,
+      "net": 1.753144254933034,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:20.870984+00:00"
     },
@@ -1315,12 +1300,34 @@
       "net": -0.5266225784439985,
       "reason": "STOP",
       "closed_at": "2026-10-07T13:50:20.870984+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.3922935665242559,
+      "entry_price": 768.83,
+      "stop_price": 767.7628571428572,
+      "target_price": 770.9642857142858,
+      "risk_value": 50.26784379180728,
+      "risk_distance_pct": 0.13880088669053137,
+      "risk_reward": 2.0000000000001066,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.858501+00:00",
+      "exit_price": 770.9642857142858,
+      "gross": 0.8372665548389213,
+      "fees": 0.0,
+      "estimated_tax": 0.0904964260519074,
+      "net": 0.7467701287870139,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T16:20:22.169354+00:00"
     }
   ],
   "tax": {
     "rate_pct": 20.0,
-    "base_tributavel": 53.56875836146094,
-    "imposto_estimado": 10.713751672292188,
+    "base_tributavel": 54.406024916299856,
+    "imposto_estimado": 10.881204983259973,
     "dias_positivos": 3,
     "daily": [
       {
@@ -1337,28 +1344,28 @@
       },
       {
         "date": "2026-10-07",
-        "net_result": 1.7930131262157967,
-        "taxable_base": 1.7930131262157967,
-        "estimated_tax": 0.35860262524315933
+        "net_result": 2.630279681054718,
+        "taxable_base": 2.630279681054718,
+        "estimated_tax": 0.5260559362109437
       }
     ]
   },
   "market": {
-    "symbol": "ADAUSDT",
+    "symbol": "AVAXUSDT",
     "market": "CRYPTO",
-    "price": 0.2563,
-    "score": 88,
+    "price": 11.338,
+    "score": 73,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_bruto": 53.56875836146095,
-    "base_tributavel": 53.56875836146094,
-    "imposto_estimado": 10.713751672292188,
-    "lucro_liquido": 42.85500668916876,
-    "patrimonio": 10053.73768213125,
+    "lucro_bruto": 54.40602491629987,
+    "base_tributavel": 54.406024916299856,
+    "imposto_estimado": 10.881204983259973,
+    "lucro_liquido": 43.52481993303989,
+    "patrimonio": 10055.873816693662,
     "dias_positivos": 3,
-    "retorno_pct": 0.5373768213124963,
-    "operacoes": 59,
-    "win_rate_pct": 37.28813559322034
+    "retorno_pct": 0.558738166936612,
+    "operacoes": 60,
+    "win_rate_pct": 38.333333333333336
   }
 }
