@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T09:07:18.300050+00:00",
+  "updated_at": "2026-10-07T09:10:09.375380+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10052.12978403949,
@@ -7,7 +7,7 @@
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
     "fee_pct": 0.0,
-    "tax_rate_pct": 15.0,
+    "tax_rate_pct": 20.0,
     "paper_trading": true,
     "real_orders": false,
     "risk_per_trade_pct": 0.5,
