@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T08:02:53.053939+00:00",
+  "updated_at": "2026-10-07T08:27:00.059553+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10052.12978403949,
@@ -1227,9 +1227,9 @@
     }
   ],
   "market": {
-    "symbol": "GOLD11",
-    "market": "B3",
-    "price": 21.579999923706055,
+    "symbol": "ADAUSDT",
+    "market": "CRYPTO",
+    "price": 0.2577,
     "score": 66,
     "signal": "HOLD"
   },

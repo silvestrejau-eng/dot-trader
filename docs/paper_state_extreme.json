@@ -1,5 +1,5 @@
 {
-  "capital": 8898.022210561596,
+  "capital": 8542.101322139131,
   "positions": [
     {
       "symbol": "USO",
@@ -45,6 +45,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-07T07:26:48.842794+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1381.1443089734726,
+      "entry_price": 0.2577,
+      "stop_price": 0.257245,
+      "target_price": 0.25861,
+      "risk_value": 88.98022210561597,
+      "risk_distance_pct": 0.17656189367480918,
+      "risk_reward": 2.000000000000122,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T08:26:13.797142+00:00"
     }
   ],
   "trades": [
@@ -3964,5 +3979,5 @@
       "closed_at": "2026-10-07T08:01:50.380294+00:00"
     }
   ],
-  "updated_at": "2026-10-07T08:02:53.055912+00:00"
+  "updated_at": "2026-10-07T08:27:00.062100+00:00"
 }
