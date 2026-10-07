@@ -1,5 +1,5 @@
 {
-  "capital": 9624.746421294236,
+  "capital": 8515.359649790178,
   "positions": [
     {
       "symbol": "CORN11",
@@ -15,6 +15,51 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-07T14:26:29.205512+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.5007477034608033,
+      "entry_price": 768.83,
+      "stop_price": 768.0830000000001,
+      "target_price": 770.3240000000001,
+      "risk_value": 96.24746421294236,
+      "risk_distance_pct": 0.09716062068337047,
+      "risk_reward": 2.0000000000001523,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.861387+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1453.3632032154883,
+      "entry_price": 0.2543,
+      "stop_price": 0.25373,
+      "target_price": 0.25544,
+      "risk_value": 92.39756564442467,
+      "risk_distance_pct": 0.22414471097129957,
+      "risk_reward": 1.9999999999999025,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.861387+00:00"
+    },
+    {
+      "symbol": "IVVB11",
+      "market": "B3",
+      "quantity": 0.8078475460227016,
+      "entry_price": 439.20001220703125,
+      "stop_price": 438.88501129150393,
+      "target_price": 439.83001403808595,
+      "risk_value": 88.7016630186477,
+      "risk_distance_pct": 0.07172151793539457,
+      "risk_reward": 2.0000000000001803,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T15:35:04.861387+00:00"
     }
   ],
   "trades": [
@@ -4220,5 +4265,5 @@
       "closed_at": "2026-10-07T14:03:45.836353+00:00"
     }
   ],
-  "updated_at": "2026-10-07T15:04:00.230616+00:00"
+  "updated_at": "2026-10-07T15:36:08.004993+00:00"
 }

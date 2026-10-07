@@ -1,39 +1,133 @@
 {
-  "updated_at": "2026-10-07T15:04:00.342038+00:00",
+  "updated_at": "2026-10-07T15:36:08.012286+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 0,
+      "opened_total": 1,
       "closed_now": 0,
       "closed": 59,
-      "capital": 10053.568758361456,
-      "patrimonio": 10053.568758361456,
-      "retorno_pct": 0.5356875836145525,
+      "capital": 9751.961695610613,
+      "patrimonio": 10053.670754688754,
+      "retorno_pct": 0.5367075468875271,
       "operacoes": 59,
-      "posicoes": 0,
+      "posicoes": 1,
       "win_rate_pct": 37.28813559322034,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "BNBUSDT",
+          "market": "CRYPTO",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 769.09,
+          "momentum_pct": 0.3182677884301821,
+          "volume_ratio": 0.3244592050807684,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        }
+      ]
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 4,
       "closed_now": 0,
       "closed": 197,
-      "capital": 9624.746421294236,
-      "patrimonio": 10026.343963260708,
-      "retorno_pct": 0.2634396326070876,
+      "capital": 8515.359649790178,
+      "patrimonio": 10025.785373186593,
+      "retorno_pct": 0.2578537318659313,
       "operacoes": 197,
-      "posicoes": 1,
+      "posicoes": 4,
       "win_rate_pct": 37.56345177664975,
       "last_event": null,
-      "opportunities": []
+      "opportunities": [
+        {
+          "symbol": "BNBUSDT",
+          "market": "CRYPTO",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 769.09,
+          "momentum_pct": 0.3182677884301821,
+          "volume_ratio": 0.3244592050807684,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "ADAUSDT",
+          "market": "CRYPTO",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 0.2546,
+          "momentum_pct": 0.35474970437525677,
+          "volume_ratio": 0.3027888886946304,
+          "reason": [
+            "EMA9>EMA21",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        }
+      ]
     }
   },
-  "extreme_opportunities": [],
-  "hunter_opportunities": []
+  "extreme_opportunities": [
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 769.09,
+      "momentum_pct": 0.3182677884301821,
+      "volume_ratio": 0.3244592050807684,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 0.2546,
+      "momentum_pct": 0.35474970437525677,
+      "volume_ratio": 0.3027888886946304,
+      "reason": [
+        "EMA9>EMA21",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    }
+  ],
+  "hunter_opportunities": [
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 769.09,
+      "momentum_pct": 0.3182677884301821,
+      "volume_ratio": 0.3244592050807684,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    }
+  ]
 }

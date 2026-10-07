@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T15:04:00.228674+00:00",
+  "updated_at": "2026-10-07T15:36:08.002023+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 10053.568758361456,
+    "capital": 9751.961695610613,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -19,7 +19,23 @@
     "strategy": "DOT_HUNTER_X",
     "tax_method": "20% sobre resultado líquido diário positivo (estimativa; apuração fiscal real é mensal)"
   },
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.3922935665242559,
+      "entry_price": 768.83,
+      "stop_price": 767.7628571428572,
+      "target_price": 770.9642857142858,
+      "risk_value": 50.26784379180728,
+      "risk_distance_pct": 0.13880088669053137,
+      "risk_reward": 2.0000000000001066,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.858501+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1298,20 +1314,20 @@
     ]
   },
   "market": {
-    "symbol": "WEGE3",
-    "market": "B3",
-    "price": 51.119998931884766,
-    "score": 58,
-    "signal": "HOLD"
+    "symbol": "BNBUSDT",
+    "market": "CRYPTO",
+    "price": 769.09,
+    "score": 78,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_bruto": 53.56875836146095,
     "base_tributavel": 53.56875836146094,
     "imposto_estimado": 10.713751672292188,
     "lucro_liquido": 42.85500668916876,
-    "patrimonio": 10053.568758361456,
+    "patrimonio": 10053.670754688754,
     "dias_positivos": 3,
-    "retorno_pct": 0.5356875836145525,
+    "retorno_pct": 0.5367075468875271,
     "operacoes": 59,
     "win_rate_pct": 37.28813559322034
   }

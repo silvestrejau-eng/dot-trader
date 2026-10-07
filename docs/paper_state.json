@@ -1,6 +1,22 @@
 {
-  "capital": 10053.568758361456,
-  "positions": [],
+  "capital": 9751.961695610613,
+  "positions": [
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.3922935665242559,
+      "entry_price": 768.83,
+      "stop_price": 767.7628571428572,
+      "target_price": 770.9642857142858,
+      "risk_value": 50.26784379180728,
+      "risk_distance_pct": 0.13880088669053137,
+      "risk_reward": 2.0000000000001066,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.858501+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1252,5 +1268,5 @@
       "closed_at": "2026-10-07T13:50:20.870984+00:00"
     }
   ],
-  "updated_at": "2026-10-07T15:04:00.228674+00:00"
+  "updated_at": "2026-10-07T15:36:08.002023+00:00"
 }
