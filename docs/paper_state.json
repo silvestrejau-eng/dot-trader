@@ -1,6 +1,37 @@
 {
-  "capital": 10052.12978403949,
-  "positions": [],
+  "capital": 9458.048913802755,
+  "positions": [
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "quantity": 5.982223654711357,
+      "entry_price": 50.40999984741211,
+      "stop_price": 50.24571337018694,
+      "target_price": 50.738572801862446,
+      "risk_value": 50.26064892019745,
+      "risk_distance_pct": 0.32590057076463647,
+      "risk_reward": 2.0,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.275960+00:00"
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
+      "quantity": 2.2546397743983575,
+      "entry_price": 129.74000549316406,
+      "stop_price": 129.50643266950334,
+      "target_price": 130.20715114048548,
+      "risk_value": 48.75282945259153,
+      "risk_distance_pct": 0.18003145812494145,
+      "risk_reward": 1.9999999999998783,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.275960+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1208,5 +1239,5 @@
       "closed_at": "2026-10-07T08:02:39.516210+00:00"
     }
   ],
-  "updated_at": "2026-10-07T13:07:27.791461+00:00"
+  "updated_at": "2026-10-07T13:30:45.981239+00:00"
 }
