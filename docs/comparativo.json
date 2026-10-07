@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T07:04:40.882107+00:00",
+  "updated_at": "2026-10-07T07:27:43.160285+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -23,28 +23,28 @@
       "opened_now": 0,
       "opened_total": 3,
       "closed_now": 0,
-      "closed": 180,
-      "capital": 8942.955177170752,
-      "patrimonio": 10027.617328117014,
-      "retorno_pct": 0.2761732811701334,
-      "operacoes": 180,
+      "closed": 181,
+      "capital": 8899.762886145814,
+      "patrimonio": 10026.92507372754,
+      "retorno_pct": 0.26925073727539495,
+      "operacoes": 181,
       "posicoes": 3,
-      "win_rate_pct": 38.88888888888889,
+      "win_rate_pct": 38.67403314917127,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "LINKUSDT",
+          "symbol": "DOGEUSDT",
           "market": "CRYPTO",
-          "score": 72,
-          "signal": "COMPRA",
-          "price": 13.808,
-          "momentum_pct": 0.465657741559955,
-          "volume_ratio": 2.52274030513731,
+          "score": 66,
+          "signal": "HOLD",
+          "price": 0.09089,
+          "momentum_pct": 0.19843457171204726,
+          "volume_ratio": 0.16993366173980456,
           "reason": [
             "EMA9>EMA21>EMA50",
-            "RSI sobrecomprado",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
+            "RSI momentum ideal",
+            "momentum positivo",
+            "preco comprimido na maxima"
           ]
         },
         {
@@ -67,18 +67,18 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "LINKUSDT",
+      "symbol": "DOGEUSDT",
       "market": "CRYPTO",
-      "score": 72,
-      "signal": "COMPRA",
-      "price": 13.808,
-      "momentum_pct": 0.465657741559955,
-      "volume_ratio": 2.52274030513731,
+      "score": 66,
+      "signal": "HOLD",
+      "price": 0.09089,
+      "momentum_pct": 0.19843457171204726,
+      "volume_ratio": 0.16993366173980456,
       "reason": [
         "EMA9>EMA21>EMA50",
-        "RSI sobrecomprado",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima"
       ]
     },
     {

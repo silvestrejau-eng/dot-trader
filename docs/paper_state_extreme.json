@@ -1,5 +1,5 @@
 {
-  "capital": 8942.955177170752,
+  "capital": 8899.762886145814,
   "positions": [
     {
       "symbol": "USO",
@@ -32,19 +32,19 @@
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
     },
     {
-      "symbol": "LINKUSDT",
+      "symbol": "DOGEUSDT",
       "market": "CRYPTO",
-      "quantity": 23.786634908029534,
-      "entry_price": 13.796,
-      "stop_price": 13.77375,
-      "target_price": 13.840499999999999,
-      "risk_value": 82.04010379779386,
-      "risk_distance_pct": 0.16127863148738517,
+      "quantity": 4081.2618708937816,
+      "entry_price": 0.09086,
+      "stop_price": 0.09075949999999999,
+      "target_price": 0.091061,
+      "risk_value": 92.70586339735225,
+      "risk_distance_pct": 0.11060972925380076,
       "risk_reward": 2.0,
-      "score": 72.0,
+      "score": 66.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-07T06:44:37.369573+00:00"
+      "opened_at": "2026-10-07T07:26:48.842794+00:00"
     }
   ],
   "trades": [
@@ -3874,7 +3874,29 @@
       "net": -0.25328099382915426,
       "reason": "STOP",
       "closed_at": "2026-10-07T07:03:35.414598+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 23.786634908029534,
+      "entry_price": 13.796,
+      "stop_price": 13.77375,
+      "target_price": 13.840499999999999,
+      "risk_value": 82.04010379779386,
+      "risk_distance_pct": 0.16127863148738517,
+      "risk_reward": 2.0,
+      "score": 72.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.369573+00:00",
+      "exit_price": 13.77375,
+      "gross": -0.529252626703649,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.529252626703649,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T07:26:42.075619+00:00"
     }
   ],
-  "updated_at": "2026-10-07T07:04:40.876200+00:00"
+  "updated_at": "2026-10-07T07:27:43.154358+00:00"
 }

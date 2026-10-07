@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T07:04:40.873921+00:00",
+  "updated_at": "2026-10-07T07:27:43.151998+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10053.216508714691,
@@ -1205,11 +1205,11 @@
     }
   ],
   "market": {
-    "symbol": "LINKUSDT",
+    "symbol": "DOGEUSDT",
     "market": "CRYPTO",
-    "price": 13.808,
-    "score": 72,
-    "signal": "COMPRA"
+    "price": 0.09089,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 35.3009126522287,
