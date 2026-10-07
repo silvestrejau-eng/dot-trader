@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T05:23:10.738482+00:00",
+  "updated_at": "2026-10-07T05:41:38.059031+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -16,23 +16,7 @@
       "posicoes": 1,
       "win_rate_pct": 37.735849056603776,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "score": 76,
-          "signal": "COMPRA",
-          "price": 0.2567,
-          "momentum_pct": 0.86444007858546,
-          "volume_ratio": 2.0804423243237347,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        }
-      ]
+      "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
@@ -41,58 +25,13 @@
       "closed_now": 0,
       "closed": 173,
       "capital": 8200.993058874561,
-      "patrimonio": 10025.934388059835,
-      "retorno_pct": 0.25934388059836166,
+      "patrimonio": 10026.5574066648,
+      "retorno_pct": 0.265574066648,
       "operacoes": 173,
       "posicoes": 5,
       "win_rate_pct": 38.72832369942196,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "score": 76,
-          "signal": "COMPRA",
-          "price": 0.2567,
-          "momentum_pct": 0.86444007858546,
-          "volume_ratio": 2.0804423243237347,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "SOLUSDT",
-          "market": "CRYPTO",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 118.6,
-          "momentum_pct": 0.44888625391716896,
-          "volume_ratio": 0.5390098544257041,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "XRPUSDT",
-          "market": "CRYPTO",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 1.469,
-          "momentum_pct": 0.4375769178176059,
-          "volume_ratio": 0.13681757654742,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -113,51 +52,6 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "score": 76,
-      "signal": "COMPRA",
-      "price": 0.2567,
-      "momentum_pct": 0.86444007858546,
-      "volume_ratio": 2.0804423243237347,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 118.6,
-      "momentum_pct": 0.44888625391716896,
-      "volume_ratio": 0.5390098544257041,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "XRPUSDT",
-      "market": "CRYPTO",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 1.469,
-      "momentum_pct": 0.4375769178176059,
-      "volume_ratio": 0.13681757654742,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
       "symbol": "GOLD11",
       "market": "B3",
       "score": 66,
@@ -173,21 +67,5 @@
       ]
     }
   ],
-  "hunter_opportunities": [
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "score": 76,
-      "signal": "COMPRA",
-      "price": 0.2567,
-      "momentum_pct": 0.86444007858546,
-      "volume_ratio": 2.0804423243237347,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    }
-  ]
+  "hunter_opportunities": []
 }

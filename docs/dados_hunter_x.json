@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T05:23:10.730461+00:00",
+  "updated_at": "2026-10-07T05:41:38.051028+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9750.222472878184,
@@ -1155,11 +1155,11 @@
     }
   ],
   "market": {
-    "symbol": "ADAUSDT",
-    "market": "CRYPTO",
-    "price": 0.2567,
-    "score": 76,
-    "signal": "COMPRA"
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
     "lucro_liquido": 34.169774520599105,
