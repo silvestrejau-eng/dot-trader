@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T17:50:54.605212+00:00",
+  "updated_at": "2026-10-07T18:03:53.669335+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9461.65568736864,
+    "capital": 9753.074534346744,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -21,34 +21,19 @@
   },
   "positions": [
     {
-      "symbol": "BOVA11",
-      "market": "B3",
-      "quantity": 1.4885961105218295,
-      "entry_price": 202.66000366210938,
-      "stop_price": 202.31285749162947,
-      "target_price": 203.3542960030692,
-      "risk_value": 50.2798155349593,
-      "risk_distance_pct": 0.1712948604593395,
-      "risk_reward": 2.0000000000000817,
-      "score": 78.0,
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.656193040271624,
+      "entry_price": 11.316,
+      "stop_price": 11.268285714285714,
+      "target_price": 11.411428571428573,
+      "risk_value": 50.27358007395229,
+      "risk_distance_pct": 0.42165328485584064,
+      "risk_reward": 1.9999999999999627,
+      "score": 76.0,
       "strategy": "DOT_HUNTER_X",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T17:50:05.856297+00:00"
-    },
-    {
-      "symbol": "PRIO3",
-      "market": "B3",
-      "quantity": 4.6265379670112745,
-      "entry_price": 63.25,
-      "stop_price": 63.09214292253767,
-      "target_price": 63.56571415492466,
-      "risk_value": 48.77142106891052,
-      "risk_distance_pct": 0.2495764070550697,
-      "risk_reward": 2.0,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T17:50:40.817115+00:00"
+      "source": "Binance public",
+      "opened_at": "2026-10-07T18:03:04.787679+00:00"
     }
   ],
   "trades": [
@@ -1186,8 +1171,8 @@
       "exit_price": 0.25845714285714283,
       "gross": 2.06416898547041,
       "fees": 0.0,
-      "estimated_tax": 0.2304673512336117,
-      "net": 1.8337016342367984,
+      "estimated_tax": 0.16182889745144372,
+      "net": 1.9023400880189665,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:44.067723+00:00"
     },
@@ -1274,8 +1259,8 @@
       "exit_price": 50.738572801862446,
       "gross": 1.9655969004112024,
       "fees": 0.0,
-      "estimated_tax": 0.2194616402142725,
-      "net": 1.74613526019693,
+      "estimated_tax": 0.15410093915107897,
+      "net": 1.8114959612601234,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:20.870984+00:00"
     },
@@ -1318,8 +1303,8 @@
       "exit_price": 770.9642857142858,
       "gross": 0.8372665548389213,
       "fees": 0.0,
-      "estimated_tax": 0.0934819806558826,
-      "net": 0.7437845741830387,
+      "estimated_tax": 0.06564090653250138,
+      "net": 0.7716256483064199,
       "reason": "ALVO",
       "closed_at": "2026-10-07T16:20:22.169354+00:00"
     },
@@ -1362,8 +1347,8 @@
       "exit_price": 130.75429207938058,
       "gross": 1.471029290454658,
       "fees": 0.0,
-      "estimated_tax": 0.16424247556499497,
-      "net": 1.306786814889663,
+      "estimated_tax": 0.11532730598546695,
+      "net": 1.355701984469191,
       "reason": "ALVO",
       "closed_at": "2026-10-07T17:49:50.807397+00:00"
     },
@@ -1384,16 +1369,60 @@
       "exit_price": 54.37142889840262,
       "gross": 1.162716337984505,
       "fees": 0.0,
-      "estimated_tax": 0.12981890365447263,
-      "net": 1.0328974343300323,
+      "estimated_tax": 0.09115586192277372,
+      "net": 1.0715604760617312,
       "reason": "ALVO",
       "closed_at": "2026-10-07T17:49:50.807397+00:00"
+    },
+    {
+      "symbol": "BOVA11",
+      "market": "B3",
+      "quantity": 1.4885961105218295,
+      "entry_price": 202.66000366210938,
+      "stop_price": 202.31285749162947,
+      "target_price": 203.3542960030692,
+      "risk_value": 50.2798155349593,
+      "risk_distance_pct": 0.1712948604593395,
+      "risk_reward": 2.0000000000000817,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T17:50:05.856297+00:00",
+      "exit_price": 202.31285749162947,
+      "gross": -0.516760439158931,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.516760439158931,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T18:02:50.710309+00:00"
+    },
+    {
+      "symbol": "PRIO3",
+      "market": "B3",
+      "quantity": 4.6265379670112745,
+      "entry_price": 63.25,
+      "stop_price": 63.09214292253767,
+      "target_price": 63.56571415492466,
+      "risk_value": 48.77142106891052,
+      "risk_distance_pct": 0.2495764070550697,
+      "risk_reward": 2.0,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T17:50:40.817115+00:00",
+      "exit_price": 63.09214292253767,
+      "gross": -0.7303317622409168,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.7303317622409168,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T18:02:50.710309+00:00"
     }
   ],
   "tax": {
     "rate_pct": 20.0,
-    "base_tributavel": 55.96310699186131,
-    "imposto_estimado": 11.192621398372264,
+    "base_tributavel": 54.716014790461465,
+    "imposto_estimado": 10.943202958092293,
     "dias_positivos": 3,
     "daily": [
       {
@@ -1410,28 +1439,28 @@
       },
       {
         "date": "2026-10-07",
-        "net_result": 4.187361756616172,
-        "taxable_base": 4.187361756616172,
-        "estimated_tax": 0.8374723513232344
+        "net_result": 2.940269555216324,
+        "taxable_base": 2.940269555216324,
+        "estimated_tax": 0.5880539110432648
       }
     ]
   },
   "market": {
-    "symbol": "PRIO3",
-    "market": "B3",
-    "price": 63.25,
-    "score": 78,
+    "symbol": "AVAXUSDT",
+    "market": "CRYPTO",
+    "price": 11.325,
+    "score": 88,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_bruto": 55.96310699186132,
-    "base_tributavel": 55.96310699186131,
-    "imposto_estimado": 11.192621398372264,
-    "lucro_liquido": 44.770485593489056,
-    "patrimonio": 10055.873794859495,
+    "lucro_bruto": 54.71601479046148,
+    "base_tributavel": 54.716014790461465,
+    "imposto_estimado": 10.943202958092293,
+    "lucro_liquido": 43.772811832369186,
+    "patrimonio": 10054.95592052782,
     "dias_positivos": 3,
-    "retorno_pct": 0.5587379485949562,
-    "operacoes": 63,
-    "win_rate_pct": 39.682539682539684
+    "retorno_pct": 0.5495592052781939,
+    "operacoes": 65,
+    "win_rate_pct": 38.46153846153847
   }
 }
