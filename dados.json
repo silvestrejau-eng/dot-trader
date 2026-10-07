@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T06:45:38.655703+00:00",
+  "updated_at": "2026-10-07T07:04:40.873921+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9477.60176607361,
+    "capital": 10053.216508714691,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,38 +18,7 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [
-    {
-      "symbol": "SOLUSDT",
-      "market": "CRYPTO",
-      "quantity": 2.457419761289973,
-      "entry_price": 119.03,
-      "stop_price": 118.86714285714285,
-      "target_price": 119.3557142857143,
-      "risk_value": 48.75111236439092,
-      "risk_distance_pct": 0.13682024939691592,
-      "risk_reward": 2.0,
-      "score": 100.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T06:44:37.367801+00:00"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "market": "CRYPTO",
-      "quantity": 0.003364298049679552,
-      "entry_price": 84336.01,
-      "stop_price": 84269.66714285714,
-      "target_price": 84468.69571428571,
-      "risk_value": 47.2885789934592,
-      "risk_distance_pct": 0.07866492278073406,
-      "risk_reward": 2.0000000000002194,
-      "score": 77.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T06:44:37.367801+00:00"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1189,20 +1158,64 @@
       "net": 1.7545436376498487,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:44.067723+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.003364298049679552,
+      "entry_price": 84336.01,
+      "stop_price": 84269.66714285714,
+      "target_price": 84468.69571428571,
+      "risk_value": 47.2885789934592,
+      "risk_distance_pct": 0.07866492278073406,
+      "risk_reward": 2.0000000000002194,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.367801+00:00",
+      "exit_price": 84269.66714285714,
+      "gross": -0.22319714489586664,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.22319714489586664,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T07:03:35.412369+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 2.457419761289973,
+      "entry_price": 119.03,
+      "stop_price": 118.86714285714285,
+      "target_price": 119.3557142857143,
+      "risk_value": 48.75111236439092,
+      "risk_distance_pct": 0.13682024939691592,
+      "risk_reward": 2.0,
+      "score": 100.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.367801+00:00",
+      "exit_price": 118.86714285714285,
+      "gross": -0.4002083611243822,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4002083611243822,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T07:04:05.209472+00:00"
     }
   ],
   "market": {
-    "symbol": "ADAUSDT",
+    "symbol": "LINKUSDT",
     "market": "CRYPTO",
-    "price": 0.2584,
-    "score": 73,
+    "price": 13.808,
+    "score": 72,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 35.92431815824895,
-    "patrimonio": 10053.707454983205,
-    "retorno_pct": 0.5370745498320506,
-    "operacoes": 54,
-    "win_rate_pct": 38.88888888888889
+    "lucro_liquido": 35.3009126522287,
+    "patrimonio": 10053.216508714691,
+    "retorno_pct": 0.5321650871469075,
+    "operacoes": 56,
+    "win_rate_pct": 37.5
   }
 }
