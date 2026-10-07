@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T07:47:54.839643+00:00",
+  "updated_at": "2026-10-07T08:02:53.053939+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9751.62001345325,
+    "capital": 10052.12978403949,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,23 +18,7 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 26.598156386051745,
-      "entry_price": 11.339,
-      "stop_price": 11.298142857142857,
-      "target_price": 11.420714285714286,
-      "risk_value": 50.26608254357346,
-      "risk_distance_pct": 0.36032403966085025,
-      "risk_reward": 1.9999999999999565,
-      "score": 78.0,
-      "strategy": "DOT_HUNTER_X",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T07:47:21.259204+00:00"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1218,20 +1202,42 @@
       "net": -0.4002083611243822,
       "reason": "STOP",
       "closed_at": "2026-10-07T07:04:05.209472+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 26.598156386051745,
+      "entry_price": 11.339,
+      "stop_price": 11.298142857142857,
+      "target_price": 11.420714285714286,
+      "risk_value": 50.26608254357346,
+      "risk_distance_pct": 0.36032403966085025,
+      "risk_reward": 1.9999999999999565,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:47:21.259204+00:00",
+      "exit_price": 11.298142857142857,
+      "gross": -1.0867246752015682,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -1.0867246752015682,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T08:02:39.516210+00:00"
     }
   ],
   "market": {
-    "symbol": "AVAXUSDT",
-    "market": "CRYPTO",
-    "price": 11.334,
-    "score": 78,
-    "signal": "COMPRA"
+    "symbol": "GOLD11",
+    "market": "B3",
+    "price": 21.579999923706055,
+    "score": 66,
+    "signal": "HOLD"
   },
   "summary": {
-    "lucro_liquido": 35.3009126522287,
-    "patrimonio": 10053.08351793276,
-    "retorno_pct": 0.5308351793276156,
-    "operacoes": 56,
-    "win_rate_pct": 37.5
+    "lucro_liquido": 34.21418797702714,
+    "patrimonio": 10052.12978403949,
+    "retorno_pct": 0.5212978403948965,
+    "operacoes": 57,
+    "win_rate_pct": 36.84210526315789
   }
 }

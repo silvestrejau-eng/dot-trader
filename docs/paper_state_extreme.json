@@ -1,5 +1,5 @@
 {
-  "capital": 8201.768695246537,
+  "capital": 8898.022210561596,
   "positions": [
     {
       "symbol": "USO",
@@ -45,36 +45,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-07T07:26:48.842794+00:00"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "quantity": 31.403538765510987,
-      "entry_price": 11.336,
-      "stop_price": 11.307500000000001,
-      "target_price": 11.393,
-      "risk_value": 88.99762886145814,
-      "risk_distance_pct": 0.251411432604087,
-      "risk_reward": 2.000000000000062,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T07:46:54.619517+00:00"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "quantity": 1323.54904067366,
-      "entry_price": 0.2582,
-      "stop_price": 0.25776,
-      "target_price": 0.25908,
-      "risk_value": 85.43509057548475,
-      "risk_distance_pct": 0.17041053446940202,
-      "risk_reward": 2.0,
-      "score": 70.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T07:47:41.277996+00:00"
     }
   ],
   "trades": [
@@ -3948,7 +3918,51 @@
       "net": -0.2633131515066053,
       "reason": "STOP",
       "closed_at": "2026-10-07T07:47:07.892537+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 31.403538765510987,
+      "entry_price": 11.336,
+      "stop_price": 11.307500000000001,
+      "target_price": 11.393,
+      "risk_value": 88.99762886145814,
+      "risk_distance_pct": 0.251411432604087,
+      "risk_reward": 2.000000000000062,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:46:54.619517+00:00",
+      "exit_price": 11.307500000000001,
+      "gross": -0.8950008548170413,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.8950008548170413,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T08:01:50.380294+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1323.54904067366,
+      "entry_price": 0.2582,
+      "stop_price": 0.25776,
+      "target_price": 0.25908,
+      "risk_value": 85.43509057548475,
+      "risk_distance_pct": 0.17041053446940202,
+      "risk_reward": 2.0,
+      "score": 70.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:47:41.277996+00:00",
+      "exit_price": 0.25776,
+      "gross": -0.5823615778964051,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.5823615778964051,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T08:01:50.380294+00:00"
     }
   ],
-  "updated_at": "2026-10-07T07:47:54.842106+00:00"
+  "updated_at": "2026-10-07T08:02:53.055912+00:00"
 }

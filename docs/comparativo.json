@@ -1,98 +1,37 @@
 {
-  "updated_at": "2026-10-07T07:47:54.848017+00:00",
+  "updated_at": "2026-10-07T08:02:53.060916+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 56,
-      "capital": 9751.62001345325,
-      "patrimonio": 10053.08351793276,
-      "retorno_pct": 0.5308351793276156,
-      "operacoes": 56,
-      "posicoes": 1,
-      "win_rate_pct": 37.5,
+      "closed": 57,
+      "capital": 10052.12978403949,
+      "patrimonio": 10052.12978403949,
+      "retorno_pct": 0.5212978403948965,
+      "operacoes": 57,
+      "posicoes": 0,
+      "win_rate_pct": 36.84210526315789,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 78,
-          "signal": "COMPRA",
-          "price": 11.334,
-          "momentum_pct": 0.6482550395169095,
-          "volume_ratio": 0.850592790517163,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        }
-      ]
+      "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 5,
+      "opened_total": 3,
       "closed_now": 0,
-      "closed": 182,
-      "capital": 8201.768695246537,
-      "patrimonio": 10026.752286925399,
-      "retorno_pct": 0.26752286925399993,
-      "operacoes": 182,
-      "posicoes": 5,
-      "win_rate_pct": 38.46153846153847,
+      "closed": 184,
+      "capital": 8898.022210561596,
+      "patrimonio": 10025.143585524613,
+      "retorno_pct": 0.2514358552461182,
+      "operacoes": 184,
+      "posicoes": 3,
+      "win_rate_pct": 38.04347826086957,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 78,
-          "signal": "COMPRA",
-          "price": 11.334,
-          "momentum_pct": 0.6482550395169095,
-          "volume_ratio": 0.850592790517163,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "BNBUSDT",
-          "market": "CRYPTO",
-          "score": 72,
-          "signal": "COMPRA",
-          "price": 774.02,
-          "momentum_pct": 0.6554136648547315,
-          "volume_ratio": 3.308688342071057,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI sobrecomprado",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "score": 69,
-          "signal": "HOLD",
-          "price": 0.2581,
-          "momentum_pct": 0.388953714507978,
-          "volume_ratio": 1.2669560249084606,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI positivo",
-            "momentum positivo",
-            "preco comprimido na maxima"
-          ]
-        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -113,51 +52,6 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 78,
-      "signal": "COMPRA",
-      "price": 11.334,
-      "momentum_pct": 0.6482550395169095,
-      "volume_ratio": 0.850592790517163,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "BNBUSDT",
-      "market": "CRYPTO",
-      "score": 72,
-      "signal": "COMPRA",
-      "price": 774.02,
-      "momentum_pct": 0.6554136648547315,
-      "volume_ratio": 3.308688342071057,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI sobrecomprado",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "score": 69,
-      "signal": "HOLD",
-      "price": 0.2581,
-      "momentum_pct": 0.388953714507978,
-      "volume_ratio": 1.2669560249084606,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI positivo",
-        "momentum positivo",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
       "symbol": "GOLD11",
       "market": "B3",
       "score": 66,
@@ -173,21 +67,5 @@
       ]
     }
   ],
-  "hunter_opportunities": [
-    {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 78,
-      "signal": "COMPRA",
-      "price": 11.334,
-      "momentum_pct": 0.6482550395169095,
-      "volume_ratio": 0.850592790517163,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    }
-  ]
+  "hunter_opportunities": []
 }
