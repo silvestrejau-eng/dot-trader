@@ -1,5 +1,5 @@
 {
-  "capital": 9753.074534346744,
+  "capital": 9460.482298316341,
   "positions": [
     {
       "symbol": "AVAXUSDT",
@@ -15,6 +15,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-07T18:03:04.787679+00:00"
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "quantity": 5.705776969490291,
+      "entry_price": 51.279998779296875,
+      "stop_price": 51.132141385759624,
+      "target_price": 51.57571356637137,
+      "risk_value": 48.76537267173372,
+      "risk_distance_pct": 0.28833345759934953,
+      "risk_reward": 1.999999999999952,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T18:28:22.423563+00:00"
     }
   ],
   "trades": [
@@ -1400,5 +1415,5 @@
       "closed_at": "2026-10-07T18:02:50.710309+00:00"
     }
   ],
-  "updated_at": "2026-10-07T18:03:53.669335+00:00"
+  "updated_at": "2026-10-07T18:29:09.211883+00:00"
 }

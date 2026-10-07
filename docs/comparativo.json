@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-10-07T18:03:53.680601+00:00",
+  "updated_at": "2026-10-07T18:29:09.223468+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
     "hunter_x": {
       "strategy": "DOT_HUNTER_X",
       "opened_now": 0,
-      "opened_total": 1,
+      "opened_total": 2,
       "closed_now": 0,
       "closed": 65,
-      "capital": 9753.074534346744,
-      "patrimonio": 10054.95592052782,
-      "retorno_pct": 0.5495592052781939,
+      "capital": 9460.482298316341,
+      "patrimonio": 10055.557343532959,
+      "retorno_pct": 0.5555734353295927,
       "operacoes": 65,
-      "posicoes": 1,
+      "posicoes": 2,
       "win_rate_pct": 38.46153846153847,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 88,
+          "symbol": "RENT3",
+          "market": "B3",
+          "score": 85,
           "signal": "COMPRA",
-          "price": 11.325,
-          "momentum_pct": 0.8369691033745852,
-          "volume_ratio": 1.9797614094303515,
+          "price": 51.31999969482422,
+          "momentum_pct": 0.548586940192819,
+          "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "aceleracao positiva",
-            "preco comprimido na maxima"
+            "rompimento da maxima de 20 candles"
           ]
         }
       ]
@@ -37,54 +37,54 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 7,
+      "opened_total": 6,
       "closed_now": 0,
-      "closed": 218,
-      "capital": 7606.422941226595,
-      "patrimonio": 10027.59920384668,
-      "retorno_pct": 0.2759920384667991,
-      "operacoes": 218,
-      "posicoes": 7,
-      "win_rate_pct": 38.07339449541284,
+      "closed": 222,
+      "capital": 8029.381379994099,
+      "patrimonio": 10029.624794890164,
+      "retorno_pct": 0.2962479489016401,
+      "operacoes": 222,
+      "posicoes": 6,
+      "win_rate_pct": 38.73873873873874,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "AVAXUSDT",
-          "market": "CRYPTO",
-          "score": 88,
-          "signal": "COMPRA",
-          "price": 11.325,
-          "momentum_pct": 0.8369691033745852,
-          "volume_ratio": 1.9797614094303515,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        },
-        {
-          "symbol": "SUZB3",
+          "symbol": "RENT3",
           "market": "B3",
-          "score": 73,
+          "score": 85,
           "signal": "COMPRA",
-          "price": 42.400001525878906,
-          "momentum_pct": 0.4025621252317313,
+          "price": 51.31999969482422,
+          "momentum_pct": 0.548586940192819,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "aceleracao positiva",
-            "preco comprimido na maxima"
+            "rompimento da maxima de 20 candles"
           ]
         },
         {
           "symbol": "DOLA11",
           "market": "B3",
+          "score": 70,
+          "signal": "COMPRA",
+          "price": 9.970000267028809,
+          "momentum_pct": 0.1004039040515492,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "rompimento da maxima de 20 candles",
+            "volume fraco"
+          ]
+        },
+        {
+          "symbol": "SMAL11",
+          "market": "B3",
           "score": 66,
           "signal": "HOLD",
-          "price": 9.960000038146973,
-          "momentum_pct": 0.20121185722323798,
+          "price": 130.94000244140625,
+          "momentum_pct": 0.23730961265127082,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
@@ -98,42 +98,42 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 88,
-      "signal": "COMPRA",
-      "price": 11.325,
-      "momentum_pct": 0.8369691033745852,
-      "volume_ratio": 1.9797614094303515,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    },
-    {
-      "symbol": "SUZB3",
+      "symbol": "RENT3",
       "market": "B3",
-      "score": 73,
+      "score": 85,
       "signal": "COMPRA",
-      "price": 42.400001525878906,
-      "momentum_pct": 0.4025621252317313,
+      "price": 51.31999969482422,
+      "momentum_pct": 0.548586940192819,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "aceleracao positiva",
-        "preco comprimido na maxima"
+        "rompimento da maxima de 20 candles"
       ]
     },
     {
       "symbol": "DOLA11",
       "market": "B3",
+      "score": 70,
+      "signal": "COMPRA",
+      "price": 9.970000267028809,
+      "momentum_pct": 0.1004039040515492,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "rompimento da maxima de 20 candles",
+        "volume fraco"
+      ]
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
       "score": 66,
       "signal": "HOLD",
-      "price": 9.960000038146973,
-      "momentum_pct": 0.20121185722323798,
+      "price": 130.94000244140625,
+      "momentum_pct": 0.23730961265127082,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
@@ -145,18 +145,18 @@
   ],
   "hunter_opportunities": [
     {
-      "symbol": "AVAXUSDT",
-      "market": "CRYPTO",
-      "score": 88,
+      "symbol": "RENT3",
+      "market": "B3",
+      "score": 85,
       "signal": "COMPRA",
-      "price": 11.325,
-      "momentum_pct": 0.8369691033745852,
-      "volume_ratio": 1.9797614094303515,
+      "price": 51.31999969482422,
+      "momentum_pct": 0.548586940192819,
+      "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "aceleracao positiva",
-        "preco comprimido na maxima"
+        "rompimento da maxima de 20 candles"
       ]
     }
   ]

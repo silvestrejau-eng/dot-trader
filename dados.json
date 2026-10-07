@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T18:03:53.669335+00:00",
+  "updated_at": "2026-10-07T18:29:09.211883+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9753.074534346744,
+    "capital": 9460.482298316341,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -34,6 +34,21 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-07T18:03:04.787679+00:00"
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "quantity": 5.705776969490291,
+      "entry_price": 51.279998779296875,
+      "stop_price": 51.132141385759624,
+      "target_price": 51.57571356637137,
+      "risk_value": 48.76537267173372,
+      "risk_distance_pct": 0.28833345759934953,
+      "risk_reward": 1.999999999999952,
+      "score": 85.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T18:28:22.423563+00:00"
     }
   ],
   "trades": [
@@ -1446,10 +1461,10 @@
     ]
   },
   "market": {
-    "symbol": "AVAXUSDT",
-    "market": "CRYPTO",
-    "price": 11.325,
-    "score": 88,
+    "symbol": "RENT3",
+    "market": "B3",
+    "price": 51.31999969482422,
+    "score": 85,
     "signal": "COMPRA"
   },
   "summary": {
@@ -1457,9 +1472,9 @@
     "base_tributavel": 54.716014790461465,
     "imposto_estimado": 10.943202958092293,
     "lucro_liquido": 43.772811832369186,
-    "patrimonio": 10054.95592052782,
+    "patrimonio": 10055.557343532959,
     "dias_positivos": 3,
-    "retorno_pct": 0.5495592052781939,
+    "retorno_pct": 0.5555734353295927,
     "operacoes": 65,
     "win_rate_pct": 38.46153846153847
   }
