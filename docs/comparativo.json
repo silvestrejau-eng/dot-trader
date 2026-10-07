@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T17:31:18.421685+00:00",
+  "updated_at": "2026-10-07T17:50:54.614184+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -8,52 +8,98 @@
       "opened_now": 0,
       "opened_total": 2,
       "closed_now": 0,
-      "closed": 61,
-      "capital": 9485.20532335998,
-      "patrimonio": 10054.684203284402,
-      "retorno_pct": 0.5468420328440082,
-      "operacoes": 61,
+      "closed": 63,
+      "capital": 9461.65568736864,
+      "patrimonio": 10055.873794859495,
+      "retorno_pct": 0.5587379485949562,
+      "operacoes": 63,
       "posicoes": 2,
-      "win_rate_pct": 37.704918032786885,
-      "last_event": null,
-      "opportunities": []
-    },
-    "hunter_extreme": {
-      "strategy": "DOT_HUNTER_EXTREME",
-      "opened_now": 0,
-      "opened_total": 4,
-      "closed_now": 0,
-      "closed": 213,
-      "capital": 8583.558802810914,
-      "patrimonio": 10027.156800148325,
-      "retorno_pct": 0.27156800148324667,
-      "operacoes": 213,
-      "posicoes": 4,
-      "win_rate_pct": 38.028169014084504,
+      "win_rate_pct": 39.682539682539684,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "WEGE3",
+          "symbol": "PRIO3",
           "market": "B3",
-          "score": 73,
+          "score": 78,
           "signal": "COMPRA",
-          "price": 51.290000915527344,
-          "momentum_pct": 0.4898119034397297,
+          "price": 63.25,
+          "momentum_pct": 0.31720977852429666,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
           ]
         },
         {
-          "symbol": "RENT3",
+          "symbol": "PETR4",
+          "market": "B3",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 54.45000076293945,
+          "momentum_pct": 0.16556319274718678,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        }
+      ]
+    },
+    "hunter_extreme": {
+      "strategy": "DOT_HUNTER_EXTREME",
+      "opened_now": 0,
+      "opened_total": 5,
+      "closed_now": 0,
+      "closed": 216,
+      "capital": 8270.637349400287,
+      "patrimonio": 10029.662478509234,
+      "retorno_pct": 0.2966247850923365,
+      "operacoes": 216,
+      "posicoes": 5,
+      "win_rate_pct": 38.425925925925924,
+      "last_event": null,
+      "opportunities": [
+        {
+          "symbol": "PRIO3",
+          "market": "B3",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 63.25,
+          "momentum_pct": 0.31720977852429666,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "PETR4",
+          "market": "B3",
+          "score": 78,
+          "signal": "COMPRA",
+          "price": 54.45000076293945,
+          "momentum_pct": 0.16556319274718678,
+          "volume_ratio": 0.0,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "SMAL11",
           "market": "B3",
           "score": 66,
           "signal": "HOLD",
-          "price": 50.959999084472656,
-          "momentum_pct": 0.33470794621179856,
+          "price": 130.69000244140625,
+          "momentum_pct": 0.25314653997361436,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
@@ -67,27 +113,42 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "WEGE3",
+      "symbol": "PRIO3",
       "market": "B3",
-      "score": 73,
+      "score": 78,
       "signal": "COMPRA",
-      "price": 51.290000915527344,
-      "momentum_pct": 0.4898119034397297,
+      "price": 63.25,
+      "momentum_pct": 0.31720977852429666,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
       ]
     },
     {
-      "symbol": "RENT3",
+      "symbol": "PETR4",
+      "market": "B3",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 54.45000076293945,
+      "momentum_pct": 0.16556319274718678,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "SMAL11",
       "market": "B3",
       "score": 66,
       "signal": "HOLD",
-      "price": 50.959999084472656,
-      "momentum_pct": 0.33470794621179856,
+      "price": 130.69000244140625,
+      "momentum_pct": 0.25314653997361436,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
@@ -97,5 +158,36 @@
       ]
     }
   ],
-  "hunter_opportunities": []
+  "hunter_opportunities": [
+    {
+      "symbol": "PRIO3",
+      "market": "B3",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 63.25,
+      "momentum_pct": 0.31720977852429666,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "PETR4",
+      "market": "B3",
+      "score": 78,
+      "signal": "COMPRA",
+      "price": 54.45000076293945,
+      "momentum_pct": 0.16556319274718678,
+      "volume_ratio": 0.0,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    }
+  ]
 }
