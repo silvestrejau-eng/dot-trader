@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T05:01:35.772317+00:00",
+  "updated_at": "2026-10-07T05:23:10.730461+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 10051.775745235242,
+    "capital": 9750.222472878184,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -18,7 +18,23 @@
     "min_risk_reward": 1.6,
     "strategy": "DOT_HUNTER_X"
   },
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1174.7303169343872,
+      "entry_price": 0.2567,
+      "stop_price": 0.25582142857142853,
+      "target_price": 0.25845714285714283,
+      "risk_value": 50.258878726176206,
+      "risk_distance_pct": 0.34225610774111836,
+      "risk_reward": 1.9999999999999367,
+      "score": 76.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.521386+00:00"
+    }
+  ],
   "trades": [
     {
       "symbol": "DOTUSDT",
@@ -1139,11 +1155,11 @@
     }
   ],
   "market": {
-    "symbol": "GOLD11",
-    "market": "B3",
-    "price": 21.579999923706055,
-    "score": 66,
-    "signal": "HOLD"
+    "symbol": "ADAUSDT",
+    "market": "CRYPTO",
+    "price": 0.2567,
+    "score": 76,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 34.169774520599105,

@@ -1,5 +1,5 @@
 {
-  "capital": 9269.423939881006,
+  "capital": 8200.993058874561,
   "positions": [
     {
       "symbol": "USO",
@@ -30,6 +30,51 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1444.3979649210762,
+      "entry_price": 0.2567,
+      "stop_price": 0.256085,
+      "target_price": 0.25793,
+      "risk_value": 92.69423939881005,
+      "risk_distance_pct": 0.2395792754187677,
+      "risk_reward": 2.00000000000009,
+      "score": 76.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.523592+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market": "CRYPTO",
+      "quantity": 242.38738800914584,
+      "entry_price": 1.4685,
+      "stop_price": 1.4667649999999999,
+      "target_price": 1.47197,
+      "risk_value": 88.98646982285766,
+      "risk_distance_pct": 0.11814776983316597,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.523592+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 2.8826391439157533,
+      "entry_price": 118.54,
+      "stop_price": 118.4025,
+      "target_price": 118.81500000000001,
+      "risk_value": 85.42701102994336,
+      "risk_distance_pct": 0.11599460097857503,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.523592+00:00"
     }
   ],
   "trades": [
@@ -3707,5 +3752,5 @@
       "closed_at": "2026-10-07T01:19:44.465821+00:00"
     }
   ],
-  "updated_at": "2026-10-07T05:01:35.774609+00:00"
+  "updated_at": "2026-10-07T05:23:10.732783+00:00"
 }
