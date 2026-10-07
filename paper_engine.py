@@ -4,6 +4,7 @@ filtro de risco/retorno e sizing por risco. Nunca envia ordens reais.
 """
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 import json, urllib.request, urllib.parse
 
 CAPITAL_INICIAL = 10000.0
@@ -107,10 +108,9 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
 
         gross = (exit_price - pos["entry_price"]) * pos["quantity"]
         st["capital"] += pos["quantity"] * exit_price
-        tax = max(0.0, gross) * 0.20
         trade = {
             **pos, "exit_price": exit_price, "gross": gross, "fees": 0.0,
-            "estimated_tax": tax, "net": gross - tax, "reason": reason,
+            "estimated_tax": 0.0, "net": gross, "reason": reason,
             "closed_at": now_iso
         }
         trades.append(trade)
@@ -187,6 +187,26 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
         current_exposure += value
         opened.append(pos)
 
+    # Provisão fiscal: resultado líquido de cada dia positivo, não cada trade vencedor.
+    brt = ZoneInfo("America/Sao_Paulo")
+    by_day = {}
+    for t in trades:
+        try:
+            d = datetime.fromisoformat(str(t.get("closed_at", "")).replace("Z", "+00:00")).astimezone(brt).date().isoformat()
+        except Exception:
+            d = str(t.get("closed_at", ""))[:10]
+        by_day[d] = by_day.get(d, 0.0) + float(t.get("gross", 0.0))
+
+    daily_tax_base = {d: max(0.0, v) for d, v in by_day.items()}
+    daily_tax = {d: v * 0.20 for d, v in daily_tax_base.items()}
+    for d in by_day:
+        day_winners = [t for t in trades if str(t.get("closed_at", ""))[:10] == d and float(t.get("gross", 0.0)) > 0]
+        winners_gross = sum(float(t.get("gross", 0.0)) for t in day_winners)
+        for t in day_winners:
+            alloc = (float(t.get("gross", 0.0)) / winners_gross * daily_tax[d]) if winners_gross > 0 else 0.0
+            t["estimated_tax"] = alloc
+            t["net"] = float(t.get("gross", 0.0)) - alloc
+
     st["positions"], st["trades"], st["updated_at"] = positions, trades, now_iso
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -197,7 +217,8 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
         aberto += float(x["quantity"]) * p
 
     lucro_bruto = sum(float(t.get("gross", 0)) for t in trades)
-    imposto_estimado = sum(float(t.get("estimated_tax", 0)) for t in trades)
+    imposto_estimado = sum(daily_tax.values())
+    base_tributavel = sum(daily_tax_base.values())
     lucro = lucro_bruto - imposto_estimado
     patrimonio = st["capital"] + aberto
     wins = sum(1 for t in trades if float(t.get("net", 0)) > 0)
@@ -233,13 +254,18 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
             "max_positions": max_positions, "score_min": score_min,
             "max_total_exposure_pct": MAX_TOTAL_EXPOSURE_PCT,
             "cooldown_minutes": COOLDOWN_MINUTES, "min_risk_reward": min_rr,
-            "strategy": strategy_name
+            "strategy": strategy_name,
+            "tax_method": "20% sobre resultado líquido diário positivo (estimativa; apuração fiscal real é mensal)"
         },
         "positions": positions, "trades": trades,
+        "tax": {"rate_pct": 20.0, "base_tributavel": base_tributavel, "imposto_estimado": imposto_estimado,
+                "dias_positivos": sum(1 for v in daily_tax_base.values() if v > 0),
+                "daily": [{"date": d, "net_result": by_day[d], "taxable_base": daily_tax_base[d], "estimated_tax": daily_tax[d]} for d in sorted(by_day)]},
         "market": {k: s.get(k) for k in ("symbol", "market", "price", "score", "signal")},
         "summary": {
-            "lucro_bruto": lucro_bruto, "imposto_estimado": imposto_estimado,
-            "lucro_liquido": lucro, "patrimonio": patrimonio,
+            "lucro_bruto": lucro_bruto, "base_tributavel": base_tributavel,
+            "imposto_estimado": imposto_estimado, "lucro_liquido": lucro,
+            "patrimonio": patrimonio, "dias_positivos": sum(1 for v in daily_tax_base.values() if v > 0),
             "retorno_pct": result["retorno_pct"], "operacoes": len(trades),
             "win_rate_pct": result["win_rate_pct"]
         }
