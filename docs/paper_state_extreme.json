@@ -1,5 +1,5 @@
 {
-  "capital": 8200.417269253567,
+  "capital": 9267.172650049002,
   "positions": [
     {
       "symbol": "USO",
@@ -30,51 +30,6 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "market": "CRYPTO",
-      "quantity": 4081.2618708937816,
-      "entry_price": 0.09086,
-      "stop_price": 0.09075949999999999,
-      "target_price": 0.091061,
-      "risk_value": 92.70586339735225,
-      "risk_distance_pct": 0.11060972925380076,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T07:26:48.842794+00:00"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "quantity": 1381.1443089734726,
-      "entry_price": 0.2577,
-      "stop_price": 0.257245,
-      "target_price": 0.25861,
-      "risk_value": 88.98022210561597,
-      "risk_distance_pct": 0.17656189367480918,
-      "risk_reward": 2.000000000000122,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T08:26:13.797142+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "market": "CRYPTO",
-      "quantity": 302.1079159023566,
-      "entry_price": 1.131,
-      "stop_price": 1.1289,
-      "target_price": 1.1352,
-      "risk_value": 85.42101322139132,
-      "risk_distance_pct": 0.18567639257294347,
-      "risk_reward": 2.0,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T08:46:05.934682+00:00"
     }
   ],
   "trades": [
@@ -3992,7 +3947,73 @@
       "net": -0.5823615778964051,
       "reason": "STOP",
       "closed_at": "2026-10-07T08:01:50.380294+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "market": "CRYPTO",
+      "quantity": 4081.2618708937816,
+      "entry_price": 0.09086,
+      "stop_price": 0.09075949999999999,
+      "target_price": 0.091061,
+      "risk_value": 92.70586339735225,
+      "risk_distance_pct": 0.11060972925380076,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T07:26:48.842794+00:00",
+      "exit_price": 0.09075949999999999,
+      "gross": -0.4101668180248388,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.4101668180248388,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T09:01:22.073741+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1381.1443089734726,
+      "entry_price": 0.2577,
+      "stop_price": 0.257245,
+      "target_price": 0.25861,
+      "risk_value": 88.98022210561597,
+      "risk_distance_pct": 0.17656189367480918,
+      "risk_reward": 2.000000000000122,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T08:26:13.797142+00:00",
+      "exit_price": 0.257245,
+      "gross": -0.6284206605829068,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.6284206605829068,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T09:01:22.073741+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 302.1079159023566,
+      "entry_price": 1.131,
+      "stop_price": 1.1289,
+      "target_price": 1.1352,
+      "risk_value": 85.42101322139132,
+      "risk_distance_pct": 0.18567639257294347,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T08:46:05.934682+00:00",
+      "exit_price": 1.1289,
+      "gross": -0.634426623394946,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.634426623394946,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T09:01:22.073741+00:00"
     }
   ],
-  "updated_at": "2026-10-07T08:47:06.305252+00:00"
+  "updated_at": "2026-10-07T09:02:21.302126+00:00"
 }
