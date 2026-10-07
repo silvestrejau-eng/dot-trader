@@ -1,20 +1,35 @@
 {
-  "capital": 9750.222472878184,
+  "capital": 9477.60176607361,
   "positions": [
     {
-      "symbol": "ADAUSDT",
+      "symbol": "SOLUSDT",
       "market": "CRYPTO",
-      "quantity": 1174.7303169343872,
-      "entry_price": 0.2567,
-      "stop_price": 0.25582142857142853,
-      "target_price": 0.25845714285714283,
-      "risk_value": 50.258878726176206,
-      "risk_distance_pct": 0.34225610774111836,
-      "risk_reward": 1.9999999999999367,
-      "score": 76.0,
+      "quantity": 2.457419761289973,
+      "entry_price": 119.03,
+      "stop_price": 118.86714285714285,
+      "target_price": 119.3557142857143,
+      "risk_value": 48.75111236439092,
+      "risk_distance_pct": 0.13682024939691592,
+      "risk_reward": 2.0,
+      "score": 100.0,
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
-      "opened_at": "2026-10-07T05:22:07.521386+00:00"
+      "opened_at": "2026-10-07T06:44:37.367801+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.003364298049679552,
+      "entry_price": 84336.01,
+      "stop_price": 84269.66714285714,
+      "target_price": 84468.69571428571,
+      "risk_value": 47.2885789934592,
+      "risk_distance_pct": 0.07866492278073406,
+      "risk_reward": 2.0000000000002194,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.367801+00:00"
     }
   ],
   "trades": [
@@ -1134,7 +1149,29 @@
       "net": 1.86963401367589,
       "reason": "ALVO",
       "closed_at": "2026-10-06T23:16:30.373759+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1174.7303169343872,
+      "entry_price": 0.2567,
+      "stop_price": 0.25582142857142853,
+      "target_price": 0.25845714285714283,
+      "risk_value": 50.258878726176206,
+      "risk_distance_pct": 0.34225610774111836,
+      "risk_reward": 1.9999999999999367,
+      "score": 76.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.521386+00:00",
+      "exit_price": 0.25845714285714283,
+      "gross": 2.06416898547041,
+      "fees": 0.0,
+      "estimated_tax": 0.3096253478205615,
+      "net": 1.7545436376498487,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T06:44:44.067723+00:00"
     }
   ],
-  "updated_at": "2026-10-07T06:21:11.188039+00:00"
+  "updated_at": "2026-10-07T06:45:38.655703+00:00"
 }

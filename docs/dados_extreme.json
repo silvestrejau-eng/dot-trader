@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T06:21:11.190544+00:00",
+  "updated_at": "2026-10-07T06:45:38.657726+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8900.280792286734,
+    "capital": 7560.815966004682,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -50,19 +50,79 @@
       "opened_at": "2026-10-06T21:01:13.186016+00:00"
     },
     {
-      "symbol": "ADAUSDT",
+      "symbol": "SOLUSDT",
       "market": "CRYPTO",
-      "quantity": 1444.3979649210762,
-      "entry_price": 0.2567,
-      "stop_price": 0.256085,
-      "target_price": 0.25793,
-      "risk_value": 92.69423939881005,
-      "risk_distance_pct": 0.2395792754187677,
-      "risk_reward": 2.00000000000009,
-      "score": 76.0,
+      "quantity": 3.1161335325140977,
+      "entry_price": 119.03,
+      "stop_price": 118.916,
+      "target_price": 119.25800000000001,
+      "risk_value": 92.72834359378827,
+      "risk_distance_pct": 0.09577417457784115,
+      "risk_reward": 2.0,
+      "score": 100.0,
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
-      "opened_at": "2026-10-07T05:22:07.523592+00:00"
+      "opened_at": "2026-10-07T06:44:37.369573+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.004222121006200637,
+      "entry_price": 84336.01,
+      "stop_price": 84289.56999999999,
+      "target_price": 84428.89,
+      "risk_value": 89.01920985003673,
+      "risk_distance_pct": 0.05506544594652074,
+      "risk_reward": 2.0,
+      "score": 77.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.369573+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 30.170676595246345,
+      "entry_price": 11.33,
+      "stop_price": 11.2997,
+      "target_price": 11.3906,
+      "risk_value": 85.45844145603527,
+      "risk_distance_pct": 0.2674315975286888,
+      "risk_reward": 1.9999999999999414,
+      "score": 72.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.369573+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 23.786634908029534,
+      "entry_price": 13.796,
+      "stop_price": 13.77375,
+      "target_price": 13.840499999999999,
+      "risk_value": 82.04010379779386,
+      "risk_distance_pct": 0.16127863148738517,
+      "risk_reward": 2.0,
+      "score": 72.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.369573+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.12009530290619413,
+      "entry_price": 2623.2,
+      "stop_price": 2621.091,
+      "target_price": 2627.4179999999997,
+      "risk_value": 78.75849964588211,
+      "risk_distance_pct": 0.08039798719121392,
+      "risk_reward": 2.0,
+      "score": 71.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T06:44:37.369573+00:00"
     }
   ],
   "trades": [
@@ -3782,20 +3842,42 @@
       "net": 0.6738168998903212,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1444.3979649210762,
+      "entry_price": 0.2567,
+      "stop_price": 0.256085,
+      "target_price": 0.25793,
+      "risk_value": 92.69423939881005,
+      "risk_distance_pct": 0.2395792754187677,
+      "risk_reward": 2.00000000000009,
+      "score": 76.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T05:22:07.523592+00:00",
+      "exit_price": 0.25793,
+      "gross": 1.7766094968529365,
+      "fees": 0.0,
+      "estimated_tax": 0.26649142452794045,
+      "net": 1.510118072324996,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T06:44:37.369573+00:00"
     }
   ],
   "market": {
-    "symbol": "GOLD11",
-    "market": "B3",
-    "price": 21.579999923706055,
-    "score": 66,
-    "signal": "HOLD"
+    "symbol": "ADAUSDT",
+    "market": "CRYPTO",
+    "price": 0.2584,
+    "score": 73,
+    "signal": "COMPRA"
   },
   "summary": {
-    "lucro_liquido": 13.506597751167355,
-    "patrimonio": 10027.274046018165,
-    "retorno_pct": 0.2727404601816419,
-    "operacoes": 175,
-    "win_rate_pct": 39.42857142857143
+    "lucro_liquido": 15.016715823492351,
+    "patrimonio": 10028.013679719857,
+    "retorno_pct": 0.2801367971985824,
+    "operacoes": 176,
+    "win_rate_pct": 39.77272727272727
   }
 }
