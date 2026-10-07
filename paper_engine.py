@@ -189,18 +189,21 @@ def run_strategy(s, state_path, strategy_name, score_min, risk_pct, max_position
 
     # Provisão fiscal: resultado líquido de cada dia positivo, não cada trade vencedor.
     brt = ZoneInfo("America/Sao_Paulo")
+    def trade_day(t):
+        try:
+            return datetime.fromisoformat(str(t.get("closed_at", "")).replace("Z", "+00:00")).astimezone(brt).date().isoformat()
+        except Exception:
+            return str(t.get("closed_at", ""))[:10]
+
     by_day = {}
     for t in trades:
-        try:
-            d = datetime.fromisoformat(str(t.get("closed_at", "")).replace("Z", "+00:00")).astimezone(brt).date().isoformat()
-        except Exception:
-            d = str(t.get("closed_at", ""))[:10]
+        d = trade_day(t)
         by_day[d] = by_day.get(d, 0.0) + float(t.get("gross", 0.0))
 
     daily_tax_base = {d: max(0.0, v) for d, v in by_day.items()}
     daily_tax = {d: v * 0.20 for d, v in daily_tax_base.items()}
     for d in by_day:
-        day_winners = [t for t in trades if str(t.get("closed_at", ""))[:10] == d and float(t.get("gross", 0.0)) > 0]
+        day_winners = [t for t in trades if trade_day(t) == d and float(t.get("gross", 0.0)) > 0]
         winners_gross = sum(float(t.get("gross", 0.0)) for t in day_winners)
         for t in day_winners:
             alloc = (float(t.get("gross", 0.0)) / winners_gross * daily_tax[d]) if winners_gross > 0 else 0.0
