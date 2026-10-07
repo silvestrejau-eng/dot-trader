@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T16:42:16.638193+00:00",
+  "updated_at": "2026-10-07T17:09:21.866088+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8613.045435193118,
+    "capital": 7021.877475124964,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -51,21 +51,6 @@
       "opened_at": "2026-10-07T15:57:47.202871+00:00"
     },
     {
-      "symbol": "SUZB3",
-      "market": "B3",
-      "quantity": 8.464759910902151,
-      "entry_price": 42.13999938964844,
-      "stop_price": 42.084499549865725,
-      "target_price": 42.25099906921387,
-      "risk_value": 89.1762443697343,
-      "risk_distance_pct": 0.1317034660336169,
-      "risk_reward": 2.000000000000128,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T16:20:22.172443+00:00"
-    },
-    {
       "symbol": "PETR4",
       "market": "B3",
       "quantity": 6.384964237523202,
@@ -79,6 +64,96 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-07T16:41:16.555316+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "quantity": 3.0671647143549925,
+      "entry_price": 116.99,
+      "stop_price": 116.815,
+      "target_price": 117.33999999999999,
+      "risk_value": 89.70689998309764,
+      "risk_distance_pct": 0.14958543465253196,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T17:08:22.858149+00:00"
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "quantity": 6.7943686538738275,
+      "entry_price": 50.70000076293945,
+      "stop_price": 50.60050106048584,
+      "target_price": 50.89900016784668,
+      "risk_value": 86.11862398377374,
+      "risk_distance_pct": 0.19625187565351143,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T17:08:22.858149+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.4280848104824481,
+      "entry_price": 772.5,
+      "stop_price": 771.8155,
+      "target_price": 773.869,
+      "risk_value": 82.67387902442279,
+      "risk_distance_pct": 0.08860841423947666,
+      "risk_reward": 2.000000000000166,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T17:08:22.858149+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "quantity": 28.034943081400876,
+      "entry_price": 11.324,
+      "stop_price": 11.282549999999999,
+      "target_price": 11.4069,
+      "risk_value": 79.36692386344588,
+      "risk_distance_pct": 0.3660367361356508,
+      "risk_reward": 1.9999999999999571,
+      "score": 65.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T17:08:22.858149+00:00"
+    },
+    {
+      "symbol": "GLD",
+      "market": "GLOBAL",
+      "quantity": 0.8075061649956384,
+      "entry_price": 377.4200134277344,
+      "stop_price": 377.1981231689453,
+      "target_price": 377.8637939453125,
+      "risk_value": 76.19224690890803,
+      "risk_distance_pct": 0.058791333499742936,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-07T17:08:36.299025+00:00"
+    },
+    {
+      "symbol": "SLV",
+      "market": "GLOBAL",
+      "quantity": 5.396628743092256,
+      "entry_price": 54.21500015258789,
+      "stop_price": 54.15606536865234,
+      "target_price": 54.33286972045899,
+      "risk_value": 73.14455703255172,
+      "risk_distance_pct": 0.10870567881522936,
+      "risk_reward": 2.0,
+      "score": 65.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance",
+      "opened_at": "2026-10-07T17:08:55.861984+00:00"
     }
   ],
   "trades": [
@@ -3772,8 +3847,8 @@
       "exit_price": 1.47197,
       "gross": 0.8410842363917564,
       "fees": 0.0,
-      "estimated_tax": 0.005920827983753739,
-      "net": 0.8351634084080027,
+      "estimated_tax": 0.015511575213686688,
+      "net": 0.8255726611780697,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3794,8 +3869,8 @@
       "exit_price": 118.81500000000001,
       "gross": 0.7927257645768485,
       "fees": 0.0,
-      "estimated_tax": 0.0055804076301378,
-      "net": 0.7871453569467107,
+      "estimated_tax": 0.014619731043602271,
+      "net": 0.7781060335332463,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3816,8 +3891,8 @@
       "exit_price": 0.25793,
       "gross": 1.7766094968529365,
       "fees": 0.0,
-      "estimated_tax": 0.012506475297047445,
-      "net": 1.764103021555889,
+      "estimated_tax": 0.03276486544796988,
+      "net": 1.7438446314049665,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:37.369573+00:00"
     },
@@ -4102,8 +4177,8 @@
       "exit_price": 145.0452651977539,
       "gross": 0.7599944228681056,
       "fees": 0.0,
-      "estimated_tax": 0.00534999474692135,
-      "net": 0.7546444281211843,
+      "estimated_tax": 0.014016087975770997,
+      "net": 0.7459783348923346,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:30:03.216024+00:00"
     },
@@ -4124,8 +4199,8 @@
       "exit_price": 50.640000915527345,
       "gross": 1.758798332351271,
       "fees": 0.0,
-      "estimated_tax": 0.012381093276267801,
-      "net": 1.7464172390750032,
+      "estimated_tax": 0.03243638560509925,
+      "net": 1.7263619467461717,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:20.873854+00:00"
     },
@@ -4212,8 +4287,8 @@
       "exit_price": 11.2809,
       "gross": 2.1589515042152496,
       "fees": 0.0,
-      "estimated_tax": 0.01519797890466107,
-      "net": 2.1437535253105886,
+      "estimated_tax": 0.039816152997948495,
+      "net": 2.119135351217301,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:53.407647+00:00"
     },
@@ -4234,8 +4309,8 @@
       "exit_price": 12.63100004196167,
       "gross": 3.723117788669097,
       "fees": 0.0,
-      "estimated_tax": 0.02620895629257258,
-      "net": 3.6969088323765242,
+      "estimated_tax": 0.06866306501725514,
+      "net": 3.654454723651842,
       "reason": "ALVO",
       "closed_at": "2026-10-07T14:03:45.836353+00:00"
     },
@@ -4300,8 +4375,8 @@
       "exit_price": 0.25544,
       "gross": 1.6568340516656195,
       "fees": 0.0,
-      "estimated_tax": 0.011663313843119883,
-      "net": 1.6451707378224996,
+      "estimated_tax": 0.030555924005022057,
+      "net": 1.6262781276605973,
       "reason": "ALVO",
       "closed_at": "2026-10-07T15:57:47.202871+00:00"
     },
@@ -4322,8 +4397,8 @@
       "exit_price": 770.3240000000001,
       "gross": 0.7481170689704543,
       "fees": 0.0,
-      "estimated_tax": 0.005266383895252261,
-      "net": 0.742850685075202,
+      "estimated_tax": 0.013797041582613795,
+      "net": 0.7343200273878405,
       "reason": "ALVO",
       "closed_at": "2026-10-07T16:20:22.172443+00:00"
     },
@@ -4344,8 +4419,8 @@
       "exit_price": 2575.082,
       "gross": 0.7439864899310896,
       "fees": 0.0,
-      "estimated_tax": 0.005237306607975668,
-      "net": 0.7387491833231139,
+      "estimated_tax": 0.013720863972009594,
+      "net": 0.7302656259590801,
       "reason": "ALVO",
       "closed_at": "2026-10-07T16:20:22.172443+00:00"
     },
@@ -4436,12 +4511,34 @@
       "net": -0.4440566712145119,
       "reason": "STOP",
       "closed_at": "2026-10-07T16:41:36.394722+00:00"
+    },
+    {
+      "symbol": "SUZB3",
+      "market": "B3",
+      "quantity": 8.464759910902151,
+      "entry_price": 42.13999938964844,
+      "stop_price": 42.084499549865725,
+      "target_price": 42.25099906921387,
+      "risk_value": 89.1762443697343,
+      "risk_distance_pct": 0.1317034660336169,
+      "risk_reward": 2.000000000000128,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T16:20:22.172443+00:00",
+      "exit_price": 42.25099906921387,
+      "gross": 0.9395856377084459,
+      "fees": 0.0,
+      "estimated_tax": 0.017328173158420612,
+      "net": 0.9222574645500253,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T17:08:22.858149+00:00"
     }
   ],
   "tax": {
     "rate_pct": 20.0,
-    "base_tributavel": 30.46901370174157,
-    "imposto_estimado": 6.093802740348314,
+    "base_tributavel": 31.408599339450014,
+    "imposto_estimado": 6.281719867890003,
     "dias_positivos": 2,
     "daily": [
       {
@@ -4458,28 +4555,28 @@
       },
       {
         "date": "2026-10-07",
-        "net_result": 0.5265636923885479,
-        "taxable_base": 0.5265636923885479,
-        "estimated_tax": 0.1053127384777096
+        "net_result": 1.4661493300969939,
+        "taxable_base": 1.4661493300969939,
+        "estimated_tax": 0.29322986601939877
       }
     ]
   },
   "market": {
-    "symbol": "PETR4",
-    "market": "B3",
-    "price": 54.150001525878906,
-    "score": 78,
+    "symbol": "SOLUSDT",
+    "market": "CRYPTO",
+    "price": 117.02,
+    "score": 71,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_bruto": 25.767157807991623,
-    "base_tributavel": 30.46901370174157,
-    "imposto_estimado": 6.093802740348314,
-    "lucro_liquido": 19.673355067643307,
-    "patrimonio": 10027.103989755153,
+    "lucro_bruto": 26.70674344570007,
+    "base_tributavel": 31.408599339450014,
+    "imposto_estimado": 6.281719867890003,
+    "lucro_liquido": 20.425023577810066,
+    "patrimonio": 10027.91539133392,
     "dias_positivos": 2,
-    "retorno_pct": 0.27103989755152824,
-    "operacoes": 204,
-    "win_rate_pct": 37.745098039215684
+    "retorno_pct": 0.2791539133391918,
+    "operacoes": 205,
+    "win_rate_pct": 38.048780487804876
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T16:42:16.635716+00:00",
+  "updated_at": "2026-10-07T17:09:21.862921+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 9193.723136044538,
@@ -1366,10 +1366,10 @@
     ]
   },
   "market": {
-    "symbol": "PETR4",
-    "market": "B3",
-    "price": 54.150001525878906,
-    "score": 78,
+    "symbol": "SOLUSDT",
+    "market": "CRYPTO",
+    "price": 117.02,
+    "score": 71,
     "signal": "COMPRA"
   },
   "summary": {
@@ -1377,9 +1377,9 @@
     "base_tributavel": 54.406024916299856,
     "imposto_estimado": 10.881204983259973,
     "lucro_liquido": 43.52481993303989,
-    "patrimonio": 10054.760193459075,
+    "patrimonio": 10055.971000380408,
     "dias_positivos": 3,
-    "retorno_pct": 0.5476019345907579,
+    "retorno_pct": 0.5597100038040814,
     "operacoes": 60,
     "win_rate_pct": 38.333333333333336
   }

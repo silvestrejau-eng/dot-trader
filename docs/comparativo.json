@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T16:42:16.644508+00:00",
+  "updated_at": "2026-10-07T17:09:21.873915+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -10,57 +10,86 @@
       "closed_now": 0,
       "closed": 60,
       "capital": 9193.723136044538,
-      "patrimonio": 10054.760193459075,
-      "retorno_pct": 0.5476019345907579,
+      "patrimonio": 10055.971000380408,
+      "retorno_pct": 0.5597100038040814,
       "operacoes": 60,
       "posicoes": 3,
       "win_rate_pct": 38.333333333333336,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "PETR4",
-          "market": "B3",
-          "score": 78,
-          "signal": "COMPRA",
-          "price": 54.150001525878906,
-          "momentum_pct": 0.3149351335387962,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "momentum positivo",
-            "rompimento da maxima de 20 candles"
-          ]
-        }
-      ]
+      "opportunities": []
     },
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 4,
+      "opened_total": 9,
       "closed_now": 0,
-      "closed": 204,
-      "capital": 8613.045435193118,
-      "patrimonio": 10027.103989755153,
-      "retorno_pct": 0.27103989755152824,
-      "operacoes": 204,
-      "posicoes": 4,
-      "win_rate_pct": 37.745098039215684,
+      "closed": 205,
+      "capital": 7021.877475124964,
+      "patrimonio": 10027.91539133392,
+      "retorno_pct": 0.2791539133391918,
+      "operacoes": 205,
+      "posicoes": 9,
+      "win_rate_pct": 38.048780487804876,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "PETR4",
-          "market": "B3",
-          "score": 78,
+          "symbol": "SOLUSDT",
+          "market": "CRYPTO",
+          "score": 71,
           "signal": "COMPRA",
-          "price": 54.150001525878906,
-          "momentum_pct": 0.3149351335387962,
+          "price": 117.02,
+          "momentum_pct": 0.20551464291831412,
+          "volume_ratio": 0.7365889929399552,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "momentum positivo",
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "BNBUSDT",
+          "market": "CRYPTO",
+          "score": 71,
+          "signal": "COMPRA",
+          "price": 772.76,
+          "momentum_pct": 0.20098287107273016,
+          "volume_ratio": 0.7287450234729335,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI forte, proximo da sobrecompra",
+            "momentum positivo",
+            "rompimento da maxima de 20 candles"
+          ]
+        },
+        {
+          "symbol": "RENT3",
+          "market": "B3",
+          "score": 66,
+          "signal": "HOLD",
+          "price": 50.72999954223633,
+          "momentum_pct": 0.23710517770716422,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
             "RSI momentum ideal",
             "momentum positivo",
-            "rompimento da maxima de 20 candles"
+            "preco comprimido na maxima"
+          ]
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "market": "CRYPTO",
+          "score": 65,
+          "signal": "HOLD",
+          "price": 11.322,
+          "momentum_pct": 0.8371927324545725,
+          "volume_ratio": 0.660521523189501,
+          "reason": [
+            "EMA9>EMA21>EMA50",
+            "RSI momentum ideal",
+            "aceleracao positiva",
+            "volume fraco"
           ]
         }
       ]
@@ -68,36 +97,65 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "PETR4",
-      "market": "B3",
-      "score": 78,
+      "symbol": "SOLUSDT",
+      "market": "CRYPTO",
+      "score": 71,
       "signal": "COMPRA",
-      "price": 54.150001525878906,
-      "momentum_pct": 0.3149351335387962,
+      "price": 117.02,
+      "momentum_pct": 0.20551464291831412,
+      "volume_ratio": 0.7365889929399552,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "momentum positivo",
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "BNBUSDT",
+      "market": "CRYPTO",
+      "score": 71,
+      "signal": "COMPRA",
+      "price": 772.76,
+      "momentum_pct": 0.20098287107273016,
+      "volume_ratio": 0.7287450234729335,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI forte, proximo da sobrecompra",
+        "momentum positivo",
+        "rompimento da maxima de 20 candles"
+      ]
+    },
+    {
+      "symbol": "RENT3",
+      "market": "B3",
+      "score": 66,
+      "signal": "HOLD",
+      "price": 50.72999954223633,
+      "momentum_pct": 0.23710517770716422,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
         "RSI momentum ideal",
         "momentum positivo",
-        "rompimento da maxima de 20 candles"
+        "preco comprimido na maxima"
+      ]
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "market": "CRYPTO",
+      "score": 65,
+      "signal": "HOLD",
+      "price": 11.322,
+      "momentum_pct": 0.8371927324545725,
+      "volume_ratio": 0.660521523189501,
+      "reason": [
+        "EMA9>EMA21>EMA50",
+        "RSI momentum ideal",
+        "aceleracao positiva",
+        "volume fraco"
       ]
     }
   ],
-  "hunter_opportunities": [
-    {
-      "symbol": "PETR4",
-      "market": "B3",
-      "score": 78,
-      "signal": "COMPRA",
-      "price": 54.150001525878906,
-      "momentum_pct": 0.3149351335387962,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "momentum positivo",
-        "rompimento da maxima de 20 candles"
-      ]
-    }
-  ]
+  "hunter_opportunities": []
 }
