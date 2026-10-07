@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T15:36:08.002023+00:00",
+  "updated_at": "2026-10-07T15:58:49.211638+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 9751.961695610613,
+    "capital": 9175.620759400026,
     "max_position_pct": 3.0,
     "stop_mult_atr": 1.0,
     "target_mult_atr": 2.0,
@@ -34,6 +34,36 @@
       "strategy": "DOT_HUNTER_X",
       "source": "Binance public",
       "opened_at": "2026-10-07T15:35:04.858501+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1141.9158894157626,
+      "entry_price": 0.2562,
+      "stop_price": 0.25525714285714285,
+      "target_price": 0.25808571428571425,
+      "risk_value": 48.75980847805307,
+      "risk_distance_pct": 0.36801605888256606,
+      "risk_reward": 2.0,
+      "score": 88.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:57:47.199988+00:00"
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
+      "quantity": 2.1815965663256933,
+      "entry_price": 130.0800018310547,
+      "stop_price": 129.74285670689173,
+      "target_price": 130.75429207938058,
+      "risk_value": 47.29701422371148,
+      "risk_distance_pct": 0.25918290238097935,
+      "risk_reward": 1.9999999999999156,
+      "score": 78.0,
+      "strategy": "DOT_HUNTER_X",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T15:58:00.985387+00:00"
     }
   ],
   "trades": [
@@ -1314,10 +1344,10 @@
     ]
   },
   "market": {
-    "symbol": "BNBUSDT",
+    "symbol": "ADAUSDT",
     "market": "CRYPTO",
-    "price": 769.09,
-    "score": 78,
+    "price": 0.2563,
+    "score": 88,
     "signal": "COMPRA"
   },
   "summary": {
@@ -1325,9 +1355,9 @@
     "base_tributavel": 53.56875836146094,
     "imposto_estimado": 10.713751672292188,
     "lucro_liquido": 42.85500668916876,
-    "patrimonio": 10053.670754688754,
+    "patrimonio": 10053.73768213125,
     "dias_positivos": 3,
-    "retorno_pct": 0.5367075468875271,
+    "retorno_pct": 0.5373768213124963,
     "operacoes": 59,
     "win_rate_pct": 37.28813559322034
   }

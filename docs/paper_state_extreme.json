@@ -1,5 +1,5 @@
 {
-  "capital": 8515.359649790178,
+  "capital": 8189.896777500249,
   "positions": [
     {
       "symbol": "CORN11",
@@ -32,21 +32,6 @@
       "opened_at": "2026-10-07T15:35:04.861387+00:00"
     },
     {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "quantity": 1453.3632032154883,
-      "entry_price": 0.2543,
-      "stop_price": 0.25373,
-      "target_price": 0.25544,
-      "risk_value": 92.39756564442467,
-      "risk_distance_pct": 0.22414471097129957,
-      "risk_reward": 1.9999999999999025,
-      "score": 66.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T15:35:04.861387+00:00"
-    },
-    {
       "symbol": "IVVB11",
       "market": "B3",
       "quantity": 0.8078475460227016,
@@ -60,6 +45,36 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Yahoo Finance (B3)",
       "opened_at": "2026-10-07T15:35:04.861387+00:00"
+    },
+    {
+      "symbol": "SMAL11",
+      "market": "B3",
+      "quantity": 2.734761359754907,
+      "entry_price": 129.97999572753906,
+      "stop_price": 129.7429946899414,
+      "target_price": 130.45399780273436,
+      "risk_value": 88.86606746419542,
+      "risk_distance_pct": 0.1823365482288878,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T15:57:47.202871+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "CRYPTO",
+      "quantity": 0.13280729916656694,
+      "entry_price": 2569.48,
+      "stop_price": 2566.679,
+      "target_price": 2575.082,
+      "risk_value": 85.3114247656276,
+      "risk_distance_pct": 0.10901038342388074,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:57:47.202871+00:00"
     }
   ],
   "trades": [
@@ -3753,8 +3768,8 @@
       "exit_price": 1.47197,
       "gross": 0.8410842363917564,
       "fees": 0.0,
-      "estimated_tax": 0.007646955676096102,
-      "net": 0.8334372807156604,
+      "estimated_tax": 0.027400102443447982,
+      "net": 0.8136841339483085,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3775,8 +3790,8 @@
       "exit_price": 118.81500000000001,
       "gross": 0.7927257645768485,
       "fees": 0.0,
-      "estimated_tax": 0.00720729092608395,
-      "net": 0.7855184736507645,
+      "estimated_tax": 0.025824722684315387,
+      "net": 0.7669010418925332,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3797,8 +3812,8 @@
       "exit_price": 0.25793,
       "gross": 1.7766094968529365,
       "fees": 0.0,
-      "estimated_tax": 0.016152548684598027,
-      "net": 1.7604569481683385,
+      "estimated_tax": 0.05787682149959997,
+      "net": 1.7187326753533365,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:37.369573+00:00"
     },
@@ -4083,8 +4098,8 @@
       "exit_price": 145.0452651977539,
       "gross": 0.7599944228681056,
       "fees": 0.0,
-      "estimated_tax": 0.006909704657745743,
-      "net": 0.7530847182103598,
+      "estimated_tax": 0.024758429824305903,
+      "net": 0.7352359930437997,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:30:03.216024+00:00"
     },
@@ -4105,8 +4120,8 @@
       "exit_price": 50.640000915527345,
       "gross": 1.758798332351271,
       "fees": 0.0,
-      "estimated_tax": 0.01599061343532003,
-      "net": 1.742807718915951,
+      "estimated_tax": 0.0572965850489962,
+      "net": 1.7015017473022749,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:20.873854+00:00"
     },
@@ -4193,8 +4208,8 @@
       "exit_price": 11.2809,
       "gross": 2.1589515042152496,
       "fees": 0.0,
-      "estimated_tax": 0.019628719390105586,
-      "net": 2.139322784825144,
+      "estimated_tax": 0.07033242311104351,
+      "net": 2.088619081104206,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:53.407647+00:00"
     },
@@ -4215,8 +4230,8 @@
       "exit_price": 12.63100004196167,
       "gross": 3.723117788669097,
       "fees": 0.0,
-      "estimated_tax": 0.03384978040841161,
-      "net": 3.6892680082606852,
+      "estimated_tax": 0.12128845650014208,
+      "net": 3.601829332168955,
       "reason": "ALVO",
       "closed_at": "2026-10-07T14:03:45.836353+00:00"
     },
@@ -4263,7 +4278,29 @@
       "net": -0.9950408045870548,
       "reason": "STOP",
       "closed_at": "2026-10-07T14:03:45.836353+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "market": "CRYPTO",
+      "quantity": 1453.3632032154883,
+      "entry_price": 0.2543,
+      "stop_price": 0.25373,
+      "target_price": 0.25544,
+      "risk_value": 92.39756564442467,
+      "risk_distance_pct": 0.22414471097129957,
+      "risk_reward": 1.9999999999999025,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T15:35:04.861387+00:00",
+      "exit_price": 0.25544,
+      "gross": 1.6568340516656195,
+      "fees": 0.0,
+      "estimated_tax": 0.05397488239963393,
+      "net": 1.6028591692659855,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T15:57:47.202871+00:00"
     }
   ],
-  "updated_at": "2026-10-07T15:36:08.004993+00:00"
+  "updated_at": "2026-10-07T15:58:49.214731+00:00"
 }
