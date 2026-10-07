@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T00:33:20.213354+00:00",
+  "updated_at": "2026-10-07T00:59:30.709300+00:00",
   "config": {
     "capital_inicial": 10000.0,
     "capital": 10051.775745235242,
@@ -1139,11 +1139,11 @@
     }
   ],
   "market": {
-    "symbol": "GOLD11",
-    "market": "B3",
-    "price": 21.579999923706055,
-    "score": 66,
-    "signal": "HOLD"
+    "symbol": "LINKUSDT",
+    "market": "CRYPTO",
+    "price": 14.021,
+    "score": 73,
+    "signal": "COMPRA"
   },
   "summary": {
     "lucro_liquido": 34.169774520599105,
