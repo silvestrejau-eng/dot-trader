@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T13:51:19.214969+00:00",
+  "updated_at": "2026-10-07T14:04:47.791419+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,45 +21,30 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 3,
+      "opened_total": 0,
       "closed_now": 0,
-      "closed": 194,
-      "capital": 8954.369428777545,
-      "patrimonio": 10025.403695805213,
-      "retorno_pct": 0.25403695805212845,
-      "operacoes": 194,
-      "posicoes": 3,
-      "win_rate_pct": 37.628865979381445,
+      "closed": 197,
+      "capital": 10025.777522181495,
+      "patrimonio": 10025.777522181495,
+      "retorno_pct": 0.2577752218149598,
+      "operacoes": 197,
+      "posicoes": 0,
+      "win_rate_pct": 37.56345177664975,
       "last_event": null,
       "opportunities": [
         {
-          "symbol": "LINKUSDT",
-          "market": "CRYPTO",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 13.456,
-          "momentum_pct": 0.6808829031051289,
-          "volume_ratio": 0.3763017705690016,
-          "reason": [
-            "EMA9>EMA21",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "rompimento da maxima de 20 candles"
-          ]
-        },
-        {
           "symbol": "BBOI11",
           "market": "B3",
-          "score": 65,
-          "signal": "HOLD",
-          "price": 12.539999961853027,
-          "momentum_pct": 1.9512176211098575,
+          "score": 73,
+          "signal": "COMPRA",
+          "price": 12.6899995803833,
+          "momentum_pct": 1.5199966430664125,
           "volume_ratio": 0.0,
           "reason": [
             "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
+            "RSI forte, proximo da sobrecompra",
             "aceleracao positiva",
-            "volume fraco"
+            "rompimento da maxima de 20 candles"
           ]
         }
       ]
@@ -67,33 +52,18 @@
   },
   "extreme_opportunities": [
     {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 13.456,
-      "momentum_pct": 0.6808829031051289,
-      "volume_ratio": 0.3763017705690016,
-      "reason": [
-        "EMA9>EMA21",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "rompimento da maxima de 20 candles"
-      ]
-    },
-    {
       "symbol": "BBOI11",
       "market": "B3",
-      "score": 65,
-      "signal": "HOLD",
-      "price": 12.539999961853027,
-      "momentum_pct": 1.9512176211098575,
+      "score": 73,
+      "signal": "COMPRA",
+      "price": 12.6899995803833,
+      "momentum_pct": 1.5199966430664125,
       "volume_ratio": 0.0,
       "reason": [
         "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
+        "RSI forte, proximo da sobrecompra",
         "aceleracao positiva",
-        "volume fraco"
+        "rompimento da maxima de 20 candles"
       ]
     }
   ],

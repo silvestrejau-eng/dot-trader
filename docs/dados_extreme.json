@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-07T13:51:19.207500+00:00",
+  "updated_at": "2026-10-07T14:04:47.784001+00:00",
   "config": {
     "capital_inicial": 10000.0,
-    "capital": 8954.369428777545,
+    "capital": 10025.777522181495,
     "max_position_pct": 4.0,
     "stop_mult_atr": 0.7,
     "target_mult_atr": 1.4,
@@ -19,53 +19,7 @@
     "strategy": "DOT_HUNTER_EXTREME",
     "tax_method": "20% sobre resultado líquido diário positivo (estimativa; apuração fiscal real é mensal)"
   },
-  "positions": [
-    {
-      "symbol": "BBOI11",
-      "market": "B3",
-      "quantity": 28.420737374713713,
-      "entry_price": 12.5,
-      "stop_price": 12.434499979019165,
-      "target_price": 12.63100004196167,
-      "risk_value": 88.81480429598035,
-      "risk_distance_pct": 0.5240001678466797,
-      "risk_reward": 2.0,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T13:29:43.278661+00:00"
-    },
-    {
-      "symbol": "PETR4",
-      "market": "B3",
-      "quantity": 6.292414090329034,
-      "entry_price": 54.20000076293945,
-      "stop_price": 54.08450050354004,
-      "target_price": 54.43100128173828,
-      "risk_value": 85.26221212414116,
-      "risk_distance_pct": 0.21310010659333292,
-      "risk_reward": 2.0000000000000617,
-      "score": 65.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Yahoo Finance (B3)",
-      "opened_at": "2026-10-07T13:29:43.278661+00:00"
-    },
-    {
-      "symbol": "LINKUSDT",
-      "market": "CRYPTO",
-      "quantity": 27.717014055349853,
-      "entry_price": 13.461,
-      "stop_price": 13.4251,
-      "target_price": 13.532800000000002,
-      "risk_value": 93.2746815497661,
-      "risk_distance_pct": 0.2666963821409986,
-      "risk_reward": 2.0000000000000493,
-      "score": 73.0,
-      "strategy": "DOT_HUNTER_EXTREME",
-      "source": "Binance public",
-      "opened_at": "2026-10-07T13:51:06.252645+00:00"
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "symbol": "ADAUSDT",
@@ -3757,8 +3711,8 @@
       "exit_price": 1.47197,
       "gross": 0.8410842363917564,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 0.8410842363917564,
+      "estimated_tax": 0.007646955676096102,
+      "net": 0.8334372807156604,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3779,8 +3733,8 @@
       "exit_price": 118.81500000000001,
       "gross": 0.7927257645768485,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 0.7927257645768485,
+      "estimated_tax": 0.00720729092608395,
+      "net": 0.7855184736507645,
       "reason": "ALVO",
       "closed_at": "2026-10-07T05:57:10.994419+00:00"
     },
@@ -3801,8 +3755,8 @@
       "exit_price": 0.25793,
       "gross": 1.7766094968529365,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 1.7766094968529365,
+      "estimated_tax": 0.016152548684598027,
+      "net": 1.7604569481683385,
       "reason": "ALVO",
       "closed_at": "2026-10-07T06:44:37.369573+00:00"
     },
@@ -4087,8 +4041,8 @@
       "exit_price": 145.0452651977539,
       "gross": 0.7599944228681056,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 0.7599944228681056,
+      "estimated_tax": 0.006909704657745743,
+      "net": 0.7530847182103598,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:30:03.216024+00:00"
     },
@@ -4109,8 +4063,8 @@
       "exit_price": 50.640000915527345,
       "gross": 1.758798332351271,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 1.758798332351271,
+      "estimated_tax": 0.01599061343532003,
+      "net": 1.742807718915951,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:20.873854+00:00"
     },
@@ -4197,17 +4151,83 @@
       "exit_price": 11.2809,
       "gross": 2.1589515042152496,
       "fees": 0.0,
-      "estimated_tax": 0.0,
-      "net": 2.1589515042152496,
+      "estimated_tax": 0.019628719390105586,
+      "net": 2.139322784825144,
       "reason": "ALVO",
       "closed_at": "2026-10-07T13:50:53.407647+00:00"
+    },
+    {
+      "symbol": "BBOI11",
+      "market": "B3",
+      "quantity": 28.420737374713713,
+      "entry_price": 12.5,
+      "stop_price": 12.434499979019165,
+      "target_price": 12.63100004196167,
+      "risk_value": 88.81480429598035,
+      "risk_distance_pct": 0.5240001678466797,
+      "risk_reward": 2.0,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.278661+00:00",
+      "exit_price": 12.63100004196167,
+      "gross": 3.723117788669097,
+      "fees": 0.0,
+      "estimated_tax": 0.03384978040841161,
+      "net": 3.6892680082606852,
+      "reason": "ALVO",
+      "closed_at": "2026-10-07T14:03:45.836353+00:00"
+    },
+    {
+      "symbol": "PETR4",
+      "market": "B3",
+      "quantity": 6.292414090329034,
+      "entry_price": 54.20000076293945,
+      "stop_price": 54.08450050354004,
+      "target_price": 54.43100128173828,
+      "risk_value": 85.26221212414116,
+      "risk_distance_pct": 0.21310010659333292,
+      "risk_reward": 2.0000000000000617,
+      "score": 65.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Yahoo Finance (B3)",
+      "opened_at": "2026-10-07T13:29:43.278661+00:00",
+      "exit_price": 54.08450050354004,
+      "gross": -0.7267754596815136,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.7267754596815136,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T14:03:45.836353+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "market": "CRYPTO",
+      "quantity": 27.717014055349853,
+      "entry_price": 13.461,
+      "stop_price": 13.4251,
+      "target_price": 13.532800000000002,
+      "risk_value": 93.2746815497661,
+      "risk_distance_pct": 0.2666963821409986,
+      "risk_reward": 2.0000000000000493,
+      "score": 73.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T13:51:06.252645+00:00",
+      "exit_price": 13.4251,
+      "gross": -0.9950408045870548,
+      "fees": 0.0,
+      "estimated_tax": 0.0,
+      "net": -0.9950408045870548,
+      "reason": "STOP",
+      "closed_at": "2026-10-07T14:03:45.836353+00:00"
     }
   ],
   "tax": {
     "rate_pct": 20.0,
-    "base_tributavel": 29.94245000935302,
-    "imposto_estimado": 5.988490001870605,
-    "dias_positivos": 1,
+    "base_tributavel": 30.479378075244824,
+    "imposto_estimado": 6.095875615048966,
+    "dias_positivos": 2,
     "daily": [
       {
         "date": "2026-10-05",
@@ -4223,28 +4243,28 @@
       },
       {
         "date": "2026-10-07",
-        "net_result": -1.4643734585087231,
-        "taxable_base": 0.0,
-        "estimated_tax": 0.0
+        "net_result": 0.5369280658918053,
+        "taxable_base": 0.5369280658918053,
+        "estimated_tax": 0.10738561317836107
       }
     ]
   },
   "market": {
-    "symbol": "LINKUSDT",
-    "market": "CRYPTO",
-    "price": 13.456,
+    "symbol": "BBOI11",
+    "market": "B3",
+    "price": 12.6899995803833,
     "score": 73,
     "signal": "COMPRA"
   },
   "summary": {
-    "lucro_bruto": 23.776220657094353,
-    "base_tributavel": 29.94245000935302,
-    "imposto_estimado": 5.988490001870605,
-    "lucro_liquido": 17.787730655223747,
-    "patrimonio": 10025.403695805213,
-    "dias_positivos": 1,
-    "retorno_pct": 0.25403695805212845,
-    "operacoes": 194,
-    "win_rate_pct": 37.628865979381445
+    "lucro_bruto": 25.77752218149488,
+    "base_tributavel": 30.479378075244824,
+    "imposto_estimado": 6.095875615048966,
+    "lucro_liquido": 19.681646566445913,
+    "patrimonio": 10025.777522181495,
+    "dias_positivos": 2,
+    "retorno_pct": 0.2577752218149598,
+    "operacoes": 197,
+    "win_rate_pct": 37.56345177664975
   }
 }
