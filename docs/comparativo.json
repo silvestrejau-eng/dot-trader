@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T14:47:38.876627+00:00",
+  "updated_at": "2026-10-07T15:04:00.342038+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -31,41 +31,9 @@
       "posicoes": 1,
       "win_rate_pct": 37.56345177664975,
       "last_event": null,
-      "opportunities": [
-        {
-          "symbol": "CORN11",
-          "market": "B3",
-          "score": 73,
-          "signal": "COMPRA",
-          "price": 7.090000152587891,
-          "momentum_pct": 1.1412256932096465,
-          "volume_ratio": 0.0,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "aceleracao positiva",
-            "preco comprimido na maxima"
-          ]
-        }
-      ]
+      "opportunities": []
     }
   },
-  "extreme_opportunities": [
-    {
-      "symbol": "CORN11",
-      "market": "B3",
-      "score": 73,
-      "signal": "COMPRA",
-      "price": 7.090000152587891,
-      "momentum_pct": 1.1412256932096465,
-      "volume_ratio": 0.0,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "aceleracao positiva",
-        "preco comprimido na maxima"
-      ]
-    }
-  ],
+  "extreme_opportunities": [],
   "hunter_opportunities": []
 }
