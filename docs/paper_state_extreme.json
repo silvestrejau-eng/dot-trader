@@ -1,5 +1,5 @@
 {
-  "capital": 8542.101322139131,
+  "capital": 8200.417269253567,
   "positions": [
     {
       "symbol": "USO",
@@ -60,6 +60,21 @@
       "strategy": "DOT_HUNTER_EXTREME",
       "source": "Binance public",
       "opened_at": "2026-10-07T08:26:13.797142+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "market": "CRYPTO",
+      "quantity": 302.1079159023566,
+      "entry_price": 1.131,
+      "stop_price": 1.1289,
+      "target_price": 1.1352,
+      "risk_value": 85.42101322139132,
+      "risk_distance_pct": 0.18567639257294347,
+      "risk_reward": 2.0,
+      "score": 66.0,
+      "strategy": "DOT_HUNTER_EXTREME",
+      "source": "Binance public",
+      "opened_at": "2026-10-07T08:46:05.934682+00:00"
     }
   ],
   "trades": [
@@ -3979,5 +3994,5 @@
       "closed_at": "2026-10-07T08:01:50.380294+00:00"
     }
   ],
-  "updated_at": "2026-10-07T08:27:00.062100+00:00"
+  "updated_at": "2026-10-07T08:47:06.305252+00:00"
 }

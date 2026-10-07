@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T08:27:00.068177+00:00",
+  "updated_at": "2026-10-07T08:47:06.310257+00:00",
   "paper_trading": true,
   "real_orders": false,
   "comparison": {
@@ -21,32 +21,17 @@
     "hunter_extreme": {
       "strategy": "DOT_HUNTER_EXTREME",
       "opened_now": 0,
-      "opened_total": 4,
+      "opened_total": 5,
       "closed_now": 0,
       "closed": 184,
-      "capital": 8542.101322139131,
-      "patrimonio": 10025.429273855574,
-      "retorno_pct": 0.2542927385557503,
+      "capital": 8200.417269253567,
+      "patrimonio": 10025.133383045277,
+      "retorno_pct": 0.25133383045277125,
       "operacoes": 184,
-      "posicoes": 4,
+      "posicoes": 5,
       "win_rate_pct": 38.04347826086957,
       "last_event": null,
       "opportunities": [
-        {
-          "symbol": "ADAUSDT",
-          "market": "CRYPTO",
-          "score": 66,
-          "signal": "HOLD",
-          "price": 0.2577,
-          "momentum_pct": 0.19440124416796323,
-          "volume_ratio": 0.1264778848784657,
-          "reason": [
-            "EMA9>EMA21>EMA50",
-            "RSI momentum ideal",
-            "momentum positivo",
-            "preco comprimido na maxima"
-          ]
-        },
         {
           "symbol": "GOLD11",
           "market": "B3",
@@ -66,21 +51,6 @@
     }
   },
   "extreme_opportunities": [
-    {
-      "symbol": "ADAUSDT",
-      "market": "CRYPTO",
-      "score": 66,
-      "signal": "HOLD",
-      "price": 0.2577,
-      "momentum_pct": 0.19440124416796323,
-      "volume_ratio": 0.1264778848784657,
-      "reason": [
-        "EMA9>EMA21>EMA50",
-        "RSI momentum ideal",
-        "momentum positivo",
-        "preco comprimido na maxima"
-      ]
-    },
     {
       "symbol": "GOLD11",
       "market": "B3",
